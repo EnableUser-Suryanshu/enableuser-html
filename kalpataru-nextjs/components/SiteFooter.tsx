@@ -1,0 +1,213 @@
+import { MEMBER_DETAILS } from '@/lib/data';
+import {
+  APP_LINKS, MAPS, POLICY_LINKS, REGULATOR_LINKS, SOCIAL_LINKS, EXT,
+} from '@/lib/links';
+import {
+  Facebook, Instagram, XTwitter, LinkedIn, Target, OfficeBuilding,
+  Phone, Mail, Person, Map, Pencil, ListCheck, Bank, Handshake, Headset, Download,
+} from './icons';
+
+const POLICY_COLUMNS = [
+  {
+    heading: 'Compliance & Policies',
+    links: [
+      ['Security Policy', POLICY_LINKS.security],
+      ['PMLA Policy', POLICY_LINKS.pmla],
+      ['Privacy Policy', POLICY_LINKS.privacy],
+      ['Dormant Policy', POLICY_LINKS.dormant],
+      ['Surveillance Policy', POLICY_LINKS.surveillance],
+      ['Branch Supervision Policy', POLICY_LINKS.branchSupervision],
+    ],
+  },
+  {
+    heading: 'Investor Relations',
+    links: [
+      ['Investor Charter', POLICY_LINKS.investorCharter],
+      ['Sebi Complaint', POLICY_LINKS.sebiComplaint],
+      ['Investor/Client Complaint Process', POLICY_LINKS.complaintProcess],
+      ['Advisory for Investor', POLICY_LINKS.advisory],
+      ['Risk Disclosures on Derivatives', POLICY_LINKS.riskDisclosures],
+    ],
+  },
+  {
+    heading: 'Legal & Governance',
+    links: [
+      ['Circulars', POLICY_LINKS.circulars],
+      ['Regulatory', POLICY_LINKS.regulatory],
+      ['Terms of Use', POLICY_LINKS.termsOfUse],
+      ['Terms & Conditions', POLICY_LINKS.termsConditions],
+      ['Disclaimer', POLICY_LINKS.disclaimer],
+      ['RMS Policy', POLICY_LINKS.rms],
+      ['GTT Policy', POLICY_LINKS.gtt],
+    ],
+  },
+] as const;
+
+export default function SiteFooter() {
+  return (
+    <footer className="footer">
+      <div className="container">
+        <div className="f-top">
+          <div className="f-brand">
+            <div className="row">
+              <img src="/assets/logo.png" alt="Kalpataru Multiplier Ltd logo" />
+              <div>
+                <div className="brand-name">Kalpataru</div>
+                <div className="brand-tag">Multiplier Ltd</div>
+              </div>
+            </div>
+            <p className="f-desc">
+              Kalpataru is a wishful Divine Tree and in present context a widely Trusted,
+              Time tested and Transparent Share Broker, Mutual Fund Distributor and D.P.
+              of this region.
+            </p>
+            <div className="f-label">Mobile Trading Apps</div>
+            <div className="f-apps">
+              <a href={APP_LINKS.android} {...EXT} className="store-badge play">
+                <img src="/assets/badges/google-play.png" alt="Get it on Google Play" loading="lazy" />
+              </a>
+              <a href={APP_LINKS.ios} {...EXT} className="store-badge">
+                <img src="/assets/badges/app-store.svg" alt="Download on the App Store" loading="lazy" />
+              </a>
+            </div>
+            <div className="f-label">Connect With Us</div>
+            <div className="f-social">
+              <a href={SOCIAL_LINKS.facebook} {...EXT} aria-label="Facebook"><Facebook /></a>
+              <a href={SOCIAL_LINKS.instagram} {...EXT} aria-label="Instagram"><Instagram /></a>
+              <a href={SOCIAL_LINKS.twitter} {...EXT} aria-label="X (Twitter)"><XTwitter /></a>
+              <a href={SOCIAL_LINKS.linkedin} {...EXT} aria-label="LinkedIn"><LinkedIn /></a>
+            </div>
+          </div>
+          <div>
+            <div className="branch-head">
+              <Target size={20} /> Our Branches are Our Strength
+            </div>
+            <div className="branches">
+              <div className="bcard">
+                <div className="bh"><OfficeBuilding size={19} strokeW={1.9} /> Corporate Office</div>
+                <address>
+                  Hall No. 2, 1st Floor Western Block, Above Central Bank, GTB Complex,
+                  T. T. Nagar, Bhopal-462003
+                </address>
+                <div className="meta">
+                  <span>
+                    <Phone size={15} strokeW={1.8} />
+                    <a href="tel:07554350141" style={{ textDecoration: 'underline' }}>0755-4350141-143</a>,&nbsp;
+                    <a href="tel:07554283016" style={{ textDecoration: 'underline' }}>0755-4283016</a>
+                  </span>
+                  <span><Mail size={15} strokeW={1.8} /> kmlho@kalpatarumulti.com</span>
+                  <span><Person size={15} strokeW={1.8} /> Amitabh Manya Jain</span>
+                </div>
+                <a href={MAPS.corporateBhopal} {...EXT} className="link-red loc">
+                  <Map size={15} strokeW={1.8} /> View Location
+                </a>
+              </div>
+              <div className="bcard">
+                <div className="bh"><OfficeBuilding size={19} strokeW={1.9} /> Head Office (Regd.)</div>
+                <address>
+                  &quot;Kalpataru House&quot;, 18 Itwara, Bhopal (MP) - 462001
+                </address>
+                <div className="meta">
+                  <span><Phone size={15} strokeW={1.8} /> 0755-2530536, 2739822, 4262655</span>
+                  <span><Mail size={15} strokeW={1.8} /> kml01@kalpatarumulti.com</span>
+                  <span><Person size={15} strokeW={1.8} /> Aditya Manya Jain (Chairman)</span>
+                </div>
+                <a href={MAPS.headOffice} {...EXT} className="link-red loc">
+                  <Map size={15} strokeW={1.8} /> View Location
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="f-mid">
+          <div>
+            <h4>Important Policies &amp; Disclosures</h4>
+            <div className="policy-cols">
+              {POLICY_COLUMNS.map((col) => (
+                <div key={col.heading}>
+                  <h5>{col.heading}</h5>
+                  {col.links.map(([label, href]) =>
+                    href === '#' ? (
+                      <a key={label} href="#">{label}</a>
+                    ) : (
+                      <a key={label} href={href} {...EXT}>{label}</a>
+                    ),
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h4>Member Details &amp; Registration</h4>
+            <div className="member-card">
+              {MEMBER_DETAILS.map((m) => (
+                <div className="member-row" key={m.label}>
+                  <span>{m.label}</span>
+                  <span className="v">{m.value}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="grievance">
+          <h4>Quick Links</h4>
+          <div className="g-row" style={{ marginBottom: 34 }}>
+            <a href="/business-partners" className="gbtn">
+              <Handshake size={20} strokeW={1.9} />
+              <span><span className="t">BUSINESS PARTNERS</span><br /><span className="s">Franchise &amp; sub-broker</span></span>
+            </a>
+            <a href="/customer-care" className="gbtn">
+              <Headset size={20} strokeW={1.9} />
+              <span><span className="t">CUSTOMER CARE</span><br /><span className="s">Support &amp; feedback</span></span>
+            </a>
+            <a href="/downloads" className="gbtn">
+              <Download size={20} strokeW={1.9} />
+              <span><span className="t">DOWNLOADS</span><br /><span className="s">Forms &amp; software</span></span>
+            </a>
+          </div>
+          <h4>Grievance Redressal Mechanisms</h4>
+          <div className="g-row">
+            <a href={REGULATOR_LINKS.smartOdr} {...EXT} className="gbtn">
+              <Pencil size={20} strokeW={1.9} />
+              <span>
+                <span className="t">SMART ODR</span><br />
+                <span className="s">Online Dispute Resolution</span>
+              </span>
+            </a>
+            <a href={REGULATOR_LINKS.sebiScores} {...EXT} className="gbtn">
+              <ListCheck size={20} strokeW={1.9} />
+              <span>
+                <span className="t">SEBI SCORES</span><br />
+                <span className="s">Lodge a Complaint</span>
+              </span>
+            </a>
+            <a href={REGULATOR_LINKS.exchangeGrievance} {...EXT} className="gbtn">
+              <Bank size={20} strokeW={1.9} />
+              <span>
+                <span className="t">Exchange Grievance</span><br />
+                <span className="s">NSE / BSE / MCX Links</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="f-bottom">
+        <div className="container">
+          <span>© 2026 Kalpataru Multiplier Ltd. All rights reserved.</span>
+          <span>Made with <span className="heart">♥</span> in India</span>
+          <nav aria-label="Regulators">
+            <a href={REGULATOR_LINKS.nse} {...EXT}>NSE</a>
+            <a href={REGULATOR_LINKS.bse} {...EXT}>BSE</a>
+            <a href={REGULATOR_LINKS.mcx} {...EXT}>MCX</a>
+            <a href={REGULATOR_LINKS.cdsl} {...EXT}>CDSL</a>
+            <a href={REGULATOR_LINKS.sebi} {...EXT}>SEBI</a>
+            <a href={REGULATOR_LINKS.sebiScores} {...EXT}>SCORES</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  );
+}
