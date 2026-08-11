@@ -33,7 +33,7 @@ const STEPS: Step[] = [
     points: [
       'The trading account places your buy and sell orders on the exchange.',
       'The demat account holds your shares electronically — with CDSL, in your own name, never in the broker’s.',
-      'Kalpataru’s 3-in-1 account bundles trading, demat and mutual funds under a one-time ₹3,125 lifetime AMC, of which ₹2,600 is refunded when the account is closed.',
+      'Kalpataru’s 3-in-1 account bundles trading, demat and mutual funds together — trading and demat account opening is free.',
       'Keep your PAN, Aadhaar (linked to your mobile), bank proof and a signature image ready for eKYC.',
     ],
   },
@@ -116,7 +116,7 @@ export default function NewToMarketPage() {
             The Three Accounts You Need
           </h2>
           <p className="sub" style={{ textAlign: 'center', margin: '12px auto 40px', maxWidth: 600 }}>
-            Kalpataru bundles all three into one 3-in-1 account — a one-time ₹3,125 lifetime AMC, with ₹2,600 refunded on account closure.
+            Kalpataru bundles all three into one 3-in-1 account — with free trading and demat account opening.
           </p>
           <div className="values-grid stagger">
             {ACCOUNTS.map((a) => (
@@ -127,6 +127,11 @@ export default function NewToMarketPage() {
               </div>
             ))}
           </div>
+          <p className="pillar-note" style={{ margin: '28px auto 0' }}>
+            T&amp;C: Trading and demat account opening is free. A one-time ₹3,125 lifetime AMC applies to the
+            3-in-1 account, of which ₹2,600 is refunded when the account is closed. Other statutory charges,
+            taxes and levies apply as per the tariff sheet.
+          </p>
         </div>
       </section>
 

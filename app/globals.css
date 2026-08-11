@@ -1120,6 +1120,7 @@ html.motion-paused *,html.motion-paused *::before,html.motion-paused *::after{an
 .pillar .chips-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
 .pillar .chips-row .svc-tag.hot{background:var(--red);color:#fff}
 .pillar .cta-row{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.pillar-note{margin-top:18px;font-size:12px;line-height:1.7;color:var(--ink-3);max-width:640px;border-left:2px solid var(--line);padding-left:12px}
 .pillar-panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:0 24px 54px -28px rgba(1,13,35,.22);position:relative;overflow:hidden;transition:transform .35s,box-shadow .35s}
 .pillar.alt .pillar-panel{background:var(--bg-light)}
 .pillar-panel:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover)}

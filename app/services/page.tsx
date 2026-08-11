@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import type { CSSProperties } from 'react';
+import type { CSSProperties, ReactElement } from 'react';
 import PageHero from '@/components/PageHero';
 import BrandMarquee from '@/components/BrandMarquee';
 import { FUNDS } from '@/lib/data';
@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: 'Our Services — Kalpataru Multiplier Ltd',
   description:
-    'Equity, F&O and currency broking on NSE & BSE, commodities on MCX & NCDEX, mutual funds, a lifetime-AMC 3-in-1 account, IPOs, bonds, NPS, insurance and more.',
+    'Equity, F&O and currency broking on NSE & BSE, commodities on MCX & NCDEX, mutual funds, free trading & demat account opening, IPOs, bonds, NPS, insurance and more.',
 };
 
 /* ---------- panel visuals ---------- */
@@ -105,8 +105,8 @@ function DematPanel() {
         </div>
       </div>
       <div className="amc-stat">
-        <div className="big">₹3,125 lifetime AMC</div>
-        <div className="small">3-in-1 account · ₹2,600 refunded on closure</div>
+        <div className="big">Free Trading &amp; Demat</div>
+        <div className="small">3-in-1 account · opened digitally with eKYC</div>
       </div>
     </div>
   );
@@ -114,7 +114,20 @@ function DematPanel() {
 
 /* ---------- data ---------- */
 
-const PILLARS = [
+type Pillar = {
+  kicker: string;
+  title: string;
+  desc: string;
+  points: string[];
+  chips: string[];
+  ctas: { label: string; href: string; cls: string }[];
+  /* optional fine print rendered under the CTAs */
+  note?: string;
+  panel: () => ReactElement;
+  alt: boolean;
+};
+
+const PILLARS: Pillar[] = [
   {
     kicker: '01 — Trading & Broking',
     title: 'Equity, F&O and Currency on NSE & BSE',
@@ -170,17 +183,18 @@ const PILLARS = [
   {
     kicker: '04 — Demat & 3-in-1 Account',
     title: 'CDSL depository custody since 2003',
-    desc: 'Your securities live in your own CDSL demat account (DP-ID 12031600, registered IN-DP-CDSL-221-2003) — never in ours. Open the 3-in-1 account that ties trading, demat and mutual funds together for a one-time ₹3,125 lifetime AMC — of which ₹2,600 is refunded when the account is closed — see your holdings and DP account in real time, and move funds instantly from the app.',
+    desc: 'Your securities live in your own CDSL demat account (DP-ID 12031600, registered IN-DP-CDSL-221-2003) — never in ours. Open a free trading and demat account — the 3-in-1 account ties trading, demat and mutual funds together, so you can see your holdings and DP account in real time and move funds instantly from the app.',
     points: [
       'CDSL Depository Participant since 2003',
       '3-in-1 account: trading + demat + mutual funds',
-      '₹3,125 one-time lifetime AMC — ₹2,600 refunded on closure',
+      'Free trading & demat account opening',
       'Fully digital eKYC opening and closure',
       'Live holdings & DP view on app and web',
       'Instant fund transfer from the mobile app',
     ],
-    chips: ['CDSL DP', '3-IN-1', '₹3,125 LIFETIME AMC', 'eKYC'],
+    chips: ['CDSL DP', '3-IN-1', 'FREE ACCOUNT OPENING', 'eKYC'],
     ctas: [{ label: 'Open Demat Account', href: PORTALS.ekycAccountOpening, cls: 'btn btn-red' }],
+    note: 'T&C: Trading and demat account opening is free. A one-time ₹3,125 lifetime AMC applies to the 3-in-1 account, of which ₹2,600 is refunded when the account is closed. Other statutory charges, taxes and levies apply as per the tariff sheet.',
     panel: DematPanel,
     alt: true,
   },
@@ -313,6 +327,7 @@ export default function ServicesPage() {
                   <a href={c.href} {...EXT} className={c.cls} key={c.label}>{c.label}</a>
                 ))}
               </div>
+              {p.note && <p className="pillar-note">{p.note}</p>}
             </div>
             <div className={`pillar-visual reveal ${p.alt ? 'rv-left' : 'rv-right'}`}>
               <p.panel />
