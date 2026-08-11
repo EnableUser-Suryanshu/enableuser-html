@@ -4,8 +4,9 @@ import { notFound } from 'next/navigation';
 import PageHero from '@/components/PageHero';
 import MarketTable from '@/components/markets/MarketTable';
 import DataNotice, { PendingNotice } from '@/components/markets/DataNotice';
-import { MARKET_DATASETS, getDataset, datasetsInGroup, groupOf } from '@/lib/markets';
+import { MARKET_DATASETS, getDataset, datasetsInGroup, groupOf, marketMeta } from '@/lib/markets';
 import { PORTALS, EXT } from '@/lib/links';
+import MarketStatusProvider from '@/components/markets/MarketStatusContext';
 import { ArrowRight } from '@/components/icons';
 
 export function generateStaticParams() {
@@ -34,6 +35,10 @@ export default async function DatasetPage({ params }: { params: Promise<{ slug: 
   const words = dataset.title.split(' ').map((w, i) => ({ text: w, accent: i === 0 }));
 
   return (
+    <MarketStatusProvider
+      initialStatus={marketMeta.marketStatus}
+      initialTimestamp={marketMeta.marketTimestamp}
+    >
     <main id="main">
       <PageHero crumb={`Markets · ${group.label}`} words={words} lead={dataset.blurb} />
 
@@ -87,5 +92,6 @@ export default async function DatasetPage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
     </main>
+    </MarketStatusProvider>
   );
 }

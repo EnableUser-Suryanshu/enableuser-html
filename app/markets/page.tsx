@@ -3,6 +3,8 @@ import PageHero from '@/components/PageHero';
 import MarketsBento from '@/components/markets/MarketsBento';
 import DatasetExplorer from '@/components/markets/DatasetExplorer';
 import DataNotice from '@/components/markets/DataNotice';
+import MarketStatusProvider from '@/components/markets/MarketStatusContext';
+import MarketStamp from '@/components/markets/MarketStamp';
 import {
   MARKET_DATASETS, MARKET_GROUPS, getDataset, liveIndices, liveDatasetCount, marketMeta,
 } from '@/lib/markets';
@@ -23,9 +25,12 @@ export default function MarketsPage() {
   const breadth = (getDataset('advances-and-declines')?.rows ?? []) as unknown as Array<{
     group: string; adv: number; dec: number;
   }>;
-  const marketOpen = /open/i.test(marketMeta.marketStatus);
 
   return (
+    <MarketStatusProvider
+      initialStatus={marketMeta.marketStatus}
+      initialTimestamp={marketMeta.marketTimestamp}
+    >
     <main id="main">
       <PageHero
         crumb="Markets"
@@ -39,10 +44,7 @@ export default function MarketsPage() {
             <a href={PORTALS.webTrading} {...EXT} className="btn btn-white">
               LAUNCH WEB TRADING
             </a>
-            <p className="mkt-stamp">
-              <span className={`mkt-live-dot ${marketOpen ? 'on' : ''}`} aria-hidden="true"></span>
-              Live exchange data · {marketMeta.marketTimestamp} · Market {marketOpen ? 'Open' : 'Closed'}
-            </p>
+            <MarketStamp />
           </>
         }
       />
@@ -91,5 +93,6 @@ export default function MarketsPage() {
         </div>
       </section>
     </main>
+    </MarketStatusProvider>
   );
 }

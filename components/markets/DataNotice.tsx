@@ -1,3 +1,6 @@
+'use client';
+
+import { useMarketStatus } from './MarketStatusContext';
 import { marketMeta } from '@/lib/markets';
 import { Shield, History } from '../icons';
 
@@ -9,7 +12,11 @@ import { Shield, History } from '../icons';
  * by name instead.
  */
 export default function DataNotice({ vendor }: { vendor?: string }) {
-  const open = /open/i.test(marketMeta.marketStatus);
+  const { marketStatus } = useMarketStatus();
+  // Fall back to static snapshot if context is not available (e.g. when
+  // DataNotice is rendered outside MarketStatusProvider).
+  const status = marketStatus || marketMeta.marketStatus;
+  const open = /open/i.test(status);
   const licensed = marketMeta.vendor;
   return (
     <div className="data-notice" role="note">
