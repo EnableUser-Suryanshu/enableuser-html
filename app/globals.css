@@ -1279,3 +1279,86 @@ html.motion-paused *,html.motion-paused *::before,html.motion-paused *::after{an
   .page-hero{padding:64px 0 70px}
   .page-hero h1{font-size:29px}
 }
+
+/* ============ Policy documents (migrated static pages) ============ */
+.policy-section{background:#fff}
+.policy-grid{display:grid;grid-template-columns:minmax(0,1fr) 292px;gap:52px;align-items:start}
+.policy-doc{max-width:80ch;font-size:14.6px;line-height:1.82;color:var(--ink-2)}
+.policy-doc>p{margin-bottom:16px}
+.policy-doc>p:last-of-type{margin-bottom:0}
+.policy-h{font-family:var(--font-head);color:var(--ink);line-height:1.35}
+.policy-h2{font-size:23px;font-weight:700;margin:38px 0 14px;padding-bottom:10px;border-bottom:2px solid var(--line);position:relative}
+.policy-h2::after{content:"";position:absolute;left:0;bottom:-2px;width:56px;height:2px;background:var(--red)}
+.policy-h3{font-size:17.5px;font-weight:700;margin:30px 0 11px;padding-left:13px;border-left:3px solid var(--red)}
+.policy-h4{font-size:15px;font-weight:600;margin:24px 0 9px;color:var(--ink)}
+.policy-doc>.policy-h:first-child{margin-top:0}
+.policy-list{margin:0 0 18px;padding-left:2px}
+.policy-list li{position:relative;padding-left:24px;margin-bottom:9px}
+.policy-list li::before{content:"";position:absolute;left:3px;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--red);opacity:.8}
+.policy-table-wrap{overflow-x:auto;margin:20px 0 24px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.policy-table{border-collapse:collapse;width:100%;min-width:520px;font-size:13px}
+.policy-table th,.policy-table td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.policy-table thead th{background:var(--navy);color:#fff;font-weight:600;font-family:var(--font-head);font-size:12.5px;letter-spacing:.2px;border-bottom:none;position:sticky;top:0}
+.policy-table tbody th{font-weight:600;color:var(--ink);background:var(--bg-light)}
+.policy-table tbody tr:last-child th,.policy-table tbody tr:last-child td{border-bottom:none}
+.policy-table tbody tr:hover{background:rgba(187,0,9,.03)}
+.policy-foot{margin-top:38px;padding:18px 20px;background:var(--bg-light);border-left:3px solid var(--red);border-radius:0 10px 10px 0;font-size:13px;color:var(--ink-3);line-height:1.7}
+.policy-foot a{color:var(--red-hi);font-weight:600;text-decoration:underline}
+
+/* sidebar */
+.policy-side{position:sticky;top:96px;display:flex;flex-direction:column;gap:22px}
+.policy-side-block{background:var(--bg-light);border:1px solid var(--line);border-radius:14px;padding:18px 18px 14px}
+.policy-side-head{font-family:var(--font-head);font-size:11.5px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;color:var(--ink-3);margin-bottom:11px}
+.policy-side-block nav{display:flex;flex-direction:column}
+.policy-side-block nav a{display:flex;align-items:center;gap:7px;font-size:13.4px;font-weight:500;color:var(--ink-2);padding:7px 10px;margin:0 -10px;border-radius:8px;transition:background .2s,color .2s}
+.policy-side-block nav a:hover{background:#fff;color:var(--red-hi)}
+.policy-side-block nav a svg{flex:none;color:var(--red)}
+.policy-side-block nav a.is-current{background:var(--red);color:#fff;font-weight:600}
+.policy-side-block nav a.is-current:hover{background:var(--red-dark);color:#fff}
+.policy-side-cta{justify-content:center;display:flex;align-items:center;gap:8px}
+
+/* ============ Circulars & downloads ============ */
+.circ-section{background:var(--bg-light)}
+.circ-group{margin-bottom:52px}
+.circ-group:last-of-type{margin-bottom:34px}
+.circ-group-head h2{font-size:22px;font-weight:700;margin-bottom:7px}
+.circ-group-head p{color:var(--ink-3);font-size:14px;max-width:70ch}
+.circ-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.circ-card{display:flex;align-items:flex-start;gap:15px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 20px;transition:transform .3s,box-shadow .3s,border-color .3s}
+.circ-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover);border-color:#f2c9cb}
+.circ-icon{flex:none;width:44px;height:44px;border-radius:11px;background:rgba(187,0,9,.09);color:var(--red);display:flex;align-items:center;justify-content:center;transition:background .3s,color .3s,transform .35s}
+.circ-card:hover .circ-icon{background:var(--red);color:#fff;transform:rotate(-6deg) scale(1.06)}
+.circ-body{flex:1;min-width:0;display:block}
+.circ-title{display:block;font-family:var(--font-head);font-size:14.5px;font-weight:600;color:var(--ink);line-height:1.45}
+.circ-note{display:block;font-size:12.8px;color:var(--ink-3);line-height:1.6;margin-top:5px}
+.circ-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:11px}
+.circ-src{font-size:10.5px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--red);background:rgba(187,0,9,.09);padding:3px 9px;border-radius:20px}
+.circ-size{font-size:11.5px;color:var(--ink-3);font-weight:600}
+.circ-dl{flex:none;color:var(--ink-3);opacity:.55;transition:opacity .3s,color .3s,transform .3s}
+.circ-card:hover .circ-dl{opacity:1;color:var(--red);transform:translateY(2px)}
+.circ-links{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 26px;margin-top:24px}
+.circ-links h2{font-size:19px;font-weight:700;margin-bottom:7px}
+.circ-links p{color:var(--ink-3);font-size:13.6px;max-width:70ch}
+.circ-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:17px}
+.circ-chip{display:inline-flex;align-items:center;gap:7px;font-size:12.8px;font-weight:600;color:var(--ink-2);background:var(--bg-light);border:1px solid var(--line);padding:8px 14px;border-radius:22px;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.circ-chip:hover{background:var(--red);border-color:var(--red);color:#fff;transform:translateY(-2px)}
+.circ-chip svg{flex:none}
+
+@media (max-width:1020px){
+  .policy-grid{grid-template-columns:1fr;gap:38px}
+  .policy-side{position:static;order:2}
+  .policy-side-block nav{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+  .circ-grid{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .policy-doc{font-size:14px}
+  .policy-h2{font-size:20px}
+  .policy-h3{font-size:16px}
+  .policy-side-block nav{grid-template-columns:1fr}
+  .circ-card{padding:17px 16px;gap:12px}
+  .circ-links{padding:22px 18px}
+}
+
+/* draft notice on newly written policy pages awaiting compliance sign-off */
+.policy-draft{display:block;margin:0 0 26px;padding:15px 18px;background:#fff8e6;border:1px solid #f0d089;border-left:4px solid #d99b00;border-radius:0 10px 10px 0;font-size:13.2px;line-height:1.7;color:#6b4e00}
+.policy-draft strong{color:#4a3600;font-weight:700}

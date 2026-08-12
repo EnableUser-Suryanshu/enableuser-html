@@ -14,27 +14,32 @@ export const PORTALS = {
 
 const SITE = 'https://www.kalpatarumulti.com';
 
+// Policy pages now live on this site (see lib/policies.ts). PDFs are mirrored
+// under /public/files/pdf so nothing depends on the old host staying online.
 export const POLICY_LINKS = {
-  security: `${SITE}/static/security-policy.aspx`,
-  pmla: `${SITE}/static/pmla-policies.aspx`,
-  privacy: `${SITE}/static/privacy-policy.aspx`,
-  dormant: '#', // not published on the current site yet
-  surveillance: `${SITE}/static/surveillance-policy.aspx`,
-  branchSupervision: `${SITE}/static/branch-supervision-policy.aspx`,
-  investorCharter: `${SITE}/static/investorcharter-stockbroker.aspx`,
-  sebiComplaint: `${SITE}/files/pdf/Filing-Complaints-on-SCORES.pdf`,
-  complaintProcess: `${SITE}/files/pdf/investor-Client-Complaint-Resolution-Process.pdf`,
-  advisory: `${SITE}/static/advisory-investors.aspx`,
+  security: '/policies/security-policy',
+  pmla: '/policies/pmla-policy',
+  privacy: '/policies/privacy-policy',
+  dormant: '/policies/dormant-policy',
+  surveillance: '/policies/surveillance-policy',
+  branchSupervision: '/policies/branch-supervision-policy',
+  investorCharter: '/policies/investor-charter',
+  sebiComplaint: '/files/pdf/filing-complaints-on-scores.pdf',
+  complaintProcess: '/files/pdf/investor-client-complaint-resolution-process.pdf',
+  advisory: '/policies/advisory-for-investors',
   riskDisclosures:
     'https://www.sebi.gov.in/reports-and-statistics/research/jan-2023/study-analysis-of-profit-and-loss-of-individual-traders-dealing-in-equity-fando-segment_67525.html',
-  circulars: `${SITE}/static/circular.aspx`,
-  regulatory: '#',
-  termsOfUse: '#',
-  termsConditions: '#',
-  disclaimer: `${SITE}/static/disclaimer.aspx`,
-  rms: `${SITE}/static/rmspolicy.aspx`,
-  gtt: `${SITE}/static/gttpolicy.aspx`,
+  circulars: '/circulars',
+  regulatory: '/policies/regulatory-disclosures',
+  termsOfUse: '/policies/terms-of-use',
+  termsConditions: '/policies/terms-and-conditions',
+  disclaimer: '/policies/disclaimer',
+  rms: '/policies/rms-policy',
+  gtt: '/policies/gtt-policy',
 } as const;
+
+/** Policy destinations that are internal routes rather than external links. */
+export const isInternalPolicy = (href: string) => href.startsWith('/');
 
 export const SOCIAL_LINKS = {
   facebook: 'https://www.facebook.com/kalpatarumultiplerltd',

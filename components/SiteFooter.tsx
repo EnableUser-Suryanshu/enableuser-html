@@ -1,6 +1,7 @@
+import Link from 'next/link';
 import { MEMBER_DETAILS } from '@/lib/data';
 import {
-  APP_LINKS, MAPS, POLICY_LINKS, REGULATOR_LINKS, SOCIAL_LINKS, EXT,
+  APP_LINKS, MAPS, POLICY_LINKS, REGULATOR_LINKS, SOCIAL_LINKS, EXT, isInternalPolicy,
 } from '@/lib/links';
 import {
   Facebook, Instagram, XTwitter, LinkedIn, Target, OfficeBuilding,
@@ -128,11 +129,10 @@ export default function SiteFooter() {
                 <div key={col.heading}>
                   <h5>{col.heading}</h5>
                   {col.links.map(([label, href]) =>
-                    href === '#' ? (
-                      <a key={label} href="#">{label}</a>
-                    ) : (
-                      <a key={label} href={href} {...EXT}>{label}</a>
-                    ),
+                    // policy pages route in-app; PDFs and regulator links open in a new tab
+                    isInternalPolicy(href) && !href.endsWith('.pdf')
+                      ? <Link key={label} href={href}>{label}</Link>
+                      : <a key={label} href={href} {...EXT}>{label}</a>,
                   )}
                 </div>
               ))}
