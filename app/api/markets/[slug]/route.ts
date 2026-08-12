@@ -15,6 +15,9 @@ import { NextResponse } from 'next/server';
 // Plain ESM, shared verbatim with scripts/fetch-market-data.mjs so the live
 // feed and the deploy-time snapshot can never diverge.
 import { buildOneGroup, groupFor, marketStatus, createNse } from '@/scripts/market-sources.mjs';
+// Licensed NSE/BSE/MCX feed. Serves mcx-commodities, bse-indices and
+// currency-quotes when credentials are present; silently absent otherwise.
+import * as truedata from '@/scripts/vendors/truedata.mjs';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
@@ -51,7 +54,20 @@ export async function GET(
       group.needsNse ? marketStatus(nse) : Promise.resolve(null),
     ]);
 
-    const dataset = (sets as Dataset[]).find((d) => d.slug === slug) ?? null;
+    let dataset = (sets as Dataset[]).find((d) => d.slug === slug) ?? null;
+
+    // The licensed feed wins where it serves the slug — it is the only source
+    // that can give MCX in rupees. A vendor failure leaves the public-source
+    // dataset untouched rather than breaking the response.
+    if (truedata.isConfigured() && truedata.SERVES.includes(slug)) {
+      try {
+        const vendorSet = await truedata.buildDataset(slug);
+        if (vendorSet) dataset = vendorSet as Dataset;
+      } catch {
+        /* fall through to whatever the public sources produced */
+      }
+    }
+
     if (!dataset) {
       // Source reachable but this table had nothing — say so rather than 500,
       // and cache it briefly so a quiet table is not re-fetched every hit.

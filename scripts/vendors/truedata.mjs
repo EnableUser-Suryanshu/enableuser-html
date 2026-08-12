@@ -195,44 +195,70 @@ const QUOTE_COLS = [
 ];
 
 /**
+ * One builder per slug, so the live API route can refresh a single table
+ * without pulling the other two. Each returns null when the feed answered
+ * with nothing, and the caller then keeps whatever it already had.
+ */
+export const BUILDERS = {
+  'mcx-commodities': async () => {
+    const rows = await getQuotes(MCX_COMMODITIES);
+    if (!rows.length) return null;
+    return {
+      slug: 'mcx-commodities', title: 'MCX Commodity Futures', group: 'commodity',
+      blurb: 'Live bullion, energy and base-metal futures from MCX.',
+      columns: [...QUOTE_COLS, C('vol', 'Volume (’000s)', 'num')],
+      rows: rows.map(({ series, oi, time, ...r }) => r), defaultSort: 'chgPct',
+      vendor: 'TrueData (MCX)',
+    };
+  },
+
+  'bse-indices': async () => {
+    const rows = await getQuotes(BSE_INDICES);
+    if (!rows.length) return null;
+    return {
+      slug: 'bse-indices', title: 'BSE Indices', group: 'equity',
+      blurb: 'Live SENSEX and BSE broad-market index levels.',
+      columns: [C('symbol', 'Index', 'text'), C('last', 'Last', 'num'), C('prev', 'Prev Close', 'num'),
+        C('chgPct', 'Change (%)', 'pct'), C('open', 'Open', 'num'), C('high', 'High', 'num'), C('low', 'Low', 'num')],
+      rows: rows.map(({ series, oi, time, vol, chg, ...r }) => r), defaultSort: 'chgPct',
+      vendor: 'TrueData (BSE Indices)',
+    };
+  },
+
+  'currency-quotes': async () => {
+    const rows = await getQuotes(CURRENCY_FUTURES);
+    if (!rows.length) return null;
+    return {
+      slug: 'currency-quotes', title: 'Currency Futures', group: 'currency',
+      blurb: 'Live exchange-traded currency futures (NSE CDS).',
+      columns: QUOTE_COLS, rows: rows.map(({ series, oi, time, vol, ...r }) => r),
+      defaultSort: 'chgPct', vendor: 'TrueData (NSE CDS)',
+    };
+  },
+};
+
+/** Slugs this vendor can serve — used by the live route to decide whether to try. */
+export const SERVES = Object.keys(BUILDERS);
+
+/**
+ * Builds a single dataset by slug. Returns null when the vendor is not
+ * configured, does not serve that slug, or the feed had nothing.
+ */
+export async function buildDataset(slug) {
+  if (!isConfigured() || !BUILDERS[slug]) return null;
+  await authenticate();
+  return BUILDERS[slug]();
+}
+
+/**
  * Builds every dataset TrueData can serve. Each is returned only when the
  * feed actually answered, so a partial outage degrades gracefully.
  */
 export async function buildDatasets() {
   const out = [];
-
-  const mcx = await getQuotes(MCX_COMMODITIES);
-  if (mcx.length) {
-    out.push({
-      slug: 'mcx-commodities', title: 'MCX Commodity Futures', group: 'commodity',
-      blurb: 'Live bullion, energy and base-metal futures from MCX.',
-      columns: [...QUOTE_COLS, C('vol', 'Volume (’000s)', 'num')],
-      rows: mcx.map(({ series, oi, time, ...r }) => r), defaultSort: 'chgPct',
-      vendor: 'TrueData (MCX)',
-    });
+  for (const build of Object.values(BUILDERS)) {
+    const d = await build();
+    if (d) out.push(d);
   }
-
-  const bse = await getQuotes(BSE_INDICES);
-  if (bse.length) {
-    out.push({
-      slug: 'bse-indices', title: 'BSE Indices', group: 'equity',
-      blurb: 'Live SENSEX and BSE broad-market index levels.',
-      columns: [C('symbol', 'Index', 'text'), C('last', 'Last', 'num'), C('prev', 'Prev Close', 'num'),
-        C('chgPct', 'Change (%)', 'pct'), C('open', 'Open', 'num'), C('high', 'High', 'num'), C('low', 'Low', 'num')],
-      rows: bse.map(({ series, oi, time, vol, chg, ...r }) => r), defaultSort: 'chgPct',
-      vendor: 'TrueData (BSE Indices)',
-    });
-  }
-
-  const fx = await getQuotes(CURRENCY_FUTURES);
-  if (fx.length) {
-    out.push({
-      slug: 'currency-quotes', title: 'Currency Futures', group: 'currency',
-      blurb: 'Live exchange-traded currency futures (NSE CDS).',
-      columns: QUOTE_COLS, rows: fx.map(({ series, oi, time, vol, ...r }) => r),
-      defaultSort: 'chgPct', vendor: 'TrueData (NSE CDS)',
-    });
-  }
-
   return out;
 }
