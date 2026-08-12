@@ -4,7 +4,6 @@ import MarketsBento from '@/components/markets/MarketsBento';
 import DatasetExplorer from '@/components/markets/DatasetExplorer';
 import DataNotice from '@/components/markets/DataNotice';
 import MarketStatusProvider from '@/components/markets/MarketStatusContext';
-import MarketStamp from '@/components/markets/MarketStamp';
 import {
   MARKET_DATASETS, MARKET_GROUPS, getDataset, liveIndices, liveDatasetCount, marketMeta,
 } from '@/lib/markets';
@@ -44,7 +43,6 @@ export default function MarketsPage() {
             <a href={PORTALS.webTrading} {...EXT} className="btn btn-white">
               LAUNCH WEB TRADING
             </a>
-            <MarketStamp />
           </>
         }
       />
