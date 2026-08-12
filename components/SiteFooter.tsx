@@ -166,6 +166,10 @@ export default function SiteFooter() {
               <Download size={20} strokeW={1.9} />
               <span><span className="t">DOWNLOADS</span><br /><span className="s">Forms &amp; software</span></span>
             </a>
+            <a href="/bank-details" className="gbtn">
+              <Bank size={20} strokeW={1.9} />
+              <span><span className="t">BANK &amp; DP DETAILS</span><br /><span className="s">Verified account numbers</span></span>
+            </a>
           </div>
           <h4>Grievance Redressal Mechanisms</h4>
           <div className="g-row">

@@ -395,6 +395,8 @@ html.motion-paused *,html.motion-paused *::before,html.motion-paused *::after{an
 .bank-row .v{font-weight:700;font-family:'SF Mono',ui-monospace,monospace}
 .bank-row .v.name{font-family:var(--font-body)}
 .bank-row .v.red{color:var(--red);font-family:var(--font-body)}
+.bank-acc+.bank-acc{margin-top:6px;padding-top:6px;border-top:2px solid #f2f2f4}
+.bank-acc:last-of-type .bank-row:last-child{border-bottom:0}
 .dl-row{display:flex;justify-content:space-between;align-items:center;background:#f6f6f7;border-radius:10px;padding:15px 18px;margin-bottom:12px;font-size:14px;font-weight:500;transition:background .2s,transform .2s}
 .dl-row:hover{background:#fdeeee;transform:translateX(5px)}
 .dl-row svg{color:var(--red)}
@@ -1093,6 +1095,7 @@ html.motion-paused *,html.motion-paused *::before,html.motion-paused *::after{an
 .disc-table tbody tr{transition:background .2s}
 .disc-table tbody tr:hover{background:#fdf7f7}
 .disc-table tbody tr:last-child td{border-bottom:0}
+.disc-table td.acc-no{font-family:'SF Mono',ui-monospace,monospace;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:.3px;white-space:nowrap}
 .ap-name{font-weight:700}
 .mono{font-family:'SF Mono',ui-monospace,monospace;font-size:12.5px;font-weight:600}
 .seg-chips{display:inline-flex;gap:6px}
