@@ -18,18 +18,30 @@ export default function PointerFx() {
   useEffect(() => {
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    const revealIo = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add('in');
-            revealIo.unobserve(e.target);
-          }
-        });
-      },
+    const onReveal = (io: IntersectionObserver) => (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    };
+
+    // Percentage thresholds are unreachable for elements taller than the viewport
+    // (12% of a long policy document is several screens), which would leave the
+    // content stuck at opacity:0. Tall elements reveal as soon as they enter.
+    const revealIo: IntersectionObserver = new IntersectionObserver(
+      (entries) => onReveal(revealIo)(entries),
       { threshold: 0.12 },
     );
-    document.querySelectorAll('.reveal, .stagger').forEach((el) => revealIo.observe(el));
+    const tallIo: IntersectionObserver = new IntersectionObserver(
+      (entries) => onReveal(tallIo)(entries),
+      { threshold: 0, rootMargin: '0px 0px -80px 0px' },
+    );
+    document.querySelectorAll('.reveal, .stagger').forEach((el) => {
+      const tall = el.getBoundingClientRect().height > innerHeight * 0.75;
+      (tall ? tallIo : revealIo).observe(el);
+    });
 
     const watchIo = new IntersectionObserver(
       (entries) => {
@@ -44,7 +56,11 @@ export default function PointerFx() {
     );
     document.querySelectorAll('.watch').forEach((el) => watchIo.observe(el));
 
-    const cleanups: Array<() => void> = [() => revealIo.disconnect(), () => watchIo.disconnect()];
+    const cleanups: Array<() => void> = [
+      () => revealIo.disconnect(),
+      () => tallIo.disconnect(),
+      () => watchIo.disconnect(),
+    ];
 
     if (!reduce && matchMedia('(pointer:fine)').matches) {
       document
