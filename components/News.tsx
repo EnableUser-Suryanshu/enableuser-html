@@ -1,11 +1,38 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import { PORTALS, EXT } from '@/lib/links';
 import { FileText, Rocket, ArrowRight } from './icons';
 import Link from 'next/link';
 import { getDataset } from '@/lib/markets';
 
 export default function News() {
-  const announcements = getDataset('exchange-announcements')?.rows?.slice(0, 2) || [];
-  const ipos = getDataset('ipo-current-issues')?.rows?.slice(0, 2) || [];
+  const [announcements, setAnnouncements] = useState<any[]>(
+    getDataset('exchange-announcements')?.rows?.slice(0, 2) || []
+  );
+  const [ipos, setIpos] = useState<any[]>(
+    getDataset('ipo-current-issues')?.rows?.slice(0, 2) || []
+  );
+
+  useEffect(() => {
+    fetch('/api/markets/exchange-announcements')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data?.dataset?.rows) {
+          setAnnouncements(data.dataset.rows.slice(0, 2));
+        }
+      })
+      .catch(() => {});
+
+    fetch('/api/markets/ipo-current-issues')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data?.dataset?.rows) {
+          setIpos(data.dataset.rows.slice(0, 2));
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   return (
     <section className="section news watch" id="news">
