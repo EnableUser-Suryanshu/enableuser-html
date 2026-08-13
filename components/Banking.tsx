@@ -34,7 +34,7 @@ export default function Banking() {
               <FilePdf strokeW={1.8} />
             </a>
           ))}
-          <a href="#" className="btn btn-outline dl-all">Download All PDF Bundle</a>
+          <Link href="/downloads" className="btn btn-outline dl-all">Download All PDF Bundle</Link>
         </div>
       </div>
     </section>

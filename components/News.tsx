@@ -1,5 +1,6 @@
 import { PORTALS, EXT } from '@/lib/links';
 import { FileText, Rocket, ArrowRight } from './icons';
+import Link from 'next/link';
 
 export default function News() {
   return (
@@ -14,7 +15,7 @@ export default function News() {
             </div>
             <h3>Nifty 50 hits record high as FII inflows increase</h3>
             <p>Benchmark indices touched new peaks today led by banking and IT stocks amidst strong global cues...</p>
-            <a href="#" className="link-red">Read Full Report <ArrowRight size={15} strokeW={2.2} /></a>
+            <Link href="/markets" className="link-red">Read Full Report <ArrowRight size={15} strokeW={2.2} /></Link>
           </article>
           <article className="ncard">
             <div className="ncard-top">
@@ -22,7 +23,7 @@ export default function News() {
             </div>
             <h3>Sensex rises 400 points following positive GDP outlook</h3>
             <p>The Indian stock market witnessed a strong recovery in the final hour of trading as investors cheered domestic data...</p>
-            <a href="#" className="link-red">Read Full Report <ArrowRight size={15} strokeW={2.2} /></a>
+            <Link href="/markets" className="link-red">Read Full Report <ArrowRight size={15} strokeW={2.2} /></Link>
           </article>
         </div>
         <div className="reveal rv-right">
@@ -34,7 +35,7 @@ export default function News() {
             </div>
             <h3>Upcoming IPO: New tech company to list next week</h3>
             <p>The highly anticipated tech startup is set to launch its ₹1,200 Cr initial public offering on Tuesday. Price band fixed at ₹450-475...</p>
-            <a href="#" className="btn btn-outline">Check Subscription Status</a>
+            <Link href="/markets" className="btn btn-outline">Check Subscription Status</Link>
           </article>
           <article className="ncard">
             <div className="ncard-top">

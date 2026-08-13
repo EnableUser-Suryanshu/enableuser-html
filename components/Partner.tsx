@@ -1,4 +1,5 @@
 import { Handshake, CalendarCheck, IdCard, Building, TrendUp, Headset, FileText } from './icons';
+import Link from 'next/link';
 
 const WHY = [
   { icon: TrendUp, title: 'Extra Income Opportunity', body: 'Competitive revenue sharing models designed for growth.' },
@@ -22,7 +23,7 @@ export default function Partner() {
             <div className="pcard"><IdCard strokeW={1.8} /> Partner Model</div>
             <div className="pcard"><Building strokeW={1.8} /> Branch Support</div>
           </div>
-          <a href="#" className="btn btn-red">Join Now (Register API/ARN)</a>
+          <Link href="/business-partners" className="btn btn-red">Join Now (Register API/ARN)</Link>
         </div>
         <aside className="why-card reveal rv-right">
           <h3>Why Partner with Us?</h3>
