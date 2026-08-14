@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import PageHero from '@/components/PageHero';
 import PolicyBody from '@/components/pages/PolicyBody';
-import { ALL_POLICIES, POLICY_GROUPS as GROUPS, getPolicyPage } from '@/lib/policy-index';
+import { ALL_POLICIES, POLICY_GROUPS as GROUPS, getPolicyPage, policyTabs } from '@/lib/policy-index';
 import { ArrowRight, FilePdf, Shield } from '@/components/icons';
 
 export function generateStaticParams() {
@@ -29,6 +29,7 @@ export default async function PolicyPage({ params }: { params: Promise<{ slug: s
 
   const group = GROUPS.find((g) => g.key === policy.group)!;
   const words = policy.title.split(' ').map((w, i) => ({ text: w, accent: i === 0 }));
+  const tabs = policyTabs(policy.slug);
 
   return (
     <main id="main">
@@ -46,6 +47,20 @@ export default async function PolicyPage({ params }: { params: Promise<{ slug: s
                 standard practice and this firm’s own registration details, but must be reviewed
                 and approved by the Compliance Officer before it is treated as final.
               </p>
+            )}
+            {tabs && (
+              <nav className="policy-tabs" aria-label={`${policy.title.split('—')[0].trim()} sections`}>
+                {tabs.map((t) => (
+                  <Link
+                    href={`/policies/${t.slug}`}
+                    key={t.slug}
+                    className={t.slug === policy.slug ? 'is-current' : undefined}
+                    aria-current={t.slug === policy.slug ? 'page' : undefined}
+                  >
+                    {t.label}
+                  </Link>
+                ))}
+              </nav>
             )}
             <PolicyBody blocks={policy.blocks} />
 

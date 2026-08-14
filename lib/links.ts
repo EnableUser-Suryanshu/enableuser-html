@@ -24,6 +24,7 @@ export const POLICY_LINKS = {
   surveillance: '/policies/surveillance-policy',
   branchSupervision: '/policies/branch-supervision-policy',
   investorCharter: '/policies/investor-charter',
+  investorCharterDepository: '/policies/investor-charter-depository',
   sebiComplaint: '/files/pdf/filing-complaints-on-scores.pdf',
   complaintProcess: '/files/pdf/investor-client-complaint-resolution-process.pdf',
   advisory: '/policies/advisory-for-investors',

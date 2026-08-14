@@ -1286,7 +1286,10 @@ html.motion-paused *,html.motion-paused *::before,html.motion-paused *::after{an
 /* ============ Policy documents (migrated static pages) ============ */
 .policy-section{background:#fff}
 .policy-grid{display:grid;grid-template-columns:minmax(0,1fr) 292px;gap:52px;align-items:start}
-.policy-doc{max-width:80ch;font-size:14.6px;line-height:1.82;color:var(--ink-2)}
+/* prose keeps a readable measure; tables get the full content column so they
+   never need to scroll sideways */
+.policy-doc{font-size:14.6px;line-height:1.82;color:var(--ink-2)}
+.policy-doc>p,.policy-doc>.policy-h,.policy-doc>.policy-list,.policy-doc>.policy-draft{max-width:80ch}
 .policy-doc>p{margin-bottom:16px}
 .policy-doc>p:last-of-type{margin-bottom:0}
 .policy-h{font-family:var(--font-head);color:var(--ink);line-height:1.35}
@@ -1298,13 +1301,38 @@ html.motion-paused *,html.motion-paused *::before,html.motion-paused *::after{an
 .policy-list{margin:0 0 18px;padding-left:2px}
 .policy-list li{position:relative;padding-left:24px;margin-bottom:9px}
 .policy-list li::before{content:"";position:absolute;left:3px;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--red);opacity:.8}
-.policy-table-wrap{overflow-x:auto;margin:20px 0 24px;border:1px solid var(--line);border-radius:12px;background:#fff}
-.policy-table{border-collapse:collapse;width:100%;min-width:520px;font-size:13px}
-.policy-table th,.policy-table td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
-.policy-table thead th{background:var(--navy);color:#fff;font-weight:600;font-family:var(--font-head);font-size:12.5px;letter-spacing:.2px;border-bottom:none;position:sticky;top:0}
+.policy-table-wrap{margin:20px 0 24px;border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
+.policy-table{border-collapse:collapse;width:100%;font-size:13px}
+.policy-table th,.policy-table td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:break-word}
+.policy-table thead th{background:var(--navy);color:#fff;font-weight:600;font-family:var(--font-head);font-size:12.5px;letter-spacing:.2px;border-bottom:none}
 .policy-table tbody th{font-weight:600;color:var(--ink);background:var(--bg-light)}
 .policy-table tbody tr:last-child th,.policy-table tbody tr:last-child td{border-bottom:none}
 .policy-table tbody tr:hover{background:rgba(187,0,9,.03)}
+
+/* grids of short values (complaint returns, member IDs): fixed columns so the
+   widest header word decides nothing and the table always fits */
+.policy-table--grid{font-size:12.7px}
+.policy-table--grid th,.policy-table--grid td{padding:9px 10px;hyphens:auto}
+.policy-table--grid thead th{font-size:11.4px;line-height:1.34;vertical-align:bottom;letter-spacing:.1px}
+.policy-table--grid .is-num{text-align:center;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.policy-table--grid tbody tr:nth-child(even){background:rgba(11,31,58,.022)}
+.policy-table--grid tbody tr.is-total{background:var(--bg-light);font-weight:700;color:var(--ink)}
+.policy-table--grid tbody tr.is-total .is-num{color:var(--ink)}
+.policy-table--grid tbody tr:hover{background:rgba(187,0,9,.045)}
+
+/* five columns or more: fixed widths keep the longest header word from
+   dictating the layout, so nothing ever overflows the content column */
+.policy-table--grid.is-wide{table-layout:fixed}
+.policy-table--grid.is-wide th:first-child{width:7%}
+.policy-table--grid.is-wide th:nth-child(2){width:22%}
+.policy-table--grid.is-wide thead th:nth-child(n+3){text-align:center}
+.policy-table--grid.is-wide th:first-child,.policy-table--grid.is-wide td:first-child{text-align:center;color:var(--ink-3)}
+/* tabs for documents the old site split across two pages (e.g. investor charter) */
+.policy-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 30px;padding:5px;background:var(--bg-light);border:1px solid var(--line);border-radius:12px}
+.policy-tabs a{flex:1 1 auto;text-align:center;font-family:var(--font-head);font-size:13.4px;font-weight:600;color:var(--ink-2);padding:9px 16px;border-radius:9px;transition:background .2s,color .2s}
+.policy-tabs a:hover{background:#fff;color:var(--red-hi)}
+.policy-tabs a.is-current{background:var(--red);color:#fff}
+.policy-tabs a.is-current:hover{background:var(--red-dark);color:#fff}
 .policy-foot{margin-top:38px;padding:18px 20px;background:var(--bg-light);border-left:3px solid var(--red);border-radius:0 10px 10px 0;font-size:13px;color:var(--ink-3);line-height:1.7}
 .policy-foot a{color:var(--red-hi);font-weight:600;text-decoration:underline}
 
@@ -1352,6 +1380,27 @@ html.motion-paused *,html.motion-paused *::before,html.motion-paused *::after{an
   .policy-side{position:static;order:2}
   .policy-side-block nav{display:grid;grid-template-columns:1fr 1fr;gap:2px}
   .circ-grid{grid-template-columns:1fr}
+}
+/* below this a nine-column return cannot stay legible, so each row becomes a
+   card and every value carries its column name */
+@media (max-width:720px){
+  .policy-table-wrap:has(.is-wide){border:none;border-radius:0;background:none}
+  .policy-table--grid.is-wide,.policy-table--grid.is-wide tbody,.policy-table--grid.is-wide tr,.policy-table--grid.is-wide td,.policy-table--grid.is-wide th{display:block;width:auto}
+  .policy-table--grid.is-wide thead{display:none}
+  .policy-table--grid.is-wide{table-layout:auto;font-size:13.4px}
+  .policy-table--grid.is-wide tbody tr{background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:10px}
+  .policy-table--grid.is-wide tbody tr:nth-child(even){background:#fff}
+  .policy-table--grid.is-wide tbody tr.is-total{background:var(--bg-light);border-color:var(--red)}
+  .policy-table--grid.is-wide tbody tr:hover{background:#fff}
+  .policy-table--grid.is-wide tbody tr.is-total:hover{background:var(--bg-light)}
+  .policy-table--grid.is-wide td:first-child{display:none}
+  .policy-table--grid.is-wide td,.policy-table--grid.is-wide th{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;padding:6px 0;border-bottom:1px dotted var(--line);text-align:left}
+  .policy-table--grid.is-wide td::before,.policy-table--grid.is-wide th::before{content:attr(data-label);font-size:11.6px;font-weight:600;line-height:1.45;color:var(--ink-3)}
+  .policy-table--grid.is-wide .is-num{text-align:right}
+  .policy-table--grid.is-wide tr td:last-child{border-bottom:none;padding-bottom:0}
+  /* the row's own name heads the card instead of sitting in the value list */
+  .policy-table--grid.is-wide td:nth-child(2),.policy-table--grid.is-wide th:nth-child(2){display:block;font-family:var(--font-head);font-size:14.6px;font-weight:700;color:var(--ink);padding:0 0 9px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+  .policy-table--grid.is-wide td:nth-child(2)::before,.policy-table--grid.is-wide th:nth-child(2)::before{content:none}
 }
 @media (max-width:560px){
   .policy-doc{font-size:14px}

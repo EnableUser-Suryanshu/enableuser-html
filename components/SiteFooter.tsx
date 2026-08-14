@@ -23,7 +23,8 @@ const POLICY_COLUMNS = [
   {
     heading: 'Investor Relations',
     links: [
-      ['Investor Charter', POLICY_LINKS.investorCharter],
+      ['Investor Charter — Stock Broker', POLICY_LINKS.investorCharter],
+      ['Investor Charter — Depository Participant', POLICY_LINKS.investorCharterDepository],
       ['Sebi Complaint', POLICY_LINKS.sebiComplaint],
       ['Investor/Client Complaint Process', POLICY_LINKS.complaintProcess],
       ['Advisory for Investor', POLICY_LINKS.advisory],
