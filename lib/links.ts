@@ -12,6 +12,27 @@ export const PORTALS = {
     'https://re-kyc.kalpatarumulti.com/v1/company/kalpatarumulti/modification/login',
 } as const;
 
+/**
+ * The three online account services CDSL/SEBI expect to be linked from the
+ * website — raised as audit points 13 and 14 by VRDK & Co on 14-Aug-2026.
+ *
+ * These match how the live site (kalpatarumulti.com) actually implements them:
+ * its "Account Closure" and "Account Modification" links both point at the
+ * back office, and its Re-KYC tile points at the modification portal. There is
+ * no separate nomination portal, so nomination runs through the back office
+ * too — `/account-services` documents the form route alongside it.
+ *
+ * NOTE: re-kyc.kalpatarumulti.com resolves but times out on connection as of
+ * 15-Aug-2026, on the live site as well as here. It is kept as the primary
+ * Re-KYC link to match the live site, with the back office offered as the
+ * working alternative. Confirm the host is reachable with the hosting vendor.
+ */
+export const SERVICE_PORTALS: Record<'nomination' | 'reKyc' | 'closure', string | null> = {
+  nomination: PORTALS.backOfficeLogin,
+  reKyc: PORTALS.reKyc,
+  closure: PORTALS.backOfficeLogin,
+};
+
 const SITE = 'https://www.kalpatarumulti.com';
 
 // Policy pages now live on this site (see lib/policies.ts). PDFs are mirrored
@@ -63,6 +84,21 @@ export const REGULATOR_LINKS = {
   mcx: 'https://www.mcxindia.com/',
   cdsl: 'https://www.cdslindia.com/',
   sebi: 'https://www.sebi.gov.in/',
+  // Investor protection funds — the exchange links flagged dead in the
+  // 16-Aug-2026 verification sheet. These replacements were checked live.
+  investorProtectionNse:
+    'https://www.nseindia.com/complaints/investor-protection-fund-trust',
+  investorProtectionBse: 'https://www.bseindia.com/static/investors/services.aspx',
+  // Client registration documents in vernacular languages (also flagged dead).
+  kycVernacularNse:
+    'https://www.nseindia.com/trade/members-client-registration-documents',
+  kycVernacularMcx:
+    'https://www.mcxindia.com/membership/members-compliance/vernacular-language',
+  // Carried over from the live site (kalpatarumulti.com), where both are
+  // published in the footer but were missing from this build.
+  cdslEvoting: 'https://evoting.cdslindia.com/evoting/evotinglogin',
+  nseClientCollateral:
+    'https://investorhelpline.nseindia.com/ClientCollateral/welcomeCLUser',
 } as const;
 
 export const MAPS = {

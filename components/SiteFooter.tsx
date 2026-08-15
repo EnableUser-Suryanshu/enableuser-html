@@ -5,7 +5,7 @@ import {
 } from '@/lib/links';
 import {
   Facebook, Instagram, XTwitter, LinkedIn, Target, OfficeBuilding,
-  Phone, Mail, Person, Map, Pencil, ListCheck, Bank, Handshake, Headset, Download,
+  Phone, Mail, Person, Map, Pencil, ListCheck, Bank, Handshake, Headset, Download, IdCard,
 } from './icons';
 
 const POLICY_COLUMNS = [
@@ -29,6 +29,12 @@ const POLICY_COLUMNS = [
       ['Investor/Client Complaint Process', POLICY_LINKS.complaintProcess],
       ['Advisory for Investor', POLICY_LINKS.advisory],
       ['Risk Disclosures on Derivatives', POLICY_LINKS.riskDisclosures],
+      ['Shareholder e-Voting (CDSL)', REGULATOR_LINKS.cdslEvoting],
+      ['Client Collateral Data (NSE)', REGULATOR_LINKS.nseClientCollateral],
+      ['Investor Protection Fund — NSE', REGULATOR_LINKS.investorProtectionNse],
+      ['Investor Protection — BSE', REGULATOR_LINKS.investorProtectionBse],
+      ['KYC Documents in Vernacular Languages — NSE', REGULATOR_LINKS.kycVernacularNse],
+      ['Vernacular Language Documents — MCX', REGULATOR_LINKS.kycVernacularMcx],
     ],
   },
   {
@@ -155,22 +161,26 @@ export default function SiteFooter() {
         <div className="grievance">
           <h4>Quick Links</h4>
           <div className="g-row" style={{ marginBottom: 34 }}>
-            <a href="/business-partners" className="gbtn">
-              <Handshake size={20} strokeW={1.9} />
-              <span><span className="t">BUSINESS PARTNERS</span><br /><span className="s">Franchise &amp; sub-broker</span></span>
-            </a>
-            <a href="/customer-care" className="gbtn">
+            <Link href="/account-services" className="gbtn">
+              <IdCard size={20} strokeW={1.9} />
+              <span><span className="t">ACCOUNT SERVICES</span><br /><span className="s">Nomination, Re-KYC &amp; closure</span></span>
+            </Link>
+            <Link href="/customer-care" className="gbtn">
               <Headset size={20} strokeW={1.9} />
               <span><span className="t">CUSTOMER CARE</span><br /><span className="s">Support &amp; feedback</span></span>
-            </a>
-            <a href="/downloads" className="gbtn">
+            </Link>
+            <Link href="/downloads" className="gbtn">
               <Download size={20} strokeW={1.9} />
               <span><span className="t">DOWNLOADS</span><br /><span className="s">Forms &amp; software</span></span>
-            </a>
-            <a href="/bank-details" className="gbtn">
+            </Link>
+            <Link href="/bank-details" className="gbtn">
               <Bank size={20} strokeW={1.9} />
               <span><span className="t">BANK &amp; DP DETAILS</span><br /><span className="s">Verified account numbers</span></span>
-            </a>
+            </Link>
+            <Link href="/business-partners" className="gbtn">
+              <Handshake size={20} strokeW={1.9} />
+              <span><span className="t">BUSINESS PARTNERS</span><br /><span className="s">Franchise &amp; sub-broker</span></span>
+            </Link>
           </div>
           <h4>Grievance Redressal Mechanisms</h4>
           <div className="g-row">

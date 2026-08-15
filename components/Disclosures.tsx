@@ -89,6 +89,8 @@ export default function Disclosures() {
                   <tr>
                     <th scope="col">Applicant Name</th>
                     <th scope="col">City</th>
+                    <th scope="col">Registered Address</th>
+                    <th scope="col">Contact</th>
                     <th scope="col">Segments</th>
                     <th scope="col">Registration No</th>
                     <th scope="col">Registered On</th>
@@ -100,6 +102,10 @@ export default function Disclosures() {
                     <tr key={ap.regNo}>
                       <td className="ap-name">{ap.name}</td>
                       <td>{ap.city}</td>
+                      <td>{ap.address} — {ap.pin}</td>
+                      <td>
+                        <a href={`tel:${ap.mobile}`} className="ap-tel">{ap.mobile}</a>
+                      </td>
                       <td>
                         <span className="seg-chips">
                           {ap.segments.map((s) => (
@@ -114,7 +120,7 @@ export default function Disclosures() {
                   ))}
                   {filteredAps.length === 0 && (
                     <tr>
-                      <td colSpan={6} className="ap-empty">
+                      <td colSpan={8} className="ap-empty">
                         No authorised person matches &ldquo;{query}&rdquo;
                       </td>
                     </tr>

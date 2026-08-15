@@ -142,6 +142,192 @@ export const DOWNLOAD_CATS = [
 ];
 
 /* ------------------------------------------------------------------ *
+ * ACCOUNT OPENING — the two routes, step by step
+ *
+ * Audit point 12 (VRDK & Co, 14-Aug-2026): the site documented the online
+ * eKYC route only, and the auditor asked for the offline procedure to be
+ * published alongside it. Audit point 1 asks that the SARAL AOF be offered
+ * together with the CDSL additional-information annexure and a nomination
+ * form — see SARAL_AOF_NOTE below.
+ * ------------------------------------------------------------------ */
+
+export interface OpeningRoute {
+  key: 'online' | 'offline';
+  title: string;
+  strap: string;
+  steps: string[];
+}
+
+export const ACCOUNT_OPENING_ROUTES: OpeningRoute[] = [
+  {
+    key: 'online',
+    title: 'Online — eKYC',
+    strap: 'About 15 minutes, from anywhere.',
+    steps: [
+      'Open the eKYC account opening portal and enter your PAN and mobile number.',
+      'Verify the one-time password sent to your mobile number and email ID.',
+      'Complete Aadhaar-based eKYC and the in-person verification over video.',
+      'Enter your bank details and upload a cancelled cheque or bank statement, along with your signature.',
+      'Nominate — add a nominee, or record the opt-out declaration. One of the two is mandatory.',
+      'E-sign the account opening form using the Aadhaar OTP.',
+      'Your Unique Client Code and demat account are activated, usually within one working day.',
+    ],
+  },
+  {
+    key: 'offline',
+    title: 'Offline — physical form',
+    strap: 'At any of our 22 branches, or by post.',
+    steps: [
+      'Download and print the account opening and KYC forms, or collect a set from any branch.',
+      'Fill the KYC form in your own handwriting, strike off every blank, and never sign an incomplete form.',
+      'Attach self-attested copies of your PAN, Aadhaar or other address proof, a cancelled cheque or bank statement, and passport-size photographs.',
+      'Complete in-person verification with our authorised official, who signs and stamps the IPV on the form.',
+      'Submit the set along with the nomination form (SH-13) or the signed opt-out declaration.',
+      'We upload your Unique Client Code to the exchange and hand you a copy of the completed documents within 7 days.',
+    ],
+  },
+];
+
+/**
+ * The three documents that must be offered together with the SARAL AOF.
+ *
+ * `href: null` means the document has not been supplied for publication yet.
+ * The page then renders it as an explicit "awaiting document" card rather than
+ * dropping it silently, so the gap stays visible until the file arrives.
+ */
+export const SARAL_AOF_SET: { label: string; desc: string; href: string | null }[] = [
+  {
+    label: 'SARAL Account Opening Form — Resident Individuals',
+    desc: 'The simplified AOF for resident individuals trading in the cash segment.',
+    href: 'https://www.kalpatarumulti.com/files/download/SARAL_account_opening_Form_for_resident_individuals.pdf',
+  },
+  {
+    label: 'Annexure — Additional information with SARAL AOF',
+    desc: 'The additional information annexure prescribed by CDSL operating instructions, to be submitted with the SARAL AOF.',
+    href: null,
+  },
+  {
+    label: 'Form SH-13 — Nomination Form',
+    desc: 'Mandatory with the SARAL AOF, unless the opt-out declaration is submitted instead.',
+    href: 'https://www.kalpatarumulti.com/files/download/Nomination_Registration_Form_1.1_SH13_29.04.14_(1).pdf',
+  },
+  {
+    label: 'Declaration for opting out of nomination',
+    desc: 'Submit this instead of Form SH-13 if you choose not to nominate.',
+    href: 'https://www.kalpatarumulti.com/files/download/NOMINEE_OPTION.pdf',
+  },
+];
+
+/** Condition attached to the simplified SARAL account opening form (audit point 1). */
+export const SARAL_AOF_NOTE =
+  'Resident individuals who intend to trade only in the cash segment may use the simplified SARAL Account Opening Form. As per CDSL operating instructions, the SARAL AOF must be submitted together with the additional information annexure and a nomination form — or the signed declaration opting out of nomination. All three are listed below.';
+
+/* ------------------------------------------------------------------ *
+ * ACCOUNT SERVICES — online nomination, Re-KYC and account closure
+ *
+ * Published to close audit points 13 and 14 raised by VRDK & Co on
+ * 14-Aug-2026: CDSL/SEBI expect an online nomination / Re-KYC facility and
+ * an online closure facility to be linked from the website, and neither
+ * could be found. Online closure is mandatory wherever account opening is
+ * offered online.
+ *
+ * The portal URL for each service comes from SERVICE_PORTALS in lib/links.ts.
+ * Where Kalpataru has not yet supplied a self-service URL, the page publishes
+ * the documented digital route instead of a dead button, so the facility is
+ * still available and auditable.
+ * ------------------------------------------------------------------ */
+
+export interface AccountService {
+  key: 'nomination' | 'reKyc' | 'closure';
+  title: string;
+  summary: string;
+  /** Depository-prescribed processing timeline, shown against the service. */
+  timeline: string;
+  /** Label for the button that opens SERVICE_PORTALS[key]. */
+  portalLabel: string;
+  /** Second route offered when the primary portal is not the back office. */
+  altLabel?: string;
+  steps: string[];
+  forms: { label: string; href: string }[];
+  desk: { person: string; role: string; email: string; phone: string };
+}
+
+const DP_DESK = {
+  person: 'Mr. Manoj Gupta',
+  role: 'DP Manager',
+  email: 'dp@kalpatarumulti.com',
+  phone: '0755-4350143',
+};
+
+export const ACCOUNT_SERVICES: AccountService[] = [
+  {
+    key: 'nomination',
+    title: 'Online Nomination',
+    summary:
+      'Appoint, change or opt out of a nomination on your demat account at any time, free of charge. SEBI requires every demat account to carry either a registered nominee or a signed opt-out declaration — a nomination lets your heirs claim the securities without a court order.',
+    timeline: 'Registered within 7 days of a complete request.',
+    portalLabel: 'Update nomination in the Back Office',
+    steps: [
+      'Sign in to the back office with your client ID, or open the Re-KYC and modification portal.',
+      'Choose Nomination, then add, change or opt out. Enter each nominee’s name, relationship, date of birth and percentage share.',
+      'Authenticate with the OTP sent to the mobile number and email registered against your demat account, and e-sign the request.',
+      'CDSL confirms the nomination against your demat account, and you receive the confirmation by email and SMS.',
+    ],
+    forms: [
+      { label: 'Form SH-13 — Nomination Form', href: 'https://www.kalpatarumulti.com/files/download/Nomination_Registration_Form_1.1_SH13_29.04.14_(1).pdf' },
+      { label: 'Form SH-14 — Cancellation or Variation of Nomination', href: 'https://www.kalpatarumulti.com/files/download/Form_No._SH_14_p.pdf' },
+      { label: 'Declaration for opting out of nomination', href: 'https://www.kalpatarumulti.com/files/download/NOMINEE_OPTION.pdf' },
+    ],
+    desk: DP_DESK,
+  },
+  {
+    key: 'reKyc',
+    title: 'Re-KYC & Account Modification',
+    summary:
+      'Refresh your KYC and update the details held against your trading and demat account — address, mobile number, email ID, bank account, income range or signature. Keeping your own mobile number and email registered is what makes the exchange and depository alerts reach you directly.',
+    timeline: 'Updated with the KRA and CKYCR within 10 days of a complete request.',
+    portalLabel: 'Open the Re-KYC Portal',
+    altLabel: 'Or raise it from the Back Office',
+    steps: [
+      'Open the Re-KYC and modification portal and sign in with your PAN and registered mobile number.',
+      'Select the details you need to change and upload the supporting proof — an address proof, a cancelled cheque or a bank statement, as applicable.',
+      'Authenticate with the OTP sent to your registered mobile and email, and complete the Aadhaar-based e-sign.',
+      'We verify the request, update your records with the KRA and CKYCR, and confirm the change by email.',
+    ],
+    forms: [
+      { label: 'Account Modification Form', href: 'https://www.kalpatarumulti.com/files/download/modi.pdf' },
+      { label: 'KYC Form for KRA', href: 'https://www.kalpatarumulti.com/files/download/Kyc_Form_New.pdf' },
+      { label: 'Demo — Account Modification (Online)', href: 'https://www.kalpatarumulti.com/files/download/MODIFY.pdf' },
+    ],
+    desk: {
+      person: 'Mr. Vinod Singh',
+      role: 'General Manager, Back Office',
+      email: 'account@kalpatarumulti.com',
+      phone: '0755-4350142',
+    },
+  },
+  {
+    key: 'closure',
+    title: 'Online Account Closure',
+    summary:
+      'Close your trading and demat account online, whenever you choose. There is no charge for closing an account, and the refundable ₹2,600 component of the lifetime AMC is returned to your registered bank account. You may also transfer your holdings to another Depository Participant instead of selling them.',
+    timeline: 'Closed within 7 days of a complete request.',
+    portalLabel: 'Close your account in the Back Office',
+    steps: [
+      'Settle any outstanding dues, and either sell your holdings or transfer them to another demat account — closure cannot be completed while securities remain in the account.',
+      'Submit the closure request from the back office, or send the signed Account Closure Request Form to the DP desk from your registered email ID.',
+      'We verify the balances, dues and pending instructions on the account, and confirm the request by email and SMS.',
+      'The account is closed within 7 days and the refundable AMC component is credited to your registered bank account.',
+    ],
+    forms: [
+      { label: 'Account Closure Request Form', href: 'https://www.kalpatarumulti.com/files/download/ACCOUNT_CLOSURE_REQUEST_FORM.pdf' },
+      { label: 'Guide — How to close my account', href: 'https://www.kalpatarumulti.com/files/download/Closure_(1).pptx' },
+    ],
+    desk: DP_DESK,
+  },
+];
+
+/* ------------------------------------------------------------------ *
  * CUSTOMER CARE — support desks exactly as published
  * ------------------------------------------------------------------ */
 

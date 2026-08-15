@@ -15,6 +15,10 @@ const NOTICES = [
   'Prevent unauthorised transactions in your account — update your mobile number and email ID with your stock broker. Receive information of your transactions directly from the Exchange on your mobile / email at the end of the day. Issued in the interest of investors.',
   'KYC is a one-time exercise while dealing in securities markets — once KYC is done through a SEBI registered intermediary (broker, DP, mutual fund etc.), you need not undergo the same process again when you approach another intermediary.',
   'No need to issue cheques by investors while subscribing to IPO. Just write the bank account number and sign in the application form to authorise your bank to make payment in case of allotment. No worries for refund as the money remains in the investor’s account.',
+  // Options advisory prescribed by NSE circular NSE/INSP/52900. The full
+  // five-point list is on the Advisory for Investors page; this is the
+  // sitewide notice the circular asks to be displayed.
+  'Refrain from sharing trading credentials, from trading in leveraged products like options without proper understanding, from dealing in unsolicited tips through WhatsApp, Telegram, YouTube, Facebook, SMS or calls, and from trading in options based on recommendations from unauthorised or unregistered advisors and influencers.',
 ];
 
 const INTERVAL_MS = 7000;

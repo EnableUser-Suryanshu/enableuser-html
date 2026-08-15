@@ -1097,6 +1097,8 @@ html.motion-paused *,html.motion-paused *::before,html.motion-paused *::after{an
 .disc-table tbody tr:last-child td{border-bottom:0}
 .disc-table td.acc-no{font-family:'SF Mono',ui-monospace,monospace;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:.3px;white-space:nowrap}
 .ap-name{font-weight:700}
+.ap-tel{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600;color:var(--red)}
+.ap-tel:hover{text-decoration:underline}
 .mono{font-family:'SF Mono',ui-monospace,monospace;font-size:12.5px;font-weight:600}
 .seg-chips{display:inline-flex;gap:6px}
 .seg-chip{font-size:10px;font-weight:800;letter-spacing:.4px;border-radius:999px;padding:3.5px 10px;background:#eef2ff;color:#3448a8}

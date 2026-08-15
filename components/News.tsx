@@ -86,19 +86,25 @@ export default function News() {
           ) : (
             <p>No current IPOs.</p>
           )}
+          {/* Never name a specific NFO here. This card previously advertised an
+              invented "Infrastructure growth fund" with a made-up minimum
+              investment whenever fewer than two live IPOs came back — fabricated
+              product copy on a SEBI-registered broker's homepage. Keep it
+              generic; live NFO data has no free feed. */}
           {ipos.length < 2 && (
             <article className="ncard">
               <div className="ncard-top">
-                <span className="ncard-date">Open Now</span>
+                <span className="ncard-date">Mutual Funds</span>
                 <span className="pill pill-nfo">NFO</span>
               </div>
-              <h3>Latest NFO: Infrastructure growth fund now open for subscription</h3>
+              <h3>New Fund Offers</h3>
               <p>
-                Invest in the backbone of India&apos;s economy with the new thematic infrastructure fund. Min
-                investment ₹5,000...
+                New Fund Offers open through the year across equity, debt and hybrid schemes. See
+                the schemes currently open for subscription, and their scheme documents, on our
+                mutual fund portal.
               </p>
               <a href={PORTALS.mutualFund} {...EXT} className="btn btn-navy">
-                Invest via Direct Plan
+                Browse Mutual Funds
               </a>
             </article>
           )}

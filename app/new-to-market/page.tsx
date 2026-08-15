@@ -2,7 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import LearnPath, { type Step } from '@/components/pages/LearnPath';
-import { NTM_RESOURCES, GOLD_ROUTES, COMMODITY_LOGINS } from '@/lib/pages-data';
+import {
+  NTM_RESOURCES, GOLD_ROUTES, COMMODITY_LOGINS,
+  ACCOUNT_OPENING_ROUTES, SARAL_AOF_SET, SARAL_AOF_NOTE,
+} from '@/lib/pages-data';
 import { PORTALS, EXT } from '@/lib/links';
 import {
   FileText, FilePdf, ArrowRight, Shield, TrendUp, Rupee, Bank, Swap,
@@ -131,6 +134,82 @@ export default function NewToMarketPage() {
             T&amp;C: Trading and demat account opening is free. A one-time ₹3,125 lifetime AMC applies to the
             3-in-1 account, of which ₹2,600 is refunded when the account is closed. Other statutory charges,
             taxes and levies apply as per the tariff sheet.
+          </p>
+        </div>
+      </section>
+
+      {/* Account opening — both routes (audit point 12) */}
+      <section className="section watch" aria-labelledby="open-h" id="how-to-open">
+        <div className="container">
+          <h2 id="open-h" className="sec-title">How to Open Your Account</h2>
+          <p className="sec-sub" style={{ maxWidth: 760 }}>
+            Two routes, the same account at the end of it. Open it online with Aadhaar-based eKYC,
+            or fill a physical form at any branch if you would rather do it in person.
+          </p>
+
+          <div className="bank-grid" style={{ marginTop: 34 }}>
+            {ACCOUNT_OPENING_ROUTES.map((r, i) => (
+              <div className={`bank-card reveal ${i === 0 ? 'rv-left' : 'rv-right'}`} key={r.key}>
+                <div className="head">
+                  {r.key === 'online' ? <Rocket size={24} /> : <FileText size={24} />} {r.title}
+                </div>
+                <p style={{ fontSize: 13, color: 'var(--ink-3)', fontWeight: 600, marginBottom: 16 }}>
+                  {r.strap}
+                </p>
+                <ol className="esc-list">
+                  {r.steps.map((s, n) => (
+                    <li className="esc-item" key={s}>
+                      <span className="esc-num">{n + 1}</span>
+                      <div><div className="esc-detail">{s}</div></div>
+                    </li>
+                  ))}
+                </ol>
+                {r.key === 'online' ? (
+                  <a href={PORTALS.ekycAccountOpening} {...EXT} className="btn btn-red" style={{ marginTop: 18 }}>
+                    Start eKYC <ArrowRight size={16} strokeW={2.2} />
+                  </a>
+                ) : (
+                  <Link href="/downloads" className="btn btn-outline" style={{ marginTop: 18 }}>
+                    Download the forms <ArrowRight size={16} strokeW={2.2} />
+                  </Link>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div className="data-notice" role="note" style={{ marginTop: 30 }}>
+            <IdCard size={20} strokeW={1.9} />
+            <p>{SARAL_AOF_NOTE}</p>
+          </div>
+
+          <div className="res-grid stagger" style={{ marginTop: 22 }}>
+            {SARAL_AOF_SET.map((r) =>
+              r.href ? (
+                <a key={r.label} href={r.href} {...EXT} className="res-card">
+                  <span className="res-kind pdf">PDF</span>
+                  <span className="res-body">
+                    <span className="res-title">{r.label}</span>
+                    <span className="res-desc">{r.desc}</span>
+                  </span>
+                  <span className="res-go" aria-hidden="true"><FilePdf size={20} strokeW={1.8} /></span>
+                </a>
+              ) : (
+                <div key={r.label} className="res-card">
+                  <span className="res-kind">SOON</span>
+                  <span className="res-body">
+                    <span className="res-title">{r.label}</span>
+                    <span className="res-desc">
+                      {r.desc} Ask the DP desk on 0755-4350143 for a copy until it is published here.
+                    </span>
+                  </span>
+                </div>
+              ),
+            )}
+          </div>
+
+          <p className="pillar-note" style={{ margin: '26px auto 0' }}>
+            Already a client? Nomination, Re-KYC and account closure can all be completed online —
+            see <Link href="/account-services" className="link-red">Account Services</Link>.
           </p>
         </div>
       </section>

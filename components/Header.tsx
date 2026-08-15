@@ -41,12 +41,14 @@ const NAV: NavItem[] = [
   },
   {
     label: 'Support',
-    match: ['/contact', '/customer-care', '/downloads', '/bank-details'],
+    match: ['/contact', '/customer-care', '/account-services', '/downloads', '/bank-details', '/circulars'],
     children: [
       { href: '/contact', label: 'Contact Us', desc: '22 branches and key contacts' },
       { href: '/customer-care', label: 'Customer Care', desc: 'Support desks, escalation and feedback' },
+      { href: '/account-services', label: 'Account Services', desc: 'Nomination, Re-KYC and closure — online' },
       { href: '/downloads', label: 'Downloads', desc: '80 forms, guides and software' },
       { href: '/bank-details', label: 'Bank & DP Details', desc: 'Verified accounts for funds and securities' },
+      { href: '/circulars', label: 'Circulars & Policies', desc: 'Regulatory circulars and investor documents' },
     ],
   },
 ];

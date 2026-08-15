@@ -63,6 +63,17 @@ export default function BankDetailsPage() {
             </div>
           </div>
 
+          {/* USCNBA disclosure in the form prescribed by the exchanges — added
+              15-Aug-2026 after the verification sheet asked for the upstreaming
+              paragraph to accompany the client bank account table. */}
+          <p className="sec-sub" style={{ maxWidth: 860, marginBottom: 24 }}>
+            Investors are requested to note that Kalpataru Multiplier Ltd is permitted to receive
+            money from investors through designated bank accounts only, named as Upstreaming Client
+            Nodal Bank Accounts (USCNBA). Kalpataru Multiplier Ltd is also required to disclose
+            these USCNB accounts to the stock exchange. You are therefore requested to use only the
+            following USCNB accounts for the purpose of dealings in your trading account with us.
+          </p>
+
           <div className="disc-scroll">
             <table className="disc-table">
               <thead>
