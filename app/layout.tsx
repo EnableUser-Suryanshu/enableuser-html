@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Poppins, Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Ticker from '@/components/Ticker';
@@ -44,6 +45,25 @@ export default function RootLayout({
         <SiteFooter />
         <Fab />
         <PointerFx />
+
+        {/*
+          EnableUser accessibility widget (enablestack-widget 1.4.0, GPL-3.0).
+          Vendored as a themed build rather than imported, so its 350 KB stays
+          out of the app bundle and is cached as a plain static asset.
+
+          Config must be set before the widget script runs, hence
+          beforeInteractive on the config and afterInteractive on the widget.
+          It is pinned to the LEFT — the support FAB already occupies the
+          bottom-right corner.
+
+          Re-theme with:
+            npx enablestack-widget-theme "#bb0009" default
+          then copy dist/enablestack-widget.js to public/vendor/.
+        */}
+        <Script id="enablestack-config" strategy="beforeInteractive">
+          {`window.ENABLESTACK_CONFIG={colors:{primary:'#bb0009'},icon:'default',widgetPosition:{side:'left'}};`}
+        </Script>
+        <Script src="/vendor/enablestack-widget.js" strategy="afterInteractive" />
       </body>
     </html>
   );
