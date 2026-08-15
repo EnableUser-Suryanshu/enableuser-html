@@ -28,6 +28,12 @@ function I({ size = 20, strokeW = 2, children, ...rest }: IconProps & { children
 export const CheckCircle = (p: IconProps) => (
   <I {...p}><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></I>
 );
+export const Warning = (p: IconProps) => (
+  <I {...p}>
+    <path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" />
+    <path d="M12 9v4" /><path d="M12 17h.01" />
+  </I>
+);
 export const TrendUp = (p: IconProps) => (
   <I {...p}><path d="M3 17l6-6 4 4 8-8" /><path d="M14 7h7v7" /></I>
 );

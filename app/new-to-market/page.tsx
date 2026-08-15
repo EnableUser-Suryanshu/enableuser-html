@@ -258,7 +258,13 @@ export default function NewToMarketPage() {
                 <span className={`res-kind ${r.kind.toLowerCase()}`}>{r.kind}</span>
                 <span className="res-body">
                   <span className="res-title">{r.label}</span>
-                  <span className="res-desc">{r.desc}</span>
+                  <span className="res-desc">
+                    {'hi' in r && r.hi ? (
+                      <>
+                        <span lang="hi">{r.hi}</span> — {r.desc}
+                      </>
+                    ) : r.desc}
+                  </span>
                 </span>
                 <span className="res-go" aria-hidden="true"><FilePdf size={20} strokeW={1.8} /></span>
               </a>

@@ -78,9 +78,13 @@ export default function Disclosures() {
                   aria-label="Search authorised persons"
                 />
               </div>
-              <div className="ap-note">
-                <MapPin size={14} strokeW={2} /> {AUTHORISED_PERSONS.length} authorised persons
-                across {cities} cities
+              {/* Filtering happens without a page change, so the new result
+                  count has to be announced — WCAG 4.1.3 Status Messages. */}
+              <div className="ap-note" role="status" aria-live="polite">
+                <MapPin size={14} strokeW={2} />{' '}
+                {query
+                  ? `${filteredAps.length} of ${AUTHORISED_PERSONS.length} authorised persons match “${query}”`
+                  : `${AUTHORISED_PERSONS.length} authorised persons across ${cities} cities`}
               </div>
             </div>
             <div className="disc-scroll">

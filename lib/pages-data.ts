@@ -104,8 +104,11 @@ export const NTM_RESOURCES = [
   { label: 'Margin Pledge', kind: 'PDF', href: 'https://www.kalpatarumulti.com/files/newtomarket/Margin_Pledge.pdf', desc: 'How the margin pledge system works and what you need to authorise.' },
   { label: 'ANMI–Secmark FAQ on Margin', kind: 'PDF', href: 'https://www.kalpatarumulti.com/files/newtomarket/ANMI_Secmark_FAQ_on_Margin_2Sep2020.pdf', desc: 'Industry FAQ on the September 2020 margin rules.' },
   { label: 'Pledge Mechanism', kind: 'PPT', href: 'https://www.kalpatarumulti.com/files/newtomarket/pledge_mechanism.pptx', desc: 'Step-by-step walkthrough of the depository pledge mechanism.' },
-  { label: 'Union Budget 2016 — Key Features (Hindi)', kind: 'PDF', href: 'https://www.kalpatarumulti.com/files/pdf/Budget_2016_keyfeature_hindi.pdf', desc: 'बजट की मुख्य बातें — key budget features in Hindi.' },
-  { label: 'Rail Budget Highlights (Hindi)', kind: 'PDF', href: 'https://www.kalpatarumulti.com/files/pdf/rail_budget_highlights_hindi.pdf', desc: 'रेल बजट की मुख्य बातें — rail budget highlights in Hindi.' },
+  // `hi` holds the Devanagari lead so the page can mark it lang="hi" —
+  // WCAG 3.1.2 needs the language of a passage identified, and these two sit
+  // inside an otherwise English page.
+  { label: 'Union Budget 2016 — Key Features (Hindi)', kind: 'PDF', href: 'https://www.kalpatarumulti.com/files/pdf/Budget_2016_keyfeature_hindi.pdf', hi: 'बजट की मुख्य बातें', desc: 'Key budget features in Hindi.' },
+  { label: 'Rail Budget Highlights (Hindi)', kind: 'PDF', href: 'https://www.kalpatarumulti.com/files/pdf/rail_budget_highlights_hindi.pdf', hi: 'रेल बजट की मुख्य बातें', desc: 'Rail budget highlights in Hindi.' },
 ];
 
 export const GOLD_ROUTES = [

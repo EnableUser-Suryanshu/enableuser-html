@@ -147,7 +147,10 @@ export default function Hero() {
       <div className="container hero-grid">
         <Chart />
         <div className="hero-copy" ref={copyRef}>
-          <h1>
+          {/* Hindi written in Latin script — WCAG 3.1.2 needs the language of
+              the passage identified so screen readers use Hindi pronunciation
+              rules rather than reading it as English. */}
+          <h1 lang="hi-Latn">
             {HEADLINE.map((w, i) => (
               <span key={i}>
                 <span
@@ -160,8 +163,8 @@ export default function Hero() {
             ))}
           </h1>
           <p className="hero-sub">
-            EQ | Derivative | Mutual Fund | IPO – Sab ek hi jagah. Experience seamless
-            trading with institutional grade stability.
+            EQ | Derivative | Mutual Fund | IPO – <span lang="hi-Latn">Sab ek hi jagah.</span>{' '}
+            Experience seamless trading with institutional grade stability.
           </p>
           <div className="hero-actions">
             <a href={PORTALS.ekycAccountOpening} {...EXT} className="btn btn-navy">

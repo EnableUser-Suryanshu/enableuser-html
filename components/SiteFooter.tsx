@@ -130,11 +130,11 @@ export default function SiteFooter() {
 
         <div className="f-mid">
           <div>
-            <h4>Important Policies &amp; Disclosures</h4>
+            <h2>Important Policies &amp; Disclosures</h2>
             <div className="policy-cols">
               {POLICY_COLUMNS.map((col) => (
                 <div key={col.heading}>
-                  <h5>{col.heading}</h5>
+                  <h3>{col.heading}</h3>
                   {col.links.map(([label, href]) =>
                     // policy pages route in-app; PDFs and regulator links open in a new tab
                     isInternalPolicy(href) && !href.endsWith('.pdf')
@@ -146,7 +146,7 @@ export default function SiteFooter() {
             </div>
           </div>
           <div>
-            <h4>Member Details &amp; Registration</h4>
+            <h2>Member Details &amp; Registration</h2>
             <div className="member-card">
               {MEMBER_DETAILS.map((m) => (
                 <div className="member-row" key={m.label}>
@@ -159,7 +159,7 @@ export default function SiteFooter() {
         </div>
 
         <div className="grievance">
-          <h4>Quick Links</h4>
+          <h2>Quick Links</h2>
           <div className="g-row" style={{ marginBottom: 34 }}>
             <Link href="/account-services" className="gbtn">
               <IdCard size={20} strokeW={1.9} />
@@ -182,7 +182,7 @@ export default function SiteFooter() {
               <span><span className="t">BUSINESS PARTNERS</span><br /><span className="s">Franchise &amp; sub-broker</span></span>
             </Link>
           </div>
-          <h4>Grievance Redressal Mechanisms</h4>
+          <h2>Grievance Redressal Mechanisms</h2>
           <div className="g-row">
             <a href={REGULATOR_LINKS.smartOdr} {...EXT} className="gbtn">
               <Pencil size={20} strokeW={1.9} />
