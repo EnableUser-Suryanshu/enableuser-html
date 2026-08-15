@@ -73,6 +73,15 @@ export default function Header() {
     setOpen(false);
   }, [pathname]);
 
+  // Hold the page still while the drawer covers it, so scrolling the drawer
+  // doesn't scroll the page underneath it.
+  useEffect(() => {
+    if (!open) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = prev; };
+  }, [open]);
+
   // Click outside closes the open dropdown.
   useEffect(() => {
     if (!menu) return;
@@ -152,6 +161,17 @@ export default function Header() {
               </Link>
             ),
           )}
+
+          {/* Below 1020px the top bar drops the Back Office button for room,
+              which otherwise leaves existing clients with no way to reach the
+              login from the header on a phone. Surface it in the drawer. */}
+          <a
+            href={PORTALS.backOfficeLogin}
+            {...EXT}
+            className="nav-top nav-drawer-cta"
+          >
+            Back Office Login
+          </a>
         </nav>
 
         <div className="nav-cta">
