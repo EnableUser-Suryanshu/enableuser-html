@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { liveIndices } from '@/lib/markets';
+import { PauseIcon, PlayIcon } from './icons';
 
 type Exchange = 'NSE' | 'BSE' | 'MCX';
 
@@ -50,6 +51,12 @@ export default function Ticker() {
   const [rows, setRows] = useState<Row[]>(seed);
   const [movers, setMovers] = useState<Mover[]>([]);
   const [live, setLive] = useState(false);
+  // Scoped to this ticker only. WCAG 2.2.2 wants a way to stop scrolling
+  // content that starts on its own; hovering already pauses it, but hover is
+  // no use on a keyboard or a touchscreen, so this is the real control.
+  const [paused, setPaused] = useState(false);
+  const pausedRef = useRef(paused);
+  pausedRef.current = paused;
   const rowsRef = useRef(rows);
   rowsRef.current = rows;
 
@@ -63,6 +70,8 @@ export default function Ticker() {
       // still show real numbers. Later polls back off while hidden or paused.
       if (!force && !loadedOnce) return;
       if (!force) {
+        // Pausing the ticker freezes the numbers too, not just the scroll.
+        if (pausedRef.current) return;
         if (document.documentElement.classList.contains('motion-paused')) return;
         if (document.hidden) return;
       }
@@ -150,10 +159,20 @@ export default function Ticker() {
       className="ticker"
       aria-label={live ? 'Live NSE and BSE index levels' : 'NSE and BSE index levels (last close)'}
     >
-      <div className="ticker-track">
+      <div className={`ticker-track${paused ? ' paused' : ''}`}>
         <div className="t-half">{renderHalf()}</div>
         <div className="t-half" aria-hidden="true">{renderHalf()}</div>
       </div>
+      <button
+        type="button"
+        className="tkr-toggle"
+        aria-pressed={paused}
+        aria-label={paused ? 'Resume the scrolling index ticker' : 'Pause the scrolling index ticker'}
+        title={paused ? 'Resume ticker' : 'Pause ticker'}
+        onClick={() => setPaused((p) => !p)}
+      >
+        {paused ? <PlayIcon size={13} /> : <PauseIcon size={13} />}
+      </button>
     </section>
   );
 }

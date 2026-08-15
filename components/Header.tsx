@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { PORTALS, EXT } from '@/lib/links';
-import MotionToggle from './MotionToggle';
 import { ChevronDown } from './icons';
 
 interface NavChild {
@@ -156,7 +155,6 @@ export default function Header() {
         </nav>
 
         <div className="nav-cta">
-          <MotionToggle />
           <a href={PORTALS.backOfficeLogin} {...EXT} className="btn btn-outline">
             Back Office
           </a>
