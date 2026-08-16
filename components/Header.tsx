@@ -38,14 +38,18 @@ const NAV: NavItem[] = [
       { href: '/business-partners', label: 'Business Partners', desc: 'Franchise, sub-broker and ARN models' },
     ],
   },
+  // Downloads is the busiest destination on the site (80 forms) and was buried
+  // six-deep in Support — promoted to the top level. Measured at the narrowest
+  // desktop width there is room for exactly one more item before the centred
+  // group collides with the brand and the actions.
+  { label: 'Downloads', href: '/downloads', match: ['/downloads'] },
   {
     label: 'Support',
-    match: ['/contact', '/customer-care', '/account-services', '/downloads', '/bank-details', '/circulars'],
+    match: ['/contact', '/customer-care', '/account-services', '/bank-details', '/circulars'],
     children: [
-      { href: '/contact', label: 'Contact Us', desc: '22 branches and key contacts' },
       { href: '/customer-care', label: 'Customer Care', desc: 'Support desks, escalation and feedback' },
+      { href: '/contact', label: 'Contact Us', desc: '22 branches and key contacts' },
       { href: '/account-services', label: 'Account Services', desc: 'Nomination, Re-KYC and closure — online' },
-      { href: '/downloads', label: 'Downloads', desc: '80 forms, guides and software' },
       { href: '/bank-details', label: 'Bank & DP Details', desc: 'Verified accounts for funds and securities' },
       { href: '/circulars', label: 'Circulars & Policies', desc: 'Regulatory circulars and investor documents' },
     ],
@@ -175,7 +179,7 @@ export default function Header() {
         </nav>
 
         <div className="nav-cta">
-          <a href={PORTALS.backOfficeLogin} {...EXT} className="btn btn-outline">
+          <a href={PORTALS.backOfficeLogin} {...EXT} className="nav-login">
             Back Office
           </a>
           <a href={PORTALS.ekycAccountOpening} {...EXT} className="btn btn-navy">

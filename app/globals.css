@@ -80,64 +80,73 @@ html.motion-paused *,html.motion-paused *::before,html.motion-paused *::after{an
 html{scroll-padding-top:96px}
 
 .header{
-  background:rgba(255,255,255,.82);
-  backdrop-filter:saturate(1.5) blur(14px);
-  -webkit-backdrop-filter:saturate(1.5) blur(14px);
+  background:rgba(255,255,255,.84);
+  backdrop-filter:saturate(1.4) blur(14px);
+  -webkit-backdrop-filter:saturate(1.4) blur(14px);
   position:sticky;top:0;z-index:60;
-  border-bottom:1px solid #ececee;
+  border-bottom:1px solid #eeeef0;
   transition:box-shadow .3s ease,background .3s ease,border-color .3s ease;
 }
+/* Minimal: no shadow shelf on scroll, just a firmer surface and hairline. */
 .header.scrolled{
-  background:rgba(255,255,255,.94);
-  border-bottom-color:#e2e2e5;
-  box-shadow:0 8px 30px -14px rgba(1,13,35,.18);
+  background:rgba(255,255,255,.95);
+  border-bottom-color:#e4e4e7;
 }
-/* Reclaims 12px of viewport once the user is reading — these pages are long. */
-.nav{display:flex;align-items:center;gap:18px;height:76px;transition:height .3s cubic-bezier(.4,0,.2,1)}
-.header.scrolled .nav{height:64px}
+/* The header spans the full width — the wordmark sits in the corner and the
+   links centre on the viewport, not on the 1201px content column.
+   1fr | auto | 1fr keeps the middle column dead centre regardless of how wide
+   the brand and the actions are, which space-between cannot do. */
+.header .container.nav{max-width:none;padding:0 40px}
+.nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;height:68px;transition:height .3s cubic-bezier(.4,0,.2,1)}
+.header.scrolled .nav{height:58px}
+.brand{justify-self:start}
+.nav-links{justify-self:center}
+.nav-cta{justify-self:end}
 .brand{display:flex;align-items:center;gap:10px;flex:none}
-.brand img{width:48px;height:46px;object-fit:contain;transition:transform .5s cubic-bezier(.34,1.56,.64,1),width .3s cubic-bezier(.4,0,.2,1),height .3s cubic-bezier(.4,0,.2,1)}
-.header.scrolled .brand img{width:40px;height:38px}
-.brand:hover img{transform:rotate(-8deg) scale(1.08)}
-.brand-text .brand-name{font-family:var(--font-head);font-weight:700;font-size:21px;color:#1a1a1a;line-height:1.1;white-space:nowrap}
-.brand-text .brand-tag{display:flex;align-items:center;gap:7px;font-size:10px;color:#555;letter-spacing:.2px;white-space:nowrap}
-.brand-tag::after{content:"";flex:0 0 34px;height:2px;background:var(--red);border-radius:2px}
+.brand img{width:40px;height:38px;object-fit:contain;transition:transform .5s cubic-bezier(.34,1.56,.64,1),width .3s cubic-bezier(.4,0,.2,1),height .3s cubic-bezier(.4,0,.2,1)}
+.header.scrolled .brand img{width:34px;height:33px}
+.brand:hover img{transform:rotate(-6deg) scale(1.05)}
+.brand-text .brand-name{font-family:var(--font-head);font-weight:600;font-size:18px;letter-spacing:-.2px;color:var(--ink);line-height:1.15;white-space:nowrap}
+/* The red rule after the tagline was ornament — the wordmark carries it. */
+.brand-text .brand-tag{display:flex;align-items:center;font-size:10.5px;color:var(--ink-3);letter-spacing:.3px;white-space:nowrap}
 
 /* ---- top level ---- */
 /* Sections sit next to the brand and actions are pushed to the far edge, so
    the bar reads brand → where you can go → what you can do. */
-.nav-links{display:flex;align-items:center;gap:2px;margin-left:14px}
-.nav-top{position:relative;display:inline-flex;align-items:center;gap:5px;font-size:14px;font-weight:500;color:#2b2b33;padding:9px 13px;border-radius:9px;white-space:nowrap;background:none;border:0;font-family:inherit;cursor:pointer;transition:color .2s,background .2s}
-.nav-top::after{content:"";position:absolute;left:13px;right:13px;bottom:2px;height:2px;width:auto;transform:scaleX(0);transform-origin:center;background:var(--red);border-radius:2px;transition:transform .28s ease}
-.nav-top:hover{color:var(--red);background:#faf5f5}
+.nav-links{display:flex;align-items:center;gap:4px}
+/* Minimal: no tinted pills. Colour carries hover, a 2px rule carries current —
+   two signals, so the active item never depends on colour alone (1.4.1). */
+.nav-top{position:relative;display:inline-flex;align-items:center;gap:5px;font-size:14px;font-weight:500;color:#4a4f5b;padding:9px 12px;border-radius:8px;white-space:nowrap;background:none;border:0;font-family:inherit;cursor:pointer;transition:color .2s}
+.nav-top::after{content:"";position:absolute;left:12px;right:12px;bottom:0;height:2px;transform:scaleX(0);transform-origin:center;background:var(--red);border-radius:2px;transition:transform .28s ease}
+.nav-top:hover{color:var(--ink)}
 .nav-top:hover::after,.nav-top.active::after{transform:scaleX(1)}
-.nav-top.active{color:var(--red);font-weight:600;background:#fdf3f3}
+.nav-top.active{color:var(--red);font-weight:600}
 .nav-trigger svg{transition:transform .28s ease;opacity:.75}
 .nav-group.open .nav-trigger svg{transform:rotate(180deg)}
-.nav-group.open .nav-trigger{color:var(--red);background:#faf5f5}
+.nav-group.open .nav-trigger{color:var(--red)}
 
 /* ---- dropdown panel ---- */
 .nav-group{position:relative}
 /* Drawer-only Back Office link — desktop keeps the button in the top bar. */
 .nav-drawer-cta{display:none}
-.nav-panel{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%) translateY(-8px);min-width:290px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 24px 48px -20px rgba(1,13,35,.28);padding:8px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .22s ease,transform .22s ease,visibility .22s;z-index:70}
+.nav-panel{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%) translateY(-8px);min-width:286px;background:#fff;border:1px solid #ececee;border-radius:12px;box-shadow:0 16px 34px -20px rgba(1,13,35,.18);padding:6px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .22s ease,transform .22s ease,visibility .22s;z-index:70}
 /* Invisible bridge so the pointer can travel from trigger to panel. */
 .nav-panel::before{content:"";position:absolute;top:-9px;left:0;right:0;height:12px}
-/* Caret tying the panel to its trigger. */
-.nav-panel::after{content:"";position:absolute;top:-7px;left:50%;width:13px;height:13px;background:#fff;border-left:1px solid var(--line);border-top:1px solid var(--line);border-radius:3px 0 0 0;transform:translateX(-50%) rotate(45deg)}
 .nav-group.open .nav-panel{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0)}
 .nav-sub{display:block;padding:11px 14px;border-radius:10px;transition:background .2s,transform .2s}
-.nav-sub:hover{background:var(--bg-light);transform:translateX(3px)}
+.nav-sub:hover{background:var(--bg-light)}
 .nav-sub.current{background:#fdf1f1}
 .nav-sub-l{display:block;font-size:14px;font-weight:700;color:var(--ink)}
 .nav-sub.current .nav-sub-l{color:var(--red)}
 .nav-sub-d{display:block;font-size:11.8px;color:var(--ink-3);margin-top:2px;line-height:1.45}
 
 /* ---- right side ---- */
-.nav-cta{display:flex;align-items:center;gap:9px;flex:none;margin-left:auto}
-/* Hairline separating "where to go" from "what to do". */
-.nav-cta::before{content:"";width:1px;height:24px;background:var(--line);margin-right:5px;flex:none}
-.nav-cta .btn{padding:10px 17px;font-size:13px;white-space:nowrap}
+/* One solid CTA. Back Office sits beside it as a quiet text link so the bar
+   has a single point of emphasis instead of two competing buttons. */
+.nav-cta{display:flex;align-items:center;gap:18px;flex:none}
+.nav-cta .btn{padding:10px 18px;font-size:13px;white-space:nowrap}
+.nav-login{display:inline-flex;align-items:center;font-size:13.5px;font-weight:500;color:#4a4f5b;white-space:nowrap;transition:color .2s}
+.nav-login:hover{color:var(--red)}
 .hamburger{display:none;background:none;border:0;width:42px;height:42px;border-radius:8px}
 .hamburger span{display:block;width:22px;height:2px;background:var(--ink);margin:5px auto;transition:.25s}
 .hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
@@ -1266,6 +1275,7 @@ html{scroll-padding-top:96px}
 
 /* ============ Responsive ============ */
 @media (max-width:1180px){
+  .header .container.nav{padding:0 26px}
   .nav-links{gap:0}
   .nav-top{padding:9px 10px;font-size:13.5px}
   .nav-cta .btn{padding:9px 14px;font-size:12.5px}
@@ -1273,7 +1283,10 @@ html{scroll-padding-top:96px}
 @media (max-width:1020px){
   /* top:100% keeps the drawer pinned to the header whatever height it is —
      it compresses on scroll, so a hardcoded offset drifts. */
-  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;margin-left:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:10px 0 18px;border-bottom:1px solid var(--line);box-shadow:0 18px 34px -18px rgba(1,13,35,.28);max-height:calc(100dvh - 64px);overflow-y:auto;overscroll-behavior:contain}
+  /* The drawer leaves the grid flow, so the 3-column track would strand
+     the actions in the middle column — go back to flex once it appears. */
+  .nav{display:flex;justify-content:space-between}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;margin-left:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:10px 0 18px;border-bottom:1px solid var(--line);box-shadow:0 18px 34px -18px rgba(1,13,35,.28);max-height:calc(100dvh - 58px);overflow-y:auto;overscroll-behavior:contain}
   .nav-links.open{display:flex}
   .nav-top{width:100%;justify-content:space-between;padding:14px 26px;border-radius:0;font-size:15px}
   .nav-top::after{display:none}
@@ -1284,8 +1297,7 @@ html{scroll-padding-top:96px}
   .nav-sub{padding:11px 12px}
   .nav-sub:hover{transform:none}
   .hamburger{display:block}
-  .nav-cta .btn-outline{display:none}
-  .nav-cta::before{display:none}
+  .nav-login{display:none}
   /* ...and reappears inside the drawer as a real button, not a text row. */
   .nav-drawer-cta{display:flex;justify-content:center;margin:14px 26px 0;padding:13px 18px;border:1.5px solid var(--ui-border);border-radius:10px;color:var(--ink);font-weight:700;font-size:14.5px;width:auto}
   .nav-drawer-cta:hover{background:var(--bg-light);border-color:var(--ink);color:var(--ink)}
@@ -1326,8 +1338,8 @@ html{scroll-padding-top:96px}
   /* Thumb targets stay at 44px even though the label shrinks. */
   .nav-cta .btn{padding:9px 14px;font-size:11.5px;white-space:nowrap;min-height:44px}
   .hamburger{width:44px;height:44px}
-  .nav{height:64px;gap:8px}
-  .nav-links{top:64px}
+  .header .container.nav{padding:0 18px}
+  .nav{height:60px;gap:8px}
   .nav-top{padding:13px 18px}
   .nav-panel{padding:0 18px 6px}
   .hero-visual{height:560px}
