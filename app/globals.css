@@ -194,7 +194,8 @@ html{scroll-padding-top:96px}
 .hero h1{font-size:45px;line-height:1.26;font-weight:700;letter-spacing:-.3px;max-width:600px}
 .hero h1 .word{display:inline-block;opacity:0;transform:translateY(34px) rotate(3deg);animation:wordIn .7s cubic-bezier(.22,1,.36,1) forwards;animation-delay:calc(var(--i) * 70ms)}
 @keyframes wordIn{to{opacity:1;transform:none}}
-.hero h1 .red{background:linear-gradient(110deg,var(--red) 20%,var(--red-bright) 45%,#f4444e 55%,var(--red) 75%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:wordIn .7s cubic-bezier(.22,1,.36,1) forwards,shimmer 4.5s linear 1.4s infinite}
+.hero h1 .red{background:linear-gradient(110deg,var(--red) 20%,var(--red-bright) 45%,#f4444e 55%,var(--red) 75%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:wordIn .7s cubic-bezier(.22,1,.36,1) forwards,shimmer 4.5s linear 1.4s infinite;/* the shorthand above resets wordIn's delay — restore the stagger so the
+   accent word still arrives in reading order */animation-delay:calc(var(--i) * 70ms),1.4s}
 @keyframes shimmer{0%{background-position:120% 0}100%{background-position:-120% 0}}
 .hero-sub{margin-top:24px;color:var(--ink-2);font-size:16.5px;max-width:470px;opacity:0;animation:fadeUp .8s ease .55s forwards}
 .hero-actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:fadeUp .8s ease .7s forwards}

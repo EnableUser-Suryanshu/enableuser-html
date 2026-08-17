@@ -44,10 +44,10 @@ export default function BusinessPartnersPage() {
         }
       />
 
-      {/* Opening letter */}
+      {/* Who the partner would be signing up with */}
       <section className="section story watch" aria-labelledby="letter-h">
         <div className="container" style={{ maxWidth: 860 }}>
-          <h2 id="letter-h" className="sec-title">Friends,</h2>
+          <h2 id="letter-h" className="sec-title">About the Firm</h2>
           <div className="reveal" style={{ marginTop: 22 }}>
             <p style={{ fontSize: 15.5, color: 'var(--ink-2)', lineHeight: 1.85 }}>
               Kalpataru is a time-tested, tried and trusted share broker, investment advisor and

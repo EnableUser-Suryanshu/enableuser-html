@@ -12,9 +12,7 @@ import {
 /* ---------- static pieces ---------- */
 
 const HEADLINE: Array<{ text: string; red?: boolean }> = [
-  { text: 'Share' }, { text: 'Market' }, { text: 'me' }, { text: 'Trading' },
-  { text: 'aur' }, { text: 'Investment', red: true },
-  { text: 'hua' }, { text: 'aur' }, { text: 'bhi' }, { text: 'aasan' },
+  { text: 'Invest' }, { text: 'With' }, { text: 'Kalpataru', red: true },
 ];
 
 const COINS = [
@@ -147,10 +145,9 @@ export default function Hero() {
       <div className="container hero-grid">
         <Chart />
         <div className="hero-copy" ref={copyRef}>
-          {/* Hindi written in Latin script — WCAG 3.1.2 needs the language of
-              the passage identified so screen readers use Hindi pronunciation
-              rules rather than reading it as English. */}
-          <h1 lang="hi-Latn">
+          {/* Headline is English now, so it inherits the page language. The
+              lead below still has a Hinglish clause and keeps its own lang. */}
+          <h1>
             {HEADLINE.map((w, i) => (
               <span key={i}>
                 <span
