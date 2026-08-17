@@ -50,11 +50,6 @@ export default function BusinessPartnersPage() {
           <h2 id="letter-h" className="sec-title">Friends,</h2>
           <div className="reveal" style={{ marginTop: 22 }}>
             <p style={{ fontSize: 15.5, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              Life is not mere existing. To live life with full might, one should have knowledge
-              of power — and if you have it, you are blessed with the power of knowledge. Your
-              power and entrepreneurial spirit will make it profitable.
-            </p>
-            <p style={{ fontSize: 15.5, color: 'var(--ink-2)', lineHeight: 1.85, marginTop: 16 }}>
               Kalpataru is a time-tested, tried and trusted share broker, investment advisor and
               depository participant. We cover the complete financial services spectrum — share
               broking, derivatives and F&amp;O in equities, commodity, currency and index, plus
