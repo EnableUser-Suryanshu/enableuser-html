@@ -321,11 +321,6 @@ html{scroll-padding-top:96px}
 .feature-list li:hover svg{color:var(--red)}
 .feature-list svg{color:#3b4256;flex:none;transition:color .25s}
 .card-trade-bottom{margin-top:26px;align-self:end}
-.sip-box{margin:20px 0;background:#f6f6f7;border-left:4px solid var(--red);border-radius:10px;padding:16px 18px;display:flex;align-items:baseline;gap:12px;position:relative;overflow:hidden}
-.sip-box::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(187,0,9,.06),transparent 70%);transform:translateX(-100%);animation:sweep 3.5s ease 1s infinite}
-@keyframes sweep{40%,100%{transform:translateX(100%)}}
-.sip-box .amt{font-family:var(--font-head);font-size:30px;font-weight:700;color:var(--red)}
-.sip-box .lbl{font-size:13px;font-weight:600;color:#3c4252}
 .card-mf .photo{margin-bottom:22px}
 /* Stacked display heading on the Mutual Funds card: the action sits above
    the product, so the eye lands on the red line. Overrides the shared 20px

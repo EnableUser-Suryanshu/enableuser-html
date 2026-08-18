@@ -26,7 +26,7 @@ const STEPS: Step[] = [
       'A share makes you a part-owner of a company; its value moves with the company and the market.',
       'A mutual fund pools money from many investors and is managed by a professional fund manager — the simplest start for most people.',
       'Bonds and NCDs pay fixed interest and sit lower on the risk ladder than equities.',
-      'Commodities (gold, silver, crude, agri) trade on MCX and NCDEX, usually as futures contracts.',
+      'Commodities (gold, silver, crude oil, natural gas and base metals) trade on MCX, usually as futures contracts.',
       'Derivatives (F&O) magnify both gains and losses — they are not a starting point for new investors.',
     ],
   },
@@ -89,7 +89,7 @@ const ACCOUNTS = [
 const SEGMENTS = [
   { icon: TrendUp, t: 'Equity', d: 'Buy and sell shares on NSE & BSE, intraday or delivery.' },
   { icon: Swap, t: 'F&O', d: 'Index and stock futures and options — for experienced traders.' },
-  { icon: Bank, t: 'Commodity', d: 'Bullion, energy, metals and agri on MCX and NCDEX.' },
+  { icon: Bank, t: 'Commodity', d: 'Bullion, energy and base metals on MCX.' },
   { icon: Globe, t: 'Currency', d: 'Exchange-traded USD, EUR, GBP and JPY pairs against the rupee.' },
   { icon: Rocket, t: 'IPO', d: 'Apply to public issues online with a UPI mandate.' },
   { icon: IdCard, t: 'Depository', d: 'Safe custody and settlement of everything you own.' },

@@ -118,7 +118,6 @@ export const GOLD_ROUTES = [
 
 export const COMMODITY_LOGINS = [
   { label: 'MCX Online Trading', href: 'http://onlinetrading.kalpatarumulti.com/pages/Login.aspx' },
-  { label: 'NCDEX Online Trading', href: 'http://onlinetrading.kalpatarumulti.com/' },
 ];
 
 /* ------------------------------------------------------------------ *

@@ -44,10 +44,6 @@ export default function Ecosystem() {
               <span className="mf-accent">Mutual Funds</span>
             </h3>
             <p>Your goals deserve better growth — start investing today.</p>
-            <div className="sip-box">
-              <span className="amt">₹500</span>
-              <span className="lbl">SIP Start se</span>
-            </div>
             <div className="photo">
               <img src="/assets/photo_mf.jpg" alt="Hands holding coins with a growing sapling" loading="lazy" />
             </div>

@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: 'Our Services — Kalpataru Multiplier Ltd',
   description:
-    'Equity, F&O and currency broking on NSE & BSE, commodities on MCX & NCDEX, mutual funds, free trading & demat account opening, IPOs, bonds, NPS, insurance and more.',
+    'Equity, F&O and currency broking on NSE & BSE, commodities on MCX, mutual funds, free trading & demat account opening, IPOs, bonds, NPS, insurance and more.',
 };
 
 /* ---------- panel visuals ---------- */
@@ -55,10 +55,13 @@ function TradingPanel() {
 function CommodityPanel() {
   const bullionEnergy = ['Gold', 'Silver', 'Crude Oil', 'Natural Gas'];
   const metals = ['Copper', 'Zinc', 'Lead', 'Nickel'];
-  const agri = ['Soybean', 'Refined Soya', 'Guar', 'Chana', 'Sugar', 'Jeera', 'Cardamom', 'Black Pepper', 'Mentha Oil'];
+  // Soybean, refined soya, guar, chana, sugar and jeera are NCDEX contracts —
+  // dropped along with the NCDEX reference so the panel only claims what an
+  // MCX member can actually trade. Confirm the live MCX agri list with the desk.
+  const agri = ['Cardamom', 'Mentha Oil', 'Cotton'];
   return (
     <div className="pillar-panel">
-      <div className="panel-title"><Bank size={18} /> Traded on MCX &amp; NCDEX</div>
+      <div className="panel-title"><Bank size={18} /> Traded on MCX</div>
       <div className="prod-cloud">
         {bullionEnergy.map((p) => <span className="prod-chip gold" key={p}>{p}</span>)}
         {metals.map((p) => <span className="prod-chip" key={p}>{p}</span>)}
@@ -150,15 +153,15 @@ const PILLARS: Pillar[] = [
   },
   {
     kicker: '02 — Commodities',
-    title: 'Bullion to agri — MCX & NCDEX under one roof',
-    desc: 'From gold, silver, crude oil and natural gas to copper, zinc, nickel and a full basket of agri contracts — soybean, guar, chana, sugar and spices — trade and hedge them all as clients of an MCX member (16020) with NCDEX access. The same disciplined margining and risk management we apply to equities protects your commodity book too.',
+    title: 'Bullion to base metals — MCX under one roof',
+    desc: 'From gold and silver to crude oil, natural gas, copper, zinc and nickel — trade and hedge the full MCX basket as clients of an MCX member (16020). The same disciplined margining and risk management we apply to equities protects your commodity book too.',
     points: [
-      'MCX membership 16020 · NCDEX access for agri',
-      'Bullion, energy, base metals and agri contracts',
-      'Hedging desks for traders, jewellers and agri businesses',
+      'MCX membership 16020',
+      'Bullion, energy and base metal contracts',
+      'Hedging desks for traders and jewellers',
       'Unified margin and ledger with your equity account',
     ],
-    chips: ['MCX', 'NCDEX', 'BULLION', 'ENERGY', 'METALS', 'AGRI'],
+    chips: ['MCX', 'BULLION', 'ENERGY', 'METALS'],
     ctas: [{ label: 'Open Commodity Account', href: PORTALS.ekycAccountOpening, cls: 'btn btn-navy' }],
     panel: CommodityPanel,
     alt: true,
@@ -280,7 +283,7 @@ const MORE: Array<{
 
 const WHY = [
   { icon: Shield, t: 'SEBI Registered', d: 'INZ000259437 — regulated end to end.' },
-  { icon: Bank, t: '5 Market Institutions', d: 'NSE, BSE, MCX, NCDEX & CDSL access.' },
+  { icon: Bank, t: '4 Market Institutions', d: 'NSE, BSE, MCX & CDSL access.' },
   { icon: Handshake, t: '200+ Locations', d: 'Branches & partners across India.' },
   { icon: CheckCircle, t: '5-Minute eKYC', d: 'Fully digital Aadhaar-based onboarding.' },
 ];
