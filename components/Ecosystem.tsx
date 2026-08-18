@@ -13,8 +13,7 @@ export default function Ecosystem() {
             <div>
               <h3>Trade &amp; Invest</h3>
               <p>
-                Experience multi-asset trading across Equity, Derivatives, and Commodities
-                with Intraday and Delivery options.
+                Experience multi-asset trading across Equity, Derivatives and Commodities.
               </p>
               <ul className="feature-list">
                 <li><TrendUp size={17} /> Intraday Trading</li>
@@ -38,8 +37,13 @@ export default function Ecosystem() {
           </article>
 
           <article className="card card-mf reveal rv-right">
-            <h3>Mutual Funds</h3>
-            <p>Invest in Direct plans and save on commission. Start small, dream big.</p>
+            {/* Stacked display heading — the card leads with the action and
+                lands on the product, in brand red rather than a foreign blue. */}
+            <h3 className="mf-head">
+              <span>Invest in</span>
+              <span className="mf-accent">Mutual Funds</span>
+            </h3>
+            <p>Your goals deserve better growth — start investing today.</p>
             <div className="sip-box">
               <span className="amt">₹500</span>
               <span className="lbl">SIP Start se</span>
