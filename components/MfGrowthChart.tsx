@@ -4,10 +4,13 @@ import CountUp from './CountUp';
  * Animated growth curve for the Mutual Funds card.
  *
  * The figures are a worked illustration of compounding, NOT a performance
- * record — the label and the disclaimer under the chart say so, and the
- * numbers are deliberately round. Do not restate them as achieved returns:
- * a SEBI-registered distributor showing an unqualified gain figure is a
- * marketing-compliance problem (see the risk line on /mf-online).
+ * record — the label and the note under the chart say so, and the numbers are
+ * deliberately round. Do not restate them as achieved returns.
+ *
+ * NOTE: the full AMFI risk warning ("subject to market risks; read all
+ * scheme-related documents carefully") was removed from this card on request.
+ * It still appears on /mf-online. If this card ever states a scheme, a return
+ * figure or a recommendation, that warning has to come back.
  *
  * The SVG is decorative and hidden from assistive tech; every number is real
  * HTML text beside it, so a screen reader gets the content without the
@@ -55,10 +58,7 @@ export default function MfGrowthChart() {
       </div>
       </div>
 
-      <p className="mfg-note">
-        Illustrative example only — not an indication of returns. Mutual fund investments are
-        subject to market risks; read all scheme-related documents carefully.
-      </p>
+      <p className="mfg-note">Illustrative example only — not an indication of returns.</p>
     </div>
   );
 }

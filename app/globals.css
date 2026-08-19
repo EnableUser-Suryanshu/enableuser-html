@@ -344,7 +344,8 @@ html{scroll-padding-top:96px}
 .mfg-bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--red-hi),var(--red));width:0;animation:mfgBar 1.2s cubic-bezier(.4,0,.2,1) 1.3s forwards}
 @keyframes mfgBar{to{width:62%}}
 .mfg-invested{display:block;font-size:12px;font-weight:600;color:var(--ink-3)}
-.mfg-note{font-size:10.8px;line-height:1.55;color:var(--ink-3);margin-top:12px}
+/* .card p sets 14.5px and outranks a single class, so scope this to the card. */
+.card .mfg-note{font-size:10.5px;line-height:1.5;color:var(--ink-3);margin-top:10px}
 @media (max-width:560px){.mfg-card{position:static;margin-top:12px;min-width:0}}
 /* Stacked display heading on the Mutual Funds card: the action sits above
    the product, so the eye lands on the red line. Overrides the shared 20px
