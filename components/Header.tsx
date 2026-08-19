@@ -25,7 +25,7 @@ const NAV: NavItem[] = [
     label: 'Invest',
     match: ['/services', '/mf-online', '/new-to-market'],
     children: [
-      { href: '/services', label: 'Our Services', desc: 'Equity, F&O, commodity, currency, IPO and more' },
+      { href: '/services', label: 'Our Services', desc: 'Equity, F&O, commodity, IPO and more' },
       { href: '/mf-online', label: 'MF Online', desc: 'Invest across 13 fund-house portals' },
       { href: '/new-to-market', label: 'New to Market', desc: 'A beginner’s guide to investing' },
     ],

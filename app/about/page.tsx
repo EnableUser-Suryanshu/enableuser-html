@@ -55,7 +55,7 @@ const MILESTONES = [
   { year: '1992', title: 'The seed is planted', body: 'Kalpataru Multiplier Ltd is founded in Bhopal as a full-service share broking house, holding clearing membership from the very beginning.' },
   { year: '1990s', title: 'Roots across Madhya Pradesh', body: 'A growing branch and authorised-person network takes trusted investing to Sagar, Jabalpur, Vidisha, Harda, Lalitpur and beyond.' },
   { year: '2003', title: 'Depository participant', body: 'Registered as a CDSL Depository Participant (IN-DP-CDSL-221-2003), adding safe, paperless demat custody to the bouquet.' },
-  { year: '2000s – 2010s', title: 'Every branch of investing', body: 'Commodity membership on MCX, currency derivatives, mutual fund distribution, IPOs, bonds and insurance — one tree, many branches.' },
+  { year: '2000s – 2010s', title: 'Every branch of investing', body: 'Commodity membership on MCX, mutual fund distribution, IPOs, bonds and insurance — one tree, many branches.' },
   { year: 'Today', title: 'Digital-first, values-forever', body: '35,000+ investors, 200+ business locations, fully digital eKYC onboarding and modern trading platforms — with the same three Ts at the core.' },
 ];
 
@@ -126,7 +126,7 @@ export default function AboutPage() {
             </p>
             <p>
               What began as a share broking desk in Bhopal has grown branch by branch — equities,
-              derivatives, commodities, currency, mutual funds, IPOs, bonds and depository
+              derivatives, commodities, mutual funds, IPOs, bonds and depository
               services — into a full-spectrum investment house serving investors across India,
               with clearing membership held since inception.
             </p>

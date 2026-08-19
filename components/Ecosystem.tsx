@@ -1,4 +1,5 @@
 import { PORTALS, EXT } from '@/lib/links';
+import MfGrowthChart from './MfGrowthChart';
 import { TrendUp, DocLines, Swap, ArrowRight, Devices, BarChart } from './icons';
 
 export default function Ecosystem() {
@@ -44,9 +45,7 @@ export default function Ecosystem() {
               <span className="mf-accent">Mutual Funds</span>
             </h3>
             <p>Your goals deserve better growth — start investing today.</p>
-            <div className="photo">
-              <img src="/assets/photo_mf.jpg" alt="Hands holding coins with a growing sapling" loading="lazy" />
-            </div>
+            <MfGrowthChart />
             <a href={PORTALS.mutualFund} {...EXT} className="btn btn-navy">Invest Now</a>
           </article>
         </div>

@@ -93,7 +93,7 @@ export const EXCHANGE_GRIEVANCE = [
 
 export const MF_TOOLS = [
   { label: 'MF Portfolio Login', href: 'https://www.ifaplanet.com/form_login.php', desc: 'View your consolidated mutual fund portfolio and statements.' },
-  { label: 'Kalpataru MF Portal', href: 'https://mf.kalpatarumulti.com/login', desc: 'Transact in direct and regular plans through our own platform.' },
+  { label: 'Kalpataru MF Portal', href: 'https://mf.kalpatarumulti.com/login', desc: 'Transact in mutual funds with our own platforms.' },
 ];
 
 /* ------------------------------------------------------------------ *

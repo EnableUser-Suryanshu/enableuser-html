@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: 'Our Services — Kalpataru Multiplier Ltd',
   description:
-    'Equity, F&O and currency broking on NSE & BSE, commodities on MCX, mutual funds, free trading & demat account opening, IPOs, bonds, NPS, insurance and more.',
+    'Equity and F&O broking on NSE & BSE, commodities on MCX, mutual funds, free trading & demat account opening, IPOs, bonds, NPS, insurance and more.',
 };
 
 /* ---------- panel visuals ---------- */
@@ -45,7 +45,7 @@ function TradingPanel() {
         <polyline className="trend" points={pts.join(' ')} fill="none" stroke="#bb0009" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" />
       </svg>
       <div className="panel-foot">
-        <span>Cash · F&amp;O · Currency</span>
+        <span>Cash · F&amp;O</span>
         <span className="up">▲ Institutional-grade execution</span>
       </div>
     </div>
@@ -133,17 +133,16 @@ type Pillar = {
 const PILLARS: Pillar[] = [
   {
     kicker: '01 — Trading & Broking',
-    title: 'Equity, F&O and Currency on NSE & BSE',
-    desc: 'Trade the cash market, index and stock derivatives, and exchange-traded currency pairs through one account. As a clearing member on both exchanges since inception, we route your orders on institutional-grade rails — with perfect transparency in accounting, so every trade, charge and credit is visible in your back office the same day.',
+    title: 'Equity and F&O on NSE & BSE',
+    desc: 'Trade the cash market and index and stock derivatives through one account. As a clearing member on both exchanges since inception, we route your orders on institutional-grade rails — with perfect transparency in accounting, so every trade, charge and credit is visible in your back office the same day.',
     points: [
       'Intraday & delivery on NSE (11152) and BSE (3016)',
       'Index & stock futures and options with live option chain',
-      'Currency derivatives for traders and import-export hedgers',
       'Dealer desk on 0755-4350141-143 through market hours',
       'Same-day contract notes and ledger in the back office',
       'Securities Lending & Borrowing (SLB) for extra yield',
     ],
-    chips: ['NSE', 'BSE', 'INTRADAY', 'DELIVERY', 'F&O', 'CURRENCY'],
+    chips: ['NSE', 'BSE', 'INTRADAY', 'DELIVERY', 'F&O'],
     ctas: [
       { label: 'Start Trading', href: PORTALS.webTrading, cls: 'btn btn-navy' },
       { label: 'Back Office', href: PORTALS.backOfficeLogin, cls: 'btn btn-outline' },

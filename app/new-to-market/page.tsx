@@ -9,7 +9,7 @@ import {
 import { PORTALS, EXT } from '@/lib/links';
 import {
   FileText, FilePdf, ArrowRight, Shield, TrendUp, Rupee, Bank, Swap,
-  CheckCircle, Rocket, IdCard, Globe,
+  CheckCircle, Rocket, IdCard,
 } from '@/components/icons';
 
 export const metadata: Metadata = {
@@ -81,7 +81,7 @@ const STEPS: Step[] = [
 ];
 
 const ACCOUNTS = [
-  { icon: TrendUp, t: 'Trading Account', d: 'Places your orders on NSE and BSE across equity, F&O and currency.' },
+  { icon: TrendUp, t: 'Trading Account', d: 'Places your orders on NSE and BSE across equity and F&O.' },
   { icon: Shield, t: 'Demat Account', d: 'Holds your securities electronically with CDSL — DP-ID 12031600.' },
   { icon: Rupee, t: 'Mutual Fund Account', d: 'Invest in SIPs and lumpsum across every major AMC.' },
 ];
@@ -90,7 +90,6 @@ const SEGMENTS = [
   { icon: TrendUp, t: 'Equity', d: 'Buy and sell shares on NSE & BSE, intraday or delivery.' },
   { icon: Swap, t: 'F&O', d: 'Index and stock futures and options — for experienced traders.' },
   { icon: Bank, t: 'Commodity', d: 'Bullion, energy and base metals on MCX.' },
-  { icon: Globe, t: 'Currency', d: 'Exchange-traded USD, EUR, GBP and JPY pairs against the rupee.' },
   { icon: Rocket, t: 'IPO', d: 'Apply to public issues online with a UPI mandate.' },
   { icon: IdCard, t: 'Depository', d: 'Safe custody and settlement of everything you own.' },
 ];

@@ -38,7 +38,7 @@ export default function BusinessPartnersPage() {
           { text: 'Your' }, { text: 'Ambition.' }, { text: 'Our', accent: true },
           { text: 'Infrastructure.' },
         ]}
-        lead="If you are well versed in the world of finance, there are ample opportunities here. Partner with a time-tested, tried and trusted share broker, investment advisor and depository participant."
+        lead="If you are well versed in the world of finance, there are ample opportunities here. Partner with a time-tested, tried and trusted share broker, mutual fund distributor and depository participant."
         cta={
           <a href="#partner-enquiry" className="btn btn-white">BECOME A PARTNER</a>
         }
@@ -50,13 +50,12 @@ export default function BusinessPartnersPage() {
           <h2 id="letter-h" className="sec-title">About the Firm</h2>
           <div className="reveal" style={{ marginTop: 22 }}>
             <p style={{ fontSize: 15.5, color: 'var(--ink-2)', lineHeight: 1.85 }}>
-              Kalpataru is a time-tested, tried and trusted share broker, investment advisor and
-              depository participant. We cover the complete financial services spectrum — share
-              broking, derivatives and F&amp;O in equities, commodity, currency and index, plus
-              investment advisory services. We are also a DP providing depository services, and we
-              distribute financial products such as mutual funds, portfolio management advisory
-              services and IPOs, in which we hold more than half the market share of the primary
-              market in our region.
+              Kalpataru is a time-tested, tried and trusted share broker, mutual fund distributor
+              and depository participant. We cover the complete financial services spectrum —
+              share broking, derivatives and F&amp;O in equities, commodity and index. We are also
+              a DP providing depository services, and we distribute financial products such as
+              mutual funds, portfolio management services and IPOs, in which we hold more than
+              half the market share of the primary market in our region.
             </p>
             <div className="accent-quote" style={{ marginTop: 22 }}>
               Kalpataru is well equipped to handle all the wealth-creation and wealth-management

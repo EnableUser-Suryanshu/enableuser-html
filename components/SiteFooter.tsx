@@ -67,7 +67,7 @@ export default function SiteFooter() {
             <p className="f-desc">
               Kalpataru is a wishful Divine Tree and in present context a widely Trusted,
               Time tested and Transparent Share Broker, Mutual Fund Distributor and D.P.
-              of this region.
+              of Central India.
             </p>
             <div className="f-label">Mobile Trading Apps</div>
             <div className="f-apps">

@@ -322,6 +322,30 @@ html{scroll-padding-top:96px}
 .feature-list svg{color:#3b4256;flex:none;transition:color .25s}
 .card-trade-bottom{margin-top:26px;align-self:end}
 .card-mf .photo{margin-bottom:22px}
+
+/* ---- Mutual Funds growth chart ---- */
+.mfg{margin-bottom:20px}
+.mfg-plot{position:relative}
+.mfg-svg{display:block;width:100%;height:auto;overflow:visible}
+.mfg-grid{stroke:#ececee;stroke-width:1}
+/* the line draws itself, then the fill rises under it */
+.mfg-line{stroke-dasharray:520;stroke-dashoffset:520;animation:mfgDraw 1.5s cubic-bezier(.4,0,.2,1) .15s forwards}
+@keyframes mfgDraw{to{stroke-dashoffset:0}}
+.mfg-area{opacity:0;transform-origin:bottom;transform:scaleY(.6);animation:mfgRise .9s cubic-bezier(.4,0,.2,1) .95s forwards}
+@keyframes mfgRise{to{opacity:1;transform:scaleY(1)}}
+.mfg-dot{fill:#fff;stroke:var(--red);stroke-width:3;opacity:0;transform:scale(.2);transform-origin:center;transform-box:fill-box;animation:mfgPop .45s cubic-bezier(.34,1.56,.64,1) var(--d,1s) forwards}
+@keyframes mfgPop{to{opacity:1;transform:scale(1)}}
+/* value card floats over the curve, like the reference */
+.mfg-card{position:absolute;left:8px;bottom:14px;background:#fff;border:1px solid #ececee;border-radius:14px;box-shadow:0 16px 34px -20px rgba(1,13,35,.28);padding:14px 16px;min-width:186px;opacity:0;animation:mfgCardIn .6s cubic-bezier(.4,0,.2,1) 1.1s forwards}
+@keyframes mfgCardIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.mfg-eyebrow{display:block;font-size:10.5px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;color:var(--ink-3)}
+.mfg-value{display:block;font-family:var(--font-head);font-size:27px;font-weight:700;color:var(--ink);line-height:1.15;margin-top:3px;font-variant-numeric:tabular-nums}
+.mfg-bar{display:block;height:6px;border-radius:99px;background:#eceef2;margin:10px 0 7px;overflow:hidden}
+.mfg-bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--red-hi),var(--red));width:0;animation:mfgBar 1.2s cubic-bezier(.4,0,.2,1) 1.3s forwards}
+@keyframes mfgBar{to{width:62%}}
+.mfg-invested{display:block;font-size:12px;font-weight:600;color:var(--ink-3)}
+.mfg-note{font-size:10.8px;line-height:1.55;color:var(--ink-3);margin-top:12px}
+@media (max-width:560px){.mfg-card{position:static;margin-top:12px;min-width:0}}
 /* Stacked display heading on the Mutual Funds card: the action sits above
    the product, so the eye lands on the red line. Overrides the shared 20px
    .card h3 without touching the other cards. */
