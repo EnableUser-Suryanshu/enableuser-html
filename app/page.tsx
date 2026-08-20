@@ -6,7 +6,7 @@ import Stats from '@/components/Stats';
 import BrandMarquee from '@/components/BrandMarquee';
 import News from '@/components/News';
 import Faq from '@/components/Faq';
-import InvestorGrievance from '@/components/InvestorGrievance';
+import GlobalInvesting from '@/components/GlobalInvesting';
 import Help from '@/components/Help';
 
 export default function Page() {
@@ -20,7 +20,7 @@ export default function Page() {
       <BrandMarquee />
       <News />
       <Faq />
-      <InvestorGrievance />
+      <GlobalInvesting />
       <Help />
     </main>
   );

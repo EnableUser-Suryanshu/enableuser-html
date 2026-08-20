@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import FeedbackForm from '@/components/pages/FeedbackForm';
+import InvestorGrievance from '@/components/InvestorGrievance';
 import {
   SUPPORT_TEAMS, TRADING_DESKS, CARE_ESCALATION, EXCHANGE_GRIEVANCE,
 } from '@/lib/pages-data';
@@ -137,6 +138,10 @@ export default function CustomerCarePage() {
           </div>
         </div>
       </section>
+
+      {/* SCORES disclosure — moved off the home page, kept with the rest of
+          the grievance content (audit point 3, VRDK & Co). */}
+      <InvestorGrievance />
 
       {/* Feedback form */}
       <section className="section mkt-explore watch" id="feedback" aria-labelledby="fb-h">

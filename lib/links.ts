@@ -10,6 +10,8 @@ export const PORTALS = {
   mutualFund: 'https://mf.kalpatarumulti.com/login',
   reKyc:
     'https://re-kyc.kalpatarumulti.com/v1/company/kalpatarumulti/modification/login',
+  // NSE IX (NSE International Exchange) at GIFT City — US stocks from India.
+  globalInvesting: 'https://trade.nseixga.com/login?kalpataru',
 } as const;
 
 /**

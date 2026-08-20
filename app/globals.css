@@ -327,6 +327,35 @@ html{scroll-padding-top:96px}
 .card-trade-bottom{margin-top:26px;align-self:end}
 .card-mf .photo{margin-bottom:22px}
 
+/* ---- Global investing (NSE IX) ---- */
+.gi{background:var(--bg-light)}
+.gi-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:56px}
+.gi-eyebrow{display:inline-block;font-size:11px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;color:var(--red);background:#fdf1f1;border-radius:99px;padding:7px 14px}
+.gi-title{font-size:clamp(30px,3.3vw,46px);line-height:1.1;font-weight:800;letter-spacing:-.025em;color:var(--ink);margin:18px 0 0}
+.gi-accent{color:var(--red)}
+.gi-sub{font-size:15.5px;line-height:1.8;color:var(--ink-2);margin-top:16px;max-width:520px}
+/* facts read as a row of ticks, not another card grid */
+.gi-facts{list-style:none;display:flex;flex-wrap:wrap;gap:10px 22px;margin:22px 0 0;padding:0}
+.gi-facts li{position:relative;padding-left:24px;font-size:13.8px;font-weight:600;color:var(--ink)}
+.gi-facts li::before{content:"";position:absolute;left:0;top:50%;width:15px;height:15px;margin-top:-7.5px;border-radius:50%;background:var(--red);
+  -webkit-mask:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12 5 5 9-10'/%3E%3C/svg%3E") center/contain no-repeat;
+  mask:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12 5 5 9-10'/%3E%3C/svg%3E") center/contain no-repeat}
+.gi-cta{margin-top:30px}
+.gi-note{font-size:11.5px;line-height:1.6;color:var(--ink-3);margin-top:20px;max-width:460px}
+/* artwork: outlined bars grow from the axis, then the trend line draws over them */
+.gi-art svg{display:block;width:100%;height:auto;overflow:visible}
+.gi-base{stroke:#dcdce0;stroke-width:2}
+.gi-bar{fill:#fff;stroke:var(--red);stroke-width:2.5;transform-origin:center bottom;transform-box:fill-box;transform:scaleY(0);opacity:.9;animation:giGrow .75s cubic-bezier(.34,1.2,.64,1) forwards;animation-delay:calc(var(--i) * 110ms)}
+.gi-bar:nth-child(odd){fill:#fdf1f1}
+@keyframes giGrow{to{transform:scaleY(1)}}
+.gi-trend,.gi-head{fill:none;stroke:var(--navy);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:520;stroke-dashoffset:520;animation:giDraw 1.1s cubic-bezier(.4,0,.2,1) .7s forwards}
+@keyframes giDraw{to{stroke-dashoffset:0}}
+@media (max-width:1020px){
+  .gi-grid{grid-template-columns:1fr;gap:38px}
+  .gi-art{order:-1;max-width:430px}
+}
+@media (max-width:560px){.gi-facts{gap:8px 16px}.gi-facts li{font-size:13px}}
+
 /* ---- Mutual Funds growth chart ---- */
 .mfg{margin-bottom:20px}
 .mfg-plot{position:relative}
