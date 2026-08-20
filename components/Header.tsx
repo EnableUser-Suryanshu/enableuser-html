@@ -169,19 +169,41 @@ export default function Header() {
           {/* Below 1020px the top bar drops the Back Office button for room,
               which otherwise leaves existing clients with no way to reach the
               login from the header on a phone. Surface it in the drawer. */}
-          <a
-            href={PORTALS.backOfficeLogin}
-            {...EXT}
-            className="nav-top nav-drawer-cta"
-          >
+          <a href={PORTALS.backOfficeLogin} {...EXT} className="nav-top nav-drawer-cta">
             Back Office Login
+          </a>
+          <a href={PORTALS.webTrading} {...EXT} className="nav-top nav-drawer-cta alt">
+            Trading Login
           </a>
         </nav>
 
         <div className="nav-cta">
-          <a href={PORTALS.backOfficeLogin} {...EXT} className="nav-login">
-            Back Office
-          </a>
+          <div
+            className={`nav-group login-group${menu === 'Login' ? ' open' : ''}`}
+            onMouseEnter={() => setMenu('Login')}
+            onMouseLeave={() => setMenu((m) => (m === 'Login' ? null : m))}
+          >
+            <button
+              type="button"
+              className="nav-login nav-trigger"
+              aria-expanded={menu === 'Login'}
+              aria-haspopup="true"
+              onClick={() => setMenu((m) => (m === 'Login' ? null : 'Login'))}
+            >
+              Login
+              <ChevronDown size={12} strokeW={2.6} />
+            </button>
+            <div className="nav-panel" role="group" aria-label="Login">
+              <a href={PORTALS.backOfficeLogin} {...EXT} className="nav-sub">
+                <span className="nav-sub-l">Back Office Login</span>
+                <span className="nav-sub-d">Statements, ledger and account details</span>
+              </a>
+              <a href={PORTALS.webTrading} {...EXT} className="nav-sub">
+                <span className="nav-sub-l">Trading Login</span>
+                <span className="nav-sub-d">Place orders on the web trading platform</span>
+              </a>
+            </div>
+          </div>
           <a href={PORTALS.ekycAccountOpening} {...EXT} className="btn btn-navy">
             Open Account
           </a>
