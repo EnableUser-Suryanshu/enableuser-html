@@ -65,6 +65,12 @@ function Chart() {
 
 export default function Hero() {
   const phoneRef = useRef<HTMLDivElement>(null);
+  // Real interactions on the mock: the sort control actually reorders the
+  // list, and tapping it pauses the scroll (hover already did, but touch
+  // users had no way to stop it). Chips are left inert — the funds carry no
+  // category, so a working filter would mean inventing fund data.
+  const [sortDesc, setSortDesc] = useState(true);
+  const [held, setHeld] = useState(false);
   const visualRef = useRef<HTMLDivElement>(null);
   const copyRef = useRef<HTMLDivElement>(null);
   const [typed, setTyped] = useState(TYPEWRITER_PHRASES[0]);
@@ -139,6 +145,10 @@ export default function Hero() {
   }, []);
 
   let wordIndex = 0;
+
+  const num = (r: string) => parseFloat(r);
+  const sortedFunds = [...FUNDS].sort((a, b) =>
+    sortDesc ? num(b.ret) - num(a.ret) : num(a.ret) - num(b.ret));
 
   return (
     <section className="hero" id="hero">
@@ -240,13 +250,19 @@ export default function Hero() {
                 </div>
                 <div className="list-head">
                   <span>Mutual Funds</span>
-                  <span className="sort">
+                  <span
+                    className={`sort${sortDesc ? '' : ' asc'}`}
+                    onClick={() => setSortDesc((v) => !v)}
+                  >
                     3Y Return <SortArrows size={9} strokeW={2.4} />
                   </span>
                 </div>
-                <div className="fund-viewport">
-                  <div className="fund-list">
-                    {[...FUNDS, ...FUNDS].map((f, i) => (
+                <div
+                  className="fund-viewport"
+                  onClick={() => setHeld((v) => !v)}
+                >
+                  <div className={`fund-list${held ? ' held' : ''}`}>
+                    {[...sortedFunds, ...sortedFunds].map((f, i) => (
                       <div className="fund" key={i}>
                         <span className="flogo" style={{ background: f.color }}>{f.initials}</span>
                         <span className="fmeta">

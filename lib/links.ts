@@ -101,6 +101,9 @@ export const REGULATOR_LINKS = {
   cdslEvoting: 'https://evoting.cdslindia.com/evoting/evotinglogin',
   nseClientCollateral:
     'https://investorhelpline.nseindia.com/ClientCollateral/welcomeCLUser',
+  // NSE's own trade/IPO-bid verification tool. Investors check their trades
+  // with the exchange directly, independent of the broker.
+  nseVerifyTrades: 'https://www.nseindia.com/invest/check-trades-bids-verify-ipo-bids',
 } as const;
 
 export const MAPS = {
