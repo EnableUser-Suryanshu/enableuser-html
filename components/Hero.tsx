@@ -12,7 +12,9 @@ import {
 /* ---------- static pieces ---------- */
 
 const HEADLINE: Array<{ text: string; red?: boolean }> = [
-  { text: 'Invest' }, { text: 'With' }, { text: 'Kalpataru', red: true },
+  { text: "Central" }, { text: "India's" }, { text: 'Most' },
+  { text: 'Trusted' }, { text: 'Investment' }, { text: 'Broker' },
+  { text: '—' }, { text: 'Kalpataru', red: true },
 ];
 
 const COINS = [
