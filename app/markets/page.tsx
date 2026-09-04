@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import MarketsBento from '@/components/markets/MarketsBento';
 import DatasetExplorer from '@/components/markets/DatasetExplorer';
 import DataNotice from '@/components/markets/DataNotice';
+import MarketNews from '@/components/MarketNews';
 import MarketStatusProvider from '@/components/markets/MarketStatusContext';
 import {
   MARKET_DATASETS, MARKET_GROUPS, getDataset, liveIndices, liveDatasetCount, marketMeta,
@@ -74,6 +75,16 @@ export default function MarketsPage() {
           </div>
           <DatasetExplorer datasets={MARKET_DATASETS} groups={MARKET_GROUPS} />
           <DataNotice />
+        </div>
+      </section>
+
+      {/* Live news */}
+      <section className="section news watch" aria-labelledby="news-h">
+        <div className="container news-grid one">
+          <div className="reveal">
+            <h2 id="news-h" className="sr-only">Market news</h2>
+            <MarketNews limit={10} heading="Market News" />
+          </div>
         </div>
       </section>
 

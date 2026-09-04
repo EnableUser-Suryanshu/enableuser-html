@@ -20,13 +20,20 @@ interface NavItem {
 }
 
 const NAV: NavItem[] = [
-  { label: 'Markets', href: '/markets', match: ['/markets'] },
+  {
+    label: 'Markets',
+    match: ['/markets', '/tools'],
+    children: [
+      { href: '/markets', label: 'Market Data', desc: '35 live tables across NSE, BSE and global markets' },
+      { href: '/tools/margin-calculator', label: 'Margin Calculator', desc: 'Exchange margin for any NSE cash trade' },
+    ],
+  },
   {
     label: 'Invest',
     match: ['/services', '/mf-online', '/new-to-market'],
     children: [
       { href: '/services', label: 'Our Services', desc: 'Equity, F&O, commodity, IPO and more' },
-      { href: '/mf-online', label: 'MF Online', desc: 'Invest across 13 fund-house portals' },
+      { href: '/mf-online', label: 'MF Online', desc: 'SIPs and lumpsum across every major AMC' },
       { href: '/new-to-market', label: 'New to Market', desc: 'A beginner’s guide to investing' },
     ],
   },
