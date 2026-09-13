@@ -111,9 +111,29 @@ export default function DownloadsPage() {
                 Update your details, add segments or refresh KYC through the online
                 modification portal instead of submitting a physical form.
               </p>
-              <a href={PORTALS.reKyc} {...EXT} className="btn btn-outline" style={{ marginTop: 20 }}>
-                Online Modification <ArrowRight size={15} strokeW={2.2} />
-              </a>
+              {/* The modification portal (re-kyc.kalpatarumulti.com) accepts the
+                  TCP connection but never completes an HTTPS response — same on
+                  the live site. It stays as the primary link to match, but the
+                  back office is offered alongside so nobody hits a dead end.
+                  See the note in lib/links.ts. */}
+              {/* .btn is inline-flex and .bank-card is a plain block, so the two
+                  links need an explicit column to stack rather than sit side by side. */}
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 10, marginTop: 20 }}>
+                <a href={PORTALS.reKyc} {...EXT} className="btn btn-outline">
+                  Online Modification <ArrowRight size={15} strokeW={2.2} />
+                </a>
+                <a href={PORTALS.backOfficeLogin} {...EXT} className="btn btn-navy">
+                  Or raise it from the Back Office <ArrowRight size={15} strokeW={2.2} />
+                </a>
+              </div>
+              <p style={{ marginTop: 14, fontSize: 12.5, color: 'var(--ink-3)', lineHeight: 1.7 }}>
+                If the modification portal does not load, use the back office or email the signed
+                form to{' '}
+                <a href="mailto:kmlho@kalpatarumulti.com" className="link-red">
+                  kmlho@kalpatarumulti.com
+                </a>{' '}
+                from your registered email ID.
+              </p>
             </div>
           </div>
         </div>

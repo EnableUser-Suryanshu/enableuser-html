@@ -2,22 +2,24 @@ import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import BranchFinder from '@/components/pages/BranchFinder';
 import {
-  BRANCHES, KEY_CONTACTS, HEAD_OFFICES, ESCALATION, EXCHANGE_GRIEVANCE,
+  BRANCHES, KEY_CONTACTS, HEAD_OFFICES, ESCALATION,
 } from '@/lib/pages-data';
 import { MEMBER_DETAILS } from '@/lib/data';
 import { PORTALS, MAPS, EXT } from '@/lib/links';
 import {
-  Phone, Mail, MapPin, Person, Map, OfficeBuilding, Shield, WhatsApp, ArrowRight, Headset,
+  Phone, Mail, MapPin, Person, Map, OfficeBuilding, Shield, WhatsApp, Headset,
 } from '@/components/icons';
 
 export const metadata: Metadata = {
   title: 'Contact Us — Kalpataru Multiplier Ltd',
   description:
-    'Reach Kalpataru Multiplier Ltd: corporate and head office, 22 branches across Madhya Pradesh, UP and Chhattisgarh, key contacts, working hours and the investor grievance escalation matrix.',
+    'Reach Kalpataru Multiplier Ltd: corporate and head office, our Bhopal branches, key contacts, working hours and the investor grievance escalation matrix.',
 };
 
 export default function ContactPage() {
-  const cities = new Set(BRANCHES.map((b) => b.city)).size;
+  const cityNames = [...new Set(BRANCHES.map((b) => b.city))];
+  // Reads naturally whether the network is one city or many.
+  const where = cityNames.length === 1 ? `in ${cityNames[0]}` : `across ${cityNames.length} cities`;
 
   return (
     <main id="main">
@@ -27,7 +29,7 @@ export default function ContactPage() {
           { text: 'Always' }, { text: 'a' }, { text: 'Branch', accent: true },
           { text: 'Away' }, { text: 'From' }, { text: 'You.' },
         ]}
-        lead={`${BRANCHES.length} branches across ${cities} cities, a dedicated customer-care desk, and a published escalation path — talk to a person, not a queue.`}
+        lead={`${BRANCHES.length} branches ${where}, a dedicated customer-care desk, and a published escalation path — talk to a person, not a queue.`}
         cta={
           <a href="tel:07554350141" className="btn btn-white">CALL 0755-4350141</a>
         }
@@ -156,7 +158,7 @@ export default function ContactPage() {
             <div>
               <h2 id="bf-h" className="sec-title">Find Your Branch</h2>
               <p className="sec-sub">
-                {BRANCHES.length} branches across {cities} cities — filter by city or search for a manager.
+                {BRANCHES.length} branches {where} — search for a branch or a manager.
               </p>
             </div>
           </div>
@@ -183,22 +185,6 @@ export default function ContactPage() {
               </li>
             ))}
           </ol>
-          <div className="esc-links">
-            <p className="esc-links-h">
-              <Shield size={17} strokeW={2} /> Still unresolved? Lodge a complaint directly:
-            </p>
-            <div className="esc-links-row">
-              {EXCHANGE_GRIEVANCE.map((g) => (
-                <a key={g.name} href={g.href} {...EXT} className="esc-link">
-                  {g.name} <ArrowRight size={13} strokeW={2.4} />
-                </a>
-              ))}
-            </div>
-            <p className="esc-note">
-              Please quote your Complaint Reference Number when escalating to SEBI SCORES or a
-              depository portal.
-            </p>
-          </div>
         </div>
       </section>
 

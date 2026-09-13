@@ -178,7 +178,7 @@ export const ACCOUNT_OPENING_ROUTES: OpeningRoute[] = [
   {
     key: 'offline',
     title: 'Offline — physical form',
-    strap: 'At any of our 22 branches, or by post.',
+    strap: 'At any of our Bhopal branches, or by post.',
     steps: [
       'Download and print the account opening and KYC forms, or collect a set from any branch.',
       'Fill the KYC form in your own handwriting, strike off every blank, and never sign an incomplete form.',

@@ -37,25 +37,30 @@ export default function BranchFinder({ branches }: { branches: Branch[] }) {
   return (
     <div className="bfind">
       <div className="bfind-bar">
-        <div className="bfind-cities" role="group" aria-label="Filter branches by city">
-          <button
-            className={`bfind-city${city === 'all' ? ' on' : ''}`}
-            aria-pressed={city === 'all'}
-            onClick={() => setCity('all')}
-          >
-            All cities <span className="bfind-n">{branches.length}</span>
-          </button>
-          {cities.map(([c, n]) => (
+        {/* A city filter only helps when there is more than one city to pick
+            from; with a single-city network it would just be "All" and that
+            one city side by side. */}
+        {cities.length > 1 && (
+          <div className="bfind-cities" role="group" aria-label="Filter branches by city">
             <button
-              key={c}
-              className={`bfind-city${city === c ? ' on' : ''}`}
-              aria-pressed={city === c}
-              onClick={() => setCity(c)}
+              className={`bfind-city${city === 'all' ? ' on' : ''}`}
+              aria-pressed={city === 'all'}
+              onClick={() => setCity('all')}
             >
-              {c} <span className="bfind-n">{n}</span>
+              All cities <span className="bfind-n">{branches.length}</span>
             </button>
-          ))}
-        </div>
+            {cities.map(([c, n]) => (
+              <button
+                key={c}
+                className={`bfind-city${city === c ? ' on' : ''}`}
+                aria-pressed={city === c}
+                onClick={() => setCity(c)}
+              >
+                {c} <span className="bfind-n">{n}</span>
+              </button>
+            ))}
+          </div>
+        )}
         <div className="bfind-search">
           <Search size={15} strokeW={2.2} />
           <input

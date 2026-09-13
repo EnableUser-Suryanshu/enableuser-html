@@ -24,10 +24,15 @@ export const PORTALS = {
  * no separate nomination portal, so nomination runs through the back office
  * too — `/account-services` documents the form route alongside it.
  *
- * NOTE: re-kyc.kalpatarumulti.com resolves but times out on connection as of
- * 15-Aug-2026, on the live site as well as here. It is kept as the primary
- * Re-KYC link to match the live site, with the back office offered as the
- * working alternative. Confirm the host is reachable with the hosting vendor.
+ * NOTE: re-kyc.kalpatarumulti.com is still down — re-checked 07-Sep-2026, three
+ * weeks after it was first flagged on 15-Aug-2026. DNS resolves (36.255.3.123)
+ * and port 443 accepts the TCP connection, but no HTTPS response ever comes
+ * back; requests hang until they time out. The live site has the same problem,
+ * so this is the vendor's, not ours.
+ *
+ * It is kept as the primary Re-KYC link to match the live site, but every place
+ * that links to it must also offer the back office, which responds normally.
+ * Worth chasing the hosting vendor — this has now been broken for a month.
  */
 export const SERVICE_PORTALS: Record<'nomination' | 'reKyc' | 'closure', string | null> = {
   nomination: PORTALS.backOfficeLogin,
