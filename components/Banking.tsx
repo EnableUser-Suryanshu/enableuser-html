@@ -5,7 +5,7 @@ import { Bank, Download, FilePdf, ArrowRight } from './icons';
 
 const FORMS = [
   { label: 'Account Opening Form', href: PORTALS.ekycAccountOpening },
-  { label: 'KYC / Modification Form', href: PORTALS.reKyc },
+  { label: 'KYC / Modification Form', href: PORTALS.modificationForm },
   { label: 'Mutual Fund Direct Form', href: PORTALS.mutualFund },
 ];
 

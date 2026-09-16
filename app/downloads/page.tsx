@@ -108,27 +108,22 @@ export default function DownloadsPage() {
             <div className="bank-card reveal rv-right">
               <div className="head"><Shield size={24} /> Modify an Existing Account</div>
               <p style={{ fontSize: 14.5, color: 'var(--ink-2)', lineHeight: 1.75 }}>
-                Update your details, add segments or refresh KYC through the online
-                modification portal instead of submitting a physical form.
+                Update your details, add segments or refresh KYC from the back office
+                instead of submitting a physical form — or download the form if you
+                would rather post it in.
               </p>
-              {/* The modification portal (re-kyc.kalpatarumulti.com) accepts the
-                  TCP connection but never completes an HTTPS response — same on
-                  the live site. It stays as the primary link to match, but the
-                  back office is offered alongside so nobody hits a dead end.
-                  See the note in lib/links.ts. */}
               {/* .btn is inline-flex and .bank-card is a plain block, so the two
                   links need an explicit column to stack rather than sit side by side. */}
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 10, marginTop: 20 }}>
-                <a href={PORTALS.reKyc} {...EXT} className="btn btn-outline">
+                <a href={PORTALS.reKyc} {...EXT} className="btn btn-navy">
                   Online Modification <ArrowRight size={15} strokeW={2.2} />
                 </a>
-                <a href={PORTALS.backOfficeLogin} {...EXT} className="btn btn-navy">
-                  Or raise it from the Back Office <ArrowRight size={15} strokeW={2.2} />
+                <a href={PORTALS.modificationForm} {...EXT} className="btn btn-outline">
+                  Download the Form <FilePdf size={15} strokeW={2.2} />
                 </a>
               </div>
               <p style={{ marginTop: 14, fontSize: 12.5, color: 'var(--ink-3)', lineHeight: 1.7 }}>
-                If the modification portal does not load, use the back office or email the signed
-                form to{' '}
+                Sign in to the back office to raise it online, or email the signed form to{' '}
                 <a href="mailto:kmlho@kalpatarumulti.com" className="link-red">
                   kmlho@kalpatarumulti.com
                 </a>{' '}
