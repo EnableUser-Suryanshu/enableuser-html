@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-16T18:24:21.936Z",
+ "fetchedAt": "2026-09-16T20:46:15.719Z",
  "marketTimestamp": "16-Sep-2026 15:30",
  "marketStatus": "Closed",
  "source": "NSE India (nseindia.com public market data) · NSE full bhavcopy (delivery data) · NSE & BSE corporate filings, AMFI scheme data · CNBC market data · ECB reference rates",
@@ -3025,119 +3025,7 @@
    ],
    "rows": [
     {
-     "company": "MVELECTRO",
-     "date": "16-Sep-2026",
-     "client": "HRTI PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "MVELECTRO",
-     "date": "16-Sep-2026",
-     "client": "JUMP TRADING FINANCIAL INDIA PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "MVELECTRO",
-     "date": "16-Sep-2026",
-     "client": "QE SECURITIES LLP",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "MVELECTRO",
-     "date": "16-Sep-2026",
-     "client": "MICROCURVES TRADING PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "NPST",
-     "date": "16-Sep-2026",
-     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "NPST",
-     "date": "16-Sep-2026",
-     "client": "MICROCURVES TRADING PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "ONYX",
-     "date": "16-Sep-2026",
-     "client": "TUSHAR KINKER",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PINELABS",
-     "date": "16-Sep-2026",
-     "client": "QE SECURITIES LLP",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PINELABS",
-     "date": "16-Sep-2026",
-     "client": "HRTI PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PRANAV",
-     "date": "16-Sep-2026",
-     "client": "MATHISYS QUANTCAP LLP",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PRANAV",
-     "date": "16-Sep-2026",
-     "client": "D3 STOCK VISION LLP",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PRANAV",
-     "date": "16-Sep-2026",
-     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PRANAV",
-     "date": "16-Sep-2026",
-     "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PRANAV",
-     "date": "16-Sep-2026",
-     "client": "F3 ADVISORS PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PRANAV",
+     "company": "ABH",
      "date": "16-Sep-2026",
      "client": "NEO APEX SHARE BROKING SERVICES LLP",
      "deal": "BUY",
@@ -3145,194 +3033,26 @@
      "price": 0
     },
     {
-     "company": "RATNAVEER",
+     "company": "ABH",
      "date": "16-Sep-2026",
-     "client": "QE SECURITIES LLP",
+     "client": "JAGID VANITABEN RAJENDRAPRASAD",
      "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "RATNAVEER",
-     "date": "16-Sep-2026",
-     "client": "ARIHANT CAPITAL MARKETS LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "RATNAVEER",
-     "date": "16-Sep-2026",
-     "client": "BLOOMCREST TRADE PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "RATNAVEER",
-     "date": "16-Sep-2026",
-     "client": "TRADE SOLVENT PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "RAYMOND",
-     "date": "16-Sep-2026",
-     "client": "HRTI PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "RAYMOND",
-     "date": "16-Sep-2026",
-     "client": "QE SECURITIES LLP",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "RAYMOND",
-     "date": "16-Sep-2026",
-     "client": "MICROCURVES TRADING PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "RAYMOND",
-     "date": "16-Sep-2026",
-     "client": "GRAVITON RESEARCH CAPITAL LLP",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "RAYMOND",
-     "date": "16-Sep-2026",
-     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "RCDL-RE",
-     "date": "16-Sep-2026",
-     "client": "AURIS VENTURES",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "RCDL-RE",
-     "date": "16-Sep-2026",
-     "client": "ALPESH VAGHAJIBHAI VORA",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "ROSSTECH",
-     "date": "16-Sep-2026",
-     "client": "MICROCURVES TRADING PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "SEJALLTD",
-     "date": "16-Sep-2026",
-     "client": "CAPRI GLOBAL VENTURES PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "SPRL",
-     "date": "16-Sep-2026",
-     "client": "ARYAMAN CAPITAL MARKETS LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "SUNSHINE",
-     "date": "16-Sep-2026",
-     "client": "ARIHANT CAPITAL MARKETS LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "SUNSHINE",
-     "date": "16-Sep-2026",
-     "client": "HRTI PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "SUNSHINE",
-     "date": "16-Sep-2026",
-     "client": "MATHISYS QUANTCAP LLP",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "SUNSHINE",
-     "date": "16-Sep-2026",
-     "client": "ANKITA VISHAL SHAH",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "SUNSHINE",
-     "date": "16-Sep-2026",
-     "client": "QE SECURITIES LLP",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "UHTL",
-     "date": "16-Sep-2026",
-     "client": "SOUMYA MALANI",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "VALUE360",
-     "date": "16-Sep-2026",
-     "client": "CRAFT EMERGING MARKET FUND PCC-ARBITRAGE STRATEGY FUND",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "ZENITHDRUG",
-     "date": "16-Sep-2026",
-     "client": "BINDU GARG",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "AAATECH",
-     "date": "16-Sep-2026",
-     "client": "NOVA GLOBAL OPPORTUNITIES FUND PCC - TOUCHSTONE",
-     "deal": "SELL",
      "qty": 0,
      "price": 0
     },
     {
      "company": "ABH",
      "date": "16-Sep-2026",
-     "client": "JAGID VANITABEN RAJENDRAPRASAD",
-     "deal": "SELL",
+     "client": "MANDAKINIBEN PRADYUMANBHAI PATEL",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ABH",
+     "date": "16-Sep-2026",
+     "client": "MAHAMMADFARUK HAJIBHAI MIR",
+     "deal": "BUY",
      "qty": 0,
      "price": 0
     },
@@ -3340,7 +3060,287 @@
      "company": "ABH",
      "date": "16-Sep-2026",
      "client": "STATSOL RESEARCH LLP",
-     "deal": "SELL",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "AHCL",
+     "date": "16-Sep-2026",
+     "client": "QE SECURITIES LLP",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "AHCL",
+     "date": "16-Sep-2026",
+     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "AHCL",
+     "date": "16-Sep-2026",
+     "client": "HRTI PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ANTELOPUS",
+     "date": "16-Sep-2026",
+     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ANTELOPUS",
+     "date": "16-Sep-2026",
+     "client": "HRTI PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ANTELOPUS",
+     "date": "16-Sep-2026",
+     "client": "QE SECURITIES LLP",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ATALREAL",
+     "date": "16-Sep-2026",
+     "client": "JAGID VANITABEN RAJENDRAPRASAD",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ATALREAL",
+     "date": "16-Sep-2026",
+     "client": "HRTI PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "CLASSICEIL",
+     "date": "16-Sep-2026",
+     "client": "CRAFT EMERGING MARKET FUND PCC-ARBITRAGE STRATEGY FUND",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "COMSYN",
+     "date": "16-Sep-2026",
+     "client": "ARIHANT CAPITAL MARKETS LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "CSM",
+     "date": "16-Sep-2026",
+     "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "CSM",
+     "date": "16-Sep-2026",
+     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "CSM",
+     "date": "16-Sep-2026",
+     "client": "SILVERLEAF CAPITAL SERVICES PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "EMPOWER",
+     "date": "16-Sep-2026",
+     "client": "ALIA COMMOSALES LLP",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "EMUDHRA",
+     "date": "16-Sep-2026",
+     "client": "SILVERLEAF CAPITAL SERVICES PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "EMUDHRA",
+     "date": "16-Sep-2026",
+     "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "EMUDHRA",
+     "date": "16-Sep-2026",
+     "client": "MICROCURVES TRADING PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "EMUDHRA",
+     "date": "16-Sep-2026",
+     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "EMUDHRA",
+     "date": "16-Sep-2026",
+     "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "EMUDHRA",
+     "date": "16-Sep-2026",
+     "client": "IRAGE BROKING SERVICES LLP",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "EMUDHRA",
+     "date": "16-Sep-2026",
+     "client": "QE SECURITIES LLP",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "GCSL",
+     "date": "16-Sep-2026",
+     "client": "MANSUKH SECURITIES & FINANCE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "GCSL",
+     "date": "16-Sep-2026",
+     "client": "SIDDHISURI FINVEST PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "GLASSWALL",
+     "date": "16-Sep-2026",
+     "client": "PURE BROKING PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "GLASSWALL",
+     "date": "16-Sep-2026",
+     "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "GLASSWALL",
+     "date": "16-Sep-2026",
+     "client": "MARWADI CHANDARANA INTERMEDIARIES BROKERS PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "GLASSWALL",
+     "date": "16-Sep-2026",
+     "client": "MANSI SHARE AND STOCK BROKING PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "GLASSWALL",
+     "date": "16-Sep-2026",
+     "client": "FIRST BRIDGE INDIA GROWTH FUND",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "GLASSWALL",
+     "date": "16-Sep-2026",
+     "client": "OM TRADING",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "GLASSWALL",
+     "date": "16-Sep-2026",
+     "client": "AUTHUM INVESTMENT & INFRASTRUCTURE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "GLASSWALL",
+     "date": "16-Sep-2026",
+     "client": "S I INVESTMENTS ## BROKING PVT.LTD",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "GLASSWALL",
+     "date": "16-Sep-2026",
+     "client": "ELIXIR WEALTH MANAGEMENT PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "GLASSWALL",
+     "date": "16-Sep-2026",
+     "client": "DIPAN MEHTA COMMODITIES PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "GLASSWALL",
+     "date": "16-Sep-2026",
+     "client": "GOLDMINE STOCKS PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "GLASSWALL",
+     "date": "16-Sep-2026",
+     "client": "CSIM INDIA OPPORTUNITIES FUND 1",
+     "deal": "BUY",
      "qty": 0,
      "price": 0
     }
@@ -3957,163 +3957,163 @@
    ],
    "rows": [
     {
-     "company": "Indo Tech Transformers Limited",
-     "symbol": "INDOTECH",
-     "subject": "Dividend - Rs 10 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Garware Hi-Tech Films Limited",
-     "symbol": "GRWRHITECH",
-     "subject": "Dividend - Rs 12 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Vijaya Diagnostic Centre Limited",
-     "symbol": "VIJAYA",
-     "subject": "Dividend - Rs 2 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "1"
-    },
-    {
-     "company": "United Drilling Tools Limited",
-     "symbol": "UNIDT",
-     "subject": "Dividend - Re 0.60 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Prakash Pipes Limited",
-     "symbol": "PPL",
-     "subject": "Dividend - Rs 2.40 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Baid Finserv Limited",
-     "symbol": "BAIDFIN",
-     "subject": "Dividend - Re 0.10 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "2"
-    },
-    {
-     "company": "Macpower CNC Machines Limited",
-     "symbol": "MACPOWER",
+     "company": "Sunteck Realty Limited",
+     "symbol": "SUNTECK",
      "subject": "Dividend - Rs 1.50 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Zodiac Energy Limited",
-     "symbol": "ZODIAC",
-     "subject": "Dividend - Re 0.75 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "63 moons technologies limited",
-     "symbol": "63MOONS",
-     "subject": "Dividend - Rs 2 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "2"
-    },
-    {
-     "company": "Jash Engineering Limited",
-     "symbol": "JASH",
-     "subject": "Dividend - Re 1 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "2"
-    },
-    {
-     "company": "BLS International Services Limited",
-     "symbol": "BLS",
-     "subject": "Dividend - Re 0.50 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
      "faceVal": "1"
     },
     {
-     "company": "Salona Cotspin Limited",
-     "symbol": "SALONA",
-     "subject": "Dividend - Re 0.60 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Cineline India Limited",
-     "symbol": "CINELINE",
-     "subject": "Dividend - Rs 1.25 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
+     "company": "Indo Amines Limited",
+     "symbol": "INDOAMIN",
+     "subject": "Dividend - Re 0.50 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
      "faceVal": "5"
     },
     {
-     "company": "De Nora India Limited",
-     "symbol": "DENORA",
-     "subject": "Dividend - Rs 4 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
+     "company": "International Conveyors Limited",
+     "symbol": "INTLCONV",
+     "subject": "Dividend - Re 0.50 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "1"
     },
     {
-     "company": "Hindustan Copper Limited",
-     "symbol": "HINDCOPPER",
-     "subject": "Dividend - Rs 1.86 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "5"
-    },
-    {
-     "company": "V.S.T Tillers Tractors Limited",
-     "symbol": "VSTTILLERS",
-     "subject": "Dividend - Rs 25 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Emmbi Industries Limited",
-     "symbol": "EMMBI",
-     "subject": "Dividend - Re 0.30 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Ajmera Realty & Infra India Limited",
-     "symbol": "AJMERA",
+     "company": "Wealth First Portfolio Managers Limited",
+     "symbol": "WEALTH",
      "subject": "Dividend - Re 1 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "Ircon International Limited",
+     "symbol": "IRCON",
+     "subject": "Dividend - Re 0.70 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
      "faceVal": "2"
     },
     {
-     "company": "Prakash Industries Limited",
-     "symbol": "PRAKASH",
-     "subject": "Dividend - Rs 1.80 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
+     "company": "HPL Electric & Power Limited",
+     "symbol": "HPL",
+     "subject": "Dividend - Re 1 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
      "faceVal": "10"
     },
     {
-     "company": "Bannari Amman Sugars Limited",
-     "symbol": "BANARISUG",
-     "subject": "Dividend - Rs 12.50 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
+     "company": "Mstc Limited",
+     "symbol": "MSTCLTD",
+     "subject": "Dividend - Rs 8.10 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "Agarwal Industrial Corporation Limited",
+     "symbol": "AGARIND",
+     "subject": "Dividend - Rs 3.30 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "Tamil Nadu Newsprint & Papers Limited",
+     "symbol": "TNPL",
+     "subject": "Dividend - Rs 4 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "Patel Integrated Logistics Limited",
+     "symbol": "PATINTLOG",
+     "subject": "Dividend - Re 0.20 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "Tamilnadu PetroProducts Limited",
+     "symbol": "TNPETRO",
+     "subject": "Dividend - Rs 1.50 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "Ester Industries Limited",
+     "symbol": "ESTER",
+     "subject": "Dividend - Re 0.25 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "5"
+    },
+    {
+     "company": "Premier Polyfilm Limited",
+     "symbol": "PREMIERPOL",
+     "subject": "Dividend - Re 0.15 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "1"
+    },
+    {
+     "company": "KCP Sugar and Industries Corporation Limited",
+     "symbol": "KCPSUGIND",
+     "subject": "Dividend - Re 0.10 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "1"
+    },
+    {
+     "company": "Ausom Enterprise Limited",
+     "symbol": "AUSOMENT",
+     "subject": "Dividend - Re 1 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "The Ruby Mills Limited",
+     "symbol": "RUBYMILLS",
+     "subject": "Dividend - Rs 2.5 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "5"
+    },
+    {
+     "company": "Bharat Rasayan Limited",
+     "symbol": "BHARATRAS",
+     "subject": "Dividend - Re 0.50 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "5"
+    },
+    {
+     "company": "Himatsingka Seide Limited",
+     "symbol": "HIMATSEIDE",
+     "subject": "Dividend - Re 0.25 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "5"
+    },
+    {
+     "company": "Star Paper Mills Limited",
+     "symbol": "STARPAPER",
+     "subject": "Dividend - Rs 2.50 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "Bal Pharma Limited",
+     "symbol": "BALPHARMA",
+     "subject": "Dividend - Rs 1.20 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
      "faceVal": "10"
     }
    ]
@@ -4152,163 +4152,163 @@
    ],
    "rows": [
     {
-     "company": "Indo Tech Transformers Limited",
-     "symbol": "INDOTECH",
-     "subject": "Dividend - Rs 10 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Garware Hi-Tech Films Limited",
-     "symbol": "GRWRHITECH",
-     "subject": "Dividend - Rs 12 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Vijaya Diagnostic Centre Limited",
-     "symbol": "VIJAYA",
-     "subject": "Dividend - Rs 2 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "1"
-    },
-    {
-     "company": "United Drilling Tools Limited",
-     "symbol": "UNIDT",
-     "subject": "Dividend - Re 0.60 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Prakash Pipes Limited",
-     "symbol": "PPL",
-     "subject": "Dividend - Rs 2.40 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Baid Finserv Limited",
-     "symbol": "BAIDFIN",
-     "subject": "Dividend - Re 0.10 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "2"
-    },
-    {
-     "company": "Macpower CNC Machines Limited",
-     "symbol": "MACPOWER",
+     "company": "Sunteck Realty Limited",
+     "symbol": "SUNTECK",
      "subject": "Dividend - Rs 1.50 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Zodiac Energy Limited",
-     "symbol": "ZODIAC",
-     "subject": "Dividend - Re 0.75 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "63 moons technologies limited",
-     "symbol": "63MOONS",
-     "subject": "Dividend - Rs 2 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "2"
-    },
-    {
-     "company": "Jash Engineering Limited",
-     "symbol": "JASH",
-     "subject": "Dividend - Re 1 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "2"
-    },
-    {
-     "company": "BLS International Services Limited",
-     "symbol": "BLS",
-     "subject": "Dividend - Re 0.50 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
      "faceVal": "1"
     },
     {
-     "company": "Salona Cotspin Limited",
-     "symbol": "SALONA",
-     "subject": "Dividend - Re 0.60 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Cineline India Limited",
-     "symbol": "CINELINE",
-     "subject": "Dividend - Rs 1.25 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
+     "company": "Indo Amines Limited",
+     "symbol": "INDOAMIN",
+     "subject": "Dividend - Re 0.50 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
      "faceVal": "5"
     },
     {
-     "company": "De Nora India Limited",
-     "symbol": "DENORA",
-     "subject": "Dividend - Rs 4 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
+     "company": "International Conveyors Limited",
+     "symbol": "INTLCONV",
+     "subject": "Dividend - Re 0.50 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "1"
     },
     {
-     "company": "Hindustan Copper Limited",
-     "symbol": "HINDCOPPER",
-     "subject": "Dividend - Rs 1.86 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "5"
-    },
-    {
-     "company": "V.S.T Tillers Tractors Limited",
-     "symbol": "VSTTILLERS",
-     "subject": "Dividend - Rs 25 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Emmbi Industries Limited",
-     "symbol": "EMMBI",
-     "subject": "Dividend - Re 0.30 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
-     "faceVal": "10"
-    },
-    {
-     "company": "Ajmera Realty & Infra India Limited",
-     "symbol": "AJMERA",
+     "company": "Wealth First Portfolio Managers Limited",
+     "symbol": "WEALTH",
      "subject": "Dividend - Re 1 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "Ircon International Limited",
+     "symbol": "IRCON",
+     "subject": "Dividend - Re 0.70 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
      "faceVal": "2"
     },
     {
-     "company": "Prakash Industries Limited",
-     "symbol": "PRAKASH",
-     "subject": "Dividend - Rs 1.80 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
+     "company": "HPL Electric & Power Limited",
+     "symbol": "HPL",
+     "subject": "Dividend - Re 1 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
      "faceVal": "10"
     },
     {
-     "company": "Bannari Amman Sugars Limited",
-     "symbol": "BANARISUG",
-     "subject": "Dividend - Rs 12.50 Per Share",
-     "exDate": "16-Sep-2026",
-     "recDate": "16-Sep-2026",
+     "company": "Mstc Limited",
+     "symbol": "MSTCLTD",
+     "subject": "Dividend - Rs 8.10 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "Agarwal Industrial Corporation Limited",
+     "symbol": "AGARIND",
+     "subject": "Dividend - Rs 3.30 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "Tamil Nadu Newsprint & Papers Limited",
+     "symbol": "TNPL",
+     "subject": "Dividend - Rs 4 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "Patel Integrated Logistics Limited",
+     "symbol": "PATINTLOG",
+     "subject": "Dividend - Re 0.20 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "Tamilnadu PetroProducts Limited",
+     "symbol": "TNPETRO",
+     "subject": "Dividend - Rs 1.50 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "Ester Industries Limited",
+     "symbol": "ESTER",
+     "subject": "Dividend - Re 0.25 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "5"
+    },
+    {
+     "company": "Premier Polyfilm Limited",
+     "symbol": "PREMIERPOL",
+     "subject": "Dividend - Re 0.15 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "1"
+    },
+    {
+     "company": "KCP Sugar and Industries Corporation Limited",
+     "symbol": "KCPSUGIND",
+     "subject": "Dividend - Re 0.10 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "1"
+    },
+    {
+     "company": "Ausom Enterprise Limited",
+     "symbol": "AUSOMENT",
+     "subject": "Dividend - Re 1 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "The Ruby Mills Limited",
+     "symbol": "RUBYMILLS",
+     "subject": "Dividend - Rs 2.5 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "5"
+    },
+    {
+     "company": "Bharat Rasayan Limited",
+     "symbol": "BHARATRAS",
+     "subject": "Dividend - Re 0.50 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "5"
+    },
+    {
+     "company": "Himatsingka Seide Limited",
+     "symbol": "HIMATSEIDE",
+     "subject": "Dividend - Re 0.25 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "5"
+    },
+    {
+     "company": "Star Paper Mills Limited",
+     "symbol": "STARPAPER",
+     "subject": "Dividend - Rs 2.50 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
+     "faceVal": "10"
+    },
+    {
+     "company": "Bal Pharma Limited",
+     "symbol": "BALPHARMA",
+     "subject": "Dividend - Rs 1.20 Per Share",
+     "exDate": "17-Sep-2026",
+     "recDate": "17-Sep-2026",
      "faceVal": "10"
     }
    ]
@@ -4377,96 +4377,6 @@
     }
    ],
    "rows": [
-    {
-     "symbol": "COMSYN",
-     "company": "Commercial Syn Bags Limited",
-     "date": "17-Sep-2026",
-     "purpose": "Other business matters"
-    },
-    {
-     "symbol": "CUBEXTUB",
-     "company": "Cubex Tubings Limited",
-     "date": "17-Sep-2026",
-     "purpose": "Fund Raising/Other business matters"
-    },
-    {
-     "symbol": "DBSTOCKBRO",
-     "company": "DB (International) Stock Brokers Limited",
-     "date": "17-Sep-2026",
-     "purpose": "Other business matters"
-    },
-    {
-     "symbol": "EMAMILTD",
-     "company": "Emami Limited",
-     "date": "17-Sep-2026",
-     "purpose": "Buyback/Other business matters"
-    },
-    {
-     "symbol": "FEDERALBNK",
-     "company": "The Federal Bank  Limited",
-     "date": "17-Sep-2026",
-     "purpose": "Fund Raising"
-    },
-    {
-     "symbol": "GFSTEELS",
-     "company": "Grand Foundry Limited",
-     "date": "17-Sep-2026",
-     "purpose": "Fund Raising"
-    },
-    {
-     "symbol": "HGM",
-     "company": "HandsOn Global Management (HGM) Limited",
-     "date": "17-Sep-2026",
-     "purpose": "Other business matters"
-    },
-    {
-     "symbol": "KISSHT",
-     "company": "OnEMI Technology Solutions Limited",
-     "date": "17-Sep-2026",
-     "purpose": "Fund Raising"
-    },
-    {
-     "symbol": "MOTISONS",
-     "company": "Motisons Jewellers Limited",
-     "date": "17-Sep-2026",
-     "purpose": "Other business matters"
-    },
-    {
-     "symbol": "ORISSAMINE",
-     "company": "The Orissa Minerals Development Company Limited",
-     "date": "17-Sep-2026",
-     "purpose": "Financial Results"
-    },
-    {
-     "symbol": "RESPONIND",
-     "company": "Responsive Industries Limited",
-     "date": "17-Sep-2026",
-     "purpose": "Buyback"
-    },
-    {
-     "symbol": "SAHLIBHFI",
-     "company": "Shalibhadra Finance Limited",
-     "date": "17-Sep-2026",
-     "purpose": "Fund Raising"
-    },
-    {
-     "symbol": "SKYWAYS",
-     "company": "Skyways Air Services Limited",
-     "date": "17-Sep-2026",
-     "purpose": "Financial Results/Dividend/Other business matters"
-    },
-    {
-     "symbol": "SKYWAYS",
-     "company": "Skyways Air Services Limited",
-     "date": "17-Sep-2026",
-     "purpose": "Financial Results/Dividend/Other business matters"
-    },
-    {
-     "symbol": "YATHARTH",
-     "company": "Yatharth Hospital & Trauma Care Services Limited",
-     "date": "17-Sep-2026",
-     "purpose": "Fund Raising"
-    },
     {
      "symbol": "ARFIN",
      "company": "Arfin India Limited",
@@ -4759,42 +4669,6 @@
    ],
    "rows": [
     {
-     "company": "Jindal Supreme (India) Limited",
-     "symbol": "JSIPL",
-     "series": "EQ",
-     "open": "16-Sep-2026",
-     "close": "18-Sep-2026",
-     "band": "Rs.88 to Rs.93",
-     "size": "9399600"
-    },
-    {
-     "company": "Hero Motors Limited",
-     "symbol": "HEROMOTORS",
-     "series": "EQ",
-     "open": "16-Sep-2026",
-     "close": "18-Sep-2026",
-     "band": "Rs.79 to Rs.84",
-     "size": "88607596"
-    },
-    {
-     "company": "SS Retail Limited",
-     "symbol": "SSRETAIL",
-     "series": "EQ",
-     "open": "16-Sep-2026",
-     "close": "18-Sep-2026",
-     "band": "Rs.403 to Rs.424",
-     "size": "8793884"
-    },
-    {
-     "company": "Manika Plastech Limited",
-     "symbol": "MANIKA",
-     "series": "EQ",
-     "open": "11-Sep-2026",
-     "close": "16-Sep-2026",
-     "band": "Rs.40 to Rs.43",
-     "size": "21386919"
-    },
-    {
      "company": "National Stock Exchange of India Limited",
      "symbol": "NSE",
      "series": "EQ",
@@ -4813,22 +4687,40 @@
      "size": "10010000"
     },
     {
-     "company": "SpectraA Technology Solutions Limited",
-     "symbol": "SPECTRAA",
-     "series": "SME",
-     "open": "17-Sep-2026",
-     "close": "21-Sep-2026",
-     "band": "Rs.112 to Rs.118",
-     "size": "2578800"
+     "company": "SS Retail Limited",
+     "symbol": "SSRETAIL",
+     "series": "EQ",
+     "open": "16-Sep-2026",
+     "close": "18-Sep-2026",
+     "band": "Rs.403 to Rs.424",
+     "size": "8793884"
     },
     {
-     "company": "Kheria Autocomp Limited",
-     "symbol": "KHERIAAUTO",
-     "series": "SME",
-     "open": "17-Sep-2026",
-     "close": "21-Sep-2026",
-     "band": "Rs.96 to Rs.101",
-     "size": "3288000"
+     "company": "Hero Motors Limited",
+     "symbol": "HEROMOTORS",
+     "series": "EQ",
+     "open": "16-Sep-2026",
+     "close": "18-Sep-2026",
+     "band": "Rs.79 to Rs.84",
+     "size": "88607596"
+    },
+    {
+     "company": "Jindal Supreme (India) Limited",
+     "symbol": "JSIPL",
+     "series": "EQ",
+     "open": "16-Sep-2026",
+     "close": "18-Sep-2026",
+     "band": "Rs.88 to Rs.93",
+     "size": "9399600"
+    },
+    {
+     "company": "Manika Plastech Limited",
+     "symbol": "MANIKA",
+     "series": "EQ",
+     "open": "11-Sep-2026",
+     "close": "16-Sep-2026",
+     "band": "Rs.40 to Rs.43",
+     "size": "21386919"
     }
    ]
   },
@@ -4860,6 +4752,36 @@
     }
    ],
    "rows": [
+    {
+     "exchange": "NSE",
+     "company": "Eicher Motors Limited",
+     "subject": "Press Release",
+     "date": "17-Sep-2026 01:24:48"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Neogen Chemicals Limited",
+     "subject": "General Updates",
+     "date": "17-Sep-2026 00:40:01"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Neogen Chemicals Limited",
+     "subject": "Qualified Institutional Placement",
+     "date": "17-Sep-2026 00:37:46"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Neogen Chemicals Limited",
+     "subject": "Allotment of Securities",
+     "date": "17-Sep-2026 00:35:56"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Vedant Fashions Limited",
+     "subject": "General Updates",
+     "date": "16-Sep-2026 23:56:44"
+    },
     {
      "exchange": "NSE",
      "company": "Aastha Spintex Limited",
@@ -4949,36 +4871,6 @@
      "company": "Datamatics Global Services Limited",
      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
      "date": "16-Sep-2026 22:21:52"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Persistent Systems Limited",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "16-Sep-2026 22:19:03"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Dr. Reddy's Laboratories Limited",
-     "subject": "Copy of Newspaper Publication",
-     "date": "16-Sep-2026 22:10:04"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Sasken Technologies Limited",
-     "subject": "Trading Window",
-     "date": "16-Sep-2026 22:09:23"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Aye Finance Limited",
-     "subject": "Press Release",
-     "date": "16-Sep-2026 22:06:31"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Venus Pipes & Tubes Limited",
-     "subject": "Shareholders meeting",
-     "date": "16-Sep-2026 22:06:19"
     }
    ]
   },
@@ -5039,34 +4931,34 @@
      "country": "United States",
      "index": "S&P 500",
      "date": "16-Sep-2026",
-     "value": 7611.77,
+     "value": 7551.81,
      "prev": 7585.73,
      "high": 7626.79,
-     "low": 7597.61,
-     "change": 26.04,
-     "chgPct": 0.34
+     "low": 7507.77,
+     "change": -33.92,
+     "chgPct": -0.45
     },
     {
      "country": "United States",
      "index": "Dow Jones Industrial Average",
      "date": "16-Sep-2026",
-     "value": 52093.04,
+     "value": 51461.9,
      "prev": 52093.11,
      "high": 52173.7,
-     "low": 51881.68,
-     "change": -0.07,
-     "chgPct": 0
+     "low": 51186.67,
+     "change": -631.21,
+     "chgPct": -1.21
     },
     {
      "country": "United States",
      "index": "NASDAQ Composite",
      "date": "16-Sep-2026",
-     "value": 26165.436,
+     "value": 25978.425,
      "prev": 25981.571,
      "high": 26225.093,
-     "low": 26076.465,
-     "change": 183.866,
-     "chgPct": 0.71
+     "low": 25802.963,
+     "change": -3.146,
+     "chgPct": -0.01
     },
     {
      "country": "United Kingdom",
@@ -5139,44 +5031,44 @@
      "index": "KOSPI",
      "date": "16-Sep-2026",
      "value": 6717.97,
-     "prev": 6627.26,
-     "high": 6717.97,
-     "low": 6598.87,
-     "change": 90.71,
-     "chgPct": 1.37
+     "prev": 6717.97,
+     "high": 0,
+     "low": 0,
+     "change": 0,
+     "chgPct": 0
     },
     {
      "country": "Australia",
      "index": "S&P/ASX 200",
      "date": "16-Sep-2026",
      "value": 8696.5,
-     "prev": 8672.5,
-     "high": 8705.6,
-     "low": 8668.1,
-     "change": 24,
-     "chgPct": 0.28
+     "prev": 8696.5,
+     "high": 0,
+     "low": 0,
+     "change": 0,
+     "chgPct": 0
     },
     {
      "country": "Canada",
      "index": "S&P/TSX Composite",
      "date": "16-Sep-2026",
-     "value": 35693.86,
+     "value": 35491.27,
      "prev": 35582.07,
      "high": 35781.75,
-     "low": 35591.48,
-     "change": 111.79,
-     "chgPct": 0.31
+     "low": 35243.32,
+     "change": -90.8,
+     "chgPct": -0.26
     },
     {
      "country": "Brazil",
      "index": "Bovespa",
      "date": "16-Sep-2026",
-     "value": 186314.67,
+     "value": 185547.66,
      "prev": 186502.64,
      "high": 186738.25,
      "low": 184753.98,
-     "change": -187.97,
-     "chgPct": -0.1
+     "change": -954.98,
+     "chgPct": -0.51
     },
     {
      "country": "India",
@@ -5246,65 +5138,65 @@
      "symbol": "INFY",
      "company": "Infosys Ltd",
      "date": "16-Sep-2026",
-     "ltp": 11.14,
+     "ltp": 11.08,
      "prev": 11.32,
-     "chgPct": -1.63
+     "chgPct": -2.12
     },
     {
      "symbol": "WIT",
      "company": "Wipro Ltd",
      "date": "16-Sep-2026",
-     "ltp": 1.7,
+     "ltp": 1.68,
      "prev": 1.75,
-     "chgPct": -3.14
+     "chgPct": -4
     },
     {
      "symbol": "HDB",
      "company": "HDFC Bank Ltd",
      "date": "16-Sep-2026",
-     "ltp": 22.52,
+     "ltp": 22.38,
      "prev": 22.58,
-     "chgPct": -0.27
+     "chgPct": -0.89
     },
     {
      "symbol": "IBN",
      "company": "ICICI Bank Ltd",
      "date": "16-Sep-2026",
-     "ltp": 28.31,
+     "ltp": 28.15,
      "prev": 28.4,
-     "chgPct": -0.32
+     "chgPct": -0.88
     },
     {
      "symbol": "RDY",
      "company": "Dr. Reddy's Laboratories Ltd",
      "date": "16-Sep-2026",
-     "ltp": 11.67,
+     "ltp": 11.68,
      "prev": 11.55,
-     "chgPct": 1.04
+     "chgPct": 1.13
     },
     {
      "symbol": "SIFY",
      "company": "Sify Technologies Ltd",
      "date": "16-Sep-2026",
-     "ltp": 13.53,
+     "ltp": 13.33,
      "prev": 13.67,
-     "chgPct": -1.02
+     "chgPct": -2.49
     },
     {
      "symbol": "MMYT",
      "company": "MakeMyTrip Ltd",
      "date": "16-Sep-2026",
-     "ltp": 48.06,
+     "ltp": 47.86,
      "prev": 47.9,
-     "chgPct": 0.32
+     "chgPct": -0.08
     },
     {
      "symbol": "YTRA",
      "company": "Yatra Online Inc",
      "date": "16-Sep-2026",
-     "ltp": 1.06,
+     "ltp": 1.04,
      "prev": 1.01,
-     "chgPct": 4.95
+     "chgPct": 2.97
     }
    ],
    "defaultSort": "chgPct",
@@ -5357,64 +5249,64 @@
      "commodity": "Gold",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 4354,
+     "last": 4299.4,
      "prev": 4332.8,
-     "change": 21.2,
-     "chgPct": 0.49
+     "change": -33.4,
+     "chgPct": -0.77
     },
     {
      "commodity": "Silver",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 64.165,
+     "last": 63.375,
      "prev": 63.856,
-     "change": 0.309,
-     "chgPct": 0.48
+     "change": -0.481,
+     "chgPct": -0.75
     },
     {
      "commodity": "Copper",
      "contract": "Dec'26",
      "venue": "CEC:Commodities Exchange Centre",
-     "last": 6.494,
+     "last": 6.44,
      "prev": 6.4435,
-     "change": 0.0505,
-     "chgPct": 0.78
+     "change": -0.0035,
+     "chgPct": -0.05
     },
     {
      "commodity": "Platinum",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 1775.8,
+     "last": 1757.7,
      "prev": 1777,
-     "change": -1.2,
-     "chgPct": -0.07
+     "change": -19.3,
+     "chgPct": -1.09
     },
     {
      "commodity": "WTI Crude Oil",
      "contract": "Oct'26",
      "venue": "WTI Crude",
-     "last": 102.43,
+     "last": 102.15,
      "prev": 105.83,
-     "change": -3.4,
-     "chgPct": -3.21
+     "change": -3.68,
+     "chgPct": -3.48
     },
     {
      "commodity": "Brent Crude",
      "contract": "Nov'26",
      "venue": "NYMEX Brent Crude",
-     "last": 105.71,
+     "last": 105.54,
      "prev": 108.75,
-     "change": -3.04,
-     "chgPct": -2.8
+     "change": -3.21,
+     "chgPct": -2.95
     },
     {
      "commodity": "Natural Gas",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 2.885,
+     "last": 2.887,
      "prev": 2.919,
-     "change": -0.034,
-     "chgPct": -1.16
+     "change": -0.032,
+     "chgPct": -1.1
     }
    ],
    "defaultSort": "chgPct",
