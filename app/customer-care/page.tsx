@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import FeedbackForm from '@/components/pages/FeedbackForm';
+import EscalationMatrix from '@/components/pages/EscalationMatrix';
 import {
   SUPPORT_TEAMS, TRADING_DESKS, CARE_ESCALATION,
 } from '@/lib/pages-data';
@@ -122,6 +123,13 @@ export default function CustomerCarePage() {
       </section>
 
       {/* Feedback form */}
+      {/* Escalation matrix — the same regulated table as /contact */}
+      <section className="section disclosures watch" aria-labelledby="esc-matrix-h">
+        <div className="container">
+          <EscalationMatrix />
+        </div>
+      </section>
+
       <section className="section mkt-explore watch" id="feedback" aria-labelledby="fb-h">
         <div className="container">
           <div className="fb-wrap">

@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import BranchFinder from '@/components/pages/BranchFinder';
+import EscalationMatrix from '@/components/pages/EscalationMatrix';
 import {
-  BRANCHES, KEY_CONTACTS, HEAD_OFFICES, ESCALATION,
+  BRANCHES, HEAD_OFFICES, ESCALATION,
 } from '@/lib/pages-data';
 import { MEMBER_DETAILS } from '@/lib/data';
 import { PORTALS, MAPS, EXT } from '@/lib/links';
@@ -107,47 +108,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Key personnel table */}
+      {/* Escalation matrix — shared with /customer-care */}
       <section className="section disclosures watch" aria-labelledby="kp-h">
         <div className="container">
-          <h2 id="kp-h" style={{ textAlign: 'center', fontSize: 30, fontWeight: 600 }}>
-            Key Contact Persons
-          </h2>
-          <p className="sub" style={{ textAlign: 'center', margin: '12px auto 30px', maxWidth: 620 }}>
-            Names, direct numbers and working hours — published as required by SEBI.
-          </p>
-          <div className="disc-scroll">
-            <table className="disc-table">
-              <thead>
-                <tr>
-                  <th scope="col">Details Of</th>
-                  <th scope="col">Contact Person</th>
-                  <th scope="col">Contact No.</th>
-                  <th scope="col">Email ID</th>
-                  <th scope="col">Working Hours</th>
-                </tr>
-              </thead>
-              <tbody>
-                {KEY_CONTACTS.map((c) => (
-                  <tr key={c.role}>
-                    <th scope="row" className="ap-name">{c.role}</th>
-                    <td>{c.person}</td>
-                    <td>
-                      {c.phones.map((p) => (
-                        <a key={p} href={`tel:${p.replace(/[^\d]/g, '')}`} className="kc-tel">{p}</a>
-                      ))}
-                    </td>
-                    <td>
-                      {c.emails.map((e) => (
-                        <a key={e} href={`mailto:${e}`} className="kc-mail">{e}</a>
-                      ))}
-                    </td>
-                    <td>{c.hours}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <EscalationMatrix headingId="kp-h" />
         </div>
       </section>
 

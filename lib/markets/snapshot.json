@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-16T12:49:20.417Z",
+ "fetchedAt": "2026-09-16T13:50:32.230Z",
  "marketTimestamp": "16-Sep-2026 15:30",
  "marketStatus": "Closed",
  "source": "NSE India (nseindia.com public market data) · NSE full bhavcopy (delivery data) · NSE & BSE corporate filings, AMFI scheme data · CNBC market data · ECB reference rates",
@@ -1498,16 +1498,6 @@
      "vol": 608.67
     },
     {
-     "company": "GLOBALE",
-     "last": 11.12,
-     "prev": 11.7,
-     "chgPct": -4.96,
-     "chg": -0.58,
-     "high": 11.7,
-     "low": 11.12,
-     "vol": 0.28
-    },
-    {
      "company": "OSIAHYPER",
      "last": 2.3,
      "prev": 2.42,
@@ -1516,6 +1506,16 @@
      "high": 2.42,
      "low": 2.3,
      "vol": 522.01
+    },
+    {
+     "company": "GLOBALE",
+     "last": 11.12,
+     "prev": 11.7,
+     "chgPct": -4.96,
+     "chg": -0.58,
+     "high": 11.7,
+     "low": 11.12,
+     "vol": 0.28
     },
     {
      "company": "SUPTANERY",
@@ -2961,7 +2961,7 @@
      "open": 23234,
      "high": 23346,
      "low": 23198.4,
-     "oi": 276981
+     "oi": 273016
     },
     {
      "contract": "NIFTY 27-Oct-2026",
@@ -2971,7 +2971,7 @@
      "open": 23379.9,
      "high": 23450,
      "low": 23300.1,
-     "oi": 52802
+     "oi": 52752
     },
     {
      "contract": "NIFTY 23-Nov-2026",
@@ -2981,7 +2981,7 @@
      "open": 23450,
      "high": 23544,
      "low": 23401,
-     "oi": 14752
+     "oi": 14753
     }
    ],
    "defaultSort": "expiry"
@@ -4522,6 +4522,12 @@
      "purpose": "Fund Raising"
     },
     {
+     "symbol": "SUPREMEENG",
+     "company": "Supreme Engineering Limited",
+     "date": "18-Sep-2026",
+     "purpose": "Financial Results"
+    },
+    {
      "symbol": "VEDL",
      "company": "Vedanta Limited",
      "date": "18-Sep-2026",
@@ -4531,6 +4537,12 @@
      "symbol": "VIPIND",
      "company": "VIP Industries Limited",
      "date": "18-Sep-2026",
+     "purpose": "Fund Raising"
+    },
+    {
+     "symbol": "EMBDL",
+     "company": "Embassy Developments Limited",
+     "date": "19-Sep-2026",
      "purpose": "Fund Raising"
     },
     {
@@ -4642,10 +4654,10 @@
    ],
    "rows": [
     {
-     "date": "15-Sep-2026",
-     "buy": 13194.76,
-     "sale": 16172.62,
-     "net": -2977.86
+     "date": "16-Sep-2026",
+     "buy": 12959.04,
+     "sale": 14991.65,
+     "net": -2032.61
     }
    ]
   },
@@ -4678,10 +4690,10 @@
    ],
    "rows": [
     {
-     "date": "15-Sep-2026",
-     "buy": 15221.98,
-     "sale": 12535.93,
-     "net": 2686.05
+     "date": "16-Sep-2026",
+     "buy": 15279.59,
+     "sale": 11371.36,
+     "net": 3908.23
     }
    ]
   },
@@ -4798,7 +4810,7 @@
      "open": "17-Sep-2026",
      "close": "21-Sep-2026",
      "band": "Rs.96 to Rs.101",
-     "size": "4598400"
+     "size": "3288000"
     }
    ]
   },
@@ -4832,123 +4844,123 @@
    "rows": [
     {
      "exchange": "NSE",
-     "company": "Aditya Birla Real Estate Limited",
-     "subject": "Cessation",
-     "date": "16-Sep-2026 18:16:17"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Ashok Leyland Limited",
+     "company": "The South Indian Bank Limited",
      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "16-Sep-2026 18:16:11"
+     "date": "16-Sep-2026 19:18:07"
     },
     {
      "exchange": "NSE",
-     "company": "Muthoot Capital Services Limited",
-     "subject": "Issue of Securities",
-     "date": "16-Sep-2026 18:15:34"
+     "company": "Quick Heal Technologies Limited",
+     "subject": "Resignation",
+     "date": "16-Sep-2026 19:17:30"
     },
     {
      "exchange": "NSE",
-     "company": "KPI Green Energy Limited",
-     "subject": "Credit Rating",
-     "date": "16-Sep-2026 18:15:06"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Hitachi Energy India Limited",
-     "subject": "Investor Presentation",
-     "date": "16-Sep-2026 18:14:59"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Blue Dart Express Limited",
-     "subject": "Press Release",
-     "date": "16-Sep-2026 18:14:34"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Hardwyn India Limited",
-     "subject": "General Updates",
-     "date": "16-Sep-2026 18:14:05"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Travel Food Services Limited",
+     "company": "HCL Infosystems Limited",
      "subject": "Shareholders meeting",
-     "date": "16-Sep-2026 18:13:56"
+     "date": "16-Sep-2026 19:16:59"
     },
     {
      "exchange": "NSE",
-     "company": "Yes Bank Limited",
+     "company": "Rategain Travel Technologies Limited",
      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "16-Sep-2026 18:13:32"
+     "date": "16-Sep-2026 19:16:30"
     },
     {
      "exchange": "NSE",
-     "company": "Venus Pipes & Tubes Limited",
+     "company": "G R Infraprojects Limited",
+     "subject": "Updates",
+     "date": "16-Sep-2026 19:16:04"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Fortis Healthcare Limited",
+     "subject": "Press Release",
+     "date": "16-Sep-2026 19:15:13"
+    },
+    {
+     "exchange": "NSE",
+     "company": "City Union Bank Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "16-Sep-2026 19:14:49"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Shree Digvijay Cement Co.Ltd",
+     "subject": "Shareholders meeting",
+     "date": "16-Sep-2026 19:14:14"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Talbros Automotive Components Limited",
+     "subject": "General Updates",
+     "date": "16-Sep-2026 19:13:18"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Fortis Healthcare Limited",
+     "subject": "General Updates",
+     "date": "16-Sep-2026 19:12:33"
+    },
+    {
+     "exchange": "NSE",
+     "company": "HCL Infosystems Limited",
+     "subject": "Shareholders meeting",
+     "date": "16-Sep-2026 19:11:20"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Apollo Pipes Limited",
+     "subject": "Credit Rating- Revision",
+     "date": "16-Sep-2026 19:10:52"
+    },
+    {
+     "exchange": "NSE",
+     "company": "PB Fintech Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "16-Sep-2026 19:10:44"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Indiamart Intermesh Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "16-Sep-2026 19:10:21"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Indiamart Intermesh Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "16-Sep-2026 19:10:21"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Capital India Finance Limited",
      "subject": "Issue of Securities",
-     "date": "16-Sep-2026 18:13:13"
+     "date": "16-Sep-2026 19:09:41"
     },
     {
      "exchange": "NSE",
      "company": "Amanta Healthcare Limited",
-     "subject": "Change in Management",
-     "date": "16-Sep-2026 18:12:58"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Rhetan TMT Limited",
      "subject": "Shareholders meeting",
-     "date": "16-Sep-2026 18:12:30"
-    },
-    {
-     "exchange": "NSE",
-     "company": "SRM Contractors Limited",
-     "subject": "Copy of Newspaper Publication",
-     "date": "16-Sep-2026 18:12:23"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Tera Software Limited",
-     "subject": "Resignation of Director/KMP/SMP",
-     "date": "16-Sep-2026 18:11:42"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Black Box Limited",
-     "subject": "Shareholders meeting",
-     "date": "16-Sep-2026 18:10:46"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Muthoot Capital Services Limited",
-     "subject": "Committee Meeting Updates",
-     "date": "16-Sep-2026 18:08:52"
+     "date": "16-Sep-2026 19:07:42"
     },
     {
      "exchange": "NSE",
      "company": "Axis Bank Limited",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "16-Sep-2026 18:08:30"
+     "subject": "ESOP/ESOS/ESPS",
+     "date": "16-Sep-2026 19:07:14"
     },
     {
      "exchange": "NSE",
-     "company": "GOCL Corporation Limited",
-     "subject": "Updates",
-     "date": "16-Sep-2026 18:08:24"
+     "company": "Enviro Infra Engineers Limited",
+     "subject": "Shareholders meeting",
+     "date": "16-Sep-2026 19:07:05"
     },
     {
      "exchange": "NSE",
-     "company": "Fine Organic Industries Limited",
-     "subject": "General Updates",
-     "date": "16-Sep-2026 18:07:57"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Pearl Global Industries Limited",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "16-Sep-2026 18:07:51"
+     "company": "Brooks Laboratories Limited",
+     "subject": "Resignation",
+     "date": "16-Sep-2026 19:06:33"
     }
    ]
   },
@@ -5008,68 +5020,68 @@
     {
      "country": "United States",
      "index": "S&P 500",
-     "date": "15-Sep-2026",
-     "value": 7585.73,
+     "date": "16-Sep-2026",
+     "value": 7612.26,
      "prev": 7585.73,
-     "high": 7617.26,
-     "low": 7572.69,
-     "change": -34.25,
-     "chgPct": -0.45
+     "high": 7612.26,
+     "low": 7597.61,
+     "change": 26.53,
+     "chgPct": 0.35
     },
     {
      "country": "United States",
      "index": "Dow Jones Industrial Average",
-     "date": "15-Sep-2026",
-     "value": 52093.11,
+     "date": "16-Sep-2026",
+     "value": 52024.78,
      "prev": 52093.11,
-     "high": 52336.61,
-     "low": 51875.65,
-     "change": -328.09,
-     "chgPct": -0.63
+     "high": 52173.7,
+     "low": 51947.02,
+     "change": -68.33,
+     "chgPct": -0.13
     },
     {
      "country": "United States",
      "index": "NASDAQ Composite",
-     "date": "15-Sep-2026",
-     "value": 25981.571,
+     "date": "16-Sep-2026",
+     "value": 26166.419,
      "prev": 25981.571,
-     "high": 26172.121,
-     "low": 25943.31,
-     "change": -204.842,
-     "chgPct": -0.78
+     "high": 26166.419,
+     "low": 26076.465,
+     "change": 184.848,
+     "chgPct": 0.71
     },
     {
      "country": "United Kingdom",
      "index": "FTSE 100",
      "date": "16-Sep-2026",
-     "value": 10721.47,
+     "value": 10716.04,
      "prev": 10658.13,
      "high": 10735.34,
      "low": 10655.82,
-     "change": 63.34,
-     "chgPct": 0.59
+     "change": 57.91,
+     "chgPct": 0.54
     },
     {
      "country": "Germany",
      "index": "DAX",
      "date": "16-Sep-2026",
-     "value": 25478.56,
+     "value": 25486.44,
      "prev": 25402.28,
      "high": 25524.04,
      "low": 25361.7,
-     "change": 76.28,
-     "chgPct": 0.3
+     "change": 84.16,
+     "chgPct": 0.33
     },
     {
      "country": "France",
      "index": "CAC 40",
      "date": "16-Sep-2026",
-     "value": 8132.93,
+     "value": 8130.96,
      "prev": 8090.28,
      "high": 8142.08,
      "low": 8088.13,
-     "change": 42.65,
-     "chgPct": 0.53
+     "change": 40.68,
+     "chgPct": 0.5
     },
     {
      "country": "Japan",
@@ -5129,24 +5141,24 @@
     {
      "country": "Canada",
      "index": "S&P/TSX Composite",
-     "date": "15-Sep-2026",
-     "value": 35582.07,
+     "date": "16-Sep-2026",
+     "value": 35717.43,
      "prev": 35582.07,
-     "high": 0,
-     "low": 0,
-     "change": 0,
-     "chgPct": 0
+     "high": 35757.92,
+     "low": 35675.83,
+     "change": 135.36,
+     "chgPct": 0.38
     },
     {
      "country": "Brazil",
      "index": "Bovespa",
-     "date": "15-Sep-2026",
-     "value": 186502.64,
+     "date": "16-Sep-2026",
+     "value": 185012.75,
      "prev": 186502.64,
-     "high": 0,
-     "low": 0,
-     "change": 0,
-     "chgPct": 0
+     "high": 186502.64,
+     "low": 184987.4,
+     "change": -1489.89,
+     "chgPct": -0.8
     },
     {
      "country": "India",
@@ -5215,66 +5227,66 @@
     {
      "symbol": "INFY",
      "company": "Infosys Ltd",
-     "date": "15-Sep-2026",
-     "ltp": 11.32,
+     "date": "16-Sep-2026",
+     "ltp": 11.16,
      "prev": 11.32,
-     "chgPct": -2.41
+     "chgPct": -1.46
     },
     {
      "symbol": "WIT",
      "company": "Wipro Ltd",
-     "date": "15-Sep-2026",
-     "ltp": 1.75,
+     "date": "16-Sep-2026",
+     "ltp": 1.69,
      "prev": 1.75,
-     "chgPct": -1.69
+     "chgPct": -3.43
     },
     {
      "symbol": "HDB",
      "company": "HDFC Bank Ltd",
-     "date": "15-Sep-2026",
-     "ltp": 22.58,
+     "date": "16-Sep-2026",
+     "ltp": 22.69,
      "prev": 22.58,
-     "chgPct": -1.35
+     "chgPct": 0.47
     },
     {
      "symbol": "IBN",
      "company": "ICICI Bank Ltd",
-     "date": "15-Sep-2026",
-     "ltp": 28.4,
+     "date": "16-Sep-2026",
+     "ltp": 28.53,
      "prev": 28.4,
-     "chgPct": -2.94
+     "chgPct": 0.46
     },
     {
      "symbol": "RDY",
      "company": "Dr. Reddy's Laboratories Ltd",
-     "date": "15-Sep-2026",
-     "ltp": 11.55,
+     "date": "16-Sep-2026",
+     "ltp": 11.64,
      "prev": 11.55,
-     "chgPct": -3.02
+     "chgPct": 0.78
     },
     {
      "symbol": "SIFY",
      "company": "Sify Technologies Ltd",
-     "date": "15-Sep-2026",
-     "ltp": 13.67,
-     "prev": 13.56,
-     "chgPct": 0.81
+     "date": "16-Sep-2026",
+     "ltp": 13.72,
+     "prev": 13.67,
+     "chgPct": 0.37
     },
     {
      "symbol": "MMYT",
      "company": "MakeMyTrip Ltd",
-     "date": "15-Sep-2026",
-     "ltp": 47.9,
+     "date": "16-Sep-2026",
+     "ltp": 47.93,
      "prev": 47.9,
-     "chgPct": -5.24
+     "chgPct": 0.06
     },
     {
      "symbol": "YTRA",
      "company": "Yatra Online Inc",
-     "date": "15-Sep-2026",
-     "ltp": 1.01,
-     "prev": 1.13,
-     "chgPct": -10.22
+     "date": "16-Sep-2026",
+     "ltp": 1.05,
+     "prev": 1.01,
+     "chgPct": 3.96
     }
    ],
    "defaultSort": "chgPct",
@@ -5327,64 +5339,64 @@
      "commodity": "Gold",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 4384,
+     "last": 4385.9,
      "prev": 4332.8,
-     "change": 51.2,
-     "chgPct": 1.18
+     "change": 53.1,
+     "chgPct": 1.23
     },
     {
      "commodity": "Silver",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 65.16,
+     "last": 65,
      "prev": 63.856,
-     "change": 1.304,
-     "chgPct": 2.04
+     "change": 1.144,
+     "chgPct": 1.79
     },
     {
      "commodity": "Copper",
      "contract": "Dec'26",
      "venue": "CEC:Commodities Exchange Centre",
-     "last": 6.509,
+     "last": 6.4995,
      "prev": 6.4435,
-     "change": 0.0655,
-     "chgPct": 1.02
+     "change": 0.056,
+     "chgPct": 0.87
     },
     {
      "commodity": "Platinum",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 1788.9,
+     "last": 1790,
      "prev": 1777,
-     "change": 11.9,
-     "chgPct": 0.67
+     "change": 13,
+     "chgPct": 0.73
     },
     {
      "commodity": "WTI Crude Oil",
      "contract": "Oct'26",
      "venue": "WTI Crude",
-     "last": 103.87,
+     "last": 103.61,
      "prev": 105.83,
-     "change": -1.96,
-     "chgPct": -1.85
+     "change": -2.22,
+     "chgPct": -2.1
     },
     {
      "commodity": "Brent Crude",
      "contract": "Nov'26",
      "venue": "NYMEX Brent Crude",
-     "last": 107.46,
+     "last": 107.24,
      "prev": 108.75,
-     "change": -1.29,
-     "chgPct": -1.19
+     "change": -1.51,
+     "chgPct": -1.39
     },
     {
      "commodity": "Natural Gas",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 2.96,
+     "last": 2.934,
      "prev": 2.919,
-     "change": 0.041,
-     "chgPct": 1.4
+     "change": 0.015,
+     "chgPct": 0.51
     }
    ],
    "defaultSort": "chgPct",
@@ -7549,7 +7561,7 @@
      "isin": "INE442A01024"
     },
     {
-     "company": "Assambrook Ltd",
+     "company": "Assambrook Ltd-$",
      "bseCode": "500025",
      "ticker": "ASSAMBR",
      "faceValue": "10.00",
