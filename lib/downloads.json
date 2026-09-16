@@ -342,14 +342,15 @@
   "cat": "Guides & Demos"
  },
  {
-  "label": "AnyDesk",
-  "href": "https://www.kalpatarumulti.com/files/download/AnyDesk.exe",
-  "kind": "EXE",
-  "cat": "Software & Utilities"
+  "label": "AnyDesk — official download",
+  "href": "https://anydesk.com/en/downloads/windows",
+  "kind": "LINK",
+  "cat": "Software & Utilities",
+  "external": true
  },
  {
   "label": "BoltPlusOnWeb Setup",
-  "href": "https://www.kalpatarumulti.com/files/download/Boltplus_Version4.zip",
+  "href": "/files/download/Boltplus_Version4.zip",
   "kind": "ZIP",
   "cat": "Software & Utilities"
  },
@@ -366,22 +367,25 @@
   "cat": "Software & Utilities"
  },
  {
-  "label": "Dot Net 4.5.2",
-  "href": "https://www.kalpatarumulti.com/files/download/NDP452_KB2901907_x86_x64_AllOS_ENU.exe",
-  "kind": "EXE",
-  "cat": "Software & Utilities"
+  "label": ".NET Framework 4.5.2 — Microsoft",
+  "href": "https://dotnet.microsoft.com/en-us/download/dotnet-framework/net452",
+  "kind": "LINK",
+  "cat": "Software & Utilities",
+  "external": true
  },
  {
-  "label": "Dot Net 4.6.1",
-  "href": "https://www.kalpatarumulti.com/files/download/NDP461_KB3102436_x86_x64_AllOS_ENU.exe",
-  "kind": "EXE",
-  "cat": "Software & Utilities"
+  "label": ".NET Framework 4.6.1 — Microsoft",
+  "href": "https://dotnet.microsoft.com/en-us/download/dotnet-framework/net461",
+  "kind": "LINK",
+  "cat": "Software & Utilities",
+  "external": true
  },
  {
-  "label": "Dot Net 4.8",
-  "href": "https://www.kalpatarumulti.com/files/download/ndp48_web.exe",
-  "kind": "EXE",
-  "cat": "Software & Utilities"
+  "label": ".NET Framework 4.8 — Microsoft",
+  "href": "https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48",
+  "kind": "LINK",
+  "cat": "Software & Utilities",
+  "external": true
  },
  {
   "label": "FINCORP48",
@@ -391,33 +395,36 @@
  },
  {
   "label": "How to Close Account?",
-  "href": "https://www.kalpatarumulti.com/files/download/Closure_(1).pptx",
+  "href": "/files/download/Closure_(1).pptx",
   "kind": "PPTX",
   "cat": "Guides & Demos"
  },
  {
   "label": "How to CREATE A TICKET?",
-  "href": "https://www.kalpatarumulti.com/files/download/create_a_ticket_.pptx",
+  "href": "/files/download/create_a_ticket_.pptx",
   "kind": "PPTX",
   "cat": "Guides & Demos"
  },
  {
-  "label": "hp",
-  "href": "https://www.kalpatarumulti.com/files/download/hp_LJ1020_Full_Solution_v2012_918_1_57980.rar",
-  "kind": "PDF",
-  "cat": "Software & Utilities"
+  "label": "HP LaserJet 1020 driver — HP Support",
+  "href": "https://support.hp.com/in-en/drivers",
+  "kind": "LINK",
+  "cat": "Software & Utilities",
+  "external": true
  },
  {
-  "label": "HP LASERJET 1020 SETUP",
-  "href": "https://www.kalpatarumulti.com/files/download/HP_LASER_JET_1020_PLUS.rar",
-  "kind": "PDF",
-  "cat": "Software & Utilities"
+  "label": "HP LaserJet 1020 Plus driver — HP Support",
+  "href": "https://support.hp.com/in-en/drivers",
+  "kind": "LINK",
+  "cat": "Software & Utilities",
+  "external": true
  },
  {
-  "label": "JAVA 8",
-  "href": "https://www.kalpatarumulti.com/files/download/jre_8u66_windows_i586.rar",
-  "kind": "PDF",
-  "cat": "Software & Utilities"
+  "label": "Java Runtime — official download",
+  "href": "https://www.java.com/en/download/",
+  "kind": "LINK",
+  "cat": "Software & Utilities",
+  "external": true
  },
  {
   "label": "JES NEW PPT",
@@ -427,7 +434,7 @@
  },
  {
   "label": "KORP NEW CONFIG FILE",
-  "href": "https://www.kalpatarumulti.com/files/download/FinKORP.exe.rar",
+  "href": "/files/download/FinKORP.exe.rar",
   "kind": "PDF",
   "cat": "Software & Utilities"
  },
@@ -445,7 +452,7 @@
  },
  {
   "label": "Online Payment Help",
-  "href": "https://www.kalpatarumulti.com/files/download/PaymentGateway_Demo.webm",
+  "href": "/files/download/PaymentGateway_Demo.webm",
   "kind": "PDF",
   "cat": "Guides & Demos"
  },
@@ -456,27 +463,31 @@
   "cat": "Software & Utilities"
  },
  {
-  "label": "Screen Reader Access",
-  "href": "https://www.kalpatarumulti.com/files/download/nvda_2023.3.exe",
-  "kind": "EXE",
-  "cat": "Software & Utilities"
+  "label": "NVDA screen reader — NV Access",
+  "href": "https://www.nvaccess.org/download/",
+  "kind": "LINK",
+  "cat": "Software & Utilities",
+  "external": true
  },
  {
-  "label": "ShowMyPC",
-  "href": "https://www.kalpatarumulti.com/files/download/showmypc.jnlp",
-  "kind": "PDF",
-  "cat": "Software & Utilities"
+  "label": "ShowMyPC — official site",
+  "href": "https://showmypc.com/",
+  "kind": "LINK",
+  "cat": "Software & Utilities",
+  "external": true
  },
  {
-  "label": "WinRar",
-  "href": "https://www.kalpatarumulti.com/files/download/wrar571.exe",
-  "kind": "EXE",
-  "cat": "Software & Utilities"
+  "label": "WinRAR — official download",
+  "href": "https://www.win-rar.com/download.html",
+  "kind": "LINK",
+  "cat": "Software & Utilities",
+  "external": true
  },
  {
-  "label": "WSFTP",
-  "href": "https://www.kalpatarumulti.com/files/download/WS_FTP.rar",
-  "kind": "PDF",
-  "cat": "Software & Utilities"
+  "label": "WS_FTP — Progress",
+  "href": "https://www.progress.com/ftp-client",
+  "kind": "LINK",
+  "cat": "Software & Utilities",
+  "external": true
  }
 ]
