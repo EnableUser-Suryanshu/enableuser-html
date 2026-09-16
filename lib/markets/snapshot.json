@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-16T17:43:47.205Z",
+ "fetchedAt": "2026-09-16T18:24:21.936Z",
  "marketTimestamp": "16-Sep-2026 15:30",
  "marketStatus": "Closed",
  "source": "NSE India (nseindia.com public market data) · NSE full bhavcopy (delivery data) · NSE & BSE corporate filings, AMFI scheme data · CNBC market data · ECB reference rates",
@@ -1498,16 +1498,6 @@
      "vol": 608.67
     },
     {
-     "company": "OSIAHYPER",
-     "last": 2.3,
-     "prev": 2.42,
-     "chgPct": -4.96,
-     "chg": -0.12,
-     "high": 2.42,
-     "low": 2.3,
-     "vol": 522.01
-    },
-    {
      "company": "GLOBALE",
      "last": 11.12,
      "prev": 11.7,
@@ -1516,6 +1506,16 @@
      "high": 11.7,
      "low": 11.12,
      "vol": 0.28
+    },
+    {
+     "company": "OSIAHYPER",
+     "last": 2.3,
+     "prev": 2.42,
+     "chgPct": -4.96,
+     "chg": -0.12,
+     "high": 2.42,
+     "low": 2.3,
+     "vol": 522.01
     },
     {
      "company": "SUPTANERY",
@@ -3025,47 +3025,23 @@
    ],
    "rows": [
     {
-     "company": "ABH",
+     "company": "MVELECTRO",
      "date": "16-Sep-2026",
-     "client": "NEO APEX SHARE BROKING SERVICES LLP",
+     "client": "HRTI PRIVATE LIMITED",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "ABH",
+     "company": "MVELECTRO",
      "date": "16-Sep-2026",
-     "client": "JAGID VANITABEN RAJENDRAPRASAD",
+     "client": "JUMP TRADING FINANCIAL INDIA PRIVATE LIMITED",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "ABH",
-     "date": "16-Sep-2026",
-     "client": "MANDAKINIBEN PRADYUMANBHAI PATEL",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "ABH",
-     "date": "16-Sep-2026",
-     "client": "MAHAMMADFARUK HAJIBHAI MIR",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "ABH",
-     "date": "16-Sep-2026",
-     "client": "STATSOL RESEARCH LLP",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "AHCL",
+     "company": "MVELECTRO",
      "date": "16-Sep-2026",
      "client": "QE SECURITIES LLP",
      "deal": "BUY",
@@ -3073,127 +3049,7 @@
      "price": 0
     },
     {
-     "company": "AHCL",
-     "date": "16-Sep-2026",
-     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "AHCL",
-     "date": "16-Sep-2026",
-     "client": "HRTI PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "ANTELOPUS",
-     "date": "16-Sep-2026",
-     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "ANTELOPUS",
-     "date": "16-Sep-2026",
-     "client": "HRTI PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "ANTELOPUS",
-     "date": "16-Sep-2026",
-     "client": "QE SECURITIES LLP",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "ATALREAL",
-     "date": "16-Sep-2026",
-     "client": "JAGID VANITABEN RAJENDRAPRASAD",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "ATALREAL",
-     "date": "16-Sep-2026",
-     "client": "HRTI PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "CLASSICEIL",
-     "date": "16-Sep-2026",
-     "client": "CRAFT EMERGING MARKET FUND PCC-ARBITRAGE STRATEGY FUND",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "COMSYN",
-     "date": "16-Sep-2026",
-     "client": "ARIHANT CAPITAL MARKETS LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "CSM",
-     "date": "16-Sep-2026",
-     "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "CSM",
-     "date": "16-Sep-2026",
-     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "CSM",
-     "date": "16-Sep-2026",
-     "client": "SILVERLEAF CAPITAL SERVICES PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "EMPOWER",
-     "date": "16-Sep-2026",
-     "client": "ALIA COMMOSALES LLP",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "EMUDHRA",
-     "date": "16-Sep-2026",
-     "client": "SILVERLEAF CAPITAL SERVICES PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "EMUDHRA",
-     "date": "16-Sep-2026",
-     "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "EMUDHRA",
+     "company": "MVELECTRO",
      "date": "16-Sep-2026",
      "client": "MICROCURVES TRADING PRIVATE LIMITED",
      "deal": "BUY",
@@ -3201,7 +3057,7 @@
      "price": 0
     },
     {
-     "company": "EMUDHRA",
+     "company": "NPST",
      "date": "16-Sep-2026",
      "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
      "deal": "BUY",
@@ -3209,23 +3065,23 @@
      "price": 0
     },
     {
-     "company": "EMUDHRA",
+     "company": "NPST",
      "date": "16-Sep-2026",
-     "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+     "client": "MICROCURVES TRADING PRIVATE LIMITED",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "EMUDHRA",
+     "company": "ONYX",
      "date": "16-Sep-2026",
-     "client": "IRAGE BROKING SERVICES LLP",
+     "client": "TUSHAR KINKER",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "EMUDHRA",
+     "company": "PINELABS",
      "date": "16-Sep-2026",
      "client": "QE SECURITIES LLP",
      "deal": "BUY",
@@ -3233,31 +3089,39 @@
      "price": 0
     },
     {
-     "company": "GCSL",
+     "company": "PINELABS",
      "date": "16-Sep-2026",
-     "client": "MANSUKH SECURITIES & FINANCE LIMITED",
+     "client": "HRTI PRIVATE LIMITED",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "GCSL",
+     "company": "PRANAV",
      "date": "16-Sep-2026",
-     "client": "SIDDHISURI FINVEST PRIVATE LIMITED",
+     "client": "MATHISYS QUANTCAP LLP",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "GLASSWALL",
+     "company": "PRANAV",
      "date": "16-Sep-2026",
-     "client": "PURE BROKING PRIVATE LIMITED",
+     "client": "D3 STOCK VISION LLP",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "GLASSWALL",
+     "company": "PRANAV",
+     "date": "16-Sep-2026",
+     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "PRANAV",
      "date": "16-Sep-2026",
      "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
      "deal": "BUY",
@@ -3265,82 +3129,218 @@
      "price": 0
     },
     {
-     "company": "GLASSWALL",
+     "company": "PRANAV",
      "date": "16-Sep-2026",
-     "client": "MARWADI CHANDARANA INTERMEDIARIES BROKERS PRIVATE LIMITED",
+     "client": "F3 ADVISORS PRIVATE LIMITED",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "GLASSWALL",
+     "company": "PRANAV",
      "date": "16-Sep-2026",
-     "client": "MANSI SHARE AND STOCK BROKING PRIVATE LIMITED",
+     "client": "NEO APEX SHARE BROKING SERVICES LLP",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "GLASSWALL",
+     "company": "RATNAVEER",
      "date": "16-Sep-2026",
-     "client": "FIRST BRIDGE INDIA GROWTH FUND",
+     "client": "QE SECURITIES LLP",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "GLASSWALL",
+     "company": "RATNAVEER",
      "date": "16-Sep-2026",
-     "client": "OM TRADING",
+     "client": "ARIHANT CAPITAL MARKETS LIMITED",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "GLASSWALL",
+     "company": "RATNAVEER",
      "date": "16-Sep-2026",
-     "client": "AUTHUM INVESTMENT & INFRASTRUCTURE LIMITED",
+     "client": "BLOOMCREST TRADE PRIVATE LIMITED",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "GLASSWALL",
+     "company": "RATNAVEER",
      "date": "16-Sep-2026",
-     "client": "S I INVESTMENTS ## BROKING PVT.LTD",
+     "client": "TRADE SOLVENT PRIVATE LIMITED",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "GLASSWALL",
+     "company": "RAYMOND",
      "date": "16-Sep-2026",
-     "client": "ELIXIR WEALTH MANAGEMENT PRIVATE LIMITED",
+     "client": "HRTI PRIVATE LIMITED",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "GLASSWALL",
+     "company": "RAYMOND",
      "date": "16-Sep-2026",
-     "client": "DIPAN MEHTA COMMODITIES PRIVATE LIMITED",
+     "client": "QE SECURITIES LLP",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "GLASSWALL",
+     "company": "RAYMOND",
      "date": "16-Sep-2026",
-     "client": "GOLDMINE STOCKS PRIVATE LIMITED",
+     "client": "MICROCURVES TRADING PRIVATE LIMITED",
      "deal": "BUY",
      "qty": 0,
      "price": 0
     },
     {
-     "company": "GLASSWALL",
+     "company": "RAYMOND",
      "date": "16-Sep-2026",
-     "client": "CSIM INDIA OPPORTUNITIES FUND 1",
+     "client": "GRAVITON RESEARCH CAPITAL LLP",
      "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "RAYMOND",
+     "date": "16-Sep-2026",
+     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "RCDL-RE",
+     "date": "16-Sep-2026",
+     "client": "AURIS VENTURES",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "RCDL-RE",
+     "date": "16-Sep-2026",
+     "client": "ALPESH VAGHAJIBHAI VORA",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ROSSTECH",
+     "date": "16-Sep-2026",
+     "client": "MICROCURVES TRADING PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SEJALLTD",
+     "date": "16-Sep-2026",
+     "client": "CAPRI GLOBAL VENTURES PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SPRL",
+     "date": "16-Sep-2026",
+     "client": "ARYAMAN CAPITAL MARKETS LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SUNSHINE",
+     "date": "16-Sep-2026",
+     "client": "ARIHANT CAPITAL MARKETS LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SUNSHINE",
+     "date": "16-Sep-2026",
+     "client": "HRTI PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SUNSHINE",
+     "date": "16-Sep-2026",
+     "client": "MATHISYS QUANTCAP LLP",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SUNSHINE",
+     "date": "16-Sep-2026",
+     "client": "ANKITA VISHAL SHAH",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SUNSHINE",
+     "date": "16-Sep-2026",
+     "client": "QE SECURITIES LLP",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "UHTL",
+     "date": "16-Sep-2026",
+     "client": "SOUMYA MALANI",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "VALUE360",
+     "date": "16-Sep-2026",
+     "client": "CRAFT EMERGING MARKET FUND PCC-ARBITRAGE STRATEGY FUND",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ZENITHDRUG",
+     "date": "16-Sep-2026",
+     "client": "BINDU GARG",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "AAATECH",
+     "date": "16-Sep-2026",
+     "client": "NOVA GLOBAL OPPORTUNITIES FUND PCC - TOUCHSTONE",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ABH",
+     "date": "16-Sep-2026",
+     "client": "JAGID VANITABEN RAJENDRAPRASAD",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ABH",
+     "date": "16-Sep-2026",
+     "client": "STATSOL RESEARCH LLP",
+     "deal": "SELL",
      "qty": 0,
      "price": 0
     }
@@ -4862,6 +4862,30 @@
    "rows": [
     {
      "exchange": "NSE",
+     "company": "Aastha Spintex Limited",
+     "subject": "Change in Management",
+     "date": "16-Sep-2026 23:36:23"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Aastha Spintex Limited",
+     "subject": "General Updates",
+     "date": "16-Sep-2026 23:36:23"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Punjab National Bank",
+     "subject": "General Updates",
+     "date": "16-Sep-2026 23:25:33"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Zee Learn Limited",
+     "subject": "General Updates",
+     "date": "16-Sep-2026 23:14:34"
+    },
+    {
+     "exchange": "NSE",
      "company": "PB Fintech Limited",
      "subject": "General Updates",
      "date": "16-Sep-2026 23:08:40"
@@ -4955,30 +4979,6 @@
      "company": "Venus Pipes & Tubes Limited",
      "subject": "Shareholders meeting",
      "date": "16-Sep-2026 22:06:19"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Pranav Constructions Limited",
-     "subject": "Trading Window",
-     "date": "16-Sep-2026 21:47:12"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Aye Finance Limited",
-     "subject": "Change in Management",
-     "date": "16-Sep-2026 21:33:28"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Juniper Green Energy Limited",
-     "subject": "Credit Rating",
-     "date": "16-Sep-2026 21:27:29"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Seshaasai Technologies Limited",
-     "subject": "Shareholders meeting",
-     "date": "16-Sep-2026 21:23:23"
     }
    ]
   },
@@ -5039,34 +5039,34 @@
      "country": "United States",
      "index": "S&P 500",
      "date": "16-Sep-2026",
-     "value": 7605.25,
+     "value": 7611.77,
      "prev": 7585.73,
      "high": 7626.79,
      "low": 7597.61,
-     "change": 19.52,
-     "chgPct": 0.26
+     "change": 26.04,
+     "chgPct": 0.34
     },
     {
      "country": "United States",
      "index": "Dow Jones Industrial Average",
      "date": "16-Sep-2026",
-     "value": 52106.04,
+     "value": 52093.04,
      "prev": 52093.11,
      "high": 52173.7,
      "low": 51881.68,
-     "change": 12.93,
-     "chgPct": 0.02
+     "change": -0.07,
+     "chgPct": 0
     },
     {
      "country": "United States",
      "index": "NASDAQ Composite",
      "date": "16-Sep-2026",
-     "value": 26125.398,
+     "value": 26165.436,
      "prev": 25981.571,
      "high": 26225.093,
      "low": 26076.465,
-     "change": 143.828,
-     "chgPct": 0.55
+     "change": 183.866,
+     "chgPct": 0.71
     },
     {
      "country": "United Kingdom",
@@ -5160,23 +5160,23 @@
      "country": "Canada",
      "index": "S&P/TSX Composite",
      "date": "16-Sep-2026",
-     "value": 35685.98,
+     "value": 35693.86,
      "prev": 35582.07,
      "high": 35781.75,
-     "low": 35610.92,
-     "change": 103.91,
-     "chgPct": 0.29
+     "low": 35591.48,
+     "change": 111.79,
+     "chgPct": 0.31
     },
     {
      "country": "Brazil",
      "index": "Bovespa",
      "date": "16-Sep-2026",
-     "value": 185945.34,
+     "value": 186314.67,
      "prev": 186502.64,
      "high": 186738.25,
      "low": 184753.98,
-     "change": -557.3,
-     "chgPct": -0.3
+     "change": -187.97,
+     "chgPct": -0.1
     },
     {
      "country": "India",
@@ -5246,41 +5246,41 @@
      "symbol": "INFY",
      "company": "Infosys Ltd",
      "date": "16-Sep-2026",
-     "ltp": 11.17,
+     "ltp": 11.14,
      "prev": 11.32,
-     "chgPct": -1.37
+     "chgPct": -1.63
     },
     {
      "symbol": "WIT",
      "company": "Wipro Ltd",
      "date": "16-Sep-2026",
-     "ltp": 1.71,
+     "ltp": 1.7,
      "prev": 1.75,
-     "chgPct": -2.57
+     "chgPct": -3.14
     },
     {
      "symbol": "HDB",
      "company": "HDFC Bank Ltd",
      "date": "16-Sep-2026",
-     "ltp": 22.58,
+     "ltp": 22.52,
      "prev": 22.58,
-     "chgPct": 0
+     "chgPct": -0.27
     },
     {
      "symbol": "IBN",
      "company": "ICICI Bank Ltd",
      "date": "16-Sep-2026",
-     "ltp": 28.32,
+     "ltp": 28.31,
      "prev": 28.4,
-     "chgPct": -0.28
+     "chgPct": -0.32
     },
     {
      "symbol": "RDY",
      "company": "Dr. Reddy's Laboratories Ltd",
      "date": "16-Sep-2026",
-     "ltp": 11.61,
+     "ltp": 11.67,
      "prev": 11.55,
-     "chgPct": 0.48
+     "chgPct": 1.04
     },
     {
      "symbol": "SIFY",
@@ -5294,9 +5294,9 @@
      "symbol": "MMYT",
      "company": "MakeMyTrip Ltd",
      "date": "16-Sep-2026",
-     "ltp": 48.32,
+     "ltp": 48.06,
      "prev": 47.9,
-     "chgPct": 0.89
+     "chgPct": 0.32
     },
     {
      "symbol": "YTRA",
@@ -5304,7 +5304,7 @@
      "date": "16-Sep-2026",
      "ltp": 1.06,
      "prev": 1.01,
-     "chgPct": 4.8
+     "chgPct": 4.95
     }
    ],
    "defaultSort": "chgPct",
@@ -5357,64 +5357,64 @@
      "commodity": "Gold",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 4390.8,
+     "last": 4354,
      "prev": 4332.8,
-     "change": 58,
-     "chgPct": 1.34
+     "change": 21.2,
+     "chgPct": 0.49
     },
     {
      "commodity": "Silver",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 65.02,
+     "last": 64.165,
      "prev": 63.856,
-     "change": 1.164,
-     "chgPct": 1.82
+     "change": 0.309,
+     "chgPct": 0.48
     },
     {
      "commodity": "Copper",
      "contract": "Dec'26",
      "venue": "CEC:Commodities Exchange Centre",
-     "last": 6.506,
+     "last": 6.494,
      "prev": 6.4435,
-     "change": 0.0625,
-     "chgPct": 0.97
+     "change": 0.0505,
+     "chgPct": 0.78
     },
     {
      "commodity": "Platinum",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 1788.4,
+     "last": 1775.8,
      "prev": 1777,
-     "change": 11.4,
-     "chgPct": 0.64
+     "change": -1.2,
+     "chgPct": -0.07
     },
     {
      "commodity": "WTI Crude Oil",
      "contract": "Oct'26",
      "venue": "WTI Crude",
-     "last": 102.59,
+     "last": 102.43,
      "prev": 105.83,
-     "change": -3.24,
-     "chgPct": -3.06
+     "change": -3.4,
+     "chgPct": -3.21
     },
     {
      "commodity": "Brent Crude",
      "contract": "Nov'26",
      "venue": "NYMEX Brent Crude",
-     "last": 105.81,
+     "last": 105.71,
      "prev": 108.75,
-     "change": -2.94,
-     "chgPct": -2.7
+     "change": -3.04,
+     "chgPct": -2.8
     },
     {
      "commodity": "Natural Gas",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 2.891,
+     "last": 2.885,
      "prev": 2.919,
-     "change": -0.028,
-     "chgPct": -0.96
+     "change": -0.034,
+     "chgPct": -1.16
     }
    ],
    "defaultSort": "chgPct",
@@ -7579,7 +7579,7 @@
      "isin": "INE442A01024"
     },
     {
-     "company": "Assambrook Ltd-$",
+     "company": "Assambrook Ltd",
      "bseCode": "500025",
      "ticker": "ASSAMBR",
      "faceValue": "10.00",
