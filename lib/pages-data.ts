@@ -296,9 +296,9 @@ export const ACCOUNT_SERVICES: AccountService[] = [
       'We verify the request, update your records with the KRA and CKYCR, and confirm the change by email.',
     ],
     forms: [
-      { label: 'Account Modification Form', href: 'https://www.kalpatarumulti.com/files/download/modi.pdf' },
+      { label: 'Account Modification Form', href: '/files/download/modi.pdf' },
       { label: 'KYC Form for KRA', href: 'https://www.kalpatarumulti.com/files/download/Kyc_Form_New.pdf' },
-      { label: 'Demo — Account Modification (Online)', href: 'https://www.kalpatarumulti.com/files/download/MODIFY.pdf' },
+      { label: 'Demo — Account Modification (Online)', href: '/files/download/MODIFY.pdf' },
     ],
     desk: {
       person: 'Mr. Vinod Singh',

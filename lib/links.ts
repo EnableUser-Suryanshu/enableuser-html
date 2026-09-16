@@ -26,7 +26,7 @@ export const PORTALS = {
    */
   reKyc: 'https://kml-backoffice.kalpatarumulti.com/Account/Login',
   /** Offline route — the printable account modification form. */
-  modificationForm: 'https://www.kalpatarumulti.com/files/download/modi.pdf',
+  modificationForm: '/files/download/modi.pdf',
   // NSE IX (NSE International Exchange) at GIFT City — US stocks from India.
   globalInvesting: 'https://trade.nseixga.com/login?kalpataru',
 } as const;
