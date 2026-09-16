@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import DownloadCentre from '@/components/pages/DownloadCentre';
-import { DOWNLOADS, DOWNLOAD_CATS } from '@/lib/pages-data';
+import { DOWNLOAD_CATS } from '@/lib/pages-data';
+import { getDownloads } from '@/lib/downloads';
 import { PORTALS, EXT } from '@/lib/links';
 import { FilePdf, Shield, IdCard, Download, ArrowRight } from '@/components/icons';
 
@@ -18,10 +19,14 @@ const QUICK = [
   { label: 'Nomination Form (SH-13)', match: 'Form No. SH-13-Nomination Form', icon: FilePdf },
 ];
 
-export default function DownloadsPage() {
+export default async function DownloadsPage() {
+  // Managed in Sanity Studio at /studio; falls back to the checked-in list
+  // whenever Sanity is not configured or unreachable.
+  const downloads = await getDownloads();
+
   const quick = QUICK.map((q) => ({
     ...q,
-    href: DOWNLOADS.find((d) => d.label === q.match)?.href,
+    href: downloads.find((d) => d.label === q.match)?.href,
   })).filter((q) => q.href);
 
   return (
@@ -32,7 +37,7 @@ export default function DownloadsPage() {
           { text: 'Every' }, { text: 'Form,' }, { text: 'One', accent: true },
           { text: 'Place.' },
         ]}
-        lead={`${DOWNLOADS.length} forms, declarations, guides and software downloads — filter by category or search by name.`}
+        lead={`${downloads.length} forms, declarations, guides and software downloads — filter by category or search by name.`}
         cta={
           <a href={PORTALS.ekycAccountOpening} {...EXT} className="btn btn-white">
             OPEN ACCOUNT ONLINE INSTEAD
@@ -74,7 +79,7 @@ export default function DownloadsPage() {
               </p>
             </div>
           </div>
-          <DownloadCentre items={DOWNLOADS} cats={DOWNLOAD_CATS} />
+          <DownloadCentre items={downloads} cats={DOWNLOAD_CATS} />
 
           <div className="data-notice" role="note" style={{ marginTop: 26 }}>
             <Download size={20} strokeW={1.9} />

@@ -6,16 +6,17 @@ const nextConfig = {
   // that one route is dynamic. Vercel runs this natively.
   images: { unoptimized: true },
   eslint: { ignoreDuringBuilds: true },
-  webpack: (config, { dev }) => {
-    if (dev) {
-      // Don't let the dev watcher react to export artifacts in ./out.
-      config.watchOptions = {
-        ...config.watchOptions,
-        ignored: ['**/node_modules/**', '**/.git/**', '**/.next/**', '**/out/**'],
-      };
-    }
-    return config;
-  },
+
+  // Sanity Studio pulls in @sanity/ui, which imports React 19.2's
+  // `useEffectEvent`. Webpack's CJS export lexer cannot see that export
+  // statically and fails the build with "Attempted import error", even though
+  // React does export it at runtime. Turbopack resolves it correctly, so both
+  // `dev` and `build` run on Turbopack — see package.json.
+  //
+  // The previous `webpack()` hook only widened dev watch-ignores to cover
+  // ./out, an artifact of the old static export that is no longer produced.
+  // It is dropped rather than carried over, since keeping it would warn on
+  // every Turbopack build for no benefit.
 };
 
 // NOTE: `next build` and `next dev` share the .next directory. Stop the dev
