@@ -7,6 +7,7 @@ import SiteFooter from '@/components/SiteFooter';
 import InvestorNotice from '@/components/InvestorNotice';
 import Fab from '@/components/Fab';
 import ProgressBar from '@/components/ProgressBar';
+import ChromeGate from '@/components/ChromeGate';
 import PointerFx from '@/components/PointerFx';
 import './globals.css';
 
@@ -36,15 +37,20 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
       <body>
-        <a href="#main" className="skip-link">Skip to main content</a>
-        <ProgressBar />
-        <Header />
-        <Ticker />
+        {/* Chrome is suppressed on /studio, which renders a full-screen app. */}
+        <ChromeGate>
+          <a href="#main" className="skip-link">Skip to main content</a>
+          <ProgressBar />
+          <Header />
+          <Ticker />
+        </ChromeGate>
         {children}
-        <InvestorNotice />
-        <SiteFooter />
-        <Fab />
-        <PointerFx />
+        <ChromeGate>
+          <InvestorNotice />
+          <SiteFooter />
+          <Fab />
+          <PointerFx />
+        </ChromeGate>
 
         {/*
           EnableUser accessibility widget (enablestack-widget 1.4.0, GPL-3.0).
@@ -60,10 +66,12 @@ export default function RootLayout({
             npx enablestack-widget-theme "#bb0009" default
           then copy dist/enablestack-widget.js to public/vendor/.
         */}
-        <Script id="enablestack-config" strategy="beforeInteractive">
-          {`window.ENABLESTACK_CONFIG={colors:{primary:'#bb0009'},icon:'default',widgetPosition:{side:'left'}};`}
-        </Script>
-        <Script src="/vendor/enablestack-widget.js" strategy="afterInteractive" />
+        <ChromeGate>
+          <Script id="enablestack-config" strategy="beforeInteractive">
+            {`window.ENABLESTACK_CONFIG={colors:{primary:'#bb0009'},icon:'default',widgetPosition:{side:'left'}};`}
+          </Script>
+          <Script src="/vendor/enablestack-widget.js" strategy="afterInteractive" />
+        </ChromeGate>
       </body>
     </html>
   );

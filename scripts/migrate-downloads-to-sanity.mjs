@@ -22,18 +22,45 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
 const DRY = process.argv.includes('--dry');
 
+/** Next reads .env.local automatically; a bare node script does not. */
+function loadEnvLocal() {
+  const f = resolve(ROOT, '.env.local');
+  if (!existsSync(f)) return;
+  for (const line of readFileSync(f, 'utf8').split(/\r?\n/)) {
+    const m = /^\s*([A-Z0-9_]+)\s*=\s*(.*)\s*$/.exec(line);
+    if (m && !process.env[m[1]]) process.env[m[1]] = m[2].replace(/^["']|["']$/g, '');
+  }
+}
+loadEnvLocal();
+
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET ?? 'production';
-const token = process.env.SANITY_API_WRITE_TOKEN;
+
+/**
+ * Prefer an explicit token; otherwise reuse the session `sanity login` already
+ * stored on this machine. Falling back to the CLI's own credential means a
+ * one-off migration needs no token to be created, copied or pasted anywhere.
+ */
+function cliToken() {
+  try {
+    const cfg = resolve(process.env.HOME ?? '', '.config/sanity/config.json');
+    if (!existsSync(cfg)) return null;
+    return JSON.parse(readFileSync(cfg, 'utf8')).authToken ?? null;
+  } catch {
+    return null;
+  }
+}
+
+const token = process.env.SANITY_API_WRITE_TOKEN ?? cliToken();
 
 if (!projectId) {
   console.error('NEXT_PUBLIC_SANITY_PROJECT_ID is not set.');
   process.exit(1);
 }
 if (!token && !DRY) {
-  console.error('SANITY_API_WRITE_TOKEN is not set. Create one at');
-  console.error(`  https://www.sanity.io/manage/project/${projectId}/api  (Editor permissions)`);
-  console.error('Or run with --dry to preview without writing.');
+  console.error('No credential available. Either run `npx sanity login`, or set');
+  console.error(`SANITY_API_WRITE_TOKEN from https://www.sanity.io/manage/project/${projectId}/api`);
+  console.error('Run with --dry to preview without writing.');
   process.exit(1);
 }
 
