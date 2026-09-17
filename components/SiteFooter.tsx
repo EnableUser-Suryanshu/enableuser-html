@@ -6,6 +6,7 @@ import {
 import {
   Facebook, Instagram, XTwitter, LinkedIn, Target, OfficeBuilding,
   Phone, Mail, Person, Map, Pencil, ListCheck, Bank, Handshake, Headset, Download, IdCard,
+  Calculator,
 } from './icons';
 
 const POLICY_COLUMNS = [
@@ -180,6 +181,10 @@ export default function SiteFooter() {
             <Link href="/business-partners" className="gbtn">
               <Handshake size={20} strokeW={1.9} />
               <span><span className="t">BUSINESS PARTNERS</span><br /><span className="s">Franchise &amp; sub-broker</span></span>
+            </Link>
+            <Link href="/tools/margin-calculator" className="gbtn">
+              <Calculator size={20} strokeW={1.9} />
+              <span><span className="t">MARGIN CALCULATOR</span><br /><span className="s">Exchange margin, live rates</span></span>
             </Link>
           </div>
           <h2>Grievance Redressal Mechanisms</h2>

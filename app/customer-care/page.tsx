@@ -2,13 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import FeedbackForm from '@/components/pages/FeedbackForm';
-import InvestorGrievance from '@/components/InvestorGrievance';
+import EscalationMatrix from '@/components/pages/EscalationMatrix';
 import {
-  SUPPORT_TEAMS, TRADING_DESKS, CARE_ESCALATION, EXCHANGE_GRIEVANCE,
+  SUPPORT_TEAMS, TRADING_DESKS, CARE_ESCALATION,
 } from '@/lib/pages-data';
 import { PORTALS, EXT } from '@/lib/links';
 import {
-  Headset, Phone, Mail, Person, Shield, ArrowRight, TrendUp, Bank, Swap, IdCard,
+  Headset, Phone, Mail, Person, Shield, TrendUp, Bank, Swap, IdCard,
 } from '@/components/icons';
 
 export const metadata: Metadata = {
@@ -119,31 +119,17 @@ export default function CustomerCarePage() {
               </div>
             ))}
           </div>
-
-          <div className="esc-links" style={{ marginTop: 34 }}>
-            <p className="esc-links-h">
-              <Shield size={17} strokeW={2} /> Still unresolved? Lodge a complaint with the exchange or regulator:
-            </p>
-            <div className="esc-links-row">
-              {EXCHANGE_GRIEVANCE.map((g) => (
-                <a key={g.name} href={g.href} {...EXT} className="esc-link">
-                  {g.name} <ArrowRight size={13} strokeW={2.4} />
-                </a>
-              ))}
-            </div>
-            <p className="esc-note">
-              Please quote your Complaint Reference Number when escalating to SEBI SCORES or a
-              depository portal. You can also raise a support ticket through the back office.
-            </p>
-          </div>
         </div>
       </section>
 
-      {/* SCORES disclosure — moved off the home page, kept with the rest of
-          the grievance content (audit point 3, VRDK & Co). */}
-      <InvestorGrievance />
-
       {/* Feedback form */}
+      {/* Escalation matrix — the same regulated table as /contact */}
+      <section className="section disclosures watch" aria-labelledby="esc-matrix-h">
+        <div className="container">
+          <EscalationMatrix />
+        </div>
+      </section>
+
       <section className="section mkt-explore watch" id="feedback" aria-labelledby="fb-h">
         <div className="container">
           <div className="fb-wrap">

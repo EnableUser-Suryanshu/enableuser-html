@@ -20,13 +20,20 @@ interface NavItem {
 }
 
 const NAV: NavItem[] = [
-  { label: 'Markets', href: '/markets', match: ['/markets'] },
+  {
+    label: 'Markets',
+    match: ['/markets', '/tools'],
+    children: [
+      { href: '/markets', label: 'Market Data', desc: '35 live tables across NSE, BSE and global markets' },
+      { href: '/tools/margin-calculator', label: 'Margin Calculator', desc: 'Exchange margin for any NSE cash trade' },
+    ],
+  },
   {
     label: 'Invest',
     match: ['/services', '/mf-online', '/new-to-market'],
     children: [
       { href: '/services', label: 'Our Services', desc: 'Equity, F&O, commodity, IPO and more' },
-      { href: '/mf-online', label: 'MF Online', desc: 'Invest across 13 fund-house portals' },
+      { href: '/mf-online', label: 'MF Online', desc: 'SIPs and lumpsum across every major AMC' },
       { href: '/new-to-market', label: 'New to Market', desc: 'A beginner’s guide to investing' },
     ],
   },
@@ -48,7 +55,7 @@ const NAV: NavItem[] = [
     match: ['/contact', '/customer-care', '/account-services', '/bank-details', '/circulars'],
     children: [
       { href: '/customer-care', label: 'Customer Care', desc: 'Support desks, escalation and feedback' },
-      { href: '/contact', label: 'Contact Us', desc: '22 branches and key contacts' },
+      { href: '/contact', label: 'Contact Us', desc: 'Branch network and key contacts' },
       { href: '/account-services', label: 'Account Services', desc: 'Nomination, Re-KYC and closure — online' },
       { href: '/bank-details', label: 'Bank & DP Details', desc: 'Verified accounts for funds and securities' },
       { href: '/circulars', label: 'Circulars & Policies', desc: 'Regulatory circulars and investor documents' },

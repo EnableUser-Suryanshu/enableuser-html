@@ -8,3 +8,6 @@
 next-env.d.ts
 node_modules/
 out/
+.env*
+.vercel-*
+.tmp-large-downloads/

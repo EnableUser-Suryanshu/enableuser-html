@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import DownloadCentre from '@/components/pages/DownloadCentre';
-import { DOWNLOADS, DOWNLOAD_CATS } from '@/lib/pages-data';
+import { DOWNLOAD_CATS } from '@/lib/pages-data';
+import { getDownloads } from '@/lib/downloads';
 import { PORTALS, EXT } from '@/lib/links';
 import { FilePdf, Shield, IdCard, Download, ArrowRight } from '@/components/icons';
 
@@ -18,10 +19,14 @@ const QUICK = [
   { label: 'Nomination Form (SH-13)', match: 'Form No. SH-13-Nomination Form', icon: FilePdf },
 ];
 
-export default function DownloadsPage() {
+export default async function DownloadsPage() {
+  // Managed in Sanity Studio at /studio; falls back to the checked-in list
+  // whenever Sanity is not configured or unreachable.
+  const downloads = await getDownloads();
+
   const quick = QUICK.map((q) => ({
     ...q,
-    href: DOWNLOADS.find((d) => d.label === q.match)?.href,
+    href: downloads.find((d) => d.label === q.match)?.href,
   })).filter((q) => q.href);
 
   return (
@@ -32,7 +37,7 @@ export default function DownloadsPage() {
           { text: 'Every' }, { text: 'Form,' }, { text: 'One', accent: true },
           { text: 'Place.' },
         ]}
-        lead={`${DOWNLOADS.length} forms, declarations, guides and software downloads — filter by category or search by name.`}
+        lead={`${downloads.length} forms, declarations, guides and software downloads — filter by category or search by name.`}
         cta={
           <a href={PORTALS.ekycAccountOpening} {...EXT} className="btn btn-white">
             OPEN ACCOUNT ONLINE INSTEAD
@@ -74,7 +79,7 @@ export default function DownloadsPage() {
               </p>
             </div>
           </div>
-          <DownloadCentre items={DOWNLOADS} cats={DOWNLOAD_CATS} />
+          <DownloadCentre items={downloads} cats={DOWNLOAD_CATS} />
 
           <div className="data-notice" role="note" style={{ marginTop: 26 }}>
             <Download size={20} strokeW={1.9} />
@@ -108,12 +113,27 @@ export default function DownloadsPage() {
             <div className="bank-card reveal rv-right">
               <div className="head"><Shield size={24} /> Modify an Existing Account</div>
               <p style={{ fontSize: 14.5, color: 'var(--ink-2)', lineHeight: 1.75 }}>
-                Update your details, add segments or refresh KYC through the online
-                modification portal instead of submitting a physical form.
+                Update your details, add segments or refresh KYC from the back office
+                instead of submitting a physical form — or download the form if you
+                would rather post it in.
               </p>
-              <a href={PORTALS.reKyc} {...EXT} className="btn btn-outline" style={{ marginTop: 20 }}>
-                Online Modification <ArrowRight size={15} strokeW={2.2} />
-              </a>
+              {/* .btn is inline-flex and .bank-card is a plain block, so the two
+                  links need an explicit column to stack rather than sit side by side. */}
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 10, marginTop: 20 }}>
+                <a href={PORTALS.reKyc} {...EXT} className="btn btn-navy">
+                  Online Modification <ArrowRight size={15} strokeW={2.2} />
+                </a>
+                <a href={PORTALS.modificationForm} {...EXT} className="btn btn-outline">
+                  Download the Form <FilePdf size={15} strokeW={2.2} />
+                </a>
+              </div>
+              <p style={{ marginTop: 14, fontSize: 12.5, color: 'var(--ink-3)', lineHeight: 1.7 }}>
+                Sign in to the back office to raise it online, or email the signed form to{' '}
+                <a href="mailto:kmlho@kalpatarumulti.com" className="link-red">
+                  kmlho@kalpatarumulti.com
+                </a>{' '}
+                from your registered email ID.
+              </p>
             </div>
           </div>
         </div>
