@@ -16,9 +16,13 @@ const SUBJECTS = [
 type Field = 'name' | 'email' | 'contact' | 'subject' | 'message';
 
 /**
- * Client feedback form. The site is a static export, so submission composes a
- * pre-filled email to the customer-care desk. Swap `buildMailto` for a POST to
- * a form endpoint (or a Next.js route handler) when a backend is available.
+ * Client feedback form.
+ *
+ * Posts to /api/feedback, which records the submission in Sanity and then
+ * notifies the customer-care desk. It used to hand off to a `mailto:` draft in
+ * the visitor's own mail app — which meant a complaint only ever arrived if
+ * they had a mail client configured and remembered to press send. The mailto is
+ * kept, but only as an escape hatch shown when the server call fails.
  *
  * Validation is done here rather than left to the browser so that each error
  * meets WCAG 3.3.1 and 3.3.3: the message is text, it is tied to its field
@@ -29,11 +33,15 @@ type Field = 'name' | 'email' | 'contact' | 'subject' | 'message';
  */
 export default function FeedbackForm() {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  /** Set when the server could not take the message; offers the mailto route. */
+  const [failed, setFailed] = useState<string | null>(null);
   const [errors, setErrors] = useState<Partial<Record<Field, string>>>({});
   const [attempt, setAttempt] = useState(0);
   const summaryRef = useRef<HTMLDivElement>(null);
   const [form, setForm] = useState({
     clientCode: '', name: '', email: '', contact: '', city: '', subject: '', message: '',
+    website: '', // honeypot
   });
 
   const set = (k: keyof typeof form) => (
@@ -82,7 +90,7 @@ export default function FeedbackForm() {
     return `mailto:complaint@kalpatarumulti.com?cc=support@kalpatarumulti.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const found = validate();
     setErrors(found);
@@ -92,8 +100,31 @@ export default function FeedbackForm() {
       setAttempt((n) => n + 1);
       return;
     }
-    window.location.href = buildMailto();
-    setSent(true);
+
+    setSending(true);
+    setFailed(null);
+    try {
+      const r = await fetch('/api/feedback', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      const j = await r.json().catch(() => ({}));
+
+      if (r.ok && j.ok) {
+        setSent(true);
+      } else if (r.status === 422 && j.errors) {
+        // The server revalidates; surface anything the client check missed.
+        setErrors(j.errors);
+        setAttempt((n) => n + 1);
+      } else {
+        setFailed(j.error ?? 'We could not reach the customer-care desk just now.');
+      }
+    } catch {
+      setFailed('We could not reach the customer-care desk just now.');
+    } finally {
+      setSending(false);
+    }
   };
 
   // Move focus to the error summary after each failed submit, so the whole
@@ -123,24 +154,55 @@ export default function FeedbackForm() {
           it. A region injected at the moment it gains text announces nothing
           (WCAG 4.1.3). */}
       <div className="sr-only" role="status" aria-live="polite">
-        {sent ? 'Your email has been prepared and your mail app opened.' : ''}
+        {sending ? 'Sending your message…' : ''}
+        {sent ? 'Your message has been sent to the customer-care desk.' : ''}
+        {failed ?? ''}
       </div>
 
       {sent ? (
         <div className="fb-done">
           <span className="fb-done-ico"><CheckCircle size={34} strokeW={2} /></span>
-          <h3>Your email is ready to send</h3>
+          <h3>Thank you — we have your message</h3>
           <p>
-            We&apos;ve opened your mail app with the details filled in — press send and our
-            customer-care desk will pick it up. If nothing opened, write to{' '}
-            <a href="mailto:complaint@kalpatarumulti.com">complaint@kalpatarumulti.com</a> directly.
+            It has reached our customer-care desk and been logged against a reference. We aim to
+            respond within one working day. For anything urgent on a live trade, call the dealing
+            desk on <a href="tel:07554350141">0755-4350141</a> — that is always quicker.
           </p>
-          <button type="button" className="btn btn-outline" onClick={() => setSent(false)}>
+          <button
+            type="button"
+            className="btn btn-outline"
+            onClick={() => {
+              setSent(false);
+              setForm({ clientCode: '', name: '', email: '', contact: '', city: '', subject: '', message: '', website: '' });
+            }}
+          >
             Submit another response
           </button>
         </div>
       ) : (
         <form className="fb-form" onSubmit={onSubmit} noValidate>
+          {/* Honeypot: off-screen and hidden from assistive tech, so only bots
+              fill it. Submissions carrying it are accepted and discarded. */}
+          <div className="sr-only" aria-hidden="true">
+            <label htmlFor="website">Leave this field empty</label>
+            <input
+              id="website" name="website" type="text" tabIndex={-1} autoComplete="off"
+              value={form.website} onChange={set('website')}
+            />
+          </div>
+
+          {failed && (
+            <div className="fb-summary" role="alert">
+              <p><strong>{failed}</strong></p>
+              <p style={{ marginTop: 6, fontWeight: 400 }}>
+                Nothing has been lost — you can send the same details by email instead,
+                or call the desk on <a href="tel:07554350141">0755-4350141</a>.
+              </p>
+              <p style={{ marginTop: 10 }}>
+                <a className="btn btn-outline" href={buildMailto()}>Send it by email instead</a>
+              </p>
+            </div>
+          )}
           {errorList.length > 0 && (
             <div
               className="fb-summary"
@@ -217,8 +279,9 @@ export default function FeedbackForm() {
             or PIN numbers in this form — no Kalpataru employee will ask for them.
           </p>
 
-          <button type="submit" className="btn btn-navy">
-            Send to Customer Care <ArrowRight size={16} strokeW={2.2} />
+          <button type="submit" className="btn btn-navy" disabled={sending}>
+            {sending ? 'Sending…' : 'Send to Customer Care'}
+            {!sending && <ArrowRight size={16} strokeW={2.2} />}
           </button>
         </form>
       )}

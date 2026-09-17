@@ -30,6 +30,32 @@ export default defineConfig({
           .title('Content')
           .items([
             S.listItem()
+              .title('Client Feedback')
+              .child(
+                S.list()
+                  .title('Client Feedback')
+                  .items([
+                    S.listItem().title('New').child(
+                      S.documentList().title('New')
+                        .filter('_type == "feedback" && status == "new"')
+                        .defaultOrdering([{ field: 'submittedAt', direction: 'desc' }])),
+                    S.listItem().title('In progress').child(
+                      S.documentList().title('In progress')
+                        .filter('_type == "feedback" && status == "inProgress"')
+                        .defaultOrdering([{ field: 'submittedAt', direction: 'desc' }])),
+                    S.listItem().title('Resolved').child(
+                      S.documentList().title('Resolved')
+                        .filter('_type == "feedback" && status == "resolved"')
+                        .defaultOrdering([{ field: 'submittedAt', direction: 'desc' }])),
+                    S.divider(),
+                    S.listItem().title('All submissions').child(
+                      S.documentList().title('All submissions')
+                        .filter('_type == "feedback"')
+                        .defaultOrdering([{ field: 'submittedAt', direction: 'desc' }])),
+                  ]),
+              ),
+            S.divider(),
+            S.listItem()
               .title('Downloads')
               .child(
                 S.list()
