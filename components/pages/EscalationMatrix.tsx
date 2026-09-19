@@ -1,4 +1,6 @@
-import { KEY_CONTACTS } from '@/lib/pages-data';
+import { KEY_CONTACTS, EXCHANGE_GRIEVANCE } from '@/lib/pages-data';
+import { EXT } from '@/lib/links';
+import { ArrowRight, Shield } from '../icons';
 
 /**
  * The escalation matrix SEBI requires brokers to publish — who to contact at
@@ -11,9 +13,16 @@ import { KEY_CONTACTS } from '@/lib/pages-data';
 export default function EscalationMatrix({
   headingId = 'esc-matrix-h',
   showIntro = true,
+  /**
+   * Shows the regulator and depository escalation routes beneath the table —
+   * where a client who has exhausted the matrix goes next. Carried over from
+   * the live site, which publishes them in exactly this position.
+   */
+  showRegulators = false,
 }: {
   headingId?: string;
   showIntro?: boolean;
+  showRegulators?: boolean;
 }) {
   return (
     <>
@@ -62,6 +71,31 @@ export default function EscalationMatrix({
           </tbody>
         </table>
       </div>
+
+      {showRegulators && (
+        <div className="esc-reg">
+          <p className="esc-reg-lead">
+            <Shield size={18} strokeW={2} aria-hidden="true" />
+            <span>
+              If we have not responded, or the outcome does not satisfy you, you may take the
+              complaint to the depository or the regulator directly. <strong>Quote your
+              Complaint Reference Number</strong> when you do — it lets them trace what we have
+              already done.
+            </span>
+          </p>
+
+          <ul className="esc-reg-grid">
+            {EXCHANGE_GRIEVANCE.map((g) => (
+              <li key={g.name}>
+                <a href={g.href} {...EXT}>
+                  <span>{g.name}</span>
+                  <ArrowRight size={15} strokeW={2.2} aria-hidden="true" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </>
   );
 }

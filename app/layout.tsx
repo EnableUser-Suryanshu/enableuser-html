@@ -9,6 +9,7 @@ import Fab from '@/components/Fab';
 import ProgressBar from '@/components/ProgressBar';
 import ChromeGate from '@/components/ChromeGate';
 import PointerFx from '@/components/PointerFx';
+import RegulatoryPopup from '@/components/RegulatoryPopup';
 import './globals.css';
 
 const poppins = Poppins({
@@ -50,6 +51,7 @@ export default function RootLayout({
           <SiteFooter />
           <Fab />
           <PointerFx />
+          <RegulatoryPopup />
         </ChromeGate>
 
         {/*

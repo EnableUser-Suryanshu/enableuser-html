@@ -11,7 +11,7 @@ export interface KmpEntry {
 export const KMP: KmpEntry[] = [
   { name: 'Aditya Manya Jain', designation: 'Chief Executive Officer (CEO)', mobile: '9826430536', email: 'aditya@kalpatarumulti.com' },
   { name: 'Amitabh Manya Jain', designation: 'Managing Director (MD)', mobile: '9425008895', email: 'kmlho@kalpatarumulti.com' },
-  { name: 'Vinod Singh', designation: 'Manager', mobile: '9329209605', email: 'stockvinodsingh@gmail.com' },
+  { name: 'Vinod Singh', designation: 'General Manager', mobile: '9329209605', email: 'stockvinodsingh@gmail.com' },
   { name: 'Amitabh Manya Jain', designation: 'Compliance Officer', mobile: '9425008895', email: 'kmlho@kalpatarumulti.com' },
   { name: 'Aditya Manya Jain', designation: 'Designated Director', mobile: '9826430536', email: 'kmlho@kalpatarumulti.com' },
   { name: 'Amitabh Manya Jain', designation: 'Designated Director', mobile: '9425008895', email: 'kmlho@kalpatarumulti.com' },

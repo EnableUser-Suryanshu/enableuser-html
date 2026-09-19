@@ -4,7 +4,7 @@ import PageHero from '@/components/PageHero';
 import FeedbackForm from '@/components/pages/FeedbackForm';
 import EscalationMatrix from '@/components/pages/EscalationMatrix';
 import {
-  SUPPORT_TEAMS, TRADING_DESKS, CARE_ESCALATION,
+  SUPPORT_TEAMS, TRADING_DESKS, CARE_ESCALATION, EXCHANGE_GRIEVANCE,
 } from '@/lib/pages-data';
 import { PORTALS, EXT } from '@/lib/links';
 import {
@@ -126,7 +126,35 @@ export default function CustomerCarePage() {
       {/* Escalation matrix — the same regulated table as /contact */}
       <section className="section disclosures watch" aria-labelledby="esc-matrix-h">
         <div className="container">
-          <EscalationMatrix />
+          <EscalationMatrix showRegulators />
+
+          {/* Complaint links — regulatory note below the escalation matrix */}
+          <div className="complaint-note">
+            <p>
+              In absence of response / complaint not addressed to your satisfaction, you may lodge a
+              complaint with CDSL at{' '}
+              <a href="https://www.cdslindia.com/eservices/footer/grievances" {...EXT} className="link-red">
+                https://www.cdslindia.com/eservices/footer/grievances
+              </a>{' '}
+              or SEBI at{' '}
+              <a href="https://scores.sebi.gov.in/" {...EXT} className="link-red">
+                https://scores.sebi.gov.in/
+              </a>
+              . Please quote your Complaint Ref No. while raising your complaint at SEBI SCORES /
+              Depository portal.
+            </p>
+            <div className="complaint-links">
+              {EXCHANGE_GRIEVANCE.filter(
+                (g) => !g.href.includes('scores.sebi') && !g.href.includes('cdslindia') && !g.href.includes('smartodr'),
+              ).map((g) => (
+                <a key={g.name} href={g.href} {...EXT} className="complaint-pill">
+                  {g.name.replace(' Investor Services', '').replace(' Investor Complaints', '').replace(' Investor Helpline', '')}{' '}
+                  at{' '}
+                  <span className="complaint-url">{g.href.replace('https://', '').replace('http://', '')}</span>
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
