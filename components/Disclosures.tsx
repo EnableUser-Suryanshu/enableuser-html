@@ -101,24 +101,49 @@ export default function Disclosures() {
             <div className="disc-scroll">
               <table className="disc-table ap-table">
                 <caption className="sr-only">
-                  Authorised persons: name and contact number, exchange-wise authorised person
-                  code, constitution, status, registered address with city, state and PIN, and
-                  the number of terminals allotted. A field shown as an em dash is not on record.
+                  Authorised persons: serial number, name and contact number, exchange-wise
+                  authorised person code, constitution, status, registered address split into
+                  address, city, state and pin code, and terminal details giving whether a
+                  terminal is allotted and how many. A field shown as an em dash is not on record.
                 </caption>
+                {/* Explicit column widths. Under table-layout: fixed the
+                    browser takes widths from the first row, and that row is all
+                    colSpan groups here — so without a colgroup the four address
+                    columns split their group's share arbitrarily and the address
+                    itself ends up the narrowest of them. */}
+                <colgroup>
+                  {['3%', '12.5%', '12.5%', '9%', '9.5%', '19.5%', '7.5%', '8.5%', '6%', '6.5%', '6.5%']
+                    .map((w, i) => <col key={i} style={{ width: w }} />)}
+                </colgroup>
                 <thead>
-                  {/* The exchange format splits the address over four columns
-                      and the terminal details over two. Kept that way the table
-                      is wider than any container and has to scroll sideways, so
-                      each group is one cell here with its parts stacked inside.
-                      Every field the format asks for is still present. */}
+                  {/* The exchange's own column layout, kept exactly: the address
+                      split over four columns and the terminal details over two,
+                      under grouped headings. colSpan/rowSpan plus scope keeps
+                      that grouping readable to a screen reader, not just to the
+                      eye. It fits without a sideways scroll because the type and
+                      the column widths are tuned for it — see .ap-table in the
+                      stylesheet — not because any column was merged away.
+
+                      The contact number is the one addition to the format. It
+                      sits under the name rather than in a twelfth column, which
+                      is what the verification sheet asks for without widening
+                      the table. */}
                   <tr>
-                    <th scope="col">Sr.</th>
-                    <th scope="col">Authorised Person</th>
-                    <th scope="col">AP Code (Exchange wise)</th>
-                    <th scope="col">Constitution</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Registered Address</th>
-                    <th scope="col">Terminals</th>
+                    <th scope="col" rowSpan={2}>Sr.<br />No.</th>
+                    <th scope="col" rowSpan={2}>Authorised Person&rsquo;s Name</th>
+                    <th scope="col" rowSpan={2}>Authorised Person Code (Exchange wise)</th>
+                    <th scope="col" rowSpan={2}>Constitution</th>
+                    <th scope="col" rowSpan={2}>Status (Approved/ Cancelled)</th>
+                    <th scope="colgroup" colSpan={4} className="ap-grp">Registered Address</th>
+                    <th scope="colgroup" colSpan={2} className="ap-grp">Terminal Details</th>
+                  </tr>
+                  <tr>
+                    <th scope="col">Address</th>
+                    <th scope="col">City</th>
+                    <th scope="col">State</th>
+                    <th scope="col">Pin code</th>
+                    <th scope="col">Terminal Allotted (Y/N)</th>
+                    <th scope="col">No. of Terminals</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -144,27 +169,17 @@ export default function Disclosures() {
                       </td>
                       <td data-label="Constitution">{ap.constitution ?? <Pending />}</td>
                       <td data-label="Status"><span className="status-pill">{ap.status}</span></td>
-                      <td className="ap-addr" data-label="Registered Address">
-                        {ap.address ? (
-                          <>
-                            {ap.address}
-                            <span className="ap-place">
-                              {ap.city}, {ap.state} &ndash; <span className="mono">{ap.pin}</span>
-                            </span>
-                          </>
-                        ) : <Pending />}
-                      </td>
-                      <td className="ap-term" data-label="Terminals">
-                        <span className="ap-term-n">{ap.terminals}</span>
-                        <span className="ap-term-f">
-                          {ap.terminalAllotted === 'Y' ? 'Allotted' : 'Not allotted'}
-                        </span>
-                      </td>
+                      <td className="ap-addr" data-label="Address">{ap.address ?? <Pending />}</td>
+                      <td data-label="City">{ap.city ?? <Pending />}</td>
+                      <td data-label="State">{ap.state ?? <Pending />}</td>
+                      <td className="ap-pin" data-label="Pin code">{ap.pin ?? <Pending />}</td>
+                      <td className="ap-mid" data-label="Terminal Allotted">{ap.terminalAllotted}</td>
+                      <td className="ap-mid" data-label="No. of Terminals">{ap.terminals}</td>
                     </tr>
                   ))}
                   {filteredAps.length === 0 && (
                     <tr>
-                      <td colSpan={7} className="ap-empty">
+                      <td colSpan={11} className="ap-empty">
                         No authorised person matches &ldquo;{query}&rdquo;
                       </td>
                     </tr>

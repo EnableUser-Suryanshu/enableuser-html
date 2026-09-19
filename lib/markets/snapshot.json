@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-19T21:04:50.333Z",
+ "fetchedAt": "2026-09-19T21:42:32.012Z",
  "marketTimestamp": "18-Sep-2026 15:30",
  "marketStatus": "Close",
  "source": "NSE India (nseindia.com public market data) · NSE full bhavcopy (delivery data) · NSE & BSE corporate filings, AMFI scheme data · CNBC market data · ECB reference rates",
@@ -672,14 +672,14 @@
      "vol": 4.95
     },
     {
-     "company": "TATATECH",
-     "last": 719,
-     "prev": 758.75,
-     "chgPct": -5.24,
-     "chg": -39.75,
-     "high": 761.4,
-     "low": 716.1,
-     "vol": 2215.52
+     "company": "RELAXO",
+     "last": 293.95,
+     "prev": 313.7,
+     "chgPct": -6.3,
+     "chg": -19.75,
+     "high": 315,
+     "low": 289.25,
+     "vol": 2052.97
     }
    ],
    "defaultSort": "chgPct"
@@ -3025,6 +3025,222 @@
    ],
    "rows": [
     {
+     "company": "RIR",
+     "date": "18-Sep-2026",
+     "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "RIR",
+     "date": "18-Sep-2026",
+     "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "RIR",
+     "date": "18-Sep-2026",
+     "client": "IRAGE BROKING SERVICES LLP",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SHANKARA",
+     "date": "18-Sep-2026",
+     "client": "GEOMETRIC SECURITIES AND ADVISORY PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SHAREINDIA",
+     "date": "18-Sep-2026",
+     "client": "HRTI PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SHAREINDIA",
+     "date": "18-Sep-2026",
+     "client": "QE SECURITIES LLP",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SHAREINDIA",
+     "date": "18-Sep-2026",
+     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SIGACHI",
+     "date": "18-Sep-2026",
+     "client": "SPDR PORTFOLIO EMERGING MARKETS ETF",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SKYTECH",
+     "date": "18-Sep-2026",
+     "client": "KAMAL KUMAR KABRA",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SKYWAYS",
+     "date": "18-Sep-2026",
+     "client": "MICROCURVES TRADING PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SKYWAYS",
+     "date": "18-Sep-2026",
+     "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SKYWAYS",
+     "date": "18-Sep-2026",
+     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SKYWAYS",
+     "date": "18-Sep-2026",
+     "client": "JUMP TRADING FINANCIAL INDIA PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SKYWAYS",
+     "date": "18-Sep-2026",
+     "client": "HRTI PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SKYWAYS",
+     "date": "18-Sep-2026",
+     "client": "MATHISYS QUANTCAP LLP",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SKYWAYS",
+     "date": "18-Sep-2026",
+     "client": "QE SECURITIES LLP",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SKYWAYS",
+     "date": "18-Sep-2026",
+     "client": "IRAGE BROKING SERVICES LLP",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SKYWAYS",
+     "date": "18-Sep-2026",
+     "client": "IMC INDIA SECURITIES PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SKYWAYS",
+     "date": "18-Sep-2026",
+     "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SKYWAYS",
+     "date": "18-Sep-2026",
+     "client": "J4S FINANCIAL SOLUTIONS LLP",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SKYWAYS",
+     "date": "18-Sep-2026",
+     "client": "SILVERLEAF CAPITAL SERVICES PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SKYWAYS",
+     "date": "18-Sep-2026",
+     "client": "MARWADI SHARES AND FINANCE LTD.",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "SUNSHINE",
+     "date": "18-Sep-2026",
+     "client": "ARIHANT CAPITAL MARKETS LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "VEEGALAND",
+     "date": "18-Sep-2026",
+     "client": "KUBER INDIA OPPORTUNITY FUND",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "VEEGALAND",
+     "date": "18-Sep-2026",
+     "client": "LRSD SECURITIES PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "VENUSPIPES",
+     "date": "18-Sep-2026",
+     "client": "HRTI PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "WELENT",
+     "date": "18-Sep-2026",
+     "client": "AUTHUM INVESTMENT & INFRASTRUCTURE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
      "company": "AHCL",
      "date": "18-Sep-2026",
      "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
@@ -3124,222 +3340,6 @@
      "company": "ATALREAL",
      "date": "18-Sep-2026",
      "client": "HRTI PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "ATALREAL",
-     "date": "18-Sep-2026",
-     "client": "MARWADI CHANDARANA INTERMEDIARIES BROKERS PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "ATALREAL",
-     "date": "18-Sep-2026",
-     "client": "JAGID VANITABEN RAJENDRAPRASAD",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "AVALON",
-     "date": "18-Sep-2026",
-     "client": "VANGUARD TOTAL INTERNATIONAL STOCK INDEX FUND",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "AVALON",
-     "date": "18-Sep-2026",
-     "client": "VANGUARD EMERGING MARKETS STOCK INDEX FUND  A SERIES OF VIEIF",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "CSM",
-     "date": "18-Sep-2026",
-     "client": "SILVERLEAF CAPITAL SERVICES PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "CSM",
-     "date": "18-Sep-2026",
-     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "CSM",
-     "date": "18-Sep-2026",
-     "client": "QE SECURITIES LLP",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "CSM",
-     "date": "18-Sep-2026",
-     "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "DEEPA",
-     "date": "18-Sep-2026",
-     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "ENTERO",
-     "date": "18-Sep-2026",
-     "client": "HDFC MUTUAL FUND",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GCSL",
-     "date": "18-Sep-2026",
-     "client": "MANSUKH SECURITIES & FINANCE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "GOLDMINE STOCKS PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "DIPAN MEHTA COMMODITIES PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "ELIXIR WEALTH MANAGEMENT PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "VINSUL MAKARDI LTD",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "PEER GLOBAL TRADE PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "SILVERLEAF CAPITAL SERVICES PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "PLUTUS RESEARCH PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "J4S FINANCIAL SOLUTIONS LLP",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "YUGA STOCKS AND COMMODITIES PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "ASHWIN STOCKS AND INVESTMENT PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "PURE BROKING PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "GRT STRATEGIC VENTURES LLP",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "IRAGE BROKING SERVICES LLP",
-     "deal": "BUY",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "date": "18-Sep-2026",
-     "client": "QE SECURITIES LLP",
      "deal": "BUY",
      "qty": 0,
      "price": 0
