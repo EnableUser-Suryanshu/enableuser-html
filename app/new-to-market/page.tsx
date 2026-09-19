@@ -249,7 +249,7 @@ export default function NewToMarketPage() {
         <div className="container">
           <h2 id="res-h">Resource Library</h2>
           <p className="sub">
-            The margin, pledge and budget documents published by Kalpataru — download and keep.
+            The margin and pledge documents published by Kalpataru — download and keep.
           </p>
           <div className="res-grid stagger">
             {NTM_RESOURCES.map((r) => (

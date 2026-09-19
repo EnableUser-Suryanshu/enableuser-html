@@ -84,27 +84,6 @@ export const CIRCULAR_GROUPS: CircularGroup[] = [
       },
     ],
   },
-  {
-    key: 'archive',
-    label: 'Archive',
-    blurb: 'Older budget summaries retained from the previous website.',
-    docs: [
-      {
-        title: 'Budget 2016 — Key Features (Hindi)',
-        note: 'Union Budget 2016 key features summary, in Hindi.',
-        file: '/files/pdf/budget-2016-key-features-hindi.pdf',
-        kb: 356,
-        source: 'Archive',
-      },
-      {
-        title: 'Rail Budget Highlights (Hindi)',
-        note: 'Railway Budget highlights summary, in Hindi.',
-        file: '/files/pdf/rail-budget-highlights-hindi.pdf',
-        kb: 201,
-        source: 'Archive',
-      },
-    ],
-  },
 ];
 
 export const ALL_CIRCULARS = CIRCULAR_GROUPS.flatMap((g) => g.docs);
