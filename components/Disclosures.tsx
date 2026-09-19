@@ -101,40 +101,37 @@ export default function Disclosures() {
             <div className="disc-scroll">
               <table className="disc-table ap-table">
                 <caption className="sr-only">
-                  Authorised persons: name, exchange-wise authorised person code, constitution,
-                  status, registered address, and terminal details. Columns shown as an em dash
-                  are not on record.
+                  Authorised persons: name and contact number, exchange-wise authorised person
+                  code, constitution, status, registered address with city, state and PIN, and
+                  the number of terminals allotted. A field shown as an em dash is not on record.
                 </caption>
                 <thead>
-                  {/* Two header rows so "Registered Address" and "Terminal
-                      Details" group their sub-columns the way the exchange
-                      format does. colSpan/rowSpan plus scope keeps the grouping
-                      readable to a screen reader, not just to the eye. */}
+                  {/* The exchange format splits the address over four columns
+                      and the terminal details over two. Kept that way the table
+                      is wider than any container and has to scroll sideways, so
+                      each group is one cell here with its parts stacked inside.
+                      Every field the format asks for is still present. */}
                   <tr>
-                    <th scope="col" rowSpan={2}>Sr. No.</th>
-                    <th scope="col" rowSpan={2}>Authorised Person&rsquo;s Name</th>
-                    <th scope="col" rowSpan={2}>Authorised Person Code<br />(Exchange wise)</th>
-                    <th scope="col" rowSpan={2}>Constitution</th>
-                    <th scope="col" rowSpan={2}>Status</th>
-                    <th scope="colgroup" colSpan={4}>Registered Address</th>
-                    <th scope="colgroup" colSpan={2}>Terminal Details</th>
-                    <th scope="col" rowSpan={2}>Contact</th>
-                  </tr>
-                  <tr>
-                    <th scope="col">Address</th>
-                    <th scope="col">City</th>
-                    <th scope="col">State</th>
-                    <th scope="col">Pin code</th>
-                    <th scope="col">Terminal Allotted</th>
-                    <th scope="col">No. of Terminals</th>
+                    <th scope="col">Sr.</th>
+                    <th scope="col">Authorised Person</th>
+                    <th scope="col">AP Code (Exchange wise)</th>
+                    <th scope="col">Constitution</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Registered Address</th>
+                    <th scope="col">Terminals</th>
                   </tr>
                 </thead>
                 <tbody>
                   {filteredAps.map((ap, i) => (
                     <tr key={ap.codes[0].code}>
                       <td className="ap-sr">{i + 1}</td>
-                      <th scope="row" className="ap-name">{ap.name}</th>
-                      <td className="ap-codes">
+                      <th scope="row" className="ap-name">
+                        {ap.name}
+                        {ap.mobile && (
+                          <a href={`tel:${ap.mobile}`} className="ap-tel">{ap.mobile}</a>
+                        )}
+                      </th>
+                      <td className="ap-codes" data-label="AP Code (Exchange wise)">
                         {/* One column, codes separated by a slash, per the
                             exchange's own note on the source sheet. */}
                         {ap.codes.map((c, j) => (
@@ -145,24 +142,29 @@ export default function Disclosures() {
                           </span>
                         ))}
                       </td>
-                      <td>{ap.constitution ?? <Pending />}</td>
-                      <td><span className="status-pill">{ap.status}</span></td>
-                      <td className="ap-addr">{ap.address ?? <Pending />}</td>
-                      <td>{ap.city ?? <Pending />}</td>
-                      <td>{ap.state ?? <Pending />}</td>
-                      <td className="mono">{ap.pin ?? <Pending />}</td>
-                      <td className="ap-mid">{ap.terminalAllotted}</td>
-                      <td className="ap-mid">{ap.terminals}</td>
-                      <td>
-                        {ap.mobile
-                          ? <a href={`tel:${ap.mobile}`} className="ap-tel">{ap.mobile}</a>
-                          : <Pending />}
+                      <td data-label="Constitution">{ap.constitution ?? <Pending />}</td>
+                      <td data-label="Status"><span className="status-pill">{ap.status}</span></td>
+                      <td className="ap-addr" data-label="Registered Address">
+                        {ap.address ? (
+                          <>
+                            {ap.address}
+                            <span className="ap-place">
+                              {ap.city}, {ap.state} &ndash; <span className="mono">{ap.pin}</span>
+                            </span>
+                          </>
+                        ) : <Pending />}
+                      </td>
+                      <td className="ap-term" data-label="Terminals">
+                        <span className="ap-term-n">{ap.terminals}</span>
+                        <span className="ap-term-f">
+                          {ap.terminalAllotted === 'Y' ? 'Allotted' : 'Not allotted'}
+                        </span>
                       </td>
                     </tr>
                   ))}
                   {filteredAps.length === 0 && (
                     <tr>
-                      <td colSpan={12} className="ap-empty">
+                      <td colSpan={7} className="ap-empty">
                         No authorised person matches &ldquo;{query}&rdquo;
                       </td>
                     </tr>
