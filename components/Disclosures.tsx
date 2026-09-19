@@ -6,6 +6,18 @@ import { Shield, Users, Phone, Mail, Search, MapPin } from './icons';
 
 type Tab = 'kmp' | 'ap';
 
+/**
+ * A field the exchange record does not carry. Shown as an em dash, which a
+ * screen reader would otherwise read as a dash or skip entirely — so the real
+ * meaning goes in text only assistive tech sees.
+ */
+const Pending = () => (
+  <span className="ap-na">
+    <span aria-hidden="true">—</span>
+    <span className="sr-only">Not on record</span>
+  </span>
+);
+
 export default function Disclosures() {
   const [tab, setTab] = useState<Tab>('kmp');
   const [query, setQuery] = useState('');
@@ -13,15 +25,14 @@ export default function Disclosures() {
   const filteredAps = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) return AUTHORISED_PERSONS;
-    return AUTHORISED_PERSONS.filter(
-      (ap) =>
-        ap.name.toLowerCase().includes(q) ||
-        ap.city.toLowerCase().includes(q) ||
-        ap.regNo.toLowerCase().includes(q),
+    return AUTHORISED_PERSONS.filter((ap) =>
+      [ap.name, ap.city ?? '', ...ap.codes.map((c) => c.code)]
+        .some((f) => f.toLowerCase().includes(q)),
     );
   }, [query]);
 
-  const cities = new Set(AUTHORISED_PERSONS.map((ap) => ap.city)).size;
+  // Rows whose city is still pending are not counted as a location.
+  const cities = new Set(AUTHORISED_PERSONS.map((ap) => ap.city).filter(Boolean)).size;
 
   return (
     <section className="section disclosures watch" aria-label="Regulatory disclosures">
@@ -88,43 +99,70 @@ export default function Disclosures() {
               </div>
             </div>
             <div className="disc-scroll">
-              <table className="disc-table">
+              <table className="disc-table ap-table">
+                <caption className="sr-only">
+                  Authorised persons: name, exchange-wise authorised person code, constitution,
+                  status, registered address, and terminal details. Columns shown as an em dash
+                  are not on record.
+                </caption>
                 <thead>
+                  {/* Two header rows so "Registered Address" and "Terminal
+                      Details" group their sub-columns the way the exchange
+                      format does. colSpan/rowSpan plus scope keeps the grouping
+                      readable to a screen reader, not just to the eye. */}
                   <tr>
-                    <th scope="col">Applicant Name</th>
+                    <th scope="col" rowSpan={2}>Sr. No.</th>
+                    <th scope="col" rowSpan={2}>Authorised Person&rsquo;s Name</th>
+                    <th scope="col" rowSpan={2}>Authorised Person Code<br />(Exchange wise)</th>
+                    <th scope="col" rowSpan={2}>Constitution</th>
+                    <th scope="col" rowSpan={2}>Status</th>
+                    <th scope="colgroup" colSpan={4}>Registered Address</th>
+                    <th scope="colgroup" colSpan={2}>Terminal Details</th>
+                    <th scope="col" rowSpan={2}>Contact</th>
+                  </tr>
+                  <tr>
+                    <th scope="col">Address</th>
                     <th scope="col">City</th>
-                    <th scope="col">Registered Address</th>
-                    <th scope="col">Contact</th>
-                    <th scope="col">Segments</th>
-                    <th scope="col">Registration No</th>
-                    <th scope="col">Registered On</th>
-                    <th scope="col">Status</th>
+                    <th scope="col">State</th>
+                    <th scope="col">Pin code</th>
+                    <th scope="col">Terminal Allotted</th>
+                    <th scope="col">No. of Terminals</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {filteredAps.map((ap) => (
-                    <tr key={ap.regNo}>
-                      <td className="ap-name">{ap.name}</td>
-                      <td>{ap.city}</td>
-                      <td>{ap.address} — {ap.pin}</td>
-                      <td>
-                        <a href={`tel:${ap.mobile}`} className="ap-tel">{ap.mobile}</a>
+                  {filteredAps.map((ap, i) => (
+                    <tr key={ap.codes[0].code}>
+                      <td className="ap-sr">{i + 1}</td>
+                      <th scope="row" className="ap-name">{ap.name}</th>
+                      <td className="ap-codes">
+                        {/* One column, codes separated by a slash, per the
+                            exchange's own note on the source sheet. */}
+                        {ap.codes.map((c, j) => (
+                          <span key={c.code}>
+                            {j > 0 && <span className="ap-slash" aria-hidden="true"> / </span>}
+                            <span className="mono">{c.code}</span>
+                            <span className="ap-exch">{c.exchange}</span>
+                          </span>
+                        ))}
                       </td>
-                      <td>
-                        <span className="seg-chips">
-                          {ap.segments.map((s) => (
-                            <span className={`seg-chip${s === 'F&O' ? ' fo' : ''}`} key={s}>{s}</span>
-                          ))}
-                        </span>
-                      </td>
-                      <td className="mono">{ap.regNo}</td>
-                      <td>{ap.regDate}</td>
+                      <td>{ap.constitution ?? <Pending />}</td>
                       <td><span className="status-pill">{ap.status}</span></td>
+                      <td className="ap-addr">{ap.address ?? <Pending />}</td>
+                      <td>{ap.city ?? <Pending />}</td>
+                      <td>{ap.state ?? <Pending />}</td>
+                      <td className="mono">{ap.pin ?? <Pending />}</td>
+                      <td className="ap-mid">{ap.terminalAllotted}</td>
+                      <td className="ap-mid">{ap.terminals}</td>
+                      <td>
+                        {ap.mobile
+                          ? <a href={`tel:${ap.mobile}`} className="ap-tel">{ap.mobile}</a>
+                          : <Pending />}
+                      </td>
                     </tr>
                   ))}
                   {filteredAps.length === 0 && (
                     <tr>
-                      <td colSpan={8} className="ap-empty">
+                      <td colSpan={12} className="ap-empty">
                         No authorised person matches &ldquo;{query}&rdquo;
                       </td>
                     </tr>
@@ -132,6 +170,12 @@ export default function Disclosures() {
                 </tbody>
               </table>
             </div>
+            <p className="ap-foot">
+              Authorised person codes are as issued by the exchange. Where a field is shown as
+              &ldquo;—&rdquo;, that detail is not on our record; it is left blank rather than
+              estimated. Call <a href="tel:07554266669" className="ap-tel">0755 426 6669</a> and we
+              will confirm it from the exchange filing.
+            </p>
           </>
         )}
       </div>

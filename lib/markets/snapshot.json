@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-19T19:23:13.492Z",
+ "fetchedAt": "2026-09-19T20:40:48.966Z",
  "marketTimestamp": "18-Sep-2026 15:30",
  "marketStatus": "Close",
  "source": "NSE India (nseindia.com public market data) · NSE full bhavcopy (delivery data) · NSE & BSE corporate filings, AMFI scheme data · CNBC market data · ECB reference rates",
@@ -672,14 +672,14 @@
      "vol": 4.95
     },
     {
-     "company": "RELAXO",
-     "last": 293.95,
-     "prev": 313.7,
-     "chgPct": -6.3,
-     "chg": -19.75,
-     "high": 315,
-     "low": 289.25,
-     "vol": 2052.97
+     "company": "TATATECH",
+     "last": 719,
+     "prev": 758.75,
+     "chgPct": -5.24,
+     "chg": -39.75,
+     "high": 761.4,
+     "low": 716.1,
+     "vol": 2215.52
     }
    ],
    "defaultSort": "chgPct"
@@ -4594,7 +4594,7 @@
    "slug": "world-indices",
    "title": "World Indices",
    "group": "institutional",
-   "blurb": "Global benchmark levels, the move against the previous close and the day’s trading range.",
+   "blurb": "Global benchmark levels, overnight moves and the day’s trading range.",
    "columns": [
     {
      "key": "country",
@@ -4653,164 +4653,10 @@
      "low": 7610.52,
      "change": 12.74,
      "chgPct": 0.17
-    },
-    {
-     "country": "United States",
-     "index": "Dow Jones Industrial Average",
-     "date": "18-Sep-2026",
-     "value": 51682.64,
-     "prev": 51778.04,
-     "high": 51826.78,
-     "low": 51497.47,
-     "change": -95.4,
-     "chgPct": -0.18
-    },
-    {
-     "country": "United States",
-     "index": "NASDAQ Composite",
-     "date": "18-Sep-2026",
-     "value": 26522.545,
-     "prev": 26418.298,
-     "high": 26544.93,
-     "low": 26333.983,
-     "change": 104.247,
-     "chgPct": 0.4
-    },
-    {
-     "country": "United Kingdom",
-     "index": "FTSE 100",
-     "date": "18-Sep-2026",
-     "value": 10659.13,
-     "prev": 10816.14,
-     "high": 10815.94,
-     "low": 10650.16,
-     "change": -157.01,
-     "chgPct": -1.45
-    },
-    {
-     "country": "Germany",
-     "index": "DAX",
-     "date": "18-Sep-2026",
-     "value": 25304.06,
-     "prev": 25716.71,
-     "high": 25656.22,
-     "low": 25285.9,
-     "change": -412.65,
-     "chgPct": -1.6
-    },
-    {
-     "country": "France",
-     "index": "CAC 40",
-     "date": "18-Sep-2026",
-     "value": 8065.02,
-     "prev": 8186.93,
-     "high": 8161.07,
-     "low": 8046.04,
-     "change": -121.91,
-     "chgPct": -1.49
-    },
-    {
-     "country": "Japan",
-     "index": "Nikkei 225",
-     "date": "18-Sep-2026",
-     "value": 65018.95,
-     "prev": 64136.25,
-     "high": 65436.57,
-     "low": 64403.85,
-     "change": 882.7,
-     "chgPct": 1.38
-    },
-    {
-     "country": "Hong Kong",
-     "index": "Hang Seng",
-     "date": "18-Sep-2026",
-     "value": 24750.78,
-     "prev": 24604.29,
-     "high": 24862.98,
-     "low": 24703.92,
-     "change": 146.49,
-     "chgPct": 0.6
-    },
-    {
-     "country": "China",
-     "index": "Shanghai Composite",
-     "date": "18-Sep-2026",
-     "value": 3911.871,
-     "prev": 3875.604,
-     "high": 3919.669,
-     "low": 3888.496,
-     "change": 36.267,
-     "chgPct": 0.94
-    },
-    {
-     "country": "South Korea",
-     "index": "KOSPI",
-     "date": "18-Sep-2026",
-     "value": 6894.23,
-     "prev": 6715.41,
-     "high": 6914.08,
-     "low": 6830.95,
-     "change": 178.82,
-     "chgPct": 2.66
-    },
-    {
-     "country": "Australia",
-     "index": "S&P/ASX 200",
-     "date": "18-Sep-2026",
-     "value": 8731.2,
-     "prev": 8732.4,
-     "high": 8771.6,
-     "low": 8717,
-     "change": -1.2,
-     "chgPct": -0.01
-    },
-    {
-     "country": "Canada",
-     "index": "S&P/TSX Composite",
-     "date": "18-Sep-2026",
-     "value": 35806.65,
-     "prev": 35874.26,
-     "high": 35864.96,
-     "low": 35650.43,
-     "change": -67.61,
-     "chgPct": -0.19
-    },
-    {
-     "country": "Brazil",
-     "index": "Bovespa",
-     "date": "18-Sep-2026",
-     "value": 185229.17,
-     "prev": 185992.03,
-     "high": 185991.47,
-     "low": 184460.91,
-     "change": -762.86,
-     "chgPct": -0.41
-    },
-    {
-     "country": "India",
-     "index": "NIFTY 50",
-     "date": "18-Sep-2026",
-     "value": 23346.4,
-     "prev": 23270.6,
-     "high": 23389.15,
-     "low": 23286.6,
-     "change": 75.8,
-     "chgPct": 0.33
-    },
-    {
-     "country": "India",
-     "index": "NIFTY Bank",
-     "date": "18-Sep-2026",
-     "value": 56358.7,
-     "prev": 56055.75,
-     "high": 56497.45,
-     "low": 56073.55,
-     "change": 302.95,
-     "chgPct": 0.54
     }
    ],
    "defaultSort": "chgPct",
-   "vendor": "CNBC market data"
+   "vendor": "Yahoo Finance"
   },
   {
    "slug": "adr-prices",
@@ -7226,7 +7072,7 @@
      "isin": "INE442A01024"
     },
     {
-     "company": "Assambrook Ltd-$",
+     "company": "Assambrook Ltd",
      "bseCode": "500025",
      "ticker": "ASSAMBR",
      "faceValue": "10.00",
@@ -8025,7 +7871,7 @@
     }
    ],
    "defaultSort": "total",
-   "note": "This table could not be refreshed on the latest build. Figures are as last retrieved on 17-Sep-2026 11:33.",
+   "note": "This table could not be refreshed on the latest build. Figures are as last retrieved on 18-Sep-2026 15:30.",
    "stale": true
   }
  ]
