@@ -1,74 +1,34 @@
 [
- {
-  "city": "Bhopal",
-  "address": "Kalpataru Multiplier Ltd,E-103, Arera Colony, Bhopal (Mp)-462016",
-  "person": "Anil Mahendra",
-  "mobile": "9329209601",
-  "phone": "0755-4233402",
-  "email": "anilmahendra@ymail.com"
- },
- {
-  "city": "Bhopal",
-  "address": "Kalpataru Multiplier Ltd,12-B Indrapuri Near Sbi Plant Bhel, Bhopal (Mp) - 462021",
-  "person": "Abha Jain",
-  "mobile": "8989271259/ 9329571129",
-  "phone": "0755-4260437/ 4901489",
-  "email": "kml03@kalpatarumulti.com"
- },
- {
-  "city": "Bhopal",
-  "address": "G-2/114 Aishwarya Tower Gulmohar Colony Bhopal (Mp) - 462039",
-  "person": "Smt. Meera Saxena",
-  "mobile": "9300327470/ 9300718386",
-  "phone": "0755-4296512/ 4296513",
-  "email": "kkassociates53@rediffmail.com"
- },
- {
-  "city": "Bhopal",
-  "address": "Shop No. 2, Bhagat Singh Chouraha, Sharma Parisar, Karond Bhopal (MP) – 462038",
-  "person": "Akhilesh Narayan Saxena",
-  "mobile": "9893032568",
-  "phone": "2742451",
-  "email": "sahu_jeedendra@yahoo.com"
- },
- {
-  "city": "Bhopal",
-  "address": "Kalpataru Multiplier Ltd, Kalpataru Tower, 131/16, Zone-2, M.P. Nagar, Bhopal (Mp)-462011",
-  "person": "Devendra Kumar Bihar",
-  "mobile": "8989869740",
-  "phone": "0755-3147089",
-  "email": "kmlmpnagar@kalpatarumulti.com"
- },
- {
-  "city": "Bhopal",
-  "address": "Kalpataru Multiplier Ltd,103, Earning Point Complex Mandakni Chouraha Kolar Road Bhopal (Mp)",
-  "person": "YOGESH NAMDEO",
-  "mobile": "9300327458",
-  "phone": "0755-4276710",
-  "email": "kml02@kalpatarumulti.com"
- },
- {
-  "city": "Bhopal",
-  "address": "Kalpataru Multiplier Ltd,Kalpataru House 18 Itwara Bhopal (Mp)",
-  "person": "S. N. Tiwari",
-  "mobile": "9893276728",
-  "phone": "0755-4262655",
-  "email": "cgm@kalpatarumulti.com"
- },
- {
-  "city": "Bhopal",
-  "address": "45-FF Minal shopping mall, Jk Road Bhopal Madhya Pradesh 462037",
-  "person": "KAILASH KUMAR PARYANI",
-  "mobile": "7974521728",
-  "phone": "0755-4279637",
-  "email": "paryanik@rediffmail.com"
- },
- {
-  "city": "Bhopal",
-  "address": "27 NOBAL PLAZA FIRST FLOOR ZONE 2 MP NAGAR Bhopal (Mp)-462011",
-  "person": "PANKAJ CHOURASIA",
-  "mobile": "9425370687",
-  "phone": "0755-4250687",
-  "email": "chourasia.pankaj@gmail.com"
- }
+  {
+    "city": "Bhopal",
+    "address": "Kalpataru Multiplier Ltd,E-103, Arera Colony, Bhopal (Mp)-462016",
+    "person": "Anil Mahendra",
+    "mobile": "9329209601",
+    "phone": "0755-4233402",
+    "email": "anilmahendra@ymail.com"
+  },
+  {
+    "city": "Bhopal",
+    "address": "Kalpataru Multiplier Ltd,12-B Indrapuri Near Sbi Plant Bhel, Bhopal (Mp) - 462021",
+    "person": "Abha Jain",
+    "mobile": "8989271259/ 9329571129",
+    "phone": "0755-4260437/ 4901489",
+    "email": "kml03@kalpatarumulti.com"
+  },
+  {
+    "city": "Bhopal",
+    "address": "Kalpataru Multiplier Ltd,Kalpataru House 18 Itwara Bhopal (Mp)",
+    "person": "S. N. Tiwari",
+    "mobile": "9893276728",
+    "phone": "0755-4262655",
+    "email": "cgm@kalpatarumulti.com"
+  },
+  {
+    "city": "Bhopal",
+    "address": "45-FF Minal shopping mall, Jk Road Bhopal Madhya Pradesh 462037",
+    "person": "KAILASH KUMAR PARYANI",
+    "mobile": "7974521728",
+    "phone": "0755-4279637",
+    "email": "paryanik@rediffmail.com"
+  }
 ]

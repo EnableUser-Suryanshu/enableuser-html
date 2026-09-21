@@ -1312,8 +1312,6 @@ html{scroll-padding-top:108px}
 .ap-table .status-pill{font-size:9.5px;padding:3px 8px;gap:4px}
 .ap-table .status-pill::before{width:5px;height:5px}
 
-.ap-foot{margin:16px auto 0;max-width:820px;text-align:center;font-size:12.5px;line-height:1.7;color:var(--ink-3)}
-.ap-foot .ap-tel{font-size:12.5px}
 
 /* Below this the seven columns stop fitting, so each row becomes a card and
    the column headings move into the cells via data-label. The table semantics
@@ -1357,7 +1355,6 @@ html{scroll-padding-top:108px}
   /* The serial number is the row's position, which the card order already
      shows — and it would otherwise take a slot of its own. */
   .ap-table td.ap-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-  .ap-foot{text-align:left}
 }
 
 @media (max-width:1020px){.kmp-grid{grid-template-columns:1fr 1fr}}

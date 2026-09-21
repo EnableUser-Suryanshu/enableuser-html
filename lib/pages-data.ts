@@ -58,7 +58,7 @@ export const HEAD_OFFICES = [
       'Hall No. 2, 1st Floor Western Block, Above Central Bank, GTB Complex, T. T. Nagar, Bhopal - 462003',
     phones: ['0755-4350141-143', '0755-4283016'],
     email: 'kmlho@kalpatarumulti.com',
-    person: 'Amitabh Manya Jain',
+    person: 'Amitabh Manya Jain (MD)',
   },
   {
     label: 'Head Office (Registered)',
