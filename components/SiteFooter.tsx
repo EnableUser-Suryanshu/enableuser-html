@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { MEMBER_DETAILS } from '@/lib/data';
+import { siteDocumentUrl } from '@/lib/site-documents';
 import {
   APP_LINKS, MAPS, POLICY_LINKS, REGULATOR_LINKS, SOCIAL_LINKS, EXT, isInternalPolicy,
 } from '@/lib/links';
@@ -8,6 +9,14 @@ import {
   Phone, Mail, Person, Map, Pencil, ListCheck, Bank, Handshake, Headset, Download, IdCard,
   Calculator,
 } from './icons';
+
+/**
+ * Marker for a link whose file lives in Sanity. The column table is static, so
+ * the entry carries this instead of a URL and the real one is swapped in when
+ * the footer renders. Keeps the link in its published position rather than
+ * pushing it to the end of the column.
+ */
+const SITE_DOC_HREF = 'sanity:investor-complaint-process';
 
 const POLICY_COLUMNS = [
   {
@@ -29,7 +38,8 @@ const POLICY_COLUMNS = [
       ['Investor Charter — Stock Broker', POLICY_LINKS.investorCharter],
       ['Investor Charter — Depository Participant', POLICY_LINKS.investorCharterDepository],
       ['Sebi Complaint', POLICY_LINKS.sebiComplaint],
-      ['Investor/Client Complaint Process', POLICY_LINKS.complaintProcess],
+      // Resolved from Sanity at request time — see SITE_DOC_HREF below.
+      ['Investor/Client Complaint Process', SITE_DOC_HREF],
       ['Advisory for Investor', POLICY_LINKS.advisory],
       ['Risk Disclosures on Derivatives', POLICY_LINKS.riskDisclosures],
       ['Shareholder e-Voting (CDSL)', REGULATOR_LINKS.cdslEvoting],
@@ -52,7 +62,15 @@ const POLICY_COLUMNS = [
   },
 ] as const;
 
-export default function SiteFooter() {
+export default async function SiteFooter() {
+  /*
+    Served from Sanity so compliance can replace the PDF without a deployment.
+    Everything else in these columns is a policy page or a regulator's own
+    site, neither of which we host; this is the one file of ours a fixed link
+    points at. Falls back to the copy in the repo if Sanity is unreachable.
+  */
+  const complaintProcess = await siteDocumentUrl('investor-complaint-process');
+
   return (
     <footer className="footer">
       <div className="container">
@@ -136,12 +154,13 @@ export default function SiteFooter() {
               {POLICY_COLUMNS.map((col) => (
                 <div key={col.heading}>
                   <h3>{col.heading}</h3>
-                  {col.links.map(([label, href]) =>
+                  {col.links.map(([label, href]) => {
+                    const to = href === SITE_DOC_HREF ? complaintProcess : href;
                     // policy pages route in-app; PDFs and regulator links open in a new tab
-                    isInternalPolicy(href) && !href.endsWith('.pdf')
-                      ? <Link key={label} href={href}>{label}</Link>
-                      : <a key={label} href={href} {...EXT}>{label}</a>,
-                  )}
+                    return isInternalPolicy(to) && !to.endsWith('.pdf')
+                      ? <Link key={label} href={to}>{label}</Link>
+                      : <a key={label} href={to} {...EXT}>{label}</a>;
+                  })}
                 </div>
               ))}
             </div>
