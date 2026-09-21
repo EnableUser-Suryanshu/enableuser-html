@@ -13,8 +13,15 @@
  * Rendered through headless Chrome, which is the only thing on this machine
  * that lays out CSS properly. cupsfilter ignores stylesheets, and installing a
  * PDF toolchain for four documents is not worth it.
+ *
+ * Output is deterministic: Chrome stamps the wall clock into /CreationDate and
+ * /ModDate, so an unchanged guide still rendered to different bytes every run
+ * — which showed up as four modified files in git and four pointless uploads
+ * to Sanity. Both dates are rewritten to a fixed value afterwards, so
+ * identical content produces an identical file.
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync, unlinkSync, statSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
@@ -242,9 +249,20 @@ for (const g of GUIDES) {
     `--print-to-pdf=${pdfPath}`, `file://${htmlPath}`,
   ], { stdio: 'pipe' });
 
+  // Same length, so the xref offsets stay valid without rebuilding them.
+  const FIXED = "D:20260101000000+00'00'";
+  const buf = readFileSync(pdfPath);
+  const fixed = Buffer.from(
+    buf.toString('latin1').replace(/(\/(?:Creation|Mod)Date\s*\()[^)]*(\))/g, `$1${FIXED}$2`),
+    'latin1',
+  );
+  if (fixed.length !== buf.length) throw new Error(`${g.file}: date rewrite changed the file length`);
+  writeFileSync(pdfPath, fixed);
+
   if (!KEEP) unlinkSync(htmlPath);
   const steps = g.sections.reduce((n, s) => n + s.steps.length, 0);
-  console.log(`  ✓ ${g.file}.pdf  ${kb(statSync(pdfPath).size).padStart(7)}  ${steps} steps`);
+  const sha = createHash('sha1').update(fixed).digest('hex').slice(0, 8);
+  console.log(`  ✓ ${g.file}.pdf  ${kb(statSync(pdfPath).size).padStart(7)}  ${steps} steps  ${sha}`);
 }
 
 console.log(`\n${GUIDES.length} guides written to public/files/guides/`);
