@@ -1,9 +1,10 @@
 /**
  * Investor-awareness notices shown on first visit each session.
  *
- * These are the four banners kalpatarumulti.com publishes, and they are shown
- * here as the same pictures, so the pop-ups look like the ones clients already
- * know. Each banner is also written out as text — `title`, `lead`, `groups`,
+ * These are the banners kalpatarumulti.com publishes, shown here as the same
+ * pictures so the pop-ups look like the ones clients already know. Three open
+ * in the carousel; the SCORES one is exported separately and shown at the
+ * point it is relevant — see SCORES_NOTICE at the foot of this file. Each banner is also written out as text — `title`, `lead`, `groups`,
  * `footnote` — because every one of them is a picture of a paragraph, and a
  * picture of a paragraph cannot be read aloud, enlarged, translated or
  * selected. The component renders the image for sighted visitors and the text
@@ -126,29 +127,38 @@ export const NOTICES: Notice[] = [
     image: { src: '/assets/popups/sebi-banner.jpg', w: 1400, h: 787 },
     cta: { label: 'Visit investor.sebi.gov.in', href: 'https://investor.sebi.gov.in/' },
   },
-  {
-    id: 'scores-filing-2026',
-    theme: 'scores',
-    source: 'Investor grievance',
-    title: 'Filing a complaint on SCORES',
-    lead:
-      'If we have not resolved something to your satisfaction, SEBI’s SCORES portal is your next step — and it is designed to be quick.',
-    groups: [
-      {
-        heading: 'Keep ready',
-        items: ['Name', 'PAN', 'Address', 'Mobile number', 'Email ID'],
-      },
-      {
-        heading: 'What you get',
-        items: [
-          'Direct communication with us and with SEBI',
-          'Speedy redressal of the grievance',
-          'Status visible to you, end to end',
-        ],
-      },
-    ],
-    image: { src: '/assets/popups/scores-banner.png', w: 336, h: 425 },
-    cta: { label: 'Register on SCORES', href: 'https://scores.sebi.gov.in/' },
-    footnote: 'Quote your Complaint Reference Number so SEBI can trace what we have already done.',
-  },
 ];
+
+/**
+ * The SCORES notice. Deliberately NOT in NOTICES.
+ *
+ * It answers one question — how do I escalate a complaint to SEBI — and the
+ * place that question gets asked is at a link to scores.sebi.gov.in. Shown
+ * there on hover or focus it is an answer; shown in the opening carousel to
+ * everyone it is an interruption. ScoresHoverCard renders it.
+ */
+export const SCORES_NOTICE: Notice = {
+  id: 'scores-filing-2026',
+  theme: 'scores',
+  source: 'Investor grievance',
+  title: 'Filing a complaint on SCORES',
+  lead:
+    'If we have not resolved something to your satisfaction, SEBI’s SCORES portal is your next step — and it is designed to be quick.',
+  groups: [
+    {
+      heading: 'Keep ready',
+      items: ['Name', 'PAN', 'Address', 'Mobile number', 'Email ID'],
+    },
+    {
+      heading: 'What you get',
+      items: [
+        'Direct communication with us and with SEBI',
+        'Speedy redressal of the grievance',
+        'Status visible to you, end to end',
+      ],
+    },
+  ],
+  image: { src: '/assets/popups/scores-banner.png', w: 336, h: 425 },
+  cta: { label: 'Register on SCORES', href: 'https://scores.sebi.gov.in/' },
+  footnote: 'Quote your Complaint Reference Number so SEBI can trace what we have already done.',
+};

@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { NOTICES, OPEN_NOTICES } from '@/lib/notices';
 import { EXT } from '@/lib/links';
-import { ArrowRight, CheckCircle } from './icons';
+import { ArrowRight, CheckCircle, PauseIcon, PlayIcon } from './icons';
 
 /**
  * Investor-awareness notices — the four banners kalpatarumulti.com publishes.
@@ -20,19 +20,26 @@ import { ArrowRight, CheckCircle } from './icons';
  *  - labelled by its own heading, aria-modal, focus moved in on open and
  *    returned to the trigger on close
  *  - Tab cycles inside the dialog; Escape closes; arrows move between notices
- *  - nothing moves on its own. The notices advance only when someone presses
- *    Next or an arrow key, which is why there is no pause control: WCAG 2.2.2
- *    applies to content that auto-advances, and none of this does.
+ *  - autoplay has a real pause button, not just pause-on-hover — hovering is
+ *    not available to keyboard or touch users (WCAG 2.2.2), and any deliberate
+ *    move stops it too
+ *  - autoplay never starts for anyone who has asked to reduce motion
  */
+
+const AUTO_MS = 7000;
 
 export default function RegulatoryPopup() {
   const [open, setOpen] = useState(false);
   const [idx, setIdx] = useState(0);
+  const [playing, setPlaying] = useState(true);
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const returnTo = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
+    // Autoplay never starts for anyone who has asked to reduce motion.
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) setPlaying(false);
+
     // Re-opening from the bell always works, dismissal or not — the whole
     // point of that button is to get back to notices already dismissed.
     const reopen = () => { setIdx(0); setOpen(true); };
@@ -67,7 +74,17 @@ export default function RegulatoryPopup() {
 
   const go = useCallback((n: number) => {
     setIdx((n + NOTICES.length) % NOTICES.length);
+    // Any deliberate move stops the carousel — carrying on advancing under
+    // someone who has just chosen a notice takes it away from them again.
+    setPlaying(false);
   }, []);
+
+  /* autoplay */
+  useEffect(() => {
+    if (!open || !playing) return;
+    const id = setInterval(() => setIdx((i) => (i + 1) % NOTICES.length), AUTO_MS);
+    return () => clearInterval(id);
+  }, [open, playing]);
 
   /* focus management, key handling, scroll lock */
   useEffect(() => {
@@ -187,14 +204,28 @@ export default function RegulatoryPopup() {
           {n.footnote && <p className="rpop-note">{n.footnote}</p>}
         </div>
 
-        {/* One control. It cycles, so the last notice leads back to the
-            first and nothing is unreachable from here. */}
         <div className="rpop-foot">
+          {/* A real pause button, not pause-on-hover: hovering is unavailable
+              to keyboard and touch users, and WCAG 2.2.2 wants anything that
+              moves on its own to be stoppable by everyone. */}
+          <button
+            type="button"
+            className="rpop-play"
+            onClick={() => setPlaying((p) => !p)}
+            aria-label={playing ? 'Pause automatic slides' : 'Play automatic slides'}
+          >
+            {playing ? <PauseIcon size={14} strokeW={2.2} /> : <PlayIcon size={14} strokeW={2.2} />}
+          </button>
+
           <span className="rpop-count" aria-hidden="true">{idx + 1} / {NOTICES.length}</span>
+
+          {/* Cycles, so the last notice leads back to the first. */}
           <button type="button" className="rpop-next" onClick={() => go(idx + 1)}>
             Next <ArrowRight size={15} strokeW={2.4} />
           </button>
         </div>
+
+        {playing && <span className="rpop-progress" key={`p-${idx}`} aria-hidden="true" />}
 
       </div>
     </div>

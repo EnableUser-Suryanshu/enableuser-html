@@ -10,6 +10,7 @@ import ProgressBar from '@/components/ProgressBar';
 import ChromeGate from '@/components/ChromeGate';
 import PointerFx from '@/components/PointerFx';
 import RegulatoryPopup from '@/components/RegulatoryPopup';
+import ScoresHoverCard from '@/components/ScoresHoverCard';
 import './globals.css';
 
 const poppins = Poppins({
@@ -52,6 +53,7 @@ export default function RootLayout({
           <Fab />
           <PointerFx />
           <RegulatoryPopup />
+          <ScoresHoverCard />
         </ChromeGate>
 
         {/*

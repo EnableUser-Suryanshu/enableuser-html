@@ -162,7 +162,7 @@ export default function CustomerCarePage() {
         <div className="container">
           <div className="fb-wrap">
             <div className="fb-intro">
-              <h2 id="fb-h" className="sec-title">Client Feedback</h2>
+              <h2 id="fb-h" className="sec-title">Raise a Ticket</h2>
               <p className="sec-sub" style={{ marginTop: 16 }}>
                 Compliment, complaint or suggestion — tell us and it reaches the customer-care
                 desk directly. We treat every response as a chance to improve.

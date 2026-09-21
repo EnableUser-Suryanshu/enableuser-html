@@ -1830,10 +1830,20 @@ html{scroll-padding-top:108px}
 .rpop-cta:hover{transform:translateY(-2px);box-shadow:0 12px 26px -12px rgba(1,13,35,.5)}
 .rpop-note{font-size:12px;line-height:1.65;color:var(--ink-3);margin:14px 0 0;padding-left:11px;border-left:2px solid var(--line)}
 
-/* One control, with the position shown beside it so a reader knows how many
-   notices are left before pressing it. */
-.rpop-foot{flex:none;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 22px 16px;margin-top:12px;border-top:1px solid var(--line);background:#fff}
-.rpop-count{font-size:12px;font-weight:600;color:var(--ink-3);font-variant-numeric:tabular-nums}
+/* Pause/play on the left, position in the middle, Next on the right. */
+.rpop-foot{flex:none;display:flex;align-items:center;gap:12px;padding:14px 22px 16px;margin-top:12px;border-top:1px solid var(--line);background:#fff}
+.rpop-play{width:30px;height:30px;flex:none;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;background:#fff;color:var(--ink-3);cursor:pointer;transition:border-color .2s,color .2s}
+.rpop-play:hover{border-color:var(--ink-3);color:var(--ink)}
+.rpop-play:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.rpop-count{flex:1;font-size:12px;font-weight:600;color:var(--ink-3);font-variant-numeric:tabular-nums}
+
+/* Runs the length of one slide, so the pause button has something to pause
+   that is visible. Sits on the dialog's bottom edge. */
+.rpop-progress{position:absolute;left:0;bottom:0;height:3px;width:100%;transform-origin:left;animation:rpopBar 7s linear forwards}
+.rpop-cdsl   .rpop-progress{background:#1a4fa0}
+.rpop-sebi   .rpop-progress{background:#11857e}
+.rpop-nseix  .rpop-progress{background:#b45309}
+@keyframes rpopBar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 .rpop-next{display:inline-flex;align-items:center;gap:7px;padding:9px 18px;border:1px solid var(--line);border-radius:999px;background:#fff;font-family:inherit;font-size:13px;font-weight:600;color:var(--ink);cursor:pointer;transition:border-color .2s,background .2s,color .2s}
 .rpop-next:hover{background:var(--ink);border-color:var(--ink);color:#fff}
 .rpop-next:focus-visible{outline:2px solid var(--red);outline-offset:2px}
@@ -1843,6 +1853,7 @@ html{scroll-padding-top:108px}
 @keyframes rpopRise{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){
   .rpop-overlay,.rpop{animation:none}
+  .rpop-progress{display:none}
   .rpop-cta:hover{transform:none}
 }
 @media(max-width:560px){
@@ -1852,3 +1863,20 @@ html{scroll-padding-top:108px}
   .rpop-body .rpop-note{margin:12px 20px 0}
   .rpop-foot{padding:13px 18px 15px}
 }
+
+/* ---- SCORES notice on hover / focus ----
+   Attached to any link to scores.sebi.gov.in. Fixed-positioned because the
+   coordinates come from getBoundingClientRect, which is viewport-relative. */
+.shc{
+  position:fixed;z-index:1900;width:320px;max-height:min(70vh,440px);overflow:auto;
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  box-shadow:0 22px 50px -18px rgba(1,13,35,.42);
+  animation:shcIn .16s ease-out;
+}
+.shc-img{display:block;width:100%;height:auto;border-radius:13px 13px 0 0}
+.shc-note{margin:0;padding:11px 14px 13px;font-size:11.5px;line-height:1.6;color:var(--ink-3);border-top:1px solid var(--line)}
+@keyframes shcIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.shc{animation:none}}
+/* A card that follows a hover is noise on a touch screen, where there is no
+   hover and a tap is already a navigation. */
+@media (hover:none){.shc{display:none}}
