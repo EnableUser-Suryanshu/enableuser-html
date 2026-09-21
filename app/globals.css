@@ -1766,22 +1766,23 @@ html{scroll-padding-top:108px}
 
 /* ------------------------------------------------- investor notice popup */
 .rpop-overlay{position:fixed;inset:0;z-index:2000;background:rgba(1,13,35,.58);backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;padding:20px;animation:rpopFade .2s ease}
-.rpop{position:relative;width:100%;max-width:530px;max-height:90vh;overflow-y:auto;background:#fff;border-radius:20px;box-shadow:0 34px 90px -26px rgba(1,13,35,.55);animation:rpopRise .3s cubic-bezier(.22,1,.36,1)}
+.rpop{position:relative;display:flex;flex-direction:column;width:100%;max-width:530px;max-height:90vh;overflow:hidden;background:#fff;border-radius:20px;box-shadow:0 34px 90px -26px rgba(1,13,35,.55);animation:rpopRise .3s cubic-bezier(.22,1,.36,1)}
 
-/* Accent band — each notice reads as its own thing, not three of the same. */
-.rpop-band{height:78px;display:flex;align-items:center;padding:0 30px;position:relative;overflow:hidden}
-.rpop-band::after{content:"";position:absolute;right:-34px;top:-52px;width:150px;height:150px;border-radius:50%;background:rgba(255,255,255,.13)}
-.rpop-cdsl   .rpop-band{background:linear-gradient(115deg,#0b2f6b,#1a4fa0)}
-.rpop-sebi   .rpop-band{background:linear-gradient(115deg,#0a4d4a,#11857e)}
-.rpop-scores .rpop-band{background:linear-gradient(115deg,#7d0b10,#bb0009)}
-.rpop-nseix  .rpop-band{background:linear-gradient(115deg,#7c3c05,#b45309)}
-.rpop-glyph{width:46px;height:46px;border-radius:13px;background:rgba(255,255,255,.17);display:flex;align-items:center;justify-content:center;color:#fff;position:relative;z-index:1}
+/* The banner fills the dialog, so the close button sits on artwork whose
+   colour we do not control — every one of these banners is pale. A solid dark
+   chip keeps it visible on all four instead of hoping for a dark backdrop. */
+.rpop-x{position:absolute;top:14px;right:14px;z-index:3;width:34px;height:34px;display:flex;align-items:center;justify-content:center;border:0;border-radius:50%;background:rgba(1,13,35,.62);color:#fff;cursor:pointer;transition:background .2s}
+.rpop-x:hover{background:rgba(1,13,35,.85)}
+.rpop-x:focus-visible{outline:2px solid #fff;outline-offset:2px;background:rgba(1,13,35,.9)}
 
-.rpop-x{position:absolute;top:16px;right:18px;z-index:3;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border:0;border-radius:50%;background:rgba(255,255,255,.2);color:#fff;cursor:pointer;transition:background .2s}
-.rpop-x:hover{background:rgba(255,255,255,.38)}
-.rpop-x:focus-visible{outline:2px solid #fff;outline-offset:2px}
-
-.rpop-body{padding:22px 30px 4px}
+/* The four banners run from 650x365 to 1136x1280, so the dialog height moves
+   with the picture. Pinning the footer and scrolling only the body keeps the
+   dots and the pause button reachable on the tall one. */
+.rpop-body{padding:0;overflow-y:auto;flex:1;min-height:0}
+.rpop-img{display:block;width:100%;height:auto;background:#f2f3f5;border-radius:20px 20px 0 0}
+.rpop-body .rpop-cta{margin:20px 30px 0}
+.rpop-body .rpop-note{margin:14px 30px 0}
+.rpop-body .rpop-note:last-child{margin-bottom:4px}
 .rpop-source{font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;margin:0 0 7px}
 .rpop-cdsl   .rpop-source{color:#1a4fa0}
 .rpop-sebi   .rpop-source{color:#11857e}
@@ -1812,7 +1813,7 @@ html{scroll-padding-top:108px}
 .rpop-cta:hover{transform:translateY(-2px);box-shadow:0 12px 26px -12px rgba(1,13,35,.5)}
 .rpop-note{font-size:12px;line-height:1.65;color:var(--ink-3);margin:14px 0 0;padding-left:11px;border-left:2px solid var(--line)}
 
-.rpop-foot{display:flex;align-items:center;gap:14px;padding:18px 30px 22px;margin-top:16px;border-top:1px solid var(--line)}
+.rpop-foot{flex:none;display:flex;align-items:center;gap:14px;padding:16px 30px 18px;margin-top:14px;border-top:1px solid var(--line);background:#fff}
 .rpop-play{width:30px;height:30px;flex:none;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;background:#fff;color:var(--ink-3);cursor:pointer;transition:border-color .2s,color .2s}
 .rpop-play:hover{border-color:var(--ink-3);color:var(--ink)}
 .rpop-dots{display:flex;gap:7px;flex:1}

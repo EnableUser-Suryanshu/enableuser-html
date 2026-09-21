@@ -3,16 +3,17 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { NOTICES } from '@/lib/notices';
 import { EXT } from '@/lib/links';
-import {
-  ArrowRight, CheckCircle, Shield, Smartphone, ListCheck, Globe, PauseIcon, PlayIcon,
-} from './icons';
+import { ArrowRight, CheckCircle, PauseIcon, PlayIcon } from './icons';
 
 /**
- * Investor-awareness notices — CDSL, SEBI and SCORES.
+ * Investor-awareness notices — the four banners kalpatarumulti.com publishes.
  *
- * Replaces a carousel of flat PNGs (one of them 2.5 MB) with real content, so
- * the text can be read aloud, zoomed, translated and selected. Each notice
- * gets its own accent so the three do not blur into one another.
+ * The banner itself is what a visitor sees, so the pop-ups look like the ones
+ * clients already know. Each one is also carried as real text in lib/notices,
+ * rendered visually hidden beside the image: these are pictures of paragraphs,
+ * and a picture of a paragraph cannot be read aloud, enlarged by this site's
+ * own accessibility toolkit, translated or selected. Image for the eye, text
+ * for everything else, one source so the two cannot drift apart.
  *
  * Accessibility, because a modal that strands a keyboard user is worse than no
  * modal at all:
@@ -25,8 +26,6 @@ import {
  */
 
 const AUTO_MS = 7000;
-
-const THEME_ICON = { cdsl: Smartphone, sebi: Shield, scores: ListCheck, nseix: Globe } as const;
 
 export default function RegulatoryPopup() {
   const [open, setOpen] = useState(false);
@@ -104,7 +103,6 @@ export default function RegulatoryPopup() {
   if (!open) return null;
 
   const n = NOTICES[idx];
-  const Icon = THEME_ICON[n.theme];
 
   return (
     <div
@@ -125,33 +123,53 @@ export default function RegulatoryPopup() {
           </svg>
         </button>
 
-        {/* Accent band — decorative, so it carries no information of its own. */}
-        <div className="rpop-band" aria-hidden="true">
-          <span className="rpop-glyph"><Icon size={26} strokeW={1.9} /></span>
-        </div>
-
         {/* The live region announces each notice as it changes. */}
         <div className="rpop-body" aria-live="polite">
-          <p className="rpop-source">{n.source}</p>
-          <h2 className="rpop-title" id="rpop-title">
-            {n.titleHi && <span className="rpop-title-hi" lang="hi">{n.titleHi}</span>}
-            {n.title}
-          </h2>
-          <p className="rpop-lead">{n.lead}</p>
+          {/*
+            The banner as kalpatarumulti.com publishes it. alt is empty on
+            purpose: the same content follows as real text below, and a screen
+            reader should hear it once, not twice. Intrinsic width/height stop
+            the dialog jumping as each image loads.
+          */}
+          <img
+            className="rpop-img"
+            src={n.image.src}
+            alt=""
+            width={n.image.w}
+            height={n.image.h}
+            /* The first notice is what opens; the rest can wait. */
+            loading={idx === 0 ? 'eager' : 'lazy'}
+            decoding="async"
+          />
 
-          {n.groups?.map((g) => (
-            <div className="rpop-group" key={g.heading}>
-              <p className="rpop-group-h">{g.heading}</p>
-              <ul>
-                {g.items.map((it) => (
-                  <li key={it}>
-                    <CheckCircle size={15} strokeW={2.3} aria-hidden="true" />
-                    <span>{it}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {/*
+            The picture's content, in text. Visually hidden because the image
+            above already shows it, but it is what assistive technology reads,
+            what the site's accessibility toolkit can enlarge, and what a
+            translation tool can translate — none of which work on a JPEG.
+          */}
+          <div className="rpop-alt sr-only">
+            <p className="rpop-source">{n.source}</p>
+            <h2 className="rpop-title" id="rpop-title">
+              {n.titleHi && <span className="rpop-title-hi" lang="hi">{n.titleHi}</span>}
+              {n.title}
+            </h2>
+            <p className="rpop-lead">{n.lead}</p>
+
+            {n.groups?.map((g) => (
+              <div className="rpop-group" key={g.heading}>
+                <p className="rpop-group-h">{g.heading}</p>
+                <ul>
+                  {g.items.map((it) => (
+                    <li key={it}>
+                      <CheckCircle size={15} strokeW={2.3} aria-hidden="true" />
+                      <span>{it}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
 
           <a href={n.cta.href} {...EXT} className="rpop-cta" onClick={close}>
             {n.cta.label} <ArrowRight size={16} strokeW={2.3} />

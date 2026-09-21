@@ -1,12 +1,16 @@
 /**
  * Investor-awareness notices shown on first visit each session.
  *
- * The live site (kalpatarumulti.com) serves these as flat PNG banners. They
- * are rebuilt here as structured content because a picture of a paragraph
- * cannot be read aloud, cannot be zoomed without going soft, cannot be
- * translated and cannot be selected — and one of those banners was 2.5 MB.
- * This site ships an accessibility widget; its own pop-ups should not be the
- * least accessible thing on the page.
+ * These are the four banners kalpatarumulti.com publishes, and they are shown
+ * here as the same pictures, so the pop-ups look like the ones clients already
+ * know. Each banner is also written out as text — `title`, `lead`, `groups`,
+ * `footnote` — because every one of them is a picture of a paragraph, and a
+ * picture of a paragraph cannot be read aloud, enlarged, translated or
+ * selected. The component renders the image for sighted visitors and the text
+ * for everyone else, so the two never disagree.
+ *
+ * The SEBI banner is served at 1400px rather than the original 5202px: the
+ * source file was 2.5 MB for something shown about 600px wide.
  *
  * `id` is what a dismissal is remembered against. Change it when the content
  * changes materially and the notice reappears; leave it for a typo fix so
@@ -31,6 +35,16 @@ export interface Notice {
   lead: string;
   /** Optional grouped detail. */
   groups?: { heading: string; items: string[] }[];
+  /**
+   * The banner as the live site publishes it. This is what a sighted visitor
+   * sees; `title`, `lead` and `groups` above are the same content as text,
+   * rendered for screen readers and for anyone using the site's own
+   * accessibility toolkit — a picture of a paragraph cannot be read aloud,
+   * enlarged, translated or selected, and every one of these banners is one.
+   * Intrinsic dimensions are declared so the dialog does not jump as each
+   * image loads.
+   */
+  image: { src: string; w: number; h: number };
   cta: { label: string; href: string };
   /** Shown under the button — the caveat or the practical note. */
   footnote?: string;
@@ -59,6 +73,7 @@ export const NOTICES: Notice[] = [
         ],
       },
     ],
+    image: { src: '/assets/popups/nseix-banner.jpg', w: 1136, h: 1280 },
     cta: { label: 'Open the NSE IX Global login', href: 'https://trade.nseixga.com/login?kalpataru' },
     footnote:
       'Enquiries and reservations: 0755 427 6725 · 98264 30536 · 94250 08895 · 72229 49234 · 89892 71259',
@@ -79,6 +94,7 @@ export const NOTICES: Notice[] = [
         ],
       },
     ],
+    image: { src: '/assets/popups/cdsl-banner.png', w: 650, h: 365 },
     cta: { label: 'Open Easi / Easiest', href: 'https://web.cdslindia.com/myeasitoken/home/login' },
     footnote: 'CDSL is your depository. Kalpataru is your DP — we never ask for your CDSL password.',
   },
@@ -100,6 +116,7 @@ export const NOTICES: Notice[] = [
         ],
       },
     ],
+    image: { src: '/assets/popups/sebi-banner.jpg', w: 1400, h: 787 },
     cta: { label: 'Visit investor.sebi.gov.in', href: 'https://investor.sebi.gov.in/' },
   },
   {
@@ -123,6 +140,7 @@ export const NOTICES: Notice[] = [
         ],
       },
     ],
+    image: { src: '/assets/popups/scores-banner.png', w: 336, h: 425 },
     cta: { label: 'Register on SCORES', href: 'https://scores.sebi.gov.in/' },
     footnote: 'Quote your Complaint Reference Number so SEBI can trace what we have already done.',
   },
