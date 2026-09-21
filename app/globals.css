@@ -645,16 +645,20 @@ html{scroll-padding-top:108px}
 .fab::after{content:"";position:absolute;inset:-6px;border-radius:50%;background:conic-gradient(var(--red-bright) calc(var(--p,0)*1%),rgba(187,0,9,.15) 0);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 4px),#000 calc(100% - 3px));mask:radial-gradient(farthest-side,transparent calc(100% - 4px),#000 calc(100% - 3px))}
 .fab:hover{transform:scale(1.12) rotate(-8deg)}
 
-/* Support button and notices bell, stacked bottom-right. The stack owns the
-   position now; .fab keeps its own so nothing else that uses it moves. */
-.fab-stack{position:fixed;right:26px;bottom:26px;z-index:70;display:flex;flex-direction:column;align-items:center;gap:12px}
-.fab-stack .fab{position:static;right:auto;bottom:auto}
-/* Smaller, and without the pulse ring — one thing on screen should pulse. */
+/* Notices bell and support button, side by side bottom-right, bell on the
+   left. The stack owns the fixed position; each .fab must stay `relative`
+   rather than `static`, or its ripple and scroll-progress rings — both
+   absolutely positioned at inset:-6px — resolve against the whole stack and
+   draw one big ellipse around both buttons instead of a ring around each. */
+.fab-stack{position:fixed;right:26px;bottom:26px;z-index:70;display:flex;align-items:center;gap:14px}
+.fab-stack .fab{position:relative;right:auto;bottom:auto}
+/* Smaller, and with neither ring — one thing on screen pulsing is enough,
+   and the scroll progress belongs to the support button. */
 .fab-bell{width:46px;height:46px;box-shadow:0 8px 20px rgba(1,13,35,.28);background:linear-gradient(135deg,#243a63,#0b1f3a)}
-.fab-bell::before,.fab-bell::after{display:none}
+.fab-bell::before,.fab-bell::after{content:none}
 .fab-bell:hover{transform:scale(1.1) rotate(8deg)}
 @media (max-width:560px){
-  .fab-stack{right:16px;bottom:16px;gap:10px}
+  .fab-stack{right:16px;bottom:16px;gap:11px}
   .fab-bell{width:42px;height:42px}
 }
 
