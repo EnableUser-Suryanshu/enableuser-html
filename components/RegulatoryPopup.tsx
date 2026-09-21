@@ -43,6 +43,18 @@ export default function RegulatoryPopup() {
     return () => clearTimeout(t);
   }, []);
 
+  /**
+   * Warm the other banners once the dialog is up. Slides change instantly, so
+   * a banner that only starts downloading when its slide appears shows an
+   * empty box first — briefly on a fast line, visibly on a slow one. Fetching
+   * them after open costs nothing on the first paint and the four together
+   * are about 600 KB, for a dialog shown once a session.
+   */
+  useEffect(() => {
+    if (!open) return;
+    NOTICES.slice(1).forEach((s) => { new Image().src = s.image.src; });
+  }, [open]);
+
   const close = useCallback(() => {
     setOpen(false);
     try { sessionStorage.setItem('reg-popup-seen', '1'); } catch { /* private mode */ }
@@ -137,8 +149,8 @@ export default function RegulatoryPopup() {
             alt=""
             width={n.image.w}
             height={n.image.h}
-            /* The first notice is what opens; the rest can wait. */
-            loading={idx === 0 ? 'eager' : 'lazy'}
+            /* All four are warmed when the dialog opens, so none of them
+               needs to lazy-load into an empty box mid-carousel. */
             decoding="async"
           />
 
