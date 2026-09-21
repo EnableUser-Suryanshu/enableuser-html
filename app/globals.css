@@ -1774,6 +1774,7 @@ html{scroll-padding-top:108px}
 .rpop-cdsl   .rpop-band{background:linear-gradient(115deg,#0b2f6b,#1a4fa0)}
 .rpop-sebi   .rpop-band{background:linear-gradient(115deg,#0a4d4a,#11857e)}
 .rpop-scores .rpop-band{background:linear-gradient(115deg,#7d0b10,#bb0009)}
+.rpop-nseix  .rpop-band{background:linear-gradient(115deg,#7c3c05,#b45309)}
 .rpop-glyph{width:46px;height:46px;border-radius:13px;background:rgba(255,255,255,.17);display:flex;align-items:center;justify-content:center;color:#fff;position:relative;z-index:1}
 
 .rpop-x{position:absolute;top:16px;right:18px;z-index:3;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border:0;border-radius:50%;background:rgba(255,255,255,.2);color:#fff;cursor:pointer;transition:background .2s}
@@ -1785,7 +1786,12 @@ html{scroll-padding-top:108px}
 .rpop-cdsl   .rpop-source{color:#1a4fa0}
 .rpop-sebi   .rpop-source{color:#11857e}
 .rpop-scores .rpop-source{color:var(--red)}
+/* #b45309 on white is 5.05:1 — passes AA for normal-size text. */
+.rpop-nseix  .rpop-source{color:#b45309}
 .rpop-title{font-family:var(--font-head);font-size:23px;font-weight:600;line-height:1.28;margin:0 0 11px;color:var(--ink)}
+/* The Devanagari headline leads, as it does on the live banner, with the
+   English reading underneath it in the same heading. */
+.rpop-title-hi{display:block;font-size:19px;line-height:1.45;margin-bottom:5px;color:#8a4b06}
 .rpop-lead{font-size:14px;line-height:1.75;color:var(--ink-2);margin:0}
 
 .rpop-group{margin-top:17px}
@@ -1796,11 +1802,13 @@ html{scroll-padding-top:108px}
 .rpop-cdsl   .rpop-group li svg{color:#1a4fa0}
 .rpop-sebi   .rpop-group li svg{color:#11857e}
 .rpop-scores .rpop-group li svg{color:var(--red)}
+.rpop-nseix  .rpop-group li svg{color:#b45309}
 
 .rpop-cta{display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:13px 24px;border-radius:999px;font-size:14px;font-weight:600;color:#fff;transition:transform .25s,box-shadow .25s}
 .rpop-cdsl   .rpop-cta{background:#1a4fa0}
 .rpop-sebi   .rpop-cta{background:#11857e}
 .rpop-scores .rpop-cta{background:var(--red)}
+.rpop-nseix  .rpop-cta{background:#b45309}
 .rpop-cta:hover{transform:translateY(-2px);box-shadow:0 12px 26px -12px rgba(1,13,35,.5)}
 .rpop-note{font-size:12px;line-height:1.65;color:var(--ink-3);margin:14px 0 0;padding-left:11px;border-left:2px solid var(--line)}
 

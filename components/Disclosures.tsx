@@ -34,6 +34,11 @@ export default function Disclosures() {
   // Rows whose city is still pending are not counted as a location.
   const cities = new Set(AUTHORISED_PERSONS.map((ap) => ap.city).filter(Boolean)).size;
 
+  /** True while any published column is still missing a value somewhere. */
+  const hasGaps = filteredAps.some(
+    (ap) => !ap.constitution || !ap.address || !ap.city || !ap.state || !ap.pin,
+  );
+
   return (
     <section className="section disclosures watch" aria-label="Regulatory disclosures">
       <div className="container">
@@ -188,10 +193,18 @@ export default function Disclosures() {
               </table>
             </div>
             <p className="ap-foot">
-              Authorised person codes are as issued by the exchange. Where a field is shown as
-              &ldquo;—&rdquo;, that detail is not on our record; it is left blank rather than
-              estimated. Call <a href="tel:07554266669" className="ap-tel">0755 426 6669</a> and we
-              will confirm it from the exchange filing.
+              Authorised person codes are as issued by the exchange.{' '}
+              {/* Only explain the em dash while one is actually on screen —
+                  every field is on record today, and a note about missing
+                  fields that names none of them just reads as boilerplate. */}
+              {hasGaps && (
+                <>
+                  Where a field is shown as &ldquo;—&rdquo;, that detail is not on our record; it
+                  is left blank rather than estimated.{' '}
+                </>
+              )}
+              To confirm any detail against the exchange filing, call{' '}
+              <a href="tel:07554266669" className="ap-tel">0755 426 6669</a>.
             </p>
           </>
         )}

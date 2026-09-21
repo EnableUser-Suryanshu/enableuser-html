@@ -13,7 +13,7 @@
  * nobody is interrupted twice for nothing.
  */
 
-export type NoticeTheme = 'cdsl' | 'sebi' | 'scores';
+export type NoticeTheme = 'cdsl' | 'sebi' | 'scores' | 'nseix';
 
 export interface Notice {
   id: string;
@@ -21,6 +21,12 @@ export interface Notice {
   /** Small label above the title — who is speaking. */
   source: string;
   title: string;
+  /**
+   * Devanagari headline, where the notice on the live site leads in Hindi.
+   * Rendered inside lang="hi" so assistive tech switches voice — WCAG 3.1.2
+   * wants the language of a passage identified when it differs from the page.
+   */
+  titleHi?: string;
   /** Short standfirst under the title. */
   lead: string;
   /** Optional grouped detail. */
@@ -31,6 +37,32 @@ export interface Notice {
 }
 
 export const NOTICES: Notice[] = [
+  {
+    // The live site's fourth pop-up (#NFLQuiz), a Kalpataru announcement
+    // rather than a regulator's. It leads in Hindi there, so it leads in
+    // Hindi here. The phone numbers and the trading URL are read off the
+    // banner itself, which is the only place they are published.
+    id: 'nseix-global-2026',
+    theme: 'nseix',
+    source: 'Kalpataru Multiplier Ltd',
+    titleHi: 'अंतरराष्ट्रीय कंपनी के शेयर्स में खरीद बिक्री प्रारंभ',
+    title: 'Buy and sell international shares',
+    lead:
+      'Trading in shares of international companies is now open to you through Kalpataru and NSE IX Global — from the same relationship you already hold with us.',
+    groups: [
+      {
+        heading: 'Getting started',
+        items: [
+          'Trade through NSE IX Global on the Kalpataru web login',
+          'Or use the Kalpataru share trading app on Android and iOS',
+          'Call the desk and we will walk you through the first order',
+        ],
+      },
+    ],
+    cta: { label: 'Open the NSE IX Global login', href: 'https://trade.nseixga.com/login?kalpataru' },
+    footnote:
+      'Enquiries and reservations: 0755 427 6725 · 98264 30536 · 94250 08895 · 72229 49234 · 89892 71259',
+  },
   {
     id: 'cdsl-myeasi-2026',
     theme: 'cdsl',

@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { NOTICES } from '@/lib/notices';
 import { EXT } from '@/lib/links';
 import {
-  ArrowRight, CheckCircle, Shield, Smartphone, ListCheck, PauseIcon, PlayIcon,
+  ArrowRight, CheckCircle, Shield, Smartphone, ListCheck, Globe, PauseIcon, PlayIcon,
 } from './icons';
 
 /**
@@ -26,7 +26,7 @@ import {
 
 const AUTO_MS = 7000;
 
-const THEME_ICON = { cdsl: Smartphone, sebi: Shield, scores: ListCheck } as const;
+const THEME_ICON = { cdsl: Smartphone, sebi: Shield, scores: ListCheck, nseix: Globe } as const;
 
 export default function RegulatoryPopup() {
   const [open, setOpen] = useState(false);
@@ -133,7 +133,10 @@ export default function RegulatoryPopup() {
         {/* The live region announces each notice as it changes. */}
         <div className="rpop-body" aria-live="polite">
           <p className="rpop-source">{n.source}</p>
-          <h2 className="rpop-title" id="rpop-title">{n.title}</h2>
+          <h2 className="rpop-title" id="rpop-title">
+            {n.titleHi && <span className="rpop-title-hi" lang="hi">{n.titleHi}</span>}
+            {n.title}
+          </h2>
           <p className="rpop-lead">{n.lead}</p>
 
           {n.groups?.map((g) => (

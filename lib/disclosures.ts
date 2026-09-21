@@ -26,21 +26,27 @@ export const KMP: KmpEntry[] = [
  * Sources, kept distinct because they do not cover the same fields:
  *  • AP codes, terminal count and terminal-allotted flag — the client's own
  *    "Auth Person Export Data" sheet (13 rows), which is the exchange record.
- *  • Address, city, PIN, registration date and mobile — the AP disclosure
- *    table previously published on kalpatarumulti.com, which covers only the
- *    first ten of those rows.
+ *  • Address, city, PIN, registration date and mobile for the first ten — the
+ *    AP disclosure table previously published on kalpatarumulti.com.
+ *  • Address, city and PIN for the three that appear only in the sheet, and
+ *    `constitution` for all thirteen — supplied by the client 21-Sep-2026.
  *
- * Fields that are in neither source are `null` and render as an em dash. They
- * are NOT filled in by inference: this is a regulatory disclosure, and a
- * plausible guess published as fact is worse than a visible gap.
- *   • `constitution` — absent for every row; nothing in either source records
- *     whether an AP is registered as an individual, a firm or a body corporate.
- *   • address / city / state / pin / regDate / mobile for the three APs that
- *     appear only in the sheet (AP2114000151, AP2114000171, AP2114000161).
+ * Still not on record, and left null rather than guessed: registration date
+ * and mobile number for those same three (AP2114000151, AP2114000171,
+ * AP2114000161). This is a regulatory disclosure, and a plausible guess
+ * published as fact is worse than a visible gap.
+ *
+ * NOTE ON `constitution`: the exchange's own column means the legal form of
+ * the authorised person — Individual, Partnership Firm, LLP, Body Corporate.
+ * The client supplied "India" for every row, which is a country rather than a
+ * constitution, and it is published here as given rather than reinterpreted.
+ * All thirteen are registered under personal names, so the value the exchange
+ * almost certainly holds is "Individual". Worth confirming against the filing.
  *
  * `state` is the one derived field, and it is read off the PIN code rather
  * than guessed from the city name: 461xxx / 462xxx / 470xxx / 482xxx / 487xxx
- * are Madhya Pradesh, 284xxx is Uttar Pradesh. Both agree with the city.
+ * are Madhya Pradesh, 284xxx is Uttar Pradesh, 490xxx is Chhattisgarh. Every
+ * one agrees with the city given alongside it.
  *
  * Two fields on the exchange table are deliberately not carried over: PAN, as
  * personal sensitive data outside the required disclosure, and the landline
@@ -77,12 +83,13 @@ export interface ApEntry {
 
 const MP = 'Madhya Pradesh';
 const UP = 'Uttar Pradesh';
+const CG = 'Chhattisgarh';
 
 export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Meera Saxena',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000051' }],
-    constitution: null,
+    constitution: 'India',
     status: 'Approved',
     address: 'Shop No. 4, G-2/114, Aishwarya Tower, Gulmohar Colony',
     city: 'Bhopal',
@@ -97,7 +104,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Monika Jain',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000061' }],
-    constitution: null,
+    constitution: 'India',
     status: 'Approved',
     address: '17 Talabpura, Lalitpur',
     city: 'Lalitpur',
@@ -112,7 +119,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Rajesh Jain',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000071' }, { exchange: 'BSE', code: 'AP20260103166431' }],
-    constitution: null,
+    constitution: 'India',
     status: 'Approved',
     address: 'Rukmani Complex, 1st Floor, Namak Mandi, Katra Bazar',
     city: 'Sagar',
@@ -127,7 +134,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Anup Kumar Tamrakar',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000081' }],
-    constitution: null,
+    constitution: 'India',
     status: 'Approved',
     address: '31 Civil Line, Lalitpur',
     city: 'Lalitpur',
@@ -142,7 +149,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Alok Kumar Jain',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000091' }, { exchange: 'BSE', code: 'AP20260820170799' }],
-    constitution: null,
+    constitution: 'India',
     status: 'Approved',
     address: 'Near SBI, Kamath Ward, Gadarwara',
     city: 'Gadarwara',
@@ -157,7 +164,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Alok Bhatt',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000101' }],
-    constitution: null,
+    constitution: 'India',
     status: 'Approved',
     address: '401 Ranjhi Bazar, Main Road, Opp. Nana Bhai Travels, Ranjhi',
     city: 'Jabalpur',
@@ -172,7 +179,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Swati Samaiya',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000111' }, { exchange: 'BSE', code: 'AP20260820170774' }],
-    constitution: null,
+    constitution: 'India',
     status: 'Approved',
     address: 'In front of Decision Hotel, Khurai Road, Bina',
     city: 'Bina',
@@ -187,7 +194,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Ajay Chourasiya',
     codes: [{ exchange: 'NSE Cash', code: 'AP2114000121' }],
-    constitution: null,
+    constitution: 'India',
     status: 'Approved',
     address: 'H. No. 175, Phase 3, Shiv Nagar Colony, Vidisha Road, Sikandari Sarai, Huzur',
     city: 'Bhopal',
@@ -202,7 +209,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Kailash Kumar Paryani',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000131' }, { exchange: 'BSE', code: 'AP20260219167278' }],
-    constitution: null,
+    constitution: 'India',
     status: 'Approved',
     address: '45 Minaal Shopping Mall, First Floor',
     city: 'Bhopal',
@@ -217,7 +224,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Hitendra Kumar Jain',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000141' }],
-    constitution: null,
+    constitution: 'India',
     status: 'Approved',
     address: 'Fakhruddin Ali Ahmad Ward, Ward No. 23, Station Road, Harda',
     city: 'Harda',
@@ -232,12 +239,12 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Akhilesh Narayan Saxena',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000151' }],
-    constitution: null,
+    constitution: 'India',
     status: 'Approved',
-    address: null,
-    city: null,
-    state: null,
-    pin: null,
+    address: 'Shop No. 2, Bhagat Singh Square, Karond',
+    city: 'Bhopal',
+    state: MP,
+    pin: '462038',
     terminalAllotted: 'Y',
     terminals: 1,
     segments: ['Cash', 'F&O'],
@@ -247,12 +254,12 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Ashish Jain',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000171' }],
-    constitution: null,
+    constitution: 'India',
     status: 'Approved',
-    address: null,
-    city: null,
-    state: null,
-    pin: null,
+    address: 'Shop No. 49-A, Market, Sector 10',
+    city: 'Bhilai',
+    state: CG,
+    pin: '490006',
     terminalAllotted: 'Y',
     terminals: 1,
     segments: ['Cash', 'F&O'],
@@ -262,12 +269,12 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Pankaj Chourasia',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000161' }, { exchange: 'BSE', code: 'AP20250731162884' }],
-    constitution: null,
+    constitution: 'India',
     status: 'Approved',
-    address: null,
-    city: null,
-    state: null,
-    pin: null,
+    address: 'MP Nagar',
+    city: 'Bhopal',
+    state: MP,
+    pin: '462011',
     terminalAllotted: 'Y',
     terminals: 2,
     segments: ['Cash', 'F&O'],
