@@ -309,7 +309,7 @@ export const ACCOUNT_SERVICES: AccountService[] = [
     forms: [
       { label: 'Account Modification Form', href: '/files/download/modi.pdf' },
       { label: 'KYC Form for KRA', href: 'https://www.kalpatarumulti.com/files/download/Kyc_Form_New.pdf' },
-      { label: 'Demo — Account Modification (Online)', href: '/files/download/MODIFY.pdf' },
+      { label: 'Guide — Modifying your account', href: '/files/guides/demo-account-modification-online.pdf' },
     ],
     desk: {
       person: 'Mr. Vinod Singh',
@@ -333,7 +333,7 @@ export const ACCOUNT_SERVICES: AccountService[] = [
     ],
     forms: [
       { label: 'Account Closure Request Form', href: 'https://www.kalpatarumulti.com/files/download/ACCOUNT_CLOSURE_REQUEST_FORM.pdf' },
-      { label: 'Guide — How to close my account', href: 'https://www.kalpatarumulti.com/files/download/Closure_(1).pptx' },
+      { label: 'Guide — Closing your account', href: '/files/guides/how-to-close-account.pdf' },
     ],
     desk: DP_DESK,
   },

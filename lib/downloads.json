@@ -330,14 +330,14 @@
     "cat": "Guides & Demos"
   },
   {
-    "label": "Demo Account Opening process(Online)",
-    "href": "/files/download/Kalpataru_E_KYC.pdf",
+    "label": "Demo Account Opening process (Online)",
+    "href": "/files/guides/demo-account-opening-online.pdf",
     "kind": "PDF",
     "cat": "Guides & Demos"
   },
   {
     "label": "Demo Account Modification (Online)",
-    "href": "/files/download/MODIFY.pdf",
+    "href": "/files/guides/demo-account-modification-online.pdf",
     "kind": "PDF",
     "cat": "Guides & Demos"
   },
@@ -394,15 +394,15 @@
     "cat": "Software & Utilities"
   },
   {
-    "label": "How to Close Account?",
-    "href": "/files/download/Closure_(1).pptx",
-    "kind": "PPTX",
+    "label": "How to Close Your Account",
+    "href": "/files/guides/how-to-close-account.pdf",
+    "kind": "PDF",
     "cat": "Guides & Demos"
   },
   {
-    "label": "How to CREATE A TICKET?",
-    "href": "/files/download/create_a_ticket_.pptx",
-    "kind": "PPTX",
+    "label": "How to Raise a Ticket",
+    "href": "/files/guides/how-to-create-a-ticket.pdf",
+    "kind": "PDF",
     "cat": "Guides & Demos"
   },
   {
