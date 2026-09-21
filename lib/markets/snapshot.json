@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-21T11:47:46.752Z",
+ "fetchedAt": "2026-09-21T12:39:36.927Z",
  "marketTimestamp": "21-Sep-2026 15:30",
  "marketStatus": "Closed",
  "source": "NSE India (nseindia.com public market data) · NSE full bhavcopy (delivery data) · NSE & BSE corporate filings, AMFI scheme data · CNBC market data · ECB reference rates",
@@ -382,26 +382,6 @@
    ],
    "rows": [
     {
-     "company": "AHCL",
-     "last": 27.48,
-     "prev": 22.9,
-     "chgPct": 20,
-     "chg": 4.58,
-     "high": 27.48,
-     "low": 23.15,
-     "vol": 130243.73
-    },
-    {
-     "company": "SRHHYPOLTD",
-     "last": 627.7,
-     "prev": 523.1,
-     "chgPct": 20,
-     "chg": 104.6,
-     "high": 627.7,
-     "low": 519.8,
-     "vol": 292.48
-    },
-    {
      "company": "PROTEAN",
      "last": 588.35,
      "prev": 490.3,
@@ -420,6 +400,26 @@
      "high": 208.87,
      "low": 174.93,
      "vol": 60.93
+    },
+    {
+     "company": "AHCL",
+     "last": 27.48,
+     "prev": 22.9,
+     "chgPct": 20,
+     "chg": 4.58,
+     "high": 27.48,
+     "low": 23.15,
+     "vol": 130243.73
+    },
+    {
+     "company": "SRHHYPOLTD",
+     "last": 627.7,
+     "prev": 523.1,
+     "chgPct": 20,
+     "chg": 104.6,
+     "high": 627.7,
+     "low": 519.8,
+     "vol": 292.48
     },
     {
      "company": "TANAA",
@@ -718,20 +718,6 @@
    ],
    "rows": [
     {
-     "company": "AHCL",
-     "last": 27.48,
-     "chgPct": 20,
-     "bench": 0.29,
-     "outperf": 19.71
-    },
-    {
-     "company": "SRHHYPOLTD",
-     "last": 627.7,
-     "chgPct": 20,
-     "bench": 0.29,
-     "outperf": 19.71
-    },
-    {
      "company": "PROTEAN",
      "last": 588.35,
      "chgPct": 20,
@@ -741,6 +727,20 @@
     {
      "company": "ARVEE",
      "last": 208.87,
+     "chgPct": 20,
+     "bench": 0.29,
+     "outperf": 19.71
+    },
+    {
+     "company": "AHCL",
+     "last": 27.48,
+     "chgPct": 20,
+     "bench": 0.29,
+     "outperf": 19.71
+    },
+    {
+     "company": "SRHHYPOLTD",
+     "last": 627.7,
      "chgPct": 20,
      "bench": 0.29,
      "outperf": 19.71
@@ -927,26 +927,6 @@
    ],
    "rows": [
     {
-     "company": "AHCL",
-     "last": 27.48,
-     "prev": 22.9,
-     "chgPct": 20,
-     "chg": 4.58,
-     "high": 27.48,
-     "low": 23.15,
-     "vol": 130243.73
-    },
-    {
-     "company": "SRHHYPOLTD",
-     "last": 627.7,
-     "prev": 523.1,
-     "chgPct": 20,
-     "chg": 104.6,
-     "high": 627.7,
-     "low": 519.8,
-     "vol": 292.48
-    },
-    {
      "company": "PROTEAN",
      "last": 588.35,
      "prev": 490.3,
@@ -965,6 +945,26 @@
      "high": 208.87,
      "low": 174.93,
      "vol": 60.93
+    },
+    {
+     "company": "AHCL",
+     "last": 27.48,
+     "prev": 22.9,
+     "chgPct": 20,
+     "chg": 4.58,
+     "high": 27.48,
+     "low": 23.15,
+     "vol": 130243.73
+    },
+    {
+     "company": "SRHHYPOLTD",
+     "last": 627.7,
+     "prev": 523.1,
+     "chgPct": 20,
+     "chg": 104.6,
+     "high": 627.7,
+     "low": 519.8,
+     "vol": 292.48
     },
     {
      "company": "MONQ50",
@@ -1178,26 +1178,6 @@
    ],
    "rows": [
     {
-     "company": "AHCL",
-     "last": 27.48,
-     "prev": 22.9,
-     "chgPct": 20,
-     "chg": 4.58,
-     "high": 27.48,
-     "low": 23.15,
-     "vol": 130243.73
-    },
-    {
-     "company": "SRHHYPOLTD",
-     "last": 627.7,
-     "prev": 523.1,
-     "chgPct": 20,
-     "chg": 104.6,
-     "high": 627.7,
-     "low": 519.8,
-     "vol": 292.48
-    },
-    {
      "company": "PROTEAN",
      "last": 588.35,
      "prev": 490.3,
@@ -1216,6 +1196,26 @@
      "high": 208.87,
      "low": 174.93,
      "vol": 60.93
+    },
+    {
+     "company": "AHCL",
+     "last": 27.48,
+     "prev": 22.9,
+     "chgPct": 20,
+     "chg": 4.58,
+     "high": 27.48,
+     "low": 23.15,
+     "vol": 130243.73
+    },
+    {
+     "company": "SRHHYPOLTD",
+     "last": 627.7,
+     "prev": 523.1,
+     "chgPct": 20,
+     "chg": 104.6,
+     "high": 627.7,
+     "low": 519.8,
+     "vol": 292.48
     },
     {
      "company": "TANAA",
@@ -1548,16 +1548,6 @@
      "vol": 255.47
     },
     {
-     "company": "RUCHINFRA",
-     "last": 5,
-     "prev": 5.2,
-     "chgPct": -3.85,
-     "chg": -0.2,
-     "high": 5.33,
-     "low": 4.42,
-     "vol": 248.94
-    },
-    {
      "company": "COMFINTE",
      "last": 5.75,
      "prev": 5.98,
@@ -1566,6 +1556,16 @@
      "high": 6.06,
      "low": 5.63,
      "vol": 306.16
+    },
+    {
+     "company": "RUCHINFRA",
+     "last": 5,
+     "prev": 5.2,
+     "chgPct": -3.85,
+     "chg": -0.2,
+     "high": 5.33,
+     "low": 4.42,
+     "vol": 248.94
     },
     {
      "company": "UNITECH",
@@ -4190,6 +4190,12 @@
      "purpose": "Financial Results/Other business matters"
     },
     {
+     "symbol": "AIFL",
+     "company": "Ashapura Intimates Fashion Limited",
+     "date": "24-Sep-2026",
+     "purpose": "Fund Raising/Other business matters"
+    },
+    {
      "symbol": "GATECH",
      "company": "GACM Technologies Limited",
      "date": "24-Sep-2026",
@@ -4206,6 +4212,12 @@
      "company": "Global Education Limited",
      "date": "24-Sep-2026",
      "purpose": "Buyback/Other business matters"
+    },
+    {
+     "symbol": "MINDACORP",
+     "company": "Minda Corporation Limited",
+     "date": "24-Sep-2026",
+     "purpose": "Fund Raising"
     },
     {
      "symbol": "PERNIASPOP",
@@ -4506,123 +4518,123 @@
    "rows": [
     {
      "exchange": "NSE",
-     "company": "CARYSIL LIMITED",
-     "subject": "General Updates",
-     "date": "21-Sep-2026 17:16:10"
+     "company": "Manorama Industries Limited",
+     "subject": "Shareholders meeting",
+     "date": "21-Sep-2026 18:06:45"
     },
     {
      "exchange": "NSE",
-     "company": "Electronics Mart India Limited",
-     "subject": "Commencement of commercial production/operations",
-     "date": "21-Sep-2026 17:14:26"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Hero MotoCorp Limited",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "21-Sep-2026 17:13:01"
-    },
-    {
-     "exchange": "NSE",
-     "company": "CARE Ratings Limited",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "21-Sep-2026 17:12:49"
-    },
-    {
-     "exchange": "NSE",
-     "company": "MBL Infrastructure Limited",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "21-Sep-2026 17:12:40"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Tata Motors Limited",
+     "company": "Praxis Home Retail Limited",
      "subject": "Trading Window",
-     "date": "21-Sep-2026 17:12:28"
+     "date": "21-Sep-2026 18:06:30"
     },
     {
      "exchange": "NSE",
-     "company": "BGR Energy Systems Limited",
+     "company": "Ambuja Cements Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "21-Sep-2026 18:06:12"
+    },
+    {
+     "exchange": "NSE",
+     "company": "OnEMI Technology Solutions Limited",
+     "subject": "Shareholders meeting",
+     "date": "21-Sep-2026 18:05:29"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Simbhaoli Sugars Limited",
+     "subject": "Extension of Annual General Meeting",
+     "date": "21-Sep-2026 18:05:16"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Ather Energy Limited",
      "subject": "General Updates",
-     "date": "21-Sep-2026 17:11:58"
+     "date": "21-Sep-2026 18:04:48"
     },
     {
      "exchange": "NSE",
-     "company": "Jio Financial Services Limited",
+     "company": "Tembo Global Industries Limited",
      "subject": "Updates",
-     "date": "21-Sep-2026 17:11:13"
+     "date": "21-Sep-2026 18:04:46"
     },
     {
      "exchange": "NSE",
-     "company": "Videocon Industries Limited",
-     "subject": "Corporate Insolvency Resolution Process",
-     "date": "21-Sep-2026 17:10:39"
+     "company": "BLACKBUCK LIMITED",
+     "subject": "Amendment to AOA/MOA",
+     "date": "21-Sep-2026 18:04:33"
     },
     {
      "exchange": "NSE",
-     "company": "Shree Ram Proteins Limited",
+     "company": "Symphony Limited",
+     "subject": "Trading Window",
+     "date": "21-Sep-2026 18:03:27"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Mold-Tek Packaging Limited",
+     "subject": "Shareholders meeting",
+     "date": "21-Sep-2026 18:02:50"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Gabriel India Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "21-Sep-2026 18:02:41"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Milky Mist Dairy Food Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "21-Sep-2026 18:02:11"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Patanjali Foods Limited",
      "subject": "General Updates",
-     "date": "21-Sep-2026 17:10:20"
+     "date": "21-Sep-2026 18:01:40"
     },
     {
      "exchange": "NSE",
-     "company": "Veedol Corporation Limited",
+     "company": "Milky Mist Dairy Food Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "21-Sep-2026 18:00:14"
+    },
+    {
+     "exchange": "NSE",
+     "company": "NOCIL Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "21-Sep-2026 17:59:36"
+    },
+    {
+     "exchange": "NSE",
+     "company": "HDFC Asset Management Company Limited",
+     "subject": "Allotment of Securities",
+     "date": "21-Sep-2026 17:58:17"
+    },
+    {
+     "exchange": "NSE",
+     "company": "PNB Housing Finance Limited",
+     "subject": "Updates",
+     "date": "21-Sep-2026 17:56:57"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Awfis Space Solutions Limited",
      "subject": "Shareholders meeting",
-     "date": "21-Sep-2026 17:09:53"
+     "date": "21-Sep-2026 17:56:50"
     },
     {
      "exchange": "NSE",
-     "company": "Ramkrishna Forgings Limited",
-     "subject": "General Updates",
-     "date": "21-Sep-2026 17:09:15"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Shree Ram Proteins Limited",
-     "subject": "Agreements",
-     "date": "21-Sep-2026 17:09:14"
-    },
-    {
-     "exchange": "NSE",
-     "company": "TREJHARA SOLUTIONS LIMITED",
+     "company": "BLACKBUCK LIMITED",
      "subject": "Shareholders meeting",
-     "date": "21-Sep-2026 17:08:23"
+     "date": "21-Sep-2026 17:56:21"
     },
     {
      "exchange": "NSE",
-     "company": "Jagsonpal Pharmaceuticals Limited",
-     "subject": "Shareholders meeting",
-     "date": "21-Sep-2026 17:07:31"
-    },
-    {
-     "exchange": "NSE",
-     "company": "JSW Dulux Limited",
-     "subject": "Pendency of Litigation(s)/dispute(s) or the outcome impacting the Company",
-     "date": "21-Sep-2026 17:07:08"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Coffee Day Enterprises Limited",
-     "subject": "Shareholders meeting",
-     "date": "21-Sep-2026 17:07:06"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Mask Investments Limited",
-     "subject": "Shareholders meeting",
-     "date": "21-Sep-2026 17:04:54"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Ramkrishna Forgings Limited",
-     "subject": "Shareholders meeting",
-     "date": "21-Sep-2026 17:04:21"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Raymond Realty Limited",
-     "subject": "Press Release",
-     "date": "21-Sep-2026 17:03:17"
+     "company": "Omaxe Limited",
+     "subject": "Trading Window",
+     "date": "21-Sep-2026 17:55:21"
     }
    ]
   },
@@ -4716,33 +4728,33 @@
      "country": "United Kingdom",
      "index": "FTSE 100",
      "date": "21-Sep-2026",
-     "value": 10771.48,
+     "value": 10769.38,
      "prev": 10659.13,
-     "high": 10772,
+     "high": 10774.66,
      "low": 10656.7,
-     "change": 112.35,
-     "chgPct": 1.05
+     "change": 110.25,
+     "chgPct": 1.03
     },
     {
      "country": "Germany",
      "index": "DAX",
      "date": "21-Sep-2026",
-     "value": 25605.31,
+     "value": 25594.77,
      "prev": 25304.06,
-     "high": 25605.31,
+     "high": 25613.31,
      "low": 25434.16,
-     "change": 301.25,
-     "chgPct": 1.19
+     "change": 290.71,
+     "chgPct": 1.15
     },
     {
      "country": "France",
      "index": "CAC 40",
      "date": "21-Sep-2026",
-     "value": 8145.59,
+     "value": 8145.82,
      "prev": 8065.02,
-     "high": 8147.52,
+     "high": 8147.6,
      "low": 8102.09,
-     "change": 80.57,
+     "change": 80.8,
      "chgPct": 1
     },
     {
@@ -5001,64 +5013,64 @@
      "commodity": "Gold",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 4398.5,
+     "last": 4391.2,
      "prev": 4424.9,
-     "change": -26.4,
-     "chgPct": -0.6
+     "change": -33.7,
+     "chgPct": -0.76
     },
     {
      "commodity": "Silver",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 66.84,
+     "last": 66.905,
      "prev": 67.149,
-     "change": -0.309,
-     "chgPct": -0.46
+     "change": -0.244,
+     "chgPct": -0.36
     },
     {
      "commodity": "Copper",
      "contract": "Dec'26",
      "venue": "CEC:Commodities Exchange Centre",
-     "last": 6.808,
+     "last": 6.832,
      "prev": 6.6915,
-     "change": 0.1165,
-     "chgPct": 1.74
+     "change": 0.1405,
+     "chgPct": 2.1
     },
     {
      "commodity": "Platinum",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 1804.2,
+     "last": 1813.2,
      "prev": 1806.4,
-     "change": -2.2,
-     "chgPct": -0.12
+     "change": 6.8,
+     "chgPct": 0.38
     },
     {
      "commodity": "WTI Crude Oil",
      "contract": "Oct'26",
      "venue": "WTI Crude",
-     "last": 97.8,
+     "last": 97.64,
      "prev": 100.3,
-     "change": -2.5,
-     "chgPct": -2.49
+     "change": -2.66,
+     "chgPct": -2.65
     },
     {
      "commodity": "Brent Crude",
      "contract": "Nov'26",
      "venue": "NYMEX Brent Crude",
-     "last": 101.18,
+     "last": 101.31,
      "prev": 103.87,
-     "change": -2.69,
-     "chgPct": -2.59
+     "change": -2.56,
+     "chgPct": -2.46
     },
     {
      "commodity": "Natural Gas",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 2.84,
+     "last": 2.85,
      "prev": 2.912,
-     "change": -0.072,
-     "chgPct": -2.47
+     "change": -0.062,
+     "chgPct": -2.13
     }
    ],
    "defaultSort": "chgPct",
@@ -7327,7 +7339,7 @@
      "isin": "INE442A01024"
     },
     {
-     "company": "Assambrook Ltd-$",
+     "company": "Assambrook Ltd",
      "bseCode": "500025",
      "ticker": "ASSAMBR",
      "faceValue": "10.00",

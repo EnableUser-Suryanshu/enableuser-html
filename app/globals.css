@@ -1305,6 +1305,9 @@ html{scroll-padding-top:108px}
 .ap-slash{color:#c9c9cf;font-weight:700;padding:0 1px}
 .ap-addr{line-height:1.5}
 .ap-pin{font-family:'SF Mono',ui-monospace,monospace;font-weight:700;font-size:11px;font-variant-numeric:tabular-nums}
+/* "NSE, BSE, MCX" reads as one value, so it wraps as a unit rather than
+   breaking an exchange name across two lines. */
+.ap-exchanges{font-weight:600;overflow-wrap:normal;word-break:normal}
 .ap-mid{text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
 .ap-na{color:var(--ink-3)}
 /* The pill carries "Approved" at this size; drop its padding so the status

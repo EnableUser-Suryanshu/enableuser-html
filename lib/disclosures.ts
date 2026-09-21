@@ -43,6 +43,12 @@ export const KMP: KmpEntry[] = [
  * All thirteen are registered under personal names, so the value the exchange
  * almost certainly holds is "Individual". Worth confirming against the filing.
  *
+ * ONE CORRECTION to the exchange column as supplied. Swati Samaiya's row
+ * reads "NSE,SE,MCX". "SE" is not an exchange, and the same row carries a BSE
+ * authorised person code (AP20260820170774), so it is published as BSE. Every
+ * other row with a BSE code reads "NSE,BSE,MCX", which fits. Worth confirming,
+ * but publishing "SE" on a regulatory disclosure was not an option.
+ *
  * `state` is the one derived field, and it is read off the PIN code rather
  * than guessed from the city name: 461xxx / 462xxx / 470xxx / 482xxx / 487xxx
  * are Madhya Pradesh, 284xxx is Uttar Pradesh, 490xxx is Chhattisgarh. Every
@@ -65,6 +71,12 @@ export interface ApCode {
 export interface ApEntry {
   name: string;
   codes: ApCode[];
+  /**
+   * Exchanges the authorised person is registered on. Distinct from `codes`,
+   * which only covers the exchanges that issue an AP code — MCX appears here
+   * and nowhere else.
+   */
+  exchanges: string[];
   /** Individual / Partnership / Body Corporate. Null where not on record. */
   constitution: string | null;
   /** The exchange's own wording for an AP registration. */
@@ -89,6 +101,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Meera Saxena',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000051' }],
+    exchanges: ['NSE'],
     constitution: 'India',
     status: 'Approved',
     address: 'Shop No. 4, G-2/114, Aishwarya Tower, Gulmohar Colony',
@@ -104,6 +117,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Monika Jain',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000061' }],
+    exchanges: ['NSE'],
     constitution: 'India',
     status: 'Approved',
     address: '17 Talabpura, Lalitpur',
@@ -119,6 +133,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Rajesh Jain',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000071' }, { exchange: 'BSE', code: 'AP20260103166431' }],
+    exchanges: ['NSE', 'BSE', 'MCX'],
     constitution: 'India',
     status: 'Approved',
     address: 'Rukmani Complex, 1st Floor, Namak Mandi, Katra Bazar',
@@ -134,6 +149,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Anup Kumar Tamrakar',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000081' }],
+    exchanges: ['NSE'],
     constitution: 'India',
     status: 'Approved',
     address: '31 Civil Line, Lalitpur',
@@ -149,6 +165,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Alok Kumar Jain',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000091' }, { exchange: 'BSE', code: 'AP20260820170799' }],
+    exchanges: ['NSE', 'BSE', 'MCX'],
     constitution: 'India',
     status: 'Approved',
     address: 'Near SBI, Kamath Ward, Gadarwara',
@@ -164,6 +181,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Alok Bhatt',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000101' }],
+    exchanges: ['NSE'],
     constitution: 'India',
     status: 'Approved',
     address: '401 Ranjhi Bazar, Main Road, Opp. Nana Bhai Travels, Ranjhi',
@@ -179,6 +197,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Swati Samaiya',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000111' }, { exchange: 'BSE', code: 'AP20260820170774' }],
+    exchanges: ['NSE', 'BSE', 'MCX'],
     constitution: 'India',
     status: 'Approved',
     address: 'In front of Decision Hotel, Khurai Road, Bina',
@@ -194,6 +213,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Ajay Chourasiya',
     codes: [{ exchange: 'NSE Cash', code: 'AP2114000121' }],
+    exchanges: ['NSE'],
     constitution: 'India',
     status: 'Approved',
     address: 'H. No. 175, Phase 3, Shiv Nagar Colony, Vidisha Road, Sikandari Sarai, Huzur',
@@ -209,6 +229,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Kailash Kumar Paryani',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000131' }, { exchange: 'BSE', code: 'AP20260219167278' }],
+    exchanges: ['NSE', 'BSE', 'MCX'],
     constitution: 'India',
     status: 'Approved',
     address: '45 Minaal Shopping Mall, First Floor',
@@ -224,6 +245,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Hitendra Kumar Jain',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000141' }],
+    exchanges: ['NSE'],
     constitution: 'India',
     status: 'Approved',
     address: 'Fakhruddin Ali Ahmad Ward, Ward No. 23, Station Road, Harda',
@@ -239,6 +261,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
   {
     name: 'Akhilesh Narayan Saxena',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000151' }],
+    exchanges: ['NSE'],
     constitution: 'India',
     status: 'Approved',
     address: 'Shop No. 2, Bhagat Singh Square, Karond',
@@ -249,11 +272,12 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
     terminals: 1,
     segments: ['Cash', 'F&O'],
     regDate: null,
-    mobile: null,
+    mobile: '9893032568',
   },
   {
     name: 'Ashish Jain',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000171' }],
+    exchanges: ['NSE'],
     constitution: 'India',
     status: 'Approved',
     address: 'Shop No. 49-A, Market, Sector 10',
@@ -264,11 +288,12 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
     terminals: 1,
     segments: ['Cash', 'F&O'],
     regDate: null,
-    mobile: null,
+    mobile: '9425556747',
   },
   {
     name: 'Pankaj Chourasia',
     codes: [{ exchange: 'NSE Cash & F&O', code: 'AP2114000161' }, { exchange: 'BSE', code: 'AP20250731162884' }],
+    exchanges: ['NSE', 'BSE', 'MCX'],
     constitution: 'India',
     status: 'Approved',
     address: 'MP Nagar',
@@ -279,6 +304,6 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
     terminals: 2,
     segments: ['Cash', 'F&O'],
     regDate: null,
-    mobile: null,
+    mobile: '9425008895',
   },
 ];

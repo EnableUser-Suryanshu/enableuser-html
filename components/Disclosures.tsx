@@ -102,7 +102,8 @@ export default function Disclosures() {
               <table className="disc-table ap-table">
                 <caption className="sr-only">
                   Authorised persons: serial number, name and contact number, exchange-wise
-                  authorised person code, constitution, status, registered address split into
+                  authorised person code, the exchanges they are registered on, constitution,
+                  status, registered address split into
                   address, city, state and pin code, and terminal details giving whether a
                   terminal is allotted and how many. A field shown as an em dash is not on record.
                 </caption>
@@ -112,7 +113,7 @@ export default function Disclosures() {
                     columns split their group's share arbitrarily and the address
                     itself ends up the narrowest of them. */}
                 <colgroup>
-                  {['3%', '12.5%', '12.5%', '9%', '9.5%', '19.5%', '7.5%', '8.5%', '6%', '6.5%', '6.5%']
+                  {['3%', '12%', '11%', '8.5%', '8%', '9%', '16%', '7%', '7.5%', '5.5%', '6%', '6.5%']
                     .map((w, i) => <col key={i} style={{ width: w }} />)}
                 </colgroup>
                 <thead>
@@ -132,6 +133,7 @@ export default function Disclosures() {
                     <th scope="col" rowSpan={2}>Sr.<br />No.</th>
                     <th scope="col" rowSpan={2}>Authorised Person&rsquo;s Name</th>
                     <th scope="col" rowSpan={2}>Authorised Person Code (Exchange wise)</th>
+                    <th scope="col" rowSpan={2}>Exchange</th>
                     <th scope="col" rowSpan={2}>Constitution</th>
                     <th scope="col" rowSpan={2}>Status (Approved/ Cancelled)</th>
                     <th scope="colgroup" colSpan={4} className="ap-grp">Registered Address</th>
@@ -167,6 +169,9 @@ export default function Disclosures() {
                           </span>
                         ))}
                       </td>
+                      <td className="ap-exchanges" data-label="Exchange">
+                        {ap.exchanges.join(', ')}
+                      </td>
                       <td data-label="Constitution">{ap.constitution ?? <Pending />}</td>
                       <td data-label="Status"><span className="status-pill">{ap.status}</span></td>
                       <td className="ap-addr" data-label="Address">{ap.address ?? <Pending />}</td>
@@ -179,7 +184,7 @@ export default function Disclosures() {
                   ))}
                   {filteredAps.length === 0 && (
                     <tr>
-                      <td colSpan={11} className="ap-empty">
+                      <td colSpan={12} className="ap-empty">
                         No authorised person matches &ldquo;{query}&rdquo;
                       </td>
                     </tr>
