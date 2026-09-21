@@ -17,6 +17,13 @@
  * nobody is interrupted twice for nothing.
  */
 
+/**
+ * Window event that re-opens the notices dialog. The bell in the floating
+ * button stack fires it; RegulatoryPopup listens. Named here so neither has
+ * to import the other.
+ */
+export const OPEN_NOTICES = 'kml:open-notices';
+
 export type NoticeTheme = 'cdsl' | 'sebi' | 'scores' | 'nseix';
 
 export interface Notice {

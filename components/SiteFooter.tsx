@@ -19,6 +19,8 @@ const POLICY_COLUMNS = [
       ['Dormant Policy', POLICY_LINKS.dormant],
       ['Surveillance Policy', POLICY_LINKS.surveillance],
       ['Branch Supervision Policy', POLICY_LINKS.branchSupervision],
+      ['RMS Policy', POLICY_LINKS.rms],
+      ['GTT Policy', POLICY_LINKS.gtt],
     ],
   },
   {
@@ -46,8 +48,6 @@ const POLICY_COLUMNS = [
       ['Terms of Use', POLICY_LINKS.termsOfUse],
       ['Terms & Conditions', POLICY_LINKS.termsConditions],
       ['Disclaimer', POLICY_LINKS.disclaimer],
-      ['RMS Policy', POLICY_LINKS.rms],
-      ['GTT Policy', POLICY_LINKS.gtt],
     ],
   },
 ] as const;

@@ -20,7 +20,26 @@ export const POLICY_GROUPS = [
   { key: 'legal', label: 'Legal & Governance' },
 ] as const;
 
-export const ALL_POLICIES: IndexedPolicy[] = [...POLICY_PAGES, ...DRAFTED_POLICIES];
+/**
+ * Re-filing for pages whose generated `group` puts them in the wrong place.
+ *
+ * Applied here rather than in policies.ts because that file is generated from
+ * the previous site and is not hand-edited — an edit there would be lost the
+ * next time it is regenerated. This map survives.
+ *
+ * RMS and GTT arrived under "Legal & Governance". Both describe how we
+ * actually operate an account — risk limits and square-offs, and how a
+ * good-till-triggered order behaves — so they belong with the operating
+ * policies a client reads before trading, not with the site's legal notices.
+ */
+const GROUP_OVERRIDES: Record<string, PolicyPage['group']> = {
+  'rms-policy': 'compliance',
+  'gtt-policy': 'compliance',
+};
+
+export const ALL_POLICIES: IndexedPolicy[] = [...POLICY_PAGES, ...DRAFTED_POLICIES].map((p) =>
+  GROUP_OVERRIDES[p.slug] ? { ...p, group: GROUP_OVERRIDES[p.slug] } : p,
+);
 
 export const getPolicyPage = (slug: string) => ALL_POLICIES.find((p) => p.slug === slug);
 
