@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-22T12:56:53.053Z",
+ "fetchedAt": "2026-09-22T13:06:25.551Z",
  "marketTimestamp": "22-Sep-2026 15:30",
  "marketStatus": "Closed",
  "source": "NSE India (nseindia.com public market data) · NSE full bhavcopy (delivery data) · NSE & BSE corporate filings, AMFI scheme data · CNBC market data · ECB reference rates",
@@ -4262,6 +4262,12 @@
      "purpose": "Fund Raising"
     },
     {
+     "symbol": "PRASOLCHEM",
+     "company": "Prasol Chemicals Limited",
+     "date": "28-Sep-2026",
+     "purpose": "Financial Results"
+    },
+    {
      "symbol": "TCS",
      "company": "Tata Consultancy Services Limited",
      "date": "08-Oct-2026",
@@ -4626,6 +4632,78 @@
    "rows": [
     {
      "exchange": "NSE",
+     "company": "Fedbank Financial Services Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "22-Sep-2026 18:34:15"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Sterlite Technologies Limited",
+     "subject": "Appointment",
+     "date": "22-Sep-2026 18:33:18"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Brooks Laboratories Limited",
+     "subject": "Trading Window",
+     "date": "22-Sep-2026 18:33:08"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Manba Finance Limited",
+     "subject": "Amendment to AOA/MOA",
+     "date": "22-Sep-2026 18:32:59"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Shree Renuka Sugars Limited",
+     "subject": "Shareholders meeting",
+     "date": "22-Sep-2026 18:32:06"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Suraksha Diagnostic Limited",
+     "subject": "Shareholders meeting",
+     "date": "22-Sep-2026 18:31:09"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Suyog Telematics Limited",
+     "subject": "Shareholders meeting",
+     "date": "22-Sep-2026 18:30:47"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Manba Finance Limited",
+     "subject": "Issue of Securities",
+     "date": "22-Sep-2026 18:30:20"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Tata Consultancy Services Limited",
+     "subject": "Record Date",
+     "date": "22-Sep-2026 18:27:02"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Manba Finance Limited",
+     "subject": "Change in Management",
+     "date": "22-Sep-2026 18:26:43"
+    },
+    {
+     "exchange": "NSE",
+     "company": "The Jammu & Kashmir Bank Limited",
+     "subject": "Appointment",
+     "date": "22-Sep-2026 18:26:36"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Cupid Limited",
+     "subject": "General Updates",
+     "date": "22-Sep-2026 18:26:32"
+    },
+    {
+     "exchange": "NSE",
      "company": "National Fertilizers Limited",
      "subject": "Shareholders meeting",
      "date": "22-Sep-2026 18:24:31"
@@ -4671,78 +4749,6 @@
      "company": "3P Land Holdings Limited",
      "subject": "Shareholders meeting",
      "date": "22-Sep-2026 18:21:41"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Burnpur Cement Limited",
-     "subject": "Change in Director(s)",
-     "date": "22-Sep-2026 18:21:03"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Eicher Motors Limited",
-     "subject": "General Updates",
-     "date": "22-Sep-2026 18:20:55"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Kitex Garments Limited",
-     "subject": "Trading Window",
-     "date": "22-Sep-2026 18:20:17"
-    },
-    {
-     "exchange": "NSE",
-     "company": "ICICI Bank Limited",
-     "subject": "Trading Window",
-     "date": "22-Sep-2026 18:19:54"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Twamev Construction and Infrastructure Limited",
-     "subject": "General Updates",
-     "date": "22-Sep-2026 18:19:23"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Elgi Rubber Company Limited",
-     "subject": "Trading Window",
-     "date": "22-Sep-2026 18:19:21"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Bank of India",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "22-Sep-2026 18:18:10"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Burnpur Cement Limited",
-     "subject": "Change in Management",
-     "date": "22-Sep-2026 18:18:03"
-    },
-    {
-     "exchange": "NSE",
-     "company": "J.Kumar Infraprojects Limited",
-     "subject": "Shareholders meeting",
-     "date": "22-Sep-2026 18:16:46"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Canara Robeco Asset Management Company Limited",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "22-Sep-2026 18:16:31"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Aarti Pharmalabs Limited",
-     "subject": "Updates",
-     "date": "22-Sep-2026 18:16:22"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Axis Bank Limited",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "22-Sep-2026 18:16:08"
     }
    ]
   },
@@ -4836,34 +4842,34 @@
      "country": "United Kingdom",
      "index": "FTSE 100",
      "date": "22-Sep-2026",
-     "value": 10752.81,
+     "value": 10747.38,
      "prev": 10739.01,
      "high": 10771.64,
      "low": 10714.78,
-     "change": 13.8,
-     "chgPct": 0.13
+     "change": 8.37,
+     "chgPct": 0.08
     },
     {
      "country": "Germany",
      "index": "DAX",
      "date": "22-Sep-2026",
-     "value": 25737.39,
+     "value": 25726.77,
      "prev": 25575.01,
      "high": 25756.71,
      "low": 25423.07,
-     "change": 162.38,
-     "chgPct": 0.63
+     "change": 151.76,
+     "chgPct": 0.59
     },
     {
      "country": "France",
      "index": "CAC 40",
      "date": "22-Sep-2026",
-     "value": 8183.21,
+     "value": 8178.16,
      "prev": 8138.94,
      "high": 8192.26,
      "low": 8117.27,
-     "change": 44.27,
-     "chgPct": 0.54
+     "change": 39.22,
+     "chgPct": 0.48
     },
     {
      "country": "Japan",
@@ -5121,37 +5127,37 @@
      "commodity": "Gold",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 4370.5,
+     "last": 4373.3,
      "prev": 4383.9,
-     "change": -13.4,
-     "chgPct": -0.31
+     "change": -10.6,
+     "chgPct": -0.24
     },
     {
      "commodity": "Silver",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 66.37,
+     "last": 66.41,
      "prev": 66.415,
-     "change": -0.045,
-     "chgPct": -0.07
+     "change": -0.005,
+     "chgPct": -0.01
     },
     {
      "commodity": "Copper",
      "contract": "Dec'26",
      "venue": "CEC:Commodities Exchange Centre",
-     "last": 6.8545,
+     "last": 6.846,
      "prev": 6.7625,
-     "change": 0.092,
-     "chgPct": 1.36
+     "change": 0.0835,
+     "chgPct": 1.23
     },
     {
      "commodity": "Platinum",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 1812.2,
+     "last": 1812.8,
      "prev": 1801.4,
-     "change": 10.8,
-     "chgPct": 0.6
+     "change": 11.4,
+     "chgPct": 0.63
     },
     {
      "commodity": "WTI Crude Oil",
@@ -5166,19 +5172,19 @@
      "commodity": "Brent Crude",
      "contract": "Nov'26",
      "venue": "NYMEX Brent Crude",
-     "last": 98.72,
+     "last": 98.89,
      "prev": 100.34,
-     "change": -1.62,
-     "chgPct": -1.61
+     "change": -1.45,
+     "chgPct": -1.45
     },
     {
      "commodity": "Natural Gas",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 2.852,
+     "last": 2.85,
      "prev": 2.836,
-     "change": 0.016,
-     "chgPct": 0.56
+     "change": 0.014,
+     "chgPct": 0.49
     }
    ],
    "defaultSort": "chgPct",
@@ -7525,7 +7531,7 @@
      "isin": "INE442A01024"
     },
     {
-     "company": "Assambrook Ltd-$",
+     "company": "Assambrook Ltd",
      "bseCode": "500025",
      "ticker": "ASSAMBR",
      "faceValue": "10.00",
