@@ -134,9 +134,13 @@ export const GOLD_ROUTES = [
   { label: 'Gold ETFs', desc: 'Exchange-traded funds that track gold prices and trade like a share.' },
 ];
 
+/*
+ * One login. MCX Online Trading pointed at onlinetrading.kalpatarumulti.com,
+ * which returns 404 — commodity trading runs through the same web terminal as
+ * everything else, so it points there now.
+ */
 export const COMMODITY_LOGINS = [
-  { label: 'MCX Online Trading', href: 'http://onlinetrading.kalpatarumulti.com/pages/Login.aspx' },
-  { label: 'Web Trading Terminal', href: 'https://trading.kalpatarumulti.com:28001/' },
+  { label: 'MCX Online Trading', href: 'https://trading.kalpatarumulti.com:28001/' },
 ];
 
 /* ------------------------------------------------------------------ *
