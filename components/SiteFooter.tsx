@@ -11,6 +11,21 @@ import {
 } from './icons';
 
 /**
+ * Links the live site singles out with a filled box, because they are the ones
+ * an investor is most often sent to look for. Marked rather than reordered, so
+ * each stays in the group it belongs to; the styling is this site's own —
+ * a tinted chip — rather than a copy of the navy blocks.
+ */
+const FEATURED = new Set([
+  'Advisory for Investor',
+  'Risk Disclosures on Derivatives',
+  'Shareholder e-Voting (CDSL)',
+  'Client Collateral Data (NSE)',
+  'Procedure for Voluntary Freeze / Block of Online Access',
+  'Circulars',
+]);
+
+/**
  * Marker for a link whose file lives in Sanity. The column table is static, so
  * the entry carries this instead of a URL and the real one is swapped in when
  * the footer renders. Keeps the link in its published position rather than
@@ -44,6 +59,7 @@ const POLICY_COLUMNS = [
       ['Risk Disclosures on Derivatives', POLICY_LINKS.riskDisclosures],
       ['Shareholder e-Voting (CDSL)', REGULATOR_LINKS.cdslEvoting],
       ['Client Collateral Data (NSE)', REGULATOR_LINKS.nseClientCollateral],
+      ['Procedure for Voluntary Freeze / Block of Online Access', POLICY_LINKS.voluntaryFreeze],
       ['Investor Protection Fund — NSE', REGULATOR_LINKS.investorProtectionNse],
       ['Investor Protection — BSE', REGULATOR_LINKS.investorProtectionBse],
       ['KYC Documents in Vernacular Languages — NSE', REGULATOR_LINKS.kycVernacularNse],
@@ -156,10 +172,11 @@ export default async function SiteFooter() {
                   <h3>{col.heading}</h3>
                   {col.links.map(([label, href]) => {
                     const to = href === SITE_DOC_HREF ? complaintProcess : href;
+                    const cls = FEATURED.has(label) ? 'pol-hi' : undefined;
                     // policy pages route in-app; PDFs and regulator links open in a new tab
                     return isInternalPolicy(to) && !to.endsWith('.pdf')
-                      ? <Link key={label} href={to}>{label}</Link>
-                      : <a key={label} href={to} {...EXT}>{label}</a>;
+                      ? <Link key={label} href={to} className={cls}>{label}</Link>
+                      : <a key={label} href={to} className={cls} {...EXT}>{label}</a>;
                   })}
                 </div>
               ))}

@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-22T12:42:52.217Z",
+ "fetchedAt": "2026-09-22T12:56:53.053Z",
  "marketTimestamp": "22-Sep-2026 15:30",
  "marketStatus": "Closed",
  "source": "NSE India (nseindia.com public market data) · NSE full bhavcopy (delivery data) · NSE & BSE corporate filings, AMFI scheme data · CNBC market data · ECB reference rates",
@@ -4262,6 +4262,12 @@
      "purpose": "Fund Raising"
     },
     {
+     "symbol": "TCS",
+     "company": "Tata Consultancy Services Limited",
+     "date": "08-Oct-2026",
+     "purpose": "Financial Results/Dividend"
+    },
+    {
      "symbol": "HCLTECH",
      "company": "HCL Technologies Limited",
      "date": "12-Oct-2026",
@@ -4306,6 +4312,12 @@
     {
      "symbol": "HDFCBANK",
      "company": "HDFC Bank Limited",
+     "date": "17-Oct-2026",
+     "purpose": "Financial Results"
+    },
+    {
+     "symbol": "ICICIBANK",
+     "company": "ICICI Bank Limited",
      "date": "17-Oct-2026",
      "purpose": "Financial Results"
     },
@@ -4406,10 +4418,10 @@
    ],
    "rows": [
     {
-     "date": "21-Sep-2026",
-     "buy": 10637.17,
-     "sale": 11213.37,
-     "net": -576.2
+     "date": "22-Sep-2026",
+     "buy": 9845.81,
+     "sale": 13655.8,
+     "net": -3809.99
     }
    ]
   },
@@ -4442,10 +4454,10 @@
    ],
    "rows": [
     {
-     "date": "21-Sep-2026",
-     "buy": 14098.64,
-     "sale": 11301.37,
-     "net": 2797.27
+     "date": "22-Sep-2026",
+     "buy": 14599.72,
+     "sale": 10479.65,
+     "net": 4120.07
     }
    ]
   },
@@ -4500,6 +4512,15 @@
      "close": "24-Sep-2026",
      "band": "Rs.140 to Rs.148",
      "size": "33902899"
+    },
+    {
+     "company": "Moneyview Limited",
+     "symbol": "MONEYVIEW",
+     "series": "EQ",
+     "open": "24-Sep-2026",
+     "close": "28-Sep-2026",
+     "band": "Rs.32 to Rs.34",
+     "size": "334869200"
     },
     {
      "company": "Adroit Industries (India) Limited",
@@ -4605,123 +4626,123 @@
    "rows": [
     {
      "exchange": "NSE",
-     "company": "Vikran Engineering Limited",
+     "company": "National Fertilizers Limited",
+     "subject": "Shareholders meeting",
+     "date": "22-Sep-2026 18:24:31"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Manba Finance Limited",
+     "subject": "Outcome of Board Meeting",
+     "date": "22-Sep-2026 18:23:41"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Kitex Garments Limited",
      "subject": "General Updates",
-     "date": "22-Sep-2026 18:09:02"
+     "date": "22-Sep-2026 18:23:30"
     },
     {
      "exchange": "NSE",
-     "company": "GSP Crop Science Limited",
+     "company": "Pondy Oxides & Chemicals Limited",
+     "subject": "Shareholders meeting",
+     "date": "22-Sep-2026 18:22:49"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Captain Polyplast Limited",
      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "22-Sep-2026 18:08:47"
+     "date": "22-Sep-2026 18:22:30"
     },
     {
      "exchange": "NSE",
-     "company": "Manaksia Coated Metals & Industries Limited",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "22-Sep-2026 18:07:48"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Gem Aromatics Limited",
-     "subject": "Updates",
-     "date": "22-Sep-2026 18:06:51"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Central Bank of India",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "22-Sep-2026 18:06:22"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Life Insurance Corporation Of India",
+     "company": "J.Kumar Infraprojects Limited",
      "subject": "General Updates",
-     "date": "22-Sep-2026 18:05:20"
+     "date": "22-Sep-2026 18:22:23"
     },
     {
      "exchange": "NSE",
-     "company": "Digitide Solutions Limited",
+     "company": "Concord Enviro Systems Limited",
+     "subject": "Shareholders meeting",
+     "date": "22-Sep-2026 18:22:18"
+    },
+    {
+     "exchange": "NSE",
+     "company": "3P Land Holdings Limited",
+     "subject": "Shareholders meeting",
+     "date": "22-Sep-2026 18:21:41"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Burnpur Cement Limited",
+     "subject": "Change in Director(s)",
+     "date": "22-Sep-2026 18:21:03"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Eicher Motors Limited",
+     "subject": "General Updates",
+     "date": "22-Sep-2026 18:20:55"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Kitex Garments Limited",
+     "subject": "Trading Window",
+     "date": "22-Sep-2026 18:20:17"
+    },
+    {
+     "exchange": "NSE",
+     "company": "ICICI Bank Limited",
+     "subject": "Trading Window",
+     "date": "22-Sep-2026 18:19:54"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Twamev Construction and Infrastructure Limited",
+     "subject": "General Updates",
+     "date": "22-Sep-2026 18:19:23"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Elgi Rubber Company Limited",
+     "subject": "Trading Window",
+     "date": "22-Sep-2026 18:19:21"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Bank of India",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "22-Sep-2026 18:18:10"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Burnpur Cement Limited",
      "subject": "Change in Management",
-     "date": "22-Sep-2026 18:04:33"
+     "date": "22-Sep-2026 18:18:03"
     },
     {
      "exchange": "NSE",
-     "company": "Silver Touch Technologies Limited",
-     "subject": "Bagging/Receiving of orders/contracts",
-     "date": "22-Sep-2026 18:04:27"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Karur Vysya Bank Limited",
-     "subject": "Trading Window",
-     "date": "22-Sep-2026 18:04:22"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Veranda Learning Solutions Limited",
-     "subject": "Agreements",
-     "date": "22-Sep-2026 18:03:37"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Delhivery Limited",
+     "company": "J.Kumar Infraprojects Limited",
      "subject": "Shareholders meeting",
-     "date": "22-Sep-2026 18:03:07"
+     "date": "22-Sep-2026 18:16:46"
     },
     {
      "exchange": "NSE",
-     "company": "Park Medi World Limited",
-     "subject": "Shareholders meeting",
-     "date": "22-Sep-2026 18:03:04"
-    },
-    {
-     "exchange": "NSE",
-     "company": "BGR Energy Systems Limited",
-     "subject": "Shareholders meeting",
-     "date": "22-Sep-2026 18:03:01"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Ddev Plastiks Industries Limited",
-     "subject": "Trading Window",
-     "date": "22-Sep-2026 18:02:59"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Techindia Nirman Limited",
-     "subject": "Shareholders meeting",
-     "date": "22-Sep-2026 18:02:51"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Mask Investments Limited",
-     "subject": "Shareholders meeting",
-     "date": "22-Sep-2026 18:00:54"
-    },
-    {
-     "exchange": "NSE",
-     "company": "SBI Cards and Payment Services Limited",
-     "subject": "Appointment",
-     "date": "22-Sep-2026 18:00:46"
-    },
-    {
-     "exchange": "NSE",
-     "company": "CSB Bank Limited",
-     "subject": "Trading Window",
-     "date": "22-Sep-2026 17:57:17"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Patel Engineering Limited",
+     "company": "Canara Robeco Asset Management Company Limited",
      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "22-Sep-2026 17:57:01"
+     "date": "22-Sep-2026 18:16:31"
     },
     {
      "exchange": "NSE",
-     "company": "Central Bank of India",
+     "company": "Aarti Pharmalabs Limited",
+     "subject": "Updates",
+     "date": "22-Sep-2026 18:16:22"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Axis Bank Limited",
      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "22-Sep-2026 17:56:36"
+     "date": "22-Sep-2026 18:16:08"
     }
    ]
   },
@@ -4815,34 +4836,34 @@
      "country": "United Kingdom",
      "index": "FTSE 100",
      "date": "22-Sep-2026",
-     "value": 10743.28,
+     "value": 10752.81,
      "prev": 10739.01,
      "high": 10771.64,
      "low": 10714.78,
-     "change": 4.27,
-     "chgPct": 0.04
+     "change": 13.8,
+     "chgPct": 0.13
     },
     {
      "country": "Germany",
      "index": "DAX",
      "date": "22-Sep-2026",
-     "value": 25709.15,
+     "value": 25737.39,
      "prev": 25575.01,
-     "high": 25752.81,
+     "high": 25756.71,
      "low": 25423.07,
-     "change": 134.14,
-     "chgPct": 0.52
+     "change": 162.38,
+     "chgPct": 0.63
     },
     {
      "country": "France",
      "index": "CAC 40",
      "date": "22-Sep-2026",
-     "value": 8179.7,
+     "value": 8183.21,
      "prev": 8138.94,
      "high": 8192.26,
      "low": 8117.27,
-     "change": 40.76,
-     "chgPct": 0.5
+     "change": 44.27,
+     "chgPct": 0.54
     },
     {
      "country": "Japan",
@@ -5100,68 +5121,175 @@
      "commodity": "Gold",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 4378.9,
+     "last": 4370.5,
      "prev": 4383.9,
-     "change": -5,
-     "chgPct": -0.11
+     "change": -13.4,
+     "chgPct": -0.31
     },
     {
      "commodity": "Silver",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 66.42,
+     "last": 66.37,
      "prev": 66.415,
-     "change": 0.005,
-     "chgPct": 0.01
+     "change": -0.045,
+     "chgPct": -0.07
     },
     {
      "commodity": "Copper",
      "contract": "Dec'26",
      "venue": "CEC:Commodities Exchange Centre",
-     "last": 6.8575,
+     "last": 6.8545,
      "prev": 6.7625,
-     "change": 0.095,
-     "chgPct": 1.4
+     "change": 0.092,
+     "chgPct": 1.36
     },
     {
      "commodity": "Platinum",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 1803.9,
+     "last": 1812.2,
      "prev": 1801.4,
-     "change": 2.5,
-     "chgPct": 0.14
+     "change": 10.8,
+     "chgPct": 0.6
     },
     {
      "commodity": "WTI Crude Oil",
      "contract": "Oct'26",
      "venue": "WTI Crude",
-     "last": 93.5,
+     "last": 93.6,
      "prev": 95.78,
-     "change": -2.28,
-     "chgPct": -2.38
+     "change": -2.18,
+     "chgPct": -2.28
     },
     {
      "commodity": "Brent Crude",
      "contract": "Nov'26",
      "venue": "NYMEX Brent Crude",
-     "last": 98.6,
+     "last": 98.72,
      "prev": 100.34,
-     "change": -1.74,
-     "chgPct": -1.73
+     "change": -1.62,
+     "chgPct": -1.61
     },
     {
      "commodity": "Natural Gas",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 2.841,
+     "last": 2.852,
      "prev": 2.836,
-     "change": 0.005,
-     "chgPct": 0.18
+     "change": 0.016,
+     "chgPct": 0.56
     }
    ],
    "defaultSort": "chgPct",
    "vendor": "CNBC market data"
+  },
+  {
+   "slug": "currency-quotes",
+   "title": "Currency Rates",
+   "group": "currency",
+   "blurb": "Rupees per unit of each major currency, from the European Central Bank reference rates published 2026-09-21 (compared with 2026-09-17).",
+   "columns": [
+    {
+     "key": "pair",
+     "label": "Currency Pair",
+     "type": "text"
+    },
+    {
+     "key": "rate",
+     "label": "Rate (₹)",
+     "type": "num"
+    },
+    {
+     "key": "prev",
+     "label": "Prev (₹)",
+     "type": "num"
+    },
+    {
+     "key": "change",
+     "label": "Change",
+     "type": "change"
+    },
+    {
+     "key": "chgPct",
+     "label": "Change (%)",
+     "type": "pct"
+    }
+   ],
+   "rows": [
+    {
+     "pair": "USD / INR",
+     "rate": 95.7854,
+     "prev": 95.9693,
+     "change": -0.1839,
+     "chgPct": -0.19
+    },
+    {
+     "pair": "EUR / INR",
+     "rate": 110.1322,
+     "prev": 110.1322,
+     "change": 0,
+     "chgPct": 0
+    },
+    {
+     "pair": "GBP / INR",
+     "rate": 128.3697,
+     "prev": 128.3697,
+     "change": 0,
+     "chgPct": 0
+    },
+    {
+     "pair": "JPY / INR",
+     "rate": 0.6093,
+     "prev": 0.6162,
+     "change": -0.0069,
+     "chgPct": -1.12
+    },
+    {
+     "pair": "AUD / INR",
+     "rate": 68.3995,
+     "prev": 68.2594,
+     "change": 0.1401,
+     "chgPct": 0.21
+    },
+    {
+     "pair": "CAD / INR",
+     "rate": 68.4463,
+     "prev": 68.5401,
+     "change": -0.0938,
+     "chgPct": -0.14
+    },
+    {
+     "pair": "CHF / INR",
+     "rate": 116.6861,
+     "prev": 116.4144,
+     "change": 0.2717,
+     "chgPct": 0.23
+    },
+    {
+     "pair": "SGD / INR",
+     "rate": 75.188,
+     "prev": 75.2445,
+     "change": -0.0565,
+     "chgPct": -0.08
+    },
+    {
+     "pair": "CNY / INR",
+     "rate": 14.3123,
+     "prev": 14.3041,
+     "change": 0.0082,
+     "chgPct": 0.06
+    },
+    {
+     "pair": "HKD / INR",
+     "rate": 12.2145,
+     "prev": 12.2294,
+     "change": -0.0149,
+     "chgPct": -0.12
+    }
+   ],
+   "defaultSort": "chgPct",
+   "vendor": "ECB via frankfurter.app"
   },
   {
    "slug": "highest-lowest-delivery",
@@ -7397,7 +7525,7 @@
      "isin": "INE442A01024"
     },
     {
-     "company": "Assambrook Ltd",
+     "company": "Assambrook Ltd-$",
      "bseCode": "500025",
      "ticker": "ASSAMBR",
      "faceValue": "10.00",
@@ -8196,115 +8324,6 @@
     }
    ],
    "defaultSort": "total",
-   "note": "This table could not be refreshed on the latest build. Figures are as last retrieved on 22-Sep-2026 15:30.",
-   "stale": true
-  },
-  {
-   "slug": "currency-quotes",
-   "title": "Currency Rates",
-   "group": "currency",
-   "blurb": "Rupees per unit of each major currency, from the European Central Bank reference rates published 2026-09-21 (compared with 2026-09-17).",
-   "columns": [
-    {
-     "key": "pair",
-     "label": "Currency Pair",
-     "type": "text"
-    },
-    {
-     "key": "rate",
-     "label": "Rate (₹)",
-     "type": "num"
-    },
-    {
-     "key": "prev",
-     "label": "Prev (₹)",
-     "type": "num"
-    },
-    {
-     "key": "change",
-     "label": "Change",
-     "type": "change"
-    },
-    {
-     "key": "chgPct",
-     "label": "Change (%)",
-     "type": "pct"
-    }
-   ],
-   "rows": [
-    {
-     "pair": "USD / INR",
-     "rate": 95.7854,
-     "prev": 95.9693,
-     "change": -0.1839,
-     "chgPct": -0.19
-    },
-    {
-     "pair": "EUR / INR",
-     "rate": 110.1322,
-     "prev": 110.1322,
-     "change": 0,
-     "chgPct": 0
-    },
-    {
-     "pair": "GBP / INR",
-     "rate": 128.3697,
-     "prev": 128.3697,
-     "change": 0,
-     "chgPct": 0
-    },
-    {
-     "pair": "JPY / INR",
-     "rate": 0.6093,
-     "prev": 0.6162,
-     "change": -0.0069,
-     "chgPct": -1.12
-    },
-    {
-     "pair": "AUD / INR",
-     "rate": 68.3995,
-     "prev": 68.2594,
-     "change": 0.1401,
-     "chgPct": 0.21
-    },
-    {
-     "pair": "CAD / INR",
-     "rate": 68.4463,
-     "prev": 68.5401,
-     "change": -0.0938,
-     "chgPct": -0.14
-    },
-    {
-     "pair": "CHF / INR",
-     "rate": 116.6861,
-     "prev": 116.4144,
-     "change": 0.2717,
-     "chgPct": 0.23
-    },
-    {
-     "pair": "SGD / INR",
-     "rate": 75.188,
-     "prev": 75.2445,
-     "change": -0.0565,
-     "chgPct": -0.08
-    },
-    {
-     "pair": "CNY / INR",
-     "rate": 14.3123,
-     "prev": 14.3041,
-     "change": 0.0082,
-     "chgPct": 0.06
-    },
-    {
-     "pair": "HKD / INR",
-     "rate": 12.2145,
-     "prev": 12.2294,
-     "change": -0.0149,
-     "chgPct": -0.12
-    }
-   ],
-   "defaultSort": "chgPct",
-   "vendor": "ECB via frankfurter.app",
    "note": "This table could not be refreshed on the latest build. Figures are as last retrieved on 22-Sep-2026 15:30.",
    "stale": true
   }

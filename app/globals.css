@@ -621,6 +621,25 @@ html{scroll-padding-top:108px}
 .policy-cols h3{font-size:11.5px;letter-spacing:1px;font-weight:700;color:#333;margin-bottom:14px;text-transform:uppercase}
 .policy-cols a{display:block;font-size:13.5px;color:#4a4f5b;padding:5px 0;transition:color .2s,transform .2s}
 .policy-cols a:hover{color:var(--red);transform:translateX(4px)}
+
+/* The handful of disclosures an investor is most often sent to find. The live
+   site fills these as solid navy blocks; here they are a tinted chip with a
+   red spine, which carries the same "look here first" without six heavy slabs
+   in a column of quiet text. The marker is decorative — the emphasis is
+   already in the wording, so nothing is announced twice. */
+.policy-cols a.pol-hi{
+  position:relative;margin:4px 0;padding:8px 12px 8px 15px;border-radius:8px;
+  background:#fbf3f3;border:1px solid #f2dedf;color:var(--ink);font-weight:600;
+}
+.policy-cols a.pol-hi::before{
+  content:"";position:absolute;left:0;top:7px;bottom:7px;width:3px;
+  border-radius:0 3px 3px 0;background:var(--red);
+}
+.policy-cols a.pol-hi:hover{
+  background:#f7e9ea;border-color:#e8c6c8;color:var(--red);transform:translateX(3px);
+}
+.policy-cols a.pol-hi:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.policy-cols a{transition:none}.policy-cols a:hover{transform:none}}
 .member-card{background:#fff;border-radius:12px;padding:8px 24px}
 .member-row{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #ececee;font-size:13.5px}
 .member-row:last-child{border-bottom:0}

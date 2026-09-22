@@ -65,6 +65,9 @@ export const POLICY_LINKS = {
   riskDisclosures:
     'https://www.sebi.gov.in/reports-and-statistics/research/jan-2023/study-analysis-of-profit-and-loss-of-individual-traders-dealing-in-equity-fando-segment_67525.html',
   circulars: '/circulars',
+  /** SEBI's voluntary freeze / block facility — published, but not linked
+   *  from the footer until now. The file already sits in lib/circulars. */
+  voluntaryFreeze: '/files/pdf/voluntary-freeze-block-trading-account.pdf',
   regulatory: '/policies/regulatory-disclosures',
   termsOfUse: '/policies/terms-of-use',
   termsConditions: '/policies/terms-and-conditions',
