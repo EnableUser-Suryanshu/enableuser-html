@@ -56,7 +56,7 @@ const MILESTONES = [
   { year: '1990s', title: 'Roots across Madhya Pradesh', body: 'A growing branch and authorised-person network takes trusted investing to Sagar, Jabalpur, Vidisha, Harda, Lalitpur and beyond.' },
   { year: '2003', title: 'Depository participant', body: 'Registered as a CDSL Depository Participant (IN-DP-CDSL-221-2003), adding safe, paperless demat custody to the bouquet.' },
   { year: '2000s – 2010s', title: 'Every branch of investing', body: 'Commodity membership on MCX, mutual fund distribution, IPOs, bonds and insurance — one tree, many branches.' },
-  { year: 'Today', title: 'Digital-first, values-forever', body: '35,000+ investors, 200+ business locations, fully digital eKYC onboarding and modern trading platforms — with the same three Ts at the core.' },
+  { year: 'Today', title: 'Digital-first, values-forever', body: '35,000+ investors, 20+ locations, fully digital eKYC onboarding and modern trading platforms — with the same three Ts at the core.' },
 ];
 
 const LEADERS = [
@@ -156,8 +156,8 @@ export default function AboutPage() {
           </div>
           <div className="stat">
             <div className="stat-icon"><Bank size={26} /></div>
-            <div className="v"><CountUp target={200} suffix="+" /></div>
-            <div className="l">Business Locations</div>
+            <div className="v"><CountUp target={20} suffix="+" /></div>
+            <div className="l">Locations</div>
           </div>
           <div className="stat">
             <div className="stat-icon"><Shield size={26} /></div>

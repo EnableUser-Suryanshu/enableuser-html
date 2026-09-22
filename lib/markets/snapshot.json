@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-22T10:17:16.528Z",
+ "fetchedAt": "2026-09-22T11:42:19.110Z",
  "marketTimestamp": "22-Sep-2026 15:30",
  "marketStatus": "Closed",
  "source": "NSE India (nseindia.com public market data) · NSE full bhavcopy (delivery data) · NSE & BSE corporate filings, AMFI scheme data · CNBC market data · ECB reference rates",
@@ -389,7 +389,7 @@
      "chg": 118.15,
      "high": 708.9,
      "low": 590,
-     "vol": 8044.82
+     "vol": 8046.82
     },
     {
      "company": "ANSALBU",
@@ -419,7 +419,7 @@
      "chg": 3.2,
      "high": 19.21,
      "low": 16.21,
-     "vol": 200.29
+     "vol": 200.32
     },
     {
      "company": "RACE",
@@ -439,7 +439,7 @@
      "chg": 17.47,
      "high": 104.85,
      "low": 87.91,
-     "vol": 1043.44
+     "vol": 1043.54
     },
     {
      "company": "OPTIFIN",
@@ -459,7 +459,7 @@
      "chg": 15.36,
      "high": 100.12,
      "low": 82.6,
-     "vol": 8177.11
+     "vol": 8177.22
     },
     {
      "company": "TCC",
@@ -469,7 +469,7 @@
      "chg": 7.81,
      "high": 55.18,
      "low": 45.2,
-     "vol": 4284.91
+     "vol": 4284.94
     },
     {
      "company": "GABRIEL",
@@ -479,7 +479,7 @@
      "chg": 187.7,
      "high": 1495,
      "low": 1291.3,
-     "vol": 7890.79
+     "vol": 7891.06
     },
     {
      "company": "TRANSRAILL",
@@ -489,7 +489,7 @@
      "chg": 59.8,
      "high": 488,
      "low": 420,
-     "vol": 23971.38
+     "vol": 23971.64
     },
     {
      "company": "TANAA",
@@ -499,7 +499,7 @@
      "chg": 44.9,
      "high": 378.95,
      "low": 332.5,
-     "vol": 965.4
+     "vol": 965.68
     },
     {
      "company": "ISFT",
@@ -509,7 +509,7 @@
      "chg": 12.91,
      "high": 108.24,
      "low": 91.65,
-     "vol": 385.21
+     "vol": 385.24
     },
     {
      "company": "ARIHANTCAP",
@@ -519,7 +519,7 @@
      "chg": 11.28,
      "high": 93,
      "low": 81.19,
-     "vol": 6068.2
+     "vol": 6068.3
     },
     {
      "company": "KLBRENG-B",
@@ -529,7 +529,7 @@
      "chg": 58.95,
      "high": 525,
      "low": 461.15,
-     "vol": 1922.59
+     "vol": 1923.2
     },
     {
      "company": "MONQ50",
@@ -539,7 +539,7 @@
      "chg": -63.4,
      "high": 317.04,
      "low": 253.64,
-     "vol": 942.04
+     "vol": 942.88
     },
     {
      "company": "MASPTOP50",
@@ -549,7 +549,7 @@
      "chg": -15.8,
      "high": 118.83,
      "low": 96.27,
-     "vol": 4465.87
+     "vol": 4467.82
     },
     {
      "company": "AVROIND",
@@ -559,7 +559,7 @@
      "chg": -0.76,
      "high": 8.14,
      "low": 7.08,
-     "vol": 763.62
+     "vol": 765.86
     },
     {
      "company": "HGM",
@@ -579,7 +579,7 @@
      "chg": -17.1,
      "high": 248,
      "low": 229.5,
-     "vol": 1095.4
+     "vol": 1096.05
     },
     {
      "company": "SHRIKRISH",
@@ -599,7 +599,7 @@
      "chg": -20.24,
      "high": 306,
      "low": 282.1,
-     "vol": 751.27
+     "vol": 754.51
     },
     {
      "company": "ATALREAL",
@@ -609,7 +609,7 @@
      "chg": -0.93,
      "high": 14.25,
      "low": 12.8,
-     "vol": 6493.6
+     "vol": 6493.63
     },
     {
      "company": "JISLJALEQS",
@@ -619,7 +619,7 @@
      "chg": -1.98,
      "high": 31.34,
      "low": 28.85,
-     "vol": 7762.83
+     "vol": 7791.32
     },
     {
      "company": "ACUTAAS",
@@ -629,7 +629,7 @@
      "chg": -215.8,
      "high": 3450,
      "low": 3200,
-     "vol": 482.81
+     "vol": 482.99
     },
     {
      "company": "LEXUS",
@@ -659,7 +659,7 @@
      "chg": -17,
      "high": 320.85,
      "low": 296.7,
-     "vol": 3128.01
+     "vol": 3129.12
     },
     {
      "company": "KAYNES",
@@ -669,7 +669,7 @@
      "chg": -195,
      "high": 3599,
      "low": 3425,
-     "vol": 3021.34
+     "vol": 3022.94
     },
     {
      "company": "63MOONS",
@@ -679,7 +679,7 @@
      "chg": -47,
      "high": 914.95,
      "low": 788.5,
-     "vol": 1712.25
+     "vol": 1713.26
     }
    ],
    "defaultSort": "chgPct"
@@ -934,7 +934,7 @@
      "chg": 118.15,
      "high": 708.9,
      "low": 590,
-     "vol": 8044.82
+     "vol": 8046.82
     },
     {
      "company": "ANSALBU",
@@ -964,7 +964,7 @@
      "chg": -63.4,
      "high": 317.04,
      "low": 253.64,
-     "vol": 942.04
+     "vol": 942.88
     },
     {
      "company": "CRESTO",
@@ -974,7 +974,7 @@
      "chg": 3.2,
      "high": 19.21,
      "low": 16.21,
-     "vol": 200.29
+     "vol": 200.32
     },
     {
      "company": "RACE",
@@ -994,7 +994,7 @@
      "chg": 17.47,
      "high": 104.85,
      "low": 87.91,
-     "vol": 1043.44
+     "vol": 1043.54
     },
     {
      "company": "OPTIFIN",
@@ -1014,7 +1014,7 @@
      "chg": 15.36,
      "high": 100.12,
      "low": 82.6,
-     "vol": 8177.11
+     "vol": 8177.22
     },
     {
      "company": "TCC",
@@ -1024,7 +1024,7 @@
      "chg": 7.81,
      "high": 55.18,
      "low": 45.2,
-     "vol": 4284.91
+     "vol": 4284.94
     },
     {
      "company": "GABRIEL",
@@ -1034,7 +1034,7 @@
      "chg": 187.7,
      "high": 1495,
      "low": 1291.3,
-     "vol": 7890.79
+     "vol": 7891.06
     },
     {
      "company": "TRANSRAILL",
@@ -1044,7 +1044,7 @@
      "chg": 59.8,
      "high": 488,
      "low": 420,
-     "vol": 23971.38
+     "vol": 23971.64
     },
     {
      "company": "TANAA",
@@ -1054,7 +1054,7 @@
      "chg": 44.9,
      "high": 378.95,
      "low": 332.5,
-     "vol": 965.4
+     "vol": 965.68
     },
     {
      "company": "ISFT",
@@ -1064,7 +1064,7 @@
      "chg": 12.91,
      "high": 108.24,
      "low": 91.65,
-     "vol": 385.21
+     "vol": 385.24
     },
     {
      "company": "MASPTOP50",
@@ -1074,7 +1074,7 @@
      "chg": -15.8,
      "high": 118.83,
      "low": 96.27,
-     "vol": 4465.87
+     "vol": 4467.82
     },
     {
      "company": "ARIHANTCAP",
@@ -1084,7 +1084,7 @@
      "chg": 11.28,
      "high": 93,
      "low": 81.19,
-     "vol": 6068.2
+     "vol": 6068.3
     },
     {
      "company": "CREATIVEYE",
@@ -1104,7 +1104,7 @@
      "chg": 58.95,
      "high": 525,
      "low": 461.15,
-     "vol": 1922.59
+     "vol": 1923.2
     },
     {
      "company": "BLUESTONE",
@@ -1114,7 +1114,7 @@
      "chg": 96.55,
      "high": 950,
      "low": 847.95,
-     "vol": 3686.28
+     "vol": 3686.32
     },
     {
      "company": "ARVEE",
@@ -1124,7 +1124,7 @@
      "chg": 23.73,
      "high": 247.99,
      "low": 222.25,
-     "vol": 229.91
+     "vol": 229.98
     }
    ],
    "defaultSort": "chgPct"
@@ -1185,7 +1185,7 @@
      "chg": 118.15,
      "high": 708.9,
      "low": 590,
-     "vol": 8044.82
+     "vol": 8046.82
     },
     {
      "company": "ANSALBU",
@@ -1215,7 +1215,7 @@
      "chg": 17.47,
      "high": 104.85,
      "low": 87.91,
-     "vol": 1043.44
+     "vol": 1043.54
     },
     {
      "company": "RACE",
@@ -1235,7 +1235,7 @@
      "chg": 15.36,
      "high": 100.12,
      "low": 82.6,
-     "vol": 8177.11
+     "vol": 8177.22
     },
     {
      "company": "TCC",
@@ -1245,7 +1245,7 @@
      "chg": 7.81,
      "high": 55.18,
      "low": 45.2,
-     "vol": 4284.91
+     "vol": 4284.94
     },
     {
      "company": "GABRIEL",
@@ -1255,7 +1255,7 @@
      "chg": 187.7,
      "high": 1495,
      "low": 1291.3,
-     "vol": 7890.79
+     "vol": 7891.06
     },
     {
      "company": "TRANSRAILL",
@@ -1265,7 +1265,7 @@
      "chg": 59.8,
      "high": 488,
      "low": 420,
-     "vol": 23971.38
+     "vol": 23971.64
     },
     {
      "company": "TANAA",
@@ -1275,7 +1275,7 @@
      "chg": 44.9,
      "high": 378.95,
      "low": 332.5,
-     "vol": 965.4
+     "vol": 965.68
     },
     {
      "company": "ISFT",
@@ -1285,7 +1285,7 @@
      "chg": 12.91,
      "high": 108.24,
      "low": 91.65,
-     "vol": 385.21
+     "vol": 385.24
     },
     {
      "company": "ARIHANTCAP",
@@ -1295,7 +1295,7 @@
      "chg": 11.28,
      "high": 93,
      "low": 81.19,
-     "vol": 6068.2
+     "vol": 6068.3
     },
     {
      "company": "KLBRENG-B",
@@ -1305,7 +1305,7 @@
      "chg": 58.95,
      "high": 525,
      "low": 461.15,
-     "vol": 1922.59
+     "vol": 1923.2
     },
     {
      "company": "BLUESTONE",
@@ -1315,7 +1315,7 @@
      "chg": 96.55,
      "high": 950,
      "low": 847.95,
-     "vol": 3686.28
+     "vol": 3686.32
     },
     {
      "company": "ARVEE",
@@ -1325,7 +1325,7 @@
      "chg": 23.73,
      "high": 247.99,
      "low": 222.25,
-     "vol": 229.91
+     "vol": 229.98
     },
     {
      "company": "STEELCAS",
@@ -1335,7 +1335,7 @@
      "chg": 35.55,
      "high": 365,
      "low": 340,
-     "vol": 1480.32
+     "vol": 1480.42
     },
     {
      "company": "NIBL",
@@ -1345,7 +1345,7 @@
      "chg": 3.25,
      "high": 34.99,
      "low": 30.62,
-     "vol": 102.36
+     "vol": 105.96
     },
     {
      "company": "RPTECH",
@@ -1355,7 +1355,7 @@
      "chg": 83.1,
      "high": 900,
      "low": 812,
-     "vol": 726.94
+     "vol": 726.95
     },
     {
      "company": "AASTHA",
@@ -1365,7 +1365,7 @@
      "chg": 7.42,
      "high": 81.63,
      "low": 74.35,
-     "vol": 1331.81
+     "vol": 1334.83
     },
     {
      "company": "AHCL",
@@ -1375,7 +1375,7 @@
      "chg": 2.62,
      "high": 28.86,
      "low": 26.91,
-     "vol": 70017.45
+     "vol": 70018.56
     },
     {
      "company": "AVROIND",
@@ -1385,7 +1385,7 @@
      "chg": -0.76,
      "high": 8.14,
      "low": 7.08,
-     "vol": 763.62
+     "vol": 765.86
     },
     {
      "company": "ATALREAL",
@@ -1395,7 +1395,7 @@
      "chg": -0.93,
      "high": 14.25,
      "low": 12.8,
-     "vol": 6493.6
+     "vol": 6493.63
     },
     {
      "company": "LEXUS",
@@ -1415,7 +1415,7 @@
      "chg": -0.93,
      "high": 18.8,
      "low": 17.67,
-     "vol": 5510.12
+     "vol": 5520.96
     },
     {
      "company": "TIJARIA",
@@ -1425,7 +1425,7 @@
      "chg": -0.36,
      "high": 7.47,
      "low": 6.87,
-     "vol": 41.91
+     "vol": 42.12
     },
     {
      "company": "VIPULLTD",
@@ -1438,16 +1438,6 @@
      "vol": 235.57
     },
     {
-     "company": "BURNPUR",
-     "last": 16.12,
-     "prev": 16.96,
-     "chgPct": -4.95,
-     "chg": -0.84,
-     "high": 16.79,
-     "low": 16.12,
-     "vol": 27.61
-    },
-    {
      "company": "ORTINGLOBE",
      "last": 14.6,
      "prev": 15.36,
@@ -1456,6 +1446,16 @@
      "high": 15.64,
      "low": 14.6,
      "vol": 52.47
+    },
+    {
+     "company": "BURNPUR",
+     "last": 16.12,
+     "prev": 16.96,
+     "chgPct": -4.95,
+     "chg": -0.84,
+     "high": 16.79,
+     "low": 16.12,
+     "vol": 27.61
     },
     {
      "company": "BLUECOAST",
@@ -1475,7 +1475,7 @@
      "chg": -0.11,
      "high": 2.25,
      "low": 2.16,
-     "vol": 13599.64
+     "vol": 13600.18
     },
     {
      "company": "TICL",
@@ -1535,7 +1535,7 @@
      "chg": -0.32,
      "high": 6.74,
      "low": 6.29,
-     "vol": 545.87
+     "vol": 546.87
     },
     {
      "company": "INFOMEDIA",
@@ -1555,7 +1555,7 @@
      "chg": -0.86,
      "high": 19.79,
      "low": 18.35,
-     "vol": 345.65
+     "vol": 346.65
     },
     {
      "company": "RETAIL",
@@ -4244,6 +4244,12 @@
      "purpose": "Other business matters"
     },
     {
+     "symbol": "VGL",
+     "company": "VARVEE GLOBAL LIMITED",
+     "date": "25-Sep-2026",
+     "purpose": "Stock Split"
+    },
+    {
      "symbol": "POWERGRID",
      "company": "Power Grid Corporation of India Limited",
      "date": "26-Sep-2026",
@@ -4260,6 +4266,12 @@
      "company": "The State Trading Corporation of India Limited",
      "date": "13-Oct-2026",
      "purpose": "Financial Results/Other business matters"
+    },
+    {
+     "symbol": "TATATECH",
+     "company": "Tata Technologies Limited",
+     "date": "14-Oct-2026",
+     "purpose": "Financial Results"
     },
     {
      "symbol": "ANGELONE",
@@ -4294,6 +4306,12 @@
     {
      "symbol": "COFORGE",
      "company": "Coforge Limited",
+     "date": "23-Oct-2026",
+     "purpose": "Financial Results"
+    },
+    {
+     "symbol": "DRREDDY",
+     "company": "Dr. Reddy's Laboratories Limited",
      "date": "23-Oct-2026",
      "purpose": "Financial Results"
     },
@@ -4529,6 +4547,15 @@
      "size": "3858000"
     },
     {
+     "company": "Himalayan Solar Limited",
+     "symbol": "HIMALAYAN",
+     "series": "SME",
+     "open": "25-Sep-2026",
+     "close": "29-Sep-2026",
+     "band": "Rs.98 to Rs.103",
+     "size": "6604800"
+    },
+    {
      "company": "Pooja Logistics Limited",
      "symbol": "POOJALOGIS",
      "series": "SME",
@@ -4578,123 +4605,123 @@
    "rows": [
     {
      "exchange": "NSE",
-     "company": "Gujarat Narmada Valley Fertilizers and Chemicals Limited",
+     "company": "B. L. Kashyap and Sons Limited",
+     "subject": "Trading Window",
+     "date": "22-Sep-2026 17:09:52"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Cinevista Limited",
+     "subject": "Trading Window",
+     "date": "22-Sep-2026 17:07:27"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Mufin Green Finance Limited",
      "subject": "General Updates",
-     "date": "22-Sep-2026 15:45:18"
+     "date": "22-Sep-2026 17:04:48"
     },
     {
      "exchange": "NSE",
-     "company": "BEML Limited",
-     "subject": "Change in Auditors",
-     "date": "22-Sep-2026 15:44:44"
+     "company": "JSW Dulux Limited",
+     "subject": "Record Date",
+     "date": "22-Sep-2026 17:04:14"
     },
     {
      "exchange": "NSE",
-     "company": "SPR Auto Technologies Limited",
-     "subject": "Shareholders meeting",
-     "date": "22-Sep-2026 15:43:21"
+     "company": "Tempsens Instruments (India) Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "22-Sep-2026 17:03:46"
     },
     {
      "exchange": "NSE",
-     "company": "CSL Finance Limited",
-     "subject": "Amendment to AOA/MOA",
-     "date": "22-Sep-2026 15:42:12"
+     "company": "Container Corporation of India Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "22-Sep-2026 17:02:43"
     },
     {
      "exchange": "NSE",
-     "company": "Coral India Finance & Housing Limited",
-     "subject": "Trading Window",
-     "date": "22-Sep-2026 15:41:43"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Dilip Buildcon Limited",
-     "subject": "Shareholders meeting",
-     "date": "22-Sep-2026 15:40:59"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Xelpmoc Design And Tech Limited",
-     "subject": "ESOP/ESOS/ESPS",
-     "date": "22-Sep-2026 15:40:48"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Isgec Heavy Engineering Limited",
-     "subject": "Trading Window",
-     "date": "22-Sep-2026 15:39:23"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Pine Labs Limited",
-     "subject": "ESOP/ESOS/ESPS",
-     "date": "22-Sep-2026 15:39:16"
-    },
-    {
-     "exchange": "NSE",
-     "company": "HCL Technologies Limited",
+     "company": "Avenue Supermarts Limited",
      "subject": "Updates",
-     "date": "22-Sep-2026 15:38:30"
+     "date": "22-Sep-2026 17:01:33"
     },
     {
      "exchange": "NSE",
-     "company": "Indian Hume Pipe Company Limited",
-     "subject": "General Updates",
-     "date": "22-Sep-2026 15:36:21"
+     "company": "IDFC First Bank Limited",
+     "subject": "ESOP/ESOS/ESPS",
+     "date": "22-Sep-2026 17:01:29"
     },
     {
      "exchange": "NSE",
-     "company": "Hy-Tech Engineers Limited",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "22-Sep-2026 15:36:03"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Solex Energy Limited",
-     "subject": "Press Release",
-     "date": "22-Sep-2026 15:35:49"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Maithan Alloys Limited",
-     "subject": "Others",
-     "date": "22-Sep-2026 15:35:48"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Central Depository Services (India) Limited",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "22-Sep-2026 15:34:12"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Maithan Alloys Limited",
-     "subject": "Others",
-     "date": "22-Sep-2026 15:34:00"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Mahanagar Gas Limited",
+     "company": "Dr. Reddy's Laboratories Limited",
      "subject": "Trading Window",
-     "date": "22-Sep-2026 15:33:53"
+     "date": "22-Sep-2026 17:00:36"
     },
     {
      "exchange": "NSE",
-     "company": "Thomas Cook (India) Limited",
+     "company": "Medico Remedies Limited",
+     "subject": "Shareholders meeting",
+     "date": "22-Sep-2026 16:59:29"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Next Mediaworks Limited",
+     "subject": "Shareholders meeting",
+     "date": "22-Sep-2026 16:58:06"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Amj Land Holdings Limited",
+     "subject": "Shareholders meeting",
+     "date": "22-Sep-2026 16:57:19"
+    },
+    {
+     "exchange": "NSE",
+     "company": "360 ONE WAM LIMITED",
      "subject": "Press Release",
-     "date": "22-Sep-2026 15:32:46"
+     "date": "22-Sep-2026 16:54:29"
     },
     {
      "exchange": "NSE",
-     "company": "P N Gadgil Jewellers Limited",
+     "company": "Poonawalla Fincorp Limited",
+     "subject": "ESOP/ESOS/ESPS",
+     "date": "22-Sep-2026 16:54:07"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Nephrocare Health Services Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "22-Sep-2026 16:53:59"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Zydus Lifesciences Limited",
      "subject": "Copy of Newspaper Publication",
-     "date": "22-Sep-2026 15:32:18"
+     "date": "22-Sep-2026 16:53:35"
     },
     {
      "exchange": "NSE",
-     "company": "The Karnataka Bank Limited",
-     "subject": "Change in Director(s)",
-     "date": "22-Sep-2026 15:31:33"
+     "company": "W S Industries (I) Limited",
+     "subject": "Shareholders meeting",
+     "date": "22-Sep-2026 16:53:34"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Vishnu Chemicals Limited",
+     "subject": "Updates",
+     "date": "22-Sep-2026 16:53:06"
+    },
+    {
+     "exchange": "NSE",
+     "company": "MOIL Limited",
+     "subject": "Change in Management",
+     "date": "22-Sep-2026 16:52:36"
+    },
+    {
+     "exchange": "NSE",
+     "company": "India Glycols Limited",
+     "subject": "General Updates",
+     "date": "22-Sep-2026 16:52:10"
     }
    ]
   },
@@ -4788,34 +4815,34 @@
      "country": "United Kingdom",
      "index": "FTSE 100",
      "date": "22-Sep-2026",
-     "value": 10754.1,
+     "value": 10758.62,
      "prev": 10739.01,
      "high": 10771.64,
      "low": 10714.78,
-     "change": 15.09,
-     "chgPct": 0.14
+     "change": 19.61,
+     "chgPct": 0.18
     },
     {
      "country": "Germany",
      "index": "DAX",
      "date": "22-Sep-2026",
-     "value": 25708.63,
+     "value": 25704.2,
      "prev": 25575.01,
-     "high": 25726.14,
+     "high": 25752.81,
      "low": 25423.07,
-     "change": 133.62,
-     "chgPct": 0.52
+     "change": 129.19,
+     "chgPct": 0.51
     },
     {
      "country": "France",
      "index": "CAC 40",
      "date": "22-Sep-2026",
-     "value": 8177.75,
+     "value": 8186.41,
      "prev": 8138.94,
-     "high": 8183.38,
+     "high": 8192.26,
      "low": 8117.27,
-     "change": 38.81,
-     "chgPct": 0.48
+     "change": 47.47,
+     "chgPct": 0.58
     },
     {
      "country": "Japan",
@@ -5073,64 +5100,64 @@
      "commodity": "Gold",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 4372.7,
+     "last": 4355.7,
      "prev": 4383.9,
-     "change": -11.2,
-     "chgPct": -0.26
+     "change": -28.2,
+     "chgPct": -0.64
     },
     {
      "commodity": "Silver",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 66.135,
+     "last": 65.97,
      "prev": 66.415,
-     "change": -0.28,
-     "chgPct": -0.42
+     "change": -0.445,
+     "chgPct": -0.67
     },
     {
      "commodity": "Copper",
      "contract": "Dec'26",
      "venue": "CEC:Commodities Exchange Centre",
-     "last": 6.8465,
+     "last": 6.8495,
      "prev": 6.7625,
-     "change": 0.084,
-     "chgPct": 1.24
+     "change": 0.087,
+     "chgPct": 1.29
     },
     {
      "commodity": "Platinum",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 1790.1,
+     "last": 1788.8,
      "prev": 1801.4,
-     "change": -11.3,
-     "chgPct": -0.63
+     "change": -12.6,
+     "chgPct": -0.7
     },
     {
      "commodity": "WTI Crude Oil",
      "contract": "Oct'26",
      "venue": "WTI Crude",
-     "last": 92.78,
+     "last": 93.3,
      "prev": 95.78,
-     "change": -3,
-     "chgPct": -3.13
+     "change": -2.48,
+     "chgPct": -2.59
     },
     {
      "commodity": "Brent Crude",
      "contract": "Nov'26",
      "venue": "NYMEX Brent Crude",
-     "last": 97.8,
+     "last": 98.24,
      "prev": 100.34,
-     "change": -2.54,
-     "chgPct": -2.53
+     "change": -2.1,
+     "chgPct": -2.09
     },
     {
      "commodity": "Natural Gas",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 2.834,
+     "last": 2.833,
      "prev": 2.836,
-     "change": -0.002,
-     "chgPct": -0.07
+     "change": -0.003,
+     "chgPct": -0.11
     }
    ],
    "defaultSort": "chgPct",
@@ -7399,7 +7426,7 @@
      "isin": "INE442A01024"
     },
     {
-     "company": "Assambrook Ltd",
+     "company": "Assambrook Ltd-$",
      "bseCode": "500025",
      "ticker": "ASSAMBR",
      "faceValue": "10.00",
@@ -8198,7 +8225,7 @@
     }
    ],
    "defaultSort": "total",
-   "note": "This table could not be refreshed on the latest build. Figures are as last retrieved on 21-Sep-2026 15:30.",
+   "note": "This table could not be refreshed on the latest build. Figures are as last retrieved on 22-Sep-2026 15:30.",
    "stale": true
   }
  ]
