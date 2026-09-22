@@ -113,22 +113,30 @@ export interface NtmResource {
   hi?: string;
 }
 
+/*
+ * Served from this site, not from www.kalpatarumulti.com — that host is being
+ * retired, and these were the last links still pointing at it from this page.
+ * The files are the ones it serves, copied into public/files/newtomarket.
+ *
+ * The ANMI FAQ was linked as .pdf and badged PDF. No such file exists there;
+ * it is a .pptx and always was, so the link 404'd. Both are corrected.
+ */
 export const NTM_RESOURCES: NtmResource[] = [
-  { label: 'Margin Pledge', kind: 'PDF', href: 'https://www.kalpatarumulti.com/files/newtomarket/Margin_Pledge.pdf', desc: 'How the margin pledge system works and what you need to authorise.' },
-  { label: 'ANMI–Secmark FAQ on Margin', kind: 'PDF', href: 'https://www.kalpatarumulti.com/files/newtomarket/ANMI_Secmark_FAQ_on_Margin_2Sep2020.pdf', desc: 'Industry FAQ on the September 2020 margin rules.' },
-  { label: 'Pledge Mechanism', kind: 'PPT', href: 'https://www.kalpatarumulti.com/files/newtomarket/pledge_mechanism.pptx', desc: 'Step-by-step walkthrough of the depository pledge mechanism.' },
-  // The two 2016 budget summaries that used to sit here were removed along
-  // with the Archive group on the downloads page — same documents, and both
-  // nine years stale.
+  { label: 'Margin Pledge', kind: 'PDF', href: '/files/newtomarket/Margin_Pledge.pdf', desc: 'How the margin pledge system works and what you need to authorise.' },
+  { label: 'Peak Margin Reporting — Circular', kind: 'PDF', href: '/files/newtomarket/Peak_Margin_Reporting_circular_website.pdf', desc: 'The circular on peak margin reporting and how the penalty is computed.' },
+  { label: 'ANMI–Secmark FAQ on Margin', kind: 'PPT', href: '/files/newtomarket/ANMI_Secmark_FAQ_on_Margin_2Sep2020.pptx', desc: 'Industry FAQ on the September 2020 margin rules.' },
+  { label: 'Pledge Mechanism', kind: 'PPT', href: '/files/newtomarket/pledge_mechanism.pptx', desc: 'Step-by-step walkthrough of the depository pledge mechanism.' },
 ];
 
+/** Described on the page rather than linked — both are arranged through the desk. */
 export const GOLD_ROUTES = [
-  { label: 'Sovereign Gold Bond (SGB)', href: 'https://meon.space/sgb/kalpataru', desc: 'Government-backed bonds that track gold and pay interest — held in demat.' },
-  { label: 'Gold ETFs', href: 'https://www.nseindia.com/market-data/exchange-traded-funds-etf', desc: 'Exchange-traded funds that track gold prices and trade like a share.' },
+  { label: 'Sovereign Gold Bond (SGB)', desc: 'Government-backed bonds that track gold and pay interest — held in demat.' },
+  { label: 'Gold ETFs', desc: 'Exchange-traded funds that track gold prices and trade like a share.' },
 ];
 
 export const COMMODITY_LOGINS = [
   { label: 'MCX Online Trading', href: 'http://onlinetrading.kalpatarumulti.com/pages/Login.aspx' },
+  { label: 'Web Trading Terminal', href: 'https://trading.kalpatarumulti.com:28001/' },
 ];
 
 /* ------------------------------------------------------------------ *

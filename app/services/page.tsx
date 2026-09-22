@@ -6,7 +6,7 @@ import { FUNDS } from '@/lib/data';
 import { PORTALS, APP_LINKS, EXT } from '@/lib/links';
 import {
   TrendUp, Swap, Bank, Globe, Rupee, Rocket, Shield, FileText, History,
-  Users, IdCard, DocLines, ArrowRight, CheckCircle, Handshake, Smartphone,
+  Users, ArrowRight, CheckCircle, Handshake, Smartphone,
   Devices, BarChart, Search,
 } from '@/components/icons';
 
@@ -266,24 +266,12 @@ const MORE: Array<{
     body: 'Protect what you are building — life and general insurance solutions distributed with honest, needs-first advice.',
     tags: ['Life', 'General'],
   },
-  {
-    icon: IdCard,
-    title: 'PAN Card Services',
-    body: 'New PAN applications and corrections handled end-to-end at our branches — the first step of every investing journey.',
-    tags: ['New PAN', 'Corrections'],
-  },
-  {
-    icon: DocLines,
-    title: 'SLB — Lend & Earn',
-    body: 'Put idle holdings to work: lend securities through the exchange SLB mechanism and earn extra yield on your long-term portfolio.',
-    tags: ['Extra Yield', 'Exchange Settled'],
-  },
 ];
 
 const WHY = [
   { icon: Shield, t: 'SEBI Registered', d: 'INZ000259437 — regulated end to end.' },
   { icon: Bank, t: '4 Market Institutions', d: 'NSE, BSE, MCX & CDSL access.' },
-  { icon: Handshake, t: '200+ Locations', d: 'Branches & partners across India.' },
+  { icon: Handshake, t: '20+ Locations', d: 'Branches & partners across India.' },
   { icon: CheckCircle, t: '5-Minute eKYC', d: 'Fully digital Aadhaar-based onboarding.' },
 ];
 

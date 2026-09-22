@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const PILLAR_ICONS = [Users, TrendUp, Search, FileText, Devices, Shield];
 
 const MODELS = [
-  { icon: Handshake, t: 'Sub Broker / Authorised Person', d: 'Registered with the exchange under our membership, servicing clients in your own territory.' },
+  { icon: Handshake, t: 'Authorised Person', d: 'Registered with the exchange under our membership, servicing clients in your own territory.' },
   { icon: CalendarCheck, t: 'ARN Holder', d: 'Distribute mutual funds under our AMFI registration with full back-office support.' },
   { icon: IdCard, t: 'Partner Model', d: 'A revenue-sharing arrangement structured around the business you bring.' },
   { icon: Building, t: 'Branch Support', d: 'Set up a branded Kalpataru outlet with our systems, training and supervision.' },

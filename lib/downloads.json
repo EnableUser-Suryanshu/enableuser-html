@@ -451,12 +451,6 @@
     "cat": "Software & Utilities"
   },
   {
-    "label": "Online Payment Help",
-    "href": "/files/download/PaymentGateway_Demo.webm",
-    "kind": "PDF",
-    "cat": "Guides & Demos"
-  },
-  {
     "label": "QuickHeal",
     "href": "https://cdn.sanity.io/files/85s11me3/production/823ec2001d48eba2add8f22ff532161825b8489d.rar",
     "kind": "PDF",
