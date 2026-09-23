@@ -3,8 +3,28 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import PageHero from '@/components/PageHero';
 import PolicyBody from '@/components/pages/PolicyBody';
+import ComplaintsData from '@/components/pages/ComplaintsData';
+import { getComplaintsReport } from '@/lib/complaints';
 import { ALL_POLICIES, POLICY_GROUPS as GROUPS, getPolicyPage, policyTabs } from '@/lib/policy-index';
+import type { PolicyBlock } from '@/lib/policies';
 import { ArrowRight, FilePdf, Shield } from '@/components/icons';
+
+/**
+ * The two charters publish the same investor-complaints tables, and SEBI
+ * requires them monthly. Those tables now come from Sanity — see
+ * lib/complaints — so the copies baked into the generated policy blocks are
+ * dropped here rather than edited out of policies.ts, which is generated and
+ * would lose the edit.
+ */
+const CHARTERS = new Set(['investor-charter', 'investor-charter-depository']);
+
+/** Everything from the "Investor Complaints Data" heading to the end. */
+function trimComplaints(blocks: PolicyBlock[]): PolicyBlock[] {
+  const i = blocks.findIndex(
+    (b) => b.t === 'h' && /investor complaints data/i.test(b.text),
+  );
+  return i < 0 ? blocks : blocks.slice(0, i);
+}
 
 export function generateStaticParams() {
   return ALL_POLICIES.map((p) => ({ slug: p.slug }));
@@ -62,7 +82,8 @@ export default async function PolicyPage({ params }: { params: Promise<{ slug: s
                 ))}
               </nav>
             )}
-            <PolicyBody blocks={policy.blocks} />
+            <PolicyBody blocks={CHARTERS.has(slug) ? trimComplaints(policy.blocks) : policy.blocks} />
+            {CHARTERS.has(slug) && <ComplaintsData report={await getComplaintsReport()} />}
 
             <p className="policy-foot">
               This document is published by Kalpataru Multiplier Ltd in accordance with SEBI and

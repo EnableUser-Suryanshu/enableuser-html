@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-23T10:20:37.506Z",
+ "fetchedAt": "2026-09-23T10:41:27.363Z",
  "marketTimestamp": "23-Sep-2026 15:30",
  "marketStatus": "Closed",
  "source": "NSE India (nseindia.com public market data) · NSE full bhavcopy (delivery data) · NSE & BSE corporate filings, AMFI scheme data · CNBC market data · ECB reference rates",
@@ -389,7 +389,7 @@
      "chg": 20.97,
      "high": 125.82,
      "low": 117,
-     "vol": 1061.63
+     "vol": 1061.64
     },
     {
      "company": "HEROMOTORS",
@@ -399,7 +399,7 @@
      "chg": 14.4,
      "high": 98.4,
      "low": 80.5,
-     "vol": 139840.96
+     "vol": 139842.84
     },
     {
      "company": "SSRETAIL",
@@ -409,7 +409,7 @@
      "chg": 324.8,
      "high": 748.8,
      "low": 603.05,
-     "vol": 45735.41
+     "vol": 45735.53
     },
     {
      "company": "PREMIERPOL",
@@ -419,7 +419,7 @@
      "chg": 16.2,
      "high": 97.22,
      "low": 81.14,
-     "vol": 6516.81
+     "vol": 6517.06
     },
     {
      "company": "WHIRLPOOL",
@@ -429,7 +429,7 @@
      "chg": 144.2,
      "high": 865.25,
      "low": 722.2,
-     "vol": 10752.64
+     "vol": 10753.33
     },
     {
      "company": "FRONTSP",
@@ -439,7 +439,7 @@
      "chg": 232.4,
      "high": 1394.6,
      "low": 1175.4,
-     "vol": 353.53
+     "vol": 353.55
     },
     {
      "company": "EKI",
@@ -449,7 +449,7 @@
      "chg": 13.75,
      "high": 82.54,
      "low": 68.03,
-     "vol": 106.36
+     "vol": 106.37
     },
     {
      "company": "PRIORITY",
@@ -459,7 +459,7 @@
      "chg": 43,
      "high": 268.2,
      "low": 223.8,
-     "vol": 1265.69
+     "vol": 1265.73
     },
     {
      "company": "MANINDS",
@@ -469,7 +469,7 @@
      "chg": 150.4,
      "high": 1005,
      "low": 866.25,
-     "vol": 10690.94
+     "vol": 10691.37
     },
     {
      "company": "OPTIEMUS",
@@ -479,7 +479,7 @@
      "chg": 121.9,
      "high": 850.65,
      "low": 781.2,
-     "vol": 10627.48
+     "vol": 10628.49
     },
     {
      "company": "NAGREEKEXP",
@@ -499,7 +499,7 @@
      "chg": 2.88,
      "high": 22.8,
      "low": 19.48,
-     "vol": 70951.58
+     "vol": 70960.36
     },
     {
      "company": "MANUGRAPH",
@@ -509,7 +509,7 @@
      "chg": 2.98,
      "high": 24.26,
      "low": 20.99,
-     "vol": 1740.65
+     "vol": 1740.71
     },
     {
      "company": "MITCON",
@@ -529,7 +529,7 @@
      "chg": 79.75,
      "high": 679,
      "low": 591,
-     "vol": 12801.13
+     "vol": 12802.32
     },
     {
      "company": "CENTEXT-RE",
@@ -539,7 +539,7 @@
      "chg": -1.45,
      "high": 2.25,
      "low": 2.18,
-     "vol": 513.47
+     "vol": 522.57
     },
     {
      "company": "MONQ50",
@@ -549,7 +549,7 @@
      "chg": -50.72,
      "high": 228.28,
      "low": 202.92,
-     "vol": 2862.16
+     "vol": 2862.48
     },
     {
      "company": "BLUESTONE",
@@ -559,7 +559,7 @@
      "chg": -80.4,
      "high": 969.9,
      "low": 824,
-     "vol": 9219.86
+     "vol": 9219.89
     },
     {
      "company": "GLASSWALL",
@@ -569,7 +569,7 @@
      "chg": -26.59,
      "high": 314.29,
      "low": 278.37,
-     "vol": 35194.38
+     "vol": 35196.31
     },
     {
      "company": "TAALTECH",
@@ -589,7 +589,7 @@
      "chg": -1.41,
      "high": 17,
      "low": 14.69,
-     "vol": 1281.71
+     "vol": 1281.81
     },
     {
      "company": "SHERVANI",
@@ -609,7 +609,7 @@
      "chg": -23.25,
      "high": 362.8,
      "low": 333.15,
-     "vol": 6883.26
+     "vol": 6885.6
     },
     {
      "company": "GAJA",
@@ -619,7 +619,7 @@
      "chg": -9.54,
      "high": 158.6,
      "low": 148.41,
-     "vol": 1958.46
+     "vol": 1964.33
     },
     {
      "company": "SYMBIOTEC",
@@ -629,37 +629,7 @@
      "chg": -58.9,
      "high": 1128.2,
      "low": 1051.65,
-     "vol": 1443.43
-    },
-    {
-     "company": "VCL",
-     "last": 1.52,
-     "prev": 1.6,
-     "chgPct": -5,
-     "chg": -0.08,
-     "high": 1.64,
-     "low": 1.52,
-     "vol": 770.75
-    },
-    {
-     "company": "XTRANET",
-     "last": 317.65,
-     "prev": 334.36,
-     "chgPct": -5,
-     "chg": -16.71,
-     "high": 337.7,
-     "low": 317.65,
-     "vol": 1030.38
-    },
-    {
-     "company": "MONEYBOXX",
-     "last": 54.53,
-     "prev": 57.4,
-     "chgPct": -5,
-     "chg": -2.87,
-     "high": 58.4,
-     "low": 54.53,
-     "vol": 70.29
+     "vol": 1444.41
     },
     {
      "company": "DIGJAMLMTD",
@@ -672,6 +642,36 @@
      "vol": 13.23
     },
     {
+     "company": "XTRANET",
+     "last": 317.65,
+     "prev": 334.36,
+     "chgPct": -5,
+     "chg": -16.71,
+     "high": 337.7,
+     "low": 317.65,
+     "vol": 1030.48
+    },
+    {
+     "company": "VCL",
+     "last": 1.52,
+     "prev": 1.6,
+     "chgPct": -5,
+     "chg": -0.08,
+     "high": 1.64,
+     "low": 1.52,
+     "vol": 770.75
+    },
+    {
+     "company": "MONEYBOXX",
+     "last": 54.53,
+     "prev": 57.4,
+     "chgPct": -5,
+     "chg": -2.87,
+     "high": 58.4,
+     "low": 54.53,
+     "vol": 70.49
+    },
+    {
      "company": "AQYLON",
      "last": 18.81,
      "prev": 19.8,
@@ -679,7 +679,7 @@
      "chg": -0.99,
      "high": 20.74,
      "low": 18.81,
-     "vol": 649.15
+     "vol": 654.71
     }
    ],
    "defaultSort": "chgPct"
@@ -872,8 +872,8 @@
      "outperf": -5.75
     },
     {
-     "company": "VCL",
-     "last": 1.52,
+     "company": "DIGJAMLMTD",
+     "last": 53.99,
      "chgPct": -5,
      "bench": 0.5,
      "outperf": -5.5
@@ -934,7 +934,7 @@
      "chg": 324.8,
      "high": 748.8,
      "low": 603.05,
-     "vol": 45735.41
+     "vol": 45735.53
     },
     {
      "company": "CENTEXT-RE",
@@ -944,7 +944,7 @@
      "chg": -1.45,
      "high": 2.25,
      "low": 2.18,
-     "vol": 513.47
+     "vol": 522.57
     },
     {
      "company": "CUBEXTUB",
@@ -954,7 +954,7 @@
      "chg": 20.97,
      "high": 125.82,
      "low": 117,
-     "vol": 1061.63
+     "vol": 1061.64
     },
     {
      "company": "PREMIERPOL",
@@ -964,7 +964,7 @@
      "chg": 16.2,
      "high": 97.22,
      "low": 81.14,
-     "vol": 6516.81
+     "vol": 6517.06
     },
     {
      "company": "WHIRLPOOL",
@@ -974,7 +974,7 @@
      "chg": 144.2,
      "high": 865.25,
      "low": 722.2,
-     "vol": 10752.64
+     "vol": 10753.33
     },
     {
      "company": "FRONTSP",
@@ -984,7 +984,7 @@
      "chg": 232.4,
      "high": 1394.6,
      "low": 1175.4,
-     "vol": 353.53
+     "vol": 353.55
     },
     {
      "company": "MONQ50",
@@ -994,7 +994,7 @@
      "chg": -50.72,
      "high": 228.28,
      "low": 202.92,
-     "vol": 2862.16
+     "vol": 2862.48
     },
     {
      "company": "EKI",
@@ -1004,7 +1004,7 @@
      "chg": 13.75,
      "high": 82.54,
      "low": 68.03,
-     "vol": 106.36
+     "vol": 106.37
     },
     {
      "company": "PRIORITY",
@@ -1014,7 +1014,7 @@
      "chg": 43,
      "high": 268.2,
      "low": 223.8,
-     "vol": 1265.69
+     "vol": 1265.73
     },
     {
      "company": "MANINDS",
@@ -1024,7 +1024,7 @@
      "chg": 150.4,
      "high": 1005,
      "low": 866.25,
-     "vol": 10690.94
+     "vol": 10691.37
     },
     {
      "company": "OPTIEMUS",
@@ -1034,7 +1034,7 @@
      "chg": 121.9,
      "high": 850.65,
      "low": 781.2,
-     "vol": 10627.48
+     "vol": 10628.49
     },
     {
      "company": "HEROMOTORS",
@@ -1044,7 +1044,7 @@
      "chg": 14.4,
      "high": 98.4,
      "low": 80.5,
-     "vol": 139840.96
+     "vol": 139842.84
     },
     {
      "company": "NAGREEKEXP",
@@ -1064,7 +1064,7 @@
      "chg": 2.88,
      "high": 22.8,
      "low": 19.48,
-     "vol": 70951.58
+     "vol": 70960.36
     },
     {
      "company": "MANUGRAPH",
@@ -1074,7 +1074,7 @@
      "chg": 2.98,
      "high": 24.26,
      "low": 20.99,
-     "vol": 1740.65
+     "vol": 1740.71
     },
     {
      "company": "MITCON",
@@ -1094,7 +1094,7 @@
      "chg": 79.75,
      "high": 679,
      "low": 591,
-     "vol": 12801.13
+     "vol": 12802.32
     },
     {
      "company": "EKC",
@@ -1104,7 +1104,7 @@
      "chg": 13.24,
      "high": 119.33,
      "low": 100.9,
-     "vol": 23854.21
+     "vol": 23855.25
     },
     {
      "company": "JAYKAY",
@@ -1114,7 +1114,7 @@
      "chg": 23.8,
      "high": 219.35,
      "low": 191.47,
-     "vol": 9949.32
+     "vol": 9950.06
     },
     {
      "company": "ANSALBU",
@@ -1124,7 +1124,7 @@
      "chg": 11.02,
      "high": 107.5,
      "low": 95.6,
-     "vol": 179.25
+     "vol": 179.54
     }
    ],
    "defaultSort": "chgPct"
@@ -1185,7 +1185,7 @@
      "chg": 20.97,
      "high": 125.82,
      "low": 117,
-     "vol": 1061.63
+     "vol": 1061.64
     },
     {
      "company": "HEROMOTORS",
@@ -1195,7 +1195,7 @@
      "chg": 14.4,
      "high": 98.4,
      "low": 80.5,
-     "vol": 139840.96
+     "vol": 139842.84
     },
     {
      "company": "SSRETAIL",
@@ -1205,7 +1205,7 @@
      "chg": 324.8,
      "high": 748.8,
      "low": 603.05,
-     "vol": 45735.41
+     "vol": 45735.53
     },
     {
      "company": "PREMIERPOL",
@@ -1215,7 +1215,7 @@
      "chg": 16.2,
      "high": 97.22,
      "low": 81.14,
-     "vol": 6516.81
+     "vol": 6517.06
     },
     {
      "company": "WHIRLPOOL",
@@ -1225,7 +1225,7 @@
      "chg": 144.2,
      "high": 865.25,
      "low": 722.2,
-     "vol": 10752.64
+     "vol": 10753.33
     },
     {
      "company": "FRONTSP",
@@ -1235,7 +1235,7 @@
      "chg": 232.4,
      "high": 1394.6,
      "low": 1175.4,
-     "vol": 353.53
+     "vol": 353.55
     },
     {
      "company": "EKI",
@@ -1245,7 +1245,7 @@
      "chg": 13.75,
      "high": 82.54,
      "low": 68.03,
-     "vol": 106.36
+     "vol": 106.37
     },
     {
      "company": "PRIORITY",
@@ -1255,7 +1255,7 @@
      "chg": 43,
      "high": 268.2,
      "low": 223.8,
-     "vol": 1265.69
+     "vol": 1265.73
     },
     {
      "company": "MANINDS",
@@ -1265,7 +1265,7 @@
      "chg": 150.4,
      "high": 1005,
      "low": 866.25,
-     "vol": 10690.94
+     "vol": 10691.37
     },
     {
      "company": "OPTIEMUS",
@@ -1275,7 +1275,7 @@
      "chg": 121.9,
      "high": 850.65,
      "low": 781.2,
-     "vol": 10627.48
+     "vol": 10628.49
     },
     {
      "company": "NAGREEKEXP",
@@ -1295,7 +1295,7 @@
      "chg": 2.88,
      "high": 22.8,
      "low": 19.48,
-     "vol": 70951.58
+     "vol": 70960.36
     },
     {
      "company": "MANUGRAPH",
@@ -1305,7 +1305,7 @@
      "chg": 2.98,
      "high": 24.26,
      "low": 20.99,
-     "vol": 1740.65
+     "vol": 1740.71
     },
     {
      "company": "MITCON",
@@ -1325,7 +1325,7 @@
      "chg": 79.75,
      "high": 679,
      "low": 591,
-     "vol": 12801.13
+     "vol": 12802.32
     },
     {
      "company": "EKC",
@@ -1335,7 +1335,7 @@
      "chg": 13.24,
      "high": 119.33,
      "low": 100.9,
-     "vol": 23854.21
+     "vol": 23855.25
     },
     {
      "company": "JAYKAY",
@@ -1345,7 +1345,7 @@
      "chg": 23.8,
      "high": 219.35,
      "low": 191.47,
-     "vol": 9949.32
+     "vol": 9950.06
     },
     {
      "company": "ANSALBU",
@@ -1355,7 +1355,7 @@
      "chg": 11.02,
      "high": 107.5,
      "low": 95.6,
-     "vol": 179.25
+     "vol": 179.54
     },
     {
      "company": "SWARNSAR",
@@ -1365,7 +1365,7 @@
      "chg": 4.81,
      "high": 44.5,
      "low": 38.21,
-     "vol": 36.74
+     "vol": 36.94
     },
     {
      "company": "MUKANDLTD",
@@ -1375,7 +1375,7 @@
      "chg": 16.59,
      "high": 158.8,
      "low": 141.41,
-     "vol": 2524.54
+     "vol": 2525.44
     },
     {
      "company": "CENTEXT-RE",
@@ -1385,7 +1385,7 @@
      "chg": -1.45,
      "high": 2.25,
      "low": 2.18,
-     "vol": 513.47
+     "vol": 522.57
     },
     {
      "company": "OPTIFIN",
@@ -1395,7 +1395,17 @@
      "chg": -1.41,
      "high": 17,
      "low": 14.69,
-     "vol": 1281.71
+     "vol": 1281.81
+    },
+    {
+     "company": "AQYLON",
+     "last": 18.81,
+     "prev": 19.8,
+     "chgPct": -5,
+     "chg": -0.99,
+     "high": 20.74,
+     "low": 18.81,
+     "vol": 654.71
     },
     {
      "company": "VCL",
@@ -1406,16 +1416,6 @@
      "high": 1.64,
      "low": 1.52,
      "vol": 770.75
-    },
-    {
-     "company": "AQYLON",
-     "last": 18.81,
-     "prev": 19.8,
-     "chgPct": -5,
-     "chg": -0.99,
-     "high": 20.74,
-     "low": 18.81,
-     "vol": 649.15
     },
     {
      "company": "EUROTEXIND",
@@ -1435,7 +1435,7 @@
      "chg": -0.88,
      "high": 16.79,
      "low": 16.79,
-     "vol": 828.27
+     "vol": 828.37
     },
     {
      "company": "TIJARIA",
@@ -1445,7 +1445,7 @@
      "chg": -0.34,
      "high": 7.15,
      "low": 6.53,
-     "vol": 50.57
+     "vol": 51.07
     },
     {
      "company": "EMPOWER",
@@ -1455,7 +1455,7 @@
      "chg": -0.1,
      "high": 2.06,
      "low": 2.06,
-     "vol": 1642.21
+     "vol": 1644.28
     },
     {
      "company": "AURUS",
@@ -1465,7 +1465,7 @@
      "chg": -0.21,
      "high": 5,
      "low": 4.5,
-     "vol": 124.28
+     "vol": 124.3
     },
     {
      "company": "VIPULLTD",
@@ -1475,7 +1475,7 @@
      "chg": -0.45,
      "high": 11.36,
      "low": 10.96,
-     "vol": 177.67
+     "vol": 177.74
     },
     {
      "company": "MOOILGAS",
@@ -1495,7 +1495,7 @@
      "chg": -0.03,
      "high": 0.82,
      "low": 0.76,
-     "vol": 18117.29
+     "vol": 18118.02
     },
     {
      "company": "PRISMX",
@@ -1525,7 +1525,7 @@
      "chg": -0.14,
      "high": 5.16,
      "low": 4.8,
-     "vol": 7.44
+     "vol": 7.68
     },
     {
      "company": "DAVANGERE",
@@ -1535,7 +1535,7 @@
      "chg": -0.06,
      "high": 2.31,
      "low": 2.16,
-     "vol": 12481.54
+     "vol": 12500.99
     },
     {
      "company": "CCCL",
@@ -1555,7 +1555,7 @@
      "chg": -0.24,
      "high": 10.15,
      "low": 9.36,
-     "vol": 71.68
+     "vol": 72.04
     },
     {
      "company": "TREEHOUSE",
@@ -3025,150 +3025,6 @@
    ],
    "rows": [
     {
-     "company": "KSHITIJPOL",
-     "date": "22-Sep-2026",
-     "client": "SATISH MEJIYATAR",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "LUMINO",
-     "date": "22-Sep-2026",
-     "client": "HRTI PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "MAGSON",
-     "date": "22-Sep-2026",
-     "client": "RAJESH EMMANUEL FRANCIS",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "MAZDA",
-     "date": "22-Sep-2026",
-     "client": "CROLL REYNOLDS INTERNATIONAL INC",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "MGEL",
-     "date": "22-Sep-2026",
-     "client": "SPECIFIC WORLDWIDE LLP",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "MOS",
-     "date": "22-Sep-2026",
-     "client": "ASHOK INVESTORS TRUST LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "MOTISONS",
-     "date": "22-Sep-2026",
-     "client": "ARIHANT CAPITAL MARKETS LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "MVELECTRO",
-     "date": "22-Sep-2026",
-     "client": "HRTI PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "OPTIFIN",
-     "date": "22-Sep-2026",
-     "client": "NIRAJ UMESH JOSHI",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PACEDIGITK",
-     "date": "22-Sep-2026",
-     "client": "MICROCURVES TRADING PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PACEDIGITK",
-     "date": "22-Sep-2026",
-     "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PCJEWELLER",
-     "date": "22-Sep-2026",
-     "client": "JUMP TRADING FINANCIAL INDIA PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PRESSTONIC",
-     "date": "22-Sep-2026",
-     "client": "HI GROWTH CORPORATE SERVICES PVT LTD",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PROTEAN",
-     "date": "22-Sep-2026",
-     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PROTEAN",
-     "date": "22-Sep-2026",
-     "client": "MICROCURVES TRADING PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PROTEAN",
-     "date": "22-Sep-2026",
-     "client": "IMC INDIA SECURITIES PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PROTEAN",
-     "date": "22-Sep-2026",
-     "client": "QE SECURITIES LLP",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PROTEAN",
-     "date": "22-Sep-2026",
-     "client": "IRAGE BROKING SERVICES LLP",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
      "company": "PROTEAN",
      "date": "22-Sep-2026",
      "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
@@ -3341,6 +3197,150 @@
      "date": "22-Sep-2026",
      "client": "QE SECURITIES LLP",
      "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "UNIECOM",
+     "date": "22-Sep-2026",
+     "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "VCL",
+     "date": "22-Sep-2026",
+     "client": "RAJVANSH ELECTRICALS PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "VCL",
+     "date": "22-Sep-2026",
+     "client": "GOLDEN BIO ENERGY LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "AASTHA",
+     "date": "22-Sep-2026",
+     "client": "L7 HITECH PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "AHCL",
+     "date": "22-Sep-2026",
+     "client": "QE SECURITIES LLP",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "AHCL",
+     "date": "22-Sep-2026",
+     "client": "NEO APEX SHARE BROKING SERVICES LLP",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "AHCL",
+     "date": "22-Sep-2026",
+     "client": "HRTI PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ATALREAL",
+     "date": "22-Sep-2026",
+     "client": "QE SECURITIES LLP",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ATALREAL",
+     "date": "22-Sep-2026",
+     "client": "HRTI PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ATALREAL",
+     "date": "22-Sep-2026",
+     "client": "JAGID VANITABEN RAJENDRAPRASAD",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "CAPINVIT",
+     "date": "22-Sep-2026",
+     "client": "HSBC MUTUAL FUND",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "COMSYN",
+     "date": "22-Sep-2026",
+     "client": "ARIHANT CAPITAL MARKETS LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "CRESTO",
+     "date": "22-Sep-2026",
+     "client": "HEMANT BHOOT HUF",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "CUBEXTUB",
+     "date": "22-Sep-2026",
+     "client": "INDRA KIRAN VENTURES",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "DHTL",
+     "date": "22-Sep-2026",
+     "client": "RAMESH KUMAR JAIN",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "FEDDERSHOL",
+     "date": "22-Sep-2026",
+     "client": "HRTI PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "FEDDERSHOL",
+     "date": "22-Sep-2026",
+     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "FEDDERSHOL",
+     "date": "22-Sep-2026",
+     "client": "MICROCURVES TRADING PRIVATE LIMITED",
+     "deal": "BUY",
      "qty": 0,
      "price": 0
     }
@@ -4208,6 +4208,12 @@
      "purpose": "Financial Results"
     },
     {
+     "symbol": "SWARAJ",
+     "company": "Swaraj Suiting Limited",
+     "date": "28-Sep-2026",
+     "purpose": "Fund Raising"
+    },
+    {
      "symbol": "GULFPETRO",
      "company": "GP Petroleums Limited",
      "date": "30-Sep-2026",
@@ -4581,123 +4587,123 @@
    "rows": [
     {
      "exchange": "NSE",
-     "company": "Prostarm Info Systems Limited",
-     "subject": "Updates",
-     "date": "23-Sep-2026 15:49:03"
+     "company": "JSW Infrastructure Limited",
+     "subject": "Credit Rating",
+     "date": "23-Sep-2026 16:08:16"
     },
     {
      "exchange": "NSE",
-     "company": "Tilaknagar Industries Limited",
+     "company": "Urja Global Limited",
      "subject": "Shareholders meeting",
-     "date": "23-Sep-2026 15:49:01"
+     "date": "23-Sep-2026 16:07:49"
     },
     {
      "exchange": "NSE",
-     "company": "Finkurve Financial Services Limited",
-     "subject": "Updates",
-     "date": "23-Sep-2026 15:48:03"
+     "company": "Escorts Kubota Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "23-Sep-2026 16:07:12"
     },
     {
      "exchange": "NSE",
-     "company": "Dhunseri Investments Limited",
-     "subject": "Outcome of Board Meeting",
-     "date": "23-Sep-2026 15:46:26"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Avantel Limited",
-     "subject": "Bagging/Receiving of orders/contracts",
-     "date": "23-Sep-2026 15:46:11"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Hindustan Foods Limited",
-     "subject": "Shareholders meeting",
-     "date": "23-Sep-2026 15:45:20"
+     "company": "Kellton Tech Solutions Limited",
+     "subject": "General Updates",
+     "date": "23-Sep-2026 16:06:33"
     },
     {
      "exchange": "NSE",
      "company": "Macpower CNC Machines Limited",
      "subject": "Shareholders meeting",
-     "date": "23-Sep-2026 15:44:43"
+     "date": "23-Sep-2026 16:05:32"
     },
     {
      "exchange": "NSE",
-     "company": "Raymond Limited",
+     "company": "Dhunseri Investments Limited",
+     "subject": "Change in Management",
+     "date": "23-Sep-2026 16:04:44"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Landmark Cars Limited",
      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "23-Sep-2026 15:44:19"
+     "date": "23-Sep-2026 16:04:04"
     },
     {
      "exchange": "NSE",
-     "company": "Digicontent Limited",
-     "subject": "Shareholders meeting",
-     "date": "23-Sep-2026 15:44:13"
+     "company": "Landmark Cars Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "23-Sep-2026 16:04:04"
     },
     {
      "exchange": "NSE",
-     "company": "63 moons technologies limited",
-     "subject": "Shareholders meeting",
-     "date": "23-Sep-2026 15:44:05"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Aries Agro Limited",
+     "company": "Pansari Developers Limited",
      "subject": "Trading Window",
-     "date": "23-Sep-2026 15:42:52"
+     "date": "23-Sep-2026 16:04:01"
     },
     {
      "exchange": "NSE",
-     "company": "Ducon Infratechnologies Limited",
-     "subject": "Trading Window",
-     "date": "23-Sep-2026 15:42:48"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Godrej Properties Limited",
-     "subject": "Press Release",
-     "date": "23-Sep-2026 15:41:55"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Gujarat Narmada Valley Fertilizers and Chemicals Limited",
+     "company": "Hindustan Copper Limited",
      "subject": "General Updates",
-     "date": "23-Sep-2026 15:40:37"
+     "date": "23-Sep-2026 16:03:45"
     },
     {
      "exchange": "NSE",
-     "company": "Mcnally Bharat Engineering Company Limited",
-     "subject": "Reply to Clarification- Financial results",
-     "date": "23-Sep-2026 15:40:26"
+     "company": "SBI Cards and Payment Services Limited",
+     "subject": "Press Release",
+     "date": "23-Sep-2026 16:02:29"
     },
     {
      "exchange": "NSE",
-     "company": "Essar Shipping Limited",
-     "subject": "Reply to Clarification- Financial results",
-     "date": "23-Sep-2026 15:39:01"
-    },
-    {
-     "exchange": "NSE",
-     "company": "DEE Development Engineers Limited",
-     "subject": "Shareholders meeting",
-     "date": "23-Sep-2026 15:38:46"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Balkrishna Industries Limited",
-     "subject": "Credit Rating- New",
-     "date": "23-Sep-2026 15:38:20"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Genus Power Infrastructures Limited",
+     "company": "Raymond Lifestyle Limited",
      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "23-Sep-2026 15:37:55"
+     "date": "23-Sep-2026 16:02:10"
     },
     {
      "exchange": "NSE",
-     "company": "Tata Teleservices (Maharashtra) Limited",
+     "company": "Allcargo Terminals Limited",
      "subject": "Trading Window",
-     "date": "23-Sep-2026 15:37:50"
+     "date": "23-Sep-2026 16:01:45"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Vibhor Steel Tubes Limited",
+     "subject": "Trading Window",
+     "date": "23-Sep-2026 16:00:56"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Voltas Limited",
+     "subject": "Trading Window",
+     "date": "23-Sep-2026 16:00:43"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Brainbees Solutions Limited",
+     "subject": "Trading Window",
+     "date": "23-Sep-2026 15:58:55"
+    },
+    {
+     "exchange": "NSE",
+     "company": "De Nora India Limited",
+     "subject": "Shareholders meeting",
+     "date": "23-Sep-2026 15:57:56"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Raj Rayon Industries Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "23-Sep-2026 15:57:19"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Fineotex Chemical Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "23-Sep-2026 15:56:44"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Dwarikesh Sugar Industries Limited",
+     "subject": "Credit Rating",
+     "date": "23-Sep-2026 15:56:15"
     }
    ]
   },
@@ -4791,34 +4797,34 @@
      "country": "United Kingdom",
      "index": "FTSE 100",
      "date": "23-Sep-2026",
-     "value": 10714.06,
+     "value": 10712.97,
      "prev": 10708.33,
      "high": 10762.52,
      "low": 10708.79,
-     "change": 5.73,
-     "chgPct": 0.05
+     "change": 4.64,
+     "chgPct": 0.04
     },
     {
      "country": "Germany",
      "index": "DAX",
      "date": "23-Sep-2026",
-     "value": 25452.13,
+     "value": 25462.36,
      "prev": 25578.85,
      "high": 25729.05,
-     "low": 25450.89,
-     "change": -126.72,
-     "chgPct": -0.5
+     "low": 25450.52,
+     "change": -116.49,
+     "chgPct": -0.46
     },
     {
      "country": "France",
      "index": "CAC 40",
      "date": "23-Sep-2026",
-     "value": 8148.55,
+     "value": 8144.44,
      "prev": 8154.91,
      "high": 8199.66,
      "low": 8142.78,
-     "change": -6.36,
-     "chgPct": -0.08
+     "change": -10.47,
+     "chgPct": -0.13
     },
     {
      "country": "Japan",
@@ -5076,64 +5082,64 @@
      "commodity": "Gold",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 4352.5,
+     "last": 4353.6,
      "prev": 4376.4,
-     "change": -23.9,
-     "chgPct": -0.55
+     "change": -22.8,
+     "chgPct": -0.52
     },
     {
      "commodity": "Silver",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 65.825,
+     "last": 65.78,
      "prev": 66.53,
-     "change": -0.705,
-     "chgPct": -1.06
+     "change": -0.75,
+     "chgPct": -1.13
     },
     {
      "commodity": "Copper",
      "contract": "Dec'26",
      "venue": "CEC:Commodities Exchange Centre",
-     "last": 6.8205,
+     "last": 6.8195,
      "prev": 6.836,
-     "change": -0.0155,
-     "chgPct": -0.23
+     "change": -0.0165,
+     "chgPct": -0.24
     },
     {
      "commodity": "Platinum",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 1793.6,
+     "last": 1792.3,
      "prev": 1825.5,
-     "change": -31.9,
-     "chgPct": -1.75
+     "change": -33.2,
+     "chgPct": -1.82
     },
     {
      "commodity": "WTI Crude Oil",
      "contract": "Nov'26",
      "venue": "WTI Crude",
-     "last": 89.79,
+     "last": 89.67,
      "prev": 90.52,
-     "change": -0.73,
-     "chgPct": -0.81
+     "change": -0.85,
+     "chgPct": -0.94
     },
     {
      "commodity": "Brent Crude",
      "contract": "Nov'26",
      "venue": "NYMEX Brent Crude",
-     "last": 99.23,
+     "last": 99.05,
      "prev": 99.25,
-     "change": -0.02,
-     "chgPct": -0.02
+     "change": -0.2,
+     "chgPct": -0.2
     },
     {
      "commodity": "Natural Gas",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 3.018,
+     "last": 3.035,
      "prev": 2.965,
-     "change": 0.053,
-     "chgPct": 1.79
+     "change": 0.07,
+     "chgPct": 2.36
     }
    ],
    "defaultSort": "chgPct",
@@ -8279,7 +8285,7 @@
     }
    ],
    "defaultSort": "total",
-   "note": "This table could not be refreshed on the latest build. Figures are as last retrieved on 23-Sep-2026 13:03.",
+   "note": "This table could not be refreshed on the latest build. Figures are as last retrieved on 23-Sep-2026 15:30.",
    "stale": true
   }
  ]
