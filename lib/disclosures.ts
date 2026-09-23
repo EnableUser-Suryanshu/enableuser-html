@@ -296,7 +296,7 @@ export const AUTHORISED_PERSONS: ApEntry[] = [
     exchanges: ['NSE', 'BSE', 'MCX'],
     constitution: 'India',
     status: 'Approved',
-    address: 'MP Nagar',
+    address: '27, Noble Plaza, Zone-II, M.P. Nagar',
     city: 'Bhopal',
     state: MP,
     pin: '462011',

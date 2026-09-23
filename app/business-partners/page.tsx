@@ -24,7 +24,7 @@ const MODELS = [
 
 const NUMBERS = [
   { icon: History, v: 'Since 1992', l: 'Three decades of broking' },
-  { icon: Building, v: '9 branches', l: 'Across Bhopal, plus authorised persons statewide' },
+  { icon: Building, v: '5+ branches', l: 'Across Bhopal, plus authorised persons statewide' },
   { icon: Shield, v: '4 memberships', l: 'NSE · BSE · MCX · CDSL' },
   { icon: Users, v: '35K+', l: 'Investors served' },
 ];
