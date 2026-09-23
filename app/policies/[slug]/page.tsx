@@ -5,6 +5,7 @@ import PageHero from '@/components/PageHero';
 import PolicyBody from '@/components/pages/PolicyBody';
 import ComplaintsData from '@/components/pages/ComplaintsData';
 import { getComplaintsReport } from '@/lib/complaints';
+import { getCharterTimelines, asTableRows, type CharterKey } from '@/lib/charter-timelines';
 import { ALL_POLICIES, POLICY_GROUPS as GROUPS, getPolicyPage, policyTabs } from '@/lib/policy-index';
 import type { PolicyBlock } from '@/lib/policies';
 import { ArrowRight, FilePdf, Shield } from '@/components/icons';
@@ -25,6 +26,32 @@ function trimComplaints(blocks: PolicyBlock[]): PolicyBlock[] {
   );
   return i < 0 ? blocks : blocks.slice(0, i);
 }
+
+/**
+ * Swaps the activities-and-timelines table for the live one, in the position
+ * it already holds. Replacing rather than appending matters: the table sits
+ * under its own heading mid-document, and moving it would leave that heading
+ * with nothing under it.
+ *
+ * Once the complaints section is trimmed, the timelines table is the only one
+ * left on either charter — hence the first match.
+ */
+function withLiveTimelines(
+  blocks: PolicyBlock[],
+  rows: ReturnType<typeof asTableRows>,
+): PolicyBlock[] {
+  const i = blocks.findIndex((b) => b.t === 'table');
+  if (i < 0) return blocks;
+  const out = blocks.slice();
+  out[i] = { t: 'table', rows } as PolicyBlock;
+  return out;
+}
+
+/** Which charter a slug is, for the per-charter timelines document. */
+const CHARTER_KEY: Record<string, CharterKey> = {
+  'investor-charter': 'broker',
+  'investor-charter-depository': 'depository',
+};
 
 export function generateStaticParams() {
   return ALL_POLICIES.map((p) => ({ slug: p.slug }));
@@ -85,7 +112,16 @@ export default async function PolicyPage({ params }: { params: Promise<{ slug: s
             {/* On a charter the complaints data leads, as it does on the
                 published page, and the charter itself follows. */}
             {CHARTERS.has(slug) && <ComplaintsData report={await getComplaintsReport()} />}
-            <PolicyBody blocks={CHARTERS.has(slug) ? trimComplaints(policy.blocks) : policy.blocks} />
+            <PolicyBody
+              blocks={
+                CHARTERS.has(slug)
+                  ? withLiveTimelines(
+                      trimComplaints(policy.blocks),
+                      asTableRows(await getCharterTimelines(CHARTER_KEY[slug])),
+                    )
+                  : policy.blocks
+              }
+            />
 
             <p className="policy-foot">
               This document is published by Kalpataru Multiplier Ltd in accordance with SEBI and

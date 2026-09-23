@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-23T10:51:47.834Z",
+ "fetchedAt": "2026-09-23T11:07:33.708Z",
  "marketTimestamp": "23-Sep-2026 15:30",
  "marketStatus": "Closed",
  "source": "NSE India (nseindia.com public market data) · NSE full bhavcopy (delivery data) · NSE & BSE corporate filings, AMFI scheme data · CNBC market data · ECB reference rates",
@@ -3025,150 +3025,6 @@
    ],
    "rows": [
     {
-     "company": "KSHITIJPOL",
-     "date": "22-Sep-2026",
-     "client": "SATISH MEJIYATAR",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "LUMINO",
-     "date": "22-Sep-2026",
-     "client": "HRTI PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "MAGSON",
-     "date": "22-Sep-2026",
-     "client": "RAJESH EMMANUEL FRANCIS",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "MAZDA",
-     "date": "22-Sep-2026",
-     "client": "CROLL REYNOLDS INTERNATIONAL INC",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "MGEL",
-     "date": "22-Sep-2026",
-     "client": "SPECIFIC WORLDWIDE LLP",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "MOS",
-     "date": "22-Sep-2026",
-     "client": "ASHOK INVESTORS TRUST LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "MOTISONS",
-     "date": "22-Sep-2026",
-     "client": "ARIHANT CAPITAL MARKETS LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "MVELECTRO",
-     "date": "22-Sep-2026",
-     "client": "HRTI PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "OPTIFIN",
-     "date": "22-Sep-2026",
-     "client": "NIRAJ UMESH JOSHI",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PACEDIGITK",
-     "date": "22-Sep-2026",
-     "client": "MICROCURVES TRADING PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PACEDIGITK",
-     "date": "22-Sep-2026",
-     "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PCJEWELLER",
-     "date": "22-Sep-2026",
-     "client": "JUMP TRADING FINANCIAL INDIA PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PRESSTONIC",
-     "date": "22-Sep-2026",
-     "client": "HI GROWTH CORPORATE SERVICES PVT LTD",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PROTEAN",
-     "date": "22-Sep-2026",
-     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PROTEAN",
-     "date": "22-Sep-2026",
-     "client": "MICROCURVES TRADING PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PROTEAN",
-     "date": "22-Sep-2026",
-     "client": "IMC INDIA SECURITIES PRIVATE LIMITED",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PROTEAN",
-     "date": "22-Sep-2026",
-     "client": "QE SECURITIES LLP",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
-     "company": "PROTEAN",
-     "date": "22-Sep-2026",
-     "client": "IRAGE BROKING SERVICES LLP",
-     "deal": "SELL",
-     "qty": 0,
-     "price": 0
-    },
-    {
      "company": "PROTEAN",
      "date": "22-Sep-2026",
      "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
@@ -3341,6 +3197,150 @@
      "date": "22-Sep-2026",
      "client": "QE SECURITIES LLP",
      "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "UNIECOM",
+     "date": "22-Sep-2026",
+     "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "VCL",
+     "date": "22-Sep-2026",
+     "client": "RAJVANSH ELECTRICALS PRIVATE LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "VCL",
+     "date": "22-Sep-2026",
+     "client": "GOLDEN BIO ENERGY LIMITED",
+     "deal": "SELL",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "AASTHA",
+     "date": "22-Sep-2026",
+     "client": "L7 HITECH PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "AHCL",
+     "date": "22-Sep-2026",
+     "client": "QE SECURITIES LLP",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "AHCL",
+     "date": "22-Sep-2026",
+     "client": "NEO APEX SHARE BROKING SERVICES LLP",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "AHCL",
+     "date": "22-Sep-2026",
+     "client": "HRTI PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ATALREAL",
+     "date": "22-Sep-2026",
+     "client": "QE SECURITIES LLP",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ATALREAL",
+     "date": "22-Sep-2026",
+     "client": "HRTI PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "ATALREAL",
+     "date": "22-Sep-2026",
+     "client": "JAGID VANITABEN RAJENDRAPRASAD",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "CAPINVIT",
+     "date": "22-Sep-2026",
+     "client": "HSBC MUTUAL FUND",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "COMSYN",
+     "date": "22-Sep-2026",
+     "client": "ARIHANT CAPITAL MARKETS LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "CRESTO",
+     "date": "22-Sep-2026",
+     "client": "HEMANT BHOOT HUF",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "CUBEXTUB",
+     "date": "22-Sep-2026",
+     "client": "INDRA KIRAN VENTURES",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "DHTL",
+     "date": "22-Sep-2026",
+     "client": "RAMESH KUMAR JAIN",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "FEDDERSHOL",
+     "date": "22-Sep-2026",
+     "client": "HRTI PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "FEDDERSHOL",
+     "date": "22-Sep-2026",
+     "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+     "deal": "BUY",
+     "qty": 0,
+     "price": 0
+    },
+    {
+     "company": "FEDDERSHOL",
+     "date": "22-Sep-2026",
+     "client": "MICROCURVES TRADING PRIVATE LIMITED",
+     "deal": "BUY",
      "qty": 0,
      "price": 0
     }
@@ -4352,6 +4352,12 @@
      "purpose": "Financial Results"
     },
     {
+     "symbol": "TTKPRESTIG",
+     "company": "TTK Prestige Limited",
+     "date": "06-Nov-2026",
+     "purpose": "Financial Results"
+    },
+    {
      "symbol": "ABB",
      "company": "ABB India Limited",
      "date": "13-Nov-2026",
@@ -4538,6 +4544,15 @@
      "size": "10525168"
     },
     {
+     "company": "Bench Mark Infotech Services Limited",
+     "symbol": "BMISL",
+     "series": "SME",
+     "open": "25-Sep-2026",
+     "close": "29-Sep-2026",
+     "band": "Rs.104 to Rs.110",
+     "size": "3858000"
+    },
+    {
      "company": "Himalayan Solar Limited",
      "symbol": "HIMALAYAN",
      "series": "SME",
@@ -4547,13 +4562,13 @@
      "size": "6604800"
     },
     {
-     "company": "Bench Mark Infotech Services Limited",
-     "symbol": "BMISL",
+     "company": "Green Asia Impex Limited",
+     "symbol": "GREENASIA",
      "series": "SME",
-     "open": "25-Sep-2026",
-     "close": "29-Sep-2026",
-     "band": "Rs.104 to Rs.110",
-     "size": "3858000"
+     "open": "24-Sep-2026",
+     "close": "28-Sep-2026",
+     "band": "Rs.85 to Rs.90",
+     "size": "7057600"
     }
    ]
   },
@@ -4587,123 +4602,123 @@
    "rows": [
     {
      "exchange": "NSE",
-     "company": "Indian Railway Catering And Tourism Corporation Limited",
+     "company": "Bang Overseas Limited",
      "subject": "Trading Window",
-     "date": "23-Sep-2026 16:20:07"
+     "date": "23-Sep-2026 16:34:45"
     },
     {
      "exchange": "NSE",
-     "company": "Laser Power & Infra Limited",
-     "subject": "Resignation of Director/KMP/SMP",
-     "date": "23-Sep-2026 16:19:22"
+     "company": "CARYSIL LIMITED",
+     "subject": "Shareholders meeting",
+     "date": "23-Sep-2026 16:34:02"
     },
     {
      "exchange": "NSE",
-     "company": "Exide Industries Limited",
-     "subject": "Updates",
-     "date": "23-Sep-2026 16:18:19"
+     "company": "Medico Remedies Limited",
+     "subject": "Shareholders meeting",
+     "date": "23-Sep-2026 16:33:55"
     },
     {
      "exchange": "NSE",
-     "company": "Marsons Limited",
+     "company": "Globus Spirits Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "23-Sep-2026 16:32:41"
+    },
+    {
+     "exchange": "NSE",
+     "company": "INDO-MIM Limited",
+     "subject": "Shareholders meeting",
+     "date": "23-Sep-2026 16:31:22"
+    },
+    {
+     "exchange": "NSE",
+     "company": "BMW Ventures Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "23-Sep-2026 16:29:40"
+    },
+    {
+     "exchange": "NSE",
+     "company": "TTK Prestige Limited",
      "subject": "Trading Window",
-     "date": "23-Sep-2026 16:17:59"
+     "date": "23-Sep-2026 16:28:42"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Globus Spirits Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "23-Sep-2026 16:26:35"
     },
     {
      "exchange": "NSE",
      "company": "JSW Infrastructure Limited",
      "subject": "Credit Rating- Revision",
-     "date": "23-Sep-2026 16:17:22"
+     "date": "23-Sep-2026 16:26:04"
     },
     {
      "exchange": "NSE",
-     "company": "Ganesh Consumer Products Limited",
+     "company": "Metro Brands Limited",
+     "subject": "Shareholders meeting",
+     "date": "23-Sep-2026 16:25:45"
+    },
+    {
+     "exchange": "NSE",
+     "company": "PCBL Chemical Limited",
+     "subject": "Trading Window",
+     "date": "23-Sep-2026 16:25:19"
+    },
+    {
+     "exchange": "NSE",
+     "company": "LG Electronics India Limited",
+     "subject": "Trading Window",
+     "date": "23-Sep-2026 16:24:46"
+    },
+    {
+     "exchange": "NSE",
+     "company": "TVS Electronics Limited",
+     "subject": "Copy of Newspaper Publication",
+     "date": "23-Sep-2026 16:24:35"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Onward Technologies Limited",
      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "23-Sep-2026 16:17:16"
+     "date": "23-Sep-2026 16:24:08"
     },
     {
      "exchange": "NSE",
-     "company": "Thomas Scott (India) Limited",
-     "subject": "Trading Window",
-     "date": "23-Sep-2026 16:17:05"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Ethos Limited",
+     "company": "Afcons Infrastructure Limited",
      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "23-Sep-2026 16:16:52"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Sterling Tools Limited",
-     "subject": "Trading Window",
-     "date": "23-Sep-2026 16:15:42"
-    },
-    {
-     "exchange": "NSE",
-     "company": "NHPC Limited",
-     "subject": "Trading Window",
-     "date": "23-Sep-2026 16:15:28"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Lalithaa Jewellery Mart Limited",
-     "subject": "Trading Window",
-     "date": "23-Sep-2026 16:14:35"
-    },
-    {
-     "exchange": "NSE",
-     "company": "CEAT Limited",
-     "subject": "General Updates",
-     "date": "23-Sep-2026 16:14:26"
+     "date": "23-Sep-2026 16:23:43"
     },
     {
      "exchange": "NSE",
      "company": "Spandana Sphoorty Financial Limited",
-     "subject": "Copy of Newspaper Publication",
-     "date": "23-Sep-2026 16:13:33"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Suraksha Diagnostic Limited",
-     "subject": "Shareholders meeting",
-     "date": "23-Sep-2026 16:13:13"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Bansal Wire Industries Limited",
-     "subject": "General Updates",
-     "date": "23-Sep-2026 16:12:15"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Everest Kanto Cylinder Limited",
-     "subject": "Cessation",
-     "date": "23-Sep-2026 16:11:42"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Repco Home Finance Limited",
-     "subject": "Trading Window",
-     "date": "23-Sep-2026 16:11:30"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Shadowfax Technologies Limited",
      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "23-Sep-2026 16:11:09"
+     "date": "23-Sep-2026 16:23:23"
     },
     {
      "exchange": "NSE",
-     "company": "SKIL Infrastructure Limited",
-     "subject": "Corporate Insolvency Resolution Process",
-     "date": "23-Sep-2026 16:10:59"
+     "company": "Havells India Limited",
+     "subject": "Trading Window",
+     "date": "23-Sep-2026 16:22:31"
     },
     {
      "exchange": "NSE",
-     "company": "IOL Chemicals and Pharmaceuticals Limited",
-     "subject": "Granting/withdrawal/surrender/cancellation/suspension of key licenses/ regulatory approvals",
-     "date": "23-Sep-2026 16:10:53"
+     "company": "SRM Contractors Limited",
+     "subject": "General Updates",
+     "date": "23-Sep-2026 16:21:50"
+    },
+    {
+     "exchange": "NSE",
+     "company": "JSW Infrastructure Limited",
+     "subject": "Credit Rating- Revision",
+     "date": "23-Sep-2026 16:21:48"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Electrosteel Castings Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "23-Sep-2026 16:21:43"
     }
    ]
   },
@@ -4797,34 +4812,34 @@
      "country": "United Kingdom",
      "index": "FTSE 100",
      "date": "23-Sep-2026",
-     "value": 10710.72,
+     "value": 10714.97,
      "prev": 10708.33,
      "high": 10762.52,
-     "low": 10708.79,
-     "change": 2.39,
-     "chgPct": 0.02
+     "low": 10708.42,
+     "change": 6.64,
+     "chgPct": 0.06
     },
     {
      "country": "Germany",
      "index": "DAX",
      "date": "23-Sep-2026",
-     "value": 25456.88,
+     "value": 25449.82,
      "prev": 25578.85,
      "high": 25729.05,
-     "low": 25448.24,
-     "change": -121.97,
-     "chgPct": -0.48
+     "low": 25443.21,
+     "change": -129.03,
+     "chgPct": -0.5
     },
     {
      "country": "France",
      "index": "CAC 40",
      "date": "23-Sep-2026",
-     "value": 8140.99,
+     "value": 8142.56,
      "prev": 8154.91,
      "high": 8199.66,
-     "low": 8140.72,
-     "change": -13.92,
-     "chgPct": -0.17
+     "low": 8140.18,
+     "change": -12.35,
+     "chgPct": -0.15
     },
     {
      "country": "Japan",
@@ -5082,19 +5097,19 @@
      "commodity": "Gold",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 4352.6,
+     "last": 4352,
      "prev": 4376.4,
-     "change": -23.8,
-     "chgPct": -0.54
+     "change": -24.4,
+     "chgPct": -0.56
     },
     {
      "commodity": "Silver",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 65.695,
+     "last": 65.72,
      "prev": 66.53,
-     "change": -0.835,
-     "chgPct": -1.26
+     "change": -0.81,
+     "chgPct": -1.22
     },
     {
      "commodity": "Copper",
@@ -5109,37 +5124,37 @@
      "commodity": "Platinum",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 1791,
+     "last": 1789.9,
      "prev": 1825.5,
-     "change": -34.5,
-     "chgPct": -1.89
+     "change": -35.6,
+     "chgPct": -1.95
     },
     {
      "commodity": "WTI Crude Oil",
      "contract": "Nov'26",
      "venue": "WTI Crude",
-     "last": 89.66,
+     "last": 89.86,
      "prev": 90.52,
-     "change": -0.86,
-     "chgPct": -0.95
+     "change": -0.66,
+     "chgPct": -0.73
     },
     {
      "commodity": "Brent Crude",
      "contract": "Nov'26",
      "venue": "NYMEX Brent Crude",
-     "last": 99.04,
+     "last": 99.42,
      "prev": 99.25,
-     "change": -0.21,
-     "chgPct": -0.21
+     "change": 0.17,
+     "chgPct": 0.17
     },
     {
      "commodity": "Natural Gas",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 3.035,
+     "last": 3.043,
      "prev": 2.965,
-     "change": 0.07,
-     "chgPct": 2.36
+     "change": 0.078,
+     "chgPct": 2.63
     }
    ],
    "defaultSort": "chgPct",
@@ -7486,7 +7501,7 @@
      "isin": "INE442A01024"
     },
     {
-     "company": "Assambrook Ltd",
+     "company": "Assambrook Ltd-$",
      "bseCode": "500025",
      "ticker": "ASSAMBR",
      "faceValue": "10.00",
