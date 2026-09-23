@@ -21,6 +21,15 @@ export default defineConfig({
   projectId,
   dataset,
   schema: { types: schemaTypes },
+  document: {
+    /*
+      The charter documents are singletons the site reads by a fixed id.
+      Taking them out of the global "New document" menu is what keeps them
+      that way — nothing else prevents a second copy being made by accident.
+    */
+    newDocumentOptions: (prev) =>
+      prev.filter((t) => !['complaintsReport', 'charterTimelines'].includes(t.templateId)),
+  },
   plugins: [
     structureTool({
       // Group downloads by category. Eighty items in one flat list is
@@ -54,6 +63,57 @@ export default defineConfig({
                         .defaultOrdering([{ field: 'submittedAt', direction: 'desc' }])),
                   ]),
               ),
+            S.divider(),
+
+            /*
+              Investor Charters. Each of these is a single document the site
+              reads by a fixed id, so they are opened directly rather than
+              listed — a list invites a second copy, and the site's queries
+              take the first match, so a duplicate would silently win or lose
+              at random. `newDocumentOptions` below stops the global "+"
+              offering them for the same reason.
+            */
+            S.listItem()
+              .title('Investor Charters')
+              .child(
+                S.list()
+                  .title('Investor Charters')
+                  .items([
+                    S.listItem()
+                      .title('Investor Complaints Data')
+                      .child(
+                        S.document()
+                          .schemaType('complaintsReport')
+                          .documentId('complaintsReport.current')
+                          .title('Investor Complaints Data'),
+                      ),
+                    S.divider(),
+                    S.listItem()
+                      .title('Timelines — Stock Broker')
+                      .child(
+                        S.document()
+                          .schemaType('charterTimelines')
+                          .documentId('charterTimelines.broker')
+                          .title('Activities & Timelines — Stock Broker'),
+                      ),
+                    S.listItem()
+                      .title('Timelines — Depository Participant')
+                      .child(
+                        S.document()
+                          .schemaType('charterTimelines')
+                          .documentId('charterTimelines.depository')
+                          .title('Activities & Timelines — Depository Participant'),
+                      ),
+                  ]),
+              ),
+
+            S.divider(),
+            S.listItem()
+              .title('Site Documents')
+              .child(
+                S.documentTypeList('siteDocument').title('Site Documents'),
+              ),
+
             S.divider(),
             S.listItem()
               .title('Downloads')
