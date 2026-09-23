@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { MEMBER_DETAILS } from '@/lib/data';
 import { siteDocumentUrl } from '@/lib/site-documents';
+import RiskDisclosureLink from './RiskDisclosureLink';
 import {
   APP_LINKS, MAPS, POLICY_LINKS, REGULATOR_LINKS, SOCIAL_LINKS, EXT, isInternalPolicy,
 } from '@/lib/links';
@@ -33,6 +34,12 @@ const FEATURED = new Set([
  */
 const SITE_DOC_HREF = 'sanity:investor-complaint-process';
 
+/**
+ * Marker for the entry that opens SEBI's Annexure-I in a dialog instead of
+ * navigating. It keeps its place in the column; only what it renders differs.
+ */
+const RISK_DISCLOSURE_HREF = 'dialog:risk-disclosures';
+
 const POLICY_COLUMNS = [
   {
     heading: 'Compliance & Policies',
@@ -56,7 +63,7 @@ const POLICY_COLUMNS = [
       // Resolved from Sanity at request time — see SITE_DOC_HREF below.
       ['Investor/Client Complaint Process', SITE_DOC_HREF],
       ['Advisory for Investor', POLICY_LINKS.advisory],
-      ['Risk Disclosures on Derivatives', POLICY_LINKS.riskDisclosures],
+      ['Risk Disclosures on Derivatives', RISK_DISCLOSURE_HREF],
       ['Shareholder e-Voting (CDSL)', REGULATOR_LINKS.cdslEvoting],
       ['Client Collateral Data (NSE)', REGULATOR_LINKS.nseClientCollateral],
       ['Procedure for Voluntary Freeze / Block of Online Access', POLICY_LINKS.voluntaryFreeze],
@@ -171,8 +178,11 @@ export default async function SiteFooter() {
                 <div key={col.heading}>
                   <h3>{col.heading}</h3>
                   {col.links.map(([label, href]) => {
-                    const to = href === SITE_DOC_HREF ? complaintProcess : href;
                     const cls = FEATURED.has(label) ? 'pol-hi' : undefined;
+                    if (href === RISK_DISCLOSURE_HREF) {
+                      return <RiskDisclosureLink key={label} className={cls} />;
+                    }
+                    const to = href === SITE_DOC_HREF ? complaintProcess : href;
                     // policy pages route in-app; PDFs and regulator links open in a new tab
                     return isInternalPolicy(to) && !to.endsWith('.pdf')
                       ? <Link key={label} href={to} className={cls}>{label}</Link>
