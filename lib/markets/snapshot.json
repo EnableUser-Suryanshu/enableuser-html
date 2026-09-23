@@ -1,6 +1,6 @@
 {
- "fetchedAt": "2026-09-23T06:31:54.950Z",
- "marketTimestamp": "23-Sep-2026 12:01",
+ "fetchedAt": "2026-09-23T07:34:47.272Z",
+ "marketTimestamp": "23-Sep-2026 13:03",
  "marketStatus": "Open",
  "source": "NSE India (nseindia.com public market data) · NSE full bhavcopy (delivery data) · NSE & BSE corporate filings, AMFI scheme data · CNBC market data · ECB reference rates",
  "vendor": null,
@@ -50,125 +50,125 @@
    "rows": [
     {
      "index": "S&P BSE SENSEX",
-     "close": 74857.89,
+     "close": 74929.07,
      "prev": 74529.08,
      "open": 74648.32,
-     "high": 74917.5,
+     "high": 74973.74,
      "low": 74599.88,
-     "chgPct": 0.44
+     "chgPct": 0.54
     },
     {
      "index": "NIFTY 50",
-     "close": 23428.2,
+     "close": 23454.75,
      "prev": 23329,
      "open": 23352.15,
-     "high": 23445.9,
+     "high": 23466.9,
      "low": 23349.55,
-     "chgPct": 0.43
+     "chgPct": 0.54
     },
     {
      "index": "NIFTY NEXT 50",
-     "close": 72263.5,
+     "close": 72297.75,
      "prev": 71804.05,
      "open": 71950.1,
      "high": 72339.5,
      "low": 71931.5,
-     "chgPct": 0.64
+     "chgPct": 0.69
     },
     {
      "index": "NIFTY BANK",
-     "close": 56532.05,
+     "close": 56568.65,
      "prev": 56215.55,
      "open": 56209.65,
      "high": 56623.8,
      "low": 56209.65,
-     "chgPct": 0.56
+     "chgPct": 0.63
     },
     {
      "index": "NIFTY IT",
-     "close": 28396.75,
+     "close": 28360.1,
      "prev": 28582.1,
      "open": 28492.45,
      "high": 28634,
-     "low": 28359.75,
-     "chgPct": -0.65
+     "low": 28350.35,
+     "chgPct": -0.78
     },
     {
      "index": "NIFTY AUTO",
-     "close": 27169,
+     "close": 27164.45,
      "prev": 27086.3,
      "open": 27140.85,
      "high": 27209.3,
      "low": 27008.65,
-     "chgPct": 0.31
+     "chgPct": 0.29
     },
     {
      "index": "NIFTY FMCG",
-     "close": 46165.25,
+     "close": 46206.1,
      "prev": 45657.75,
      "open": 45719.45,
      "high": 46261.75,
      "low": 45665.8,
-     "chgPct": 1.11
+     "chgPct": 1.2
     },
     {
      "index": "NIFTY PHARMA",
-     "close": 26947.4,
+     "close": 27015.55,
      "prev": 26909.6,
      "open": 26894.45,
      "high": 27085,
      "low": 26832.7,
-     "chgPct": 0.14
+     "chgPct": 0.39
     },
     {
      "index": "NIFTY METAL",
-     "close": 13217.1,
+     "close": 13234.8,
      "prev": 12990.35,
      "open": 13032.35,
-     "high": 13234,
+     "high": 13303.1,
      "low": 13030.65,
-     "chgPct": 1.75
+     "chgPct": 1.88
     },
     {
      "index": "NIFTY REALTY",
-     "close": 872.15,
+     "close": 871.8,
      "prev": 861.5,
      "open": 861.55,
      "high": 876.5,
      "low": 861.55,
-     "chgPct": 1.24
+     "chgPct": 1.2
     },
     {
      "index": "NIFTY ENERGY",
-     "close": 37766.85,
+     "close": 37780.05,
      "prev": 37727,
      "open": 37788,
      "high": 37829.45,
      "low": 37597.35,
-     "chgPct": 0.11
+     "chgPct": 0.14
     },
     {
      "index": "NIFTY MIDCAP 100",
-     "close": 62190.35,
+     "close": 62274.3,
      "prev": 61963.15,
      "open": 62073.3,
-     "high": 62254.7,
+     "high": 62279.95,
      "low": 62063.05,
-     "chgPct": 0.37
+     "chgPct": 0.5
     },
     {
      "index": "NIFTY SMALLCAP 100",
-     "close": 19933.95,
+     "close": 19956.85,
      "prev": 19815.45,
      "open": 19848.05,
-     "high": 19961.5,
+     "high": 19962.7,
      "low": 19847.7,
-     "chgPct": 0.6
+     "chgPct": 0.71
     }
    ],
    "defaultSort": "chgPct",
    "meta": {
-    "timestamp": "23-Sep-2026 11:59"
+    "timestamp": "23-Sep-2026 13:01"
    }
   },
   {
@@ -206,129 +206,129 @@
    "rows": [
     {
      "group": "NIFTY 50",
-     "adv": 35,
-     "dec": 15,
+     "adv": 38,
+     "dec": 12,
      "unch": 0,
-     "ratio": 2.33
+     "ratio": 3.17
     },
     {
      "group": "NIFTY NEXT 50",
-     "adv": 42,
+     "adv": 40,
      "dec": 8,
-     "unch": 0,
-     "ratio": 5.25
+     "unch": 2,
+     "ratio": 5
     },
     {
      "group": "NIFTY BANK",
-     "adv": 12,
-     "dec": 2,
-     "unch": 0,
-     "ratio": 6
+     "adv": 13,
+     "dec": 0,
+     "unch": 1,
+     "ratio": 0
     },
     {
      "group": "NIFTY FINANCIAL SERVICES",
-     "adv": 17,
-     "dec": 3,
+     "adv": 20,
+     "dec": 0,
      "unch": 0,
-     "ratio": 5.67
+     "ratio": 0
     },
     {
      "group": "NIFTY MIDCAP SELECT",
-     "adv": 13,
-     "dec": 12,
-     "unch": 0,
-     "ratio": 1.08
+     "adv": 14,
+     "dec": 10,
+     "unch": 1,
+     "ratio": 1.4
     },
     {
      "group": "NIFTY INDIA FPI 150",
-     "adv": 110,
-     "dec": 40,
-     "unch": 0,
-     "ratio": 2.75
+     "adv": 115,
+     "dec": 33,
+     "unch": 2,
+     "ratio": 3.48
     },
     {
      "group": "NIFTY 100",
-     "adv": 77,
-     "dec": 23,
-     "unch": 0,
-     "ratio": 3.35
+     "adv": 78,
+     "dec": 20,
+     "unch": 2,
+     "ratio": 3.9
     },
     {
      "group": "NIFTY 200",
-     "adv": 144,
-     "dec": 56,
-     "unch": 0,
-     "ratio": 2.57
+     "adv": 147,
+     "dec": 50,
+     "unch": 3,
+     "ratio": 2.94
     },
     {
      "group": "NIFTY 500",
-     "adv": 354,
-     "dec": 145,
-     "unch": 2,
-     "ratio": 2.44
+     "adv": 358,
+     "dec": 138,
+     "unch": 5,
+     "ratio": 2.59
     },
     {
      "group": "NIFTY MIDCAP 50",
-     "adv": 32,
-     "dec": 18,
-     "unch": 0,
-     "ratio": 1.78
+     "adv": 35,
+     "dec": 14,
+     "unch": 1,
+     "ratio": 2.5
     },
     {
      "group": "NIFTY MIDCAP 100",
-     "adv": 67,
-     "dec": 33,
-     "unch": 0,
-     "ratio": 2.03
+     "adv": 69,
+     "dec": 30,
+     "unch": 1,
+     "ratio": 2.3
     },
     {
      "group": "NIFTY SMALLCAP 100",
-     "adv": 71,
-     "dec": 29,
+     "adv": 76,
+     "dec": 24,
      "unch": 0,
-     "ratio": 2.45
+     "ratio": 3.17
     },
     {
      "group": "NIFTY MIDCAP 150",
-     "adv": 101,
-     "dec": 48,
+     "adv": 103,
+     "dec": 46,
      "unch": 1,
-     "ratio": 2.1
+     "ratio": 2.24
     },
     {
      "group": "NIFTY SMALLCAP 50",
-     "adv": 36,
-     "dec": 14,
+     "adv": 39,
+     "dec": 11,
      "unch": 0,
-     "ratio": 2.57
+     "ratio": 3.55
     },
     {
      "group": "NIFTY SMALLCAP 250",
-     "adv": 176,
-     "dec": 74,
-     "unch": 1,
-     "ratio": 2.38
+     "adv": 177,
+     "dec": 72,
+     "unch": 2,
+     "ratio": 2.46
     },
     {
      "group": "NIFTY MIDSMALLCAP 400",
-     "adv": 277,
-     "dec": 122,
-     "unch": 2,
-     "ratio": 2.27
+     "adv": 280,
+     "dec": 118,
+     "unch": 3,
+     "ratio": 2.37
     },
     {
      "group": "NIFTY500 MULTICAP 50:25:25",
-     "adv": 354,
-     "dec": 145,
-     "unch": 2,
-     "ratio": 2.44
+     "adv": 358,
+     "dec": 138,
+     "unch": 5,
+     "ratio": 2.59
     },
     {
      "group": "NIFTY LARGEMIDCAP 250",
-     "adv": 178,
-     "dec": 71,
-     "unch": 1,
-     "ratio": 2.51
+     "adv": 181,
+     "dec": 66,
+     "unch": 3,
+     "ratio": 2.74
     }
    ],
    "defaultSort": "ratio"
@@ -382,14 +382,14 @@
    ],
    "rows": [
     {
-     "company": "CUBEXTUB",
-     "last": 125.82,
-     "prev": 104.85,
+     "company": "PREMIERPOL",
+     "last": 97.22,
+     "prev": 81.02,
      "chgPct": 20,
-     "chg": 20.97,
-     "high": 125.82,
-     "low": 117,
-     "vol": 1010.31
+     "chg": 16.2,
+     "high": 97.22,
+     "low": 81.14,
+     "vol": 5300.14
     },
     {
      "company": "HEROMOTORS",
@@ -399,7 +399,17 @@
      "chg": 14.4,
      "high": 98.4,
      "low": 80.5,
-     "vol": 138831.74
+     "vol": 139255.4
+    },
+    {
+     "company": "CUBEXTUB",
+     "last": 125.82,
+     "prev": 104.85,
+     "chgPct": 20,
+     "chg": 20.97,
+     "high": 125.82,
+     "low": 117,
+     "vol": 1027.66
     },
     {
      "company": "FRONTSP",
@@ -409,127 +419,117 @@
      "chg": 232.4,
      "high": 1394.6,
      "low": 1175.4,
-     "vol": 345.99
-    },
-    {
-     "company": "PREMIERPOL",
-     "last": 95.16,
-     "prev": 81.02,
-     "chgPct": 17.45,
-     "chg": 14.14,
-     "high": 97.22,
-     "low": 81.14,
-     "vol": 4512.18
+     "vol": 348.68
     },
     {
      "company": "MANUGRAPH",
-     "last": 23.15,
+     "last": 23.3,
      "prev": 20.22,
-     "chgPct": 14.49,
-     "chg": 2.93,
+     "chgPct": 15.23,
+     "chg": 3.08,
      "high": 24.26,
      "low": 20.99,
-     "vol": 1480.49
-    },
-    {
-     "company": "JAYKAY",
-     "last": 216.46,
-     "prev": 189.5,
-     "chgPct": 14.23,
-     "chg": 26.96,
-     "high": 219.35,
-     "low": 191.47,
-     "vol": 6660.06
+     "vol": 1540.97
     },
     {
      "company": "OPTIEMUS",
-     "last": 802.8,
+     "last": 813.95,
      "prev": 708.9,
-     "chgPct": 13.25,
-     "chg": 93.9,
+     "chgPct": 14.82,
+     "chg": 105.05,
      "high": 850.65,
      "low": 781.2,
-     "vol": 7149.52
+     "vol": 7720.82
     },
     {
-     "company": "ASHOKAMET",
-     "last": 16.15,
-     "prev": 14.3,
-     "chgPct": 12.94,
-     "chg": 1.85,
-     "high": 16.5,
-     "low": 14.3,
-     "vol": 211.29
+     "company": "JAYKAY",
+     "last": 217,
+     "prev": 189.5,
+     "chgPct": 14.51,
+     "chg": 27.5,
+     "high": 219.35,
+     "low": 191.47,
+     "vol": 7572.82
     },
     {
-     "company": "ANSALBU",
-     "last": 101.66,
-     "prev": 90.12,
-     "chgPct": 12.81,
-     "chg": 11.54,
-     "high": 107.5,
-     "low": 95.6,
-     "vol": 145.75
-    },
-    {
-     "company": "MANINDS",
-     "last": 949.3,
-     "prev": 849.9,
-     "chgPct": 11.7,
-     "chg": 99.4,
-     "high": 974,
-     "low": 866.25,
-     "vol": 4597.41
-    },
-    {
-     "company": "LOYALTEX",
-     "last": 239.94,
-     "prev": 214.95,
-     "chgPct": 11.63,
-     "chg": 24.99,
-     "high": 257.94,
-     "low": 219.25,
-     "vol": 40.58
-    },
-    {
-     "company": "OLAELEC",
-     "last": 41.74,
-     "prev": 37.78,
-     "chgPct": 10.48,
-     "chg": 3.96,
-     "high": 42.36,
-     "low": 38.25,
-     "vol": 253393.86
-    },
-    {
-     "company": "ELECON",
-     "last": 464.55,
-     "prev": 420.55,
-     "chgPct": 10.46,
-     "chg": 44,
-     "high": 476.9,
-     "low": 420.1,
-     "vol": 19911.88
-    },
-    {
-     "company": "ONEPOINT",
-     "last": 69.68,
-     "prev": 63.2,
-     "chgPct": 10.25,
-     "chg": 6.48,
-     "high": 70.5,
-     "low": 63.6,
-     "vol": 12228.5
+     "company": "SUBEXLTD",
+     "last": 22.12,
+     "prev": 19.37,
+     "chgPct": 14.2,
+     "chg": 2.75,
+     "high": 22.35,
+     "low": 19.48,
+     "vol": 29499.17
     },
     {
      "company": "SSRETAIL",
-     "last": 687.8,
+     "last": 711.4,
      "prev": 424,
-     "chgPct": 62.22,
-     "chg": 263.8,
-     "high": 688.9,
+     "chgPct": 67.78,
+     "chg": 287.4,
+     "high": 723.95,
      "low": 603.05,
-     "vol": 25212
+     "vol": 35709.52
+    },
+    {
+     "company": "ANSALBU",
+     "last": 101.88,
+     "prev": 90.12,
+     "chgPct": 13.05,
+     "chg": 11.76,
+     "high": 107.5,
+     "low": 95.6,
+     "vol": 156.11
+    },
+    {
+     "company": "MANINDS",
+     "last": 955.85,
+     "prev": 849.9,
+     "chgPct": 12.47,
+     "chg": 105.95,
+     "high": 974,
+     "low": 866.25,
+     "vol": 6850.68
+    },
+    {
+     "company": "ASHOKAMET",
+     "last": 16,
+     "prev": 14.3,
+     "chgPct": 11.89,
+     "chg": 1.7,
+     "high": 16.5,
+     "low": 14.3,
+     "vol": 248.5
+    },
+    {
+     "company": "RAYMONDREL",
+     "last": 658.5,
+     "prev": 589.5,
+     "chgPct": 11.7,
+     "chg": 69,
+     "high": 660,
+     "low": 591,
+     "vol": 1838.87
+    },
+    {
+     "company": "MCL",
+     "last": 62.78,
+     "prev": 56.35,
+     "chgPct": 11.41,
+     "chg": 6.43,
+     "high": 63.73,
+     "low": 56.51,
+     "vol": 164.73
+    },
+    {
+     "company": "LOYALTEX",
+     "last": 239.1,
+     "prev": 214.95,
+     "chgPct": 11.24,
+     "chg": 24.15,
+     "high": 257.94,
+     "low": 219.25,
+     "vol": 42.95
     },
     {
      "company": "CENTEXT-RE",
@@ -537,9 +537,9 @@
      "prev": 3.63,
      "chgPct": -39.94,
      "chg": -1.45,
-     "high": 2.22,
+     "high": 2.25,
      "low": 2.18,
-     "vol": 353.1
+     "vol": 401.7
     },
     {
      "company": "MONQ50",
@@ -549,37 +549,47 @@
      "chg": -50.72,
      "high": 228.28,
      "low": 202.92,
-     "vol": 2775.28
+     "vol": 2793.7
     },
     {
      "company": "BLUESTONE",
-     "last": 853.2,
+     "last": 830.45,
      "prev": 930.4,
-     "chgPct": -8.3,
-     "chg": -77.2,
+     "chgPct": -10.74,
+     "chg": -99.95,
      "high": 969.9,
-     "low": 842,
-     "vol": 4274.38
+     "low": 824,
+     "vol": 5700.67
     },
     {
      "company": "OPTIFIN",
-     "last": 15.7,
+     "last": 15.47,
      "prev": 16.7,
-     "chgPct": -5.99,
-     "chg": -1,
+     "chgPct": -7.37,
+     "chg": -1.23,
      "high": 17,
      "low": 14.69,
-     "vol": 1064.3
+     "vol": 1098.14
     },
     {
-     "company": "PFOCUS",
-     "last": 339.45,
-     "prev": 357.45,
-     "chgPct": -5.04,
-     "chg": -18,
-     "high": 362.8,
-     "low": 333.15,
-     "vol": 4399.61
+     "company": "GLASSWALL",
+     "last": 291.42,
+     "prev": 309.29,
+     "chgPct": -5.78,
+     "chg": -17.87,
+     "high": 314.29,
+     "low": 290,
+     "vol": 23620.74
+    },
+    {
+     "company": "TAALTECH",
+     "last": 1124,
+     "prev": 1185.4,
+     "chgPct": -5.18,
+     "chg": -61.4,
+     "high": 1174.7,
+     "low": 1080.3,
+     "vol": 72.43
     },
     {
      "company": "VCL",
@@ -589,17 +599,7 @@
      "chg": -0.08,
      "high": 1.64,
      "low": 1.52,
-     "vol": 652.84
-    },
-    {
-     "company": "HMVL",
-     "last": 78.1,
-     "prev": 82.21,
-     "chgPct": -5,
-     "chg": -4.11,
-     "high": 83,
-     "low": 78.1,
-     "vol": 44.83
+     "vol": 666.86
     },
     {
      "company": "ONIXSOLAR",
@@ -609,7 +609,17 @@
      "chg": -16.1,
      "high": 306.5,
      "low": 306.5,
-     "vol": 9.09
+     "vol": 11.29
+    },
+    {
+     "company": "SIMPLXREA",
+     "last": 114.17,
+     "prev": 120.17,
+     "chgPct": -4.99,
+     "chg": -6,
+     "high": 120.15,
+     "low": 114.17,
+     "vol": 0.15
     },
     {
      "company": "NIRAJISPAT",
@@ -629,57 +639,47 @@
      "chg": -0.88,
      "high": 16.79,
      "low": 16.79,
-     "vol": 571.33
+     "vol": 626.69
     },
     {
-     "company": "KAUSHALYA",
-     "last": 826,
-     "prev": 868.75,
-     "chgPct": -4.92,
-     "chg": -42.75,
-     "high": 828,
-     "low": 826,
-     "vol": 0.2
+     "company": "TIJARIA",
+     "last": 6.53,
+     "prev": 6.87,
+     "chgPct": -4.95,
+     "chg": -0.34,
+     "high": 7.15,
+     "low": 6.53,
+     "vol": 46.93
     },
     {
-     "company": "GAJA",
-     "last": 151.6,
-     "prev": 159.34,
+     "company": "MSL",
+     "last": 131.3,
+     "prev": 138,
      "chgPct": -4.86,
-     "chg": -7.74,
-     "high": 158.6,
-     "low": 148.41,
-     "vol": 1354.15
+     "chg": -6.7,
+     "high": 143,
+     "low": 131.3,
+     "vol": 0.42
     },
     {
-     "company": "SYMBIOTEC",
-     "last": 1066.65,
-     "prev": 1120.9,
-     "chgPct": -4.84,
-     "chg": -54.25,
-     "high": 1128.2,
-     "low": 1065,
-     "vol": 757.24
-    },
-    {
-     "company": "INDOTHAI",
-     "last": 30.84,
-     "prev": 32.38,
-     "chgPct": -4.76,
-     "chg": -1.54,
-     "high": 31.8,
-     "low": 30.77,
-     "vol": 2400.4
-    },
-    {
-     "company": "TAALTECH",
-     "last": 1129.1,
-     "prev": 1185.4,
+     "company": "GLOBALE",
+     "last": 10.62,
+     "prev": 11.15,
      "chgPct": -4.75,
-     "chg": -56.3,
-     "high": 1174.7,
-     "low": 1080.3,
-     "vol": 66.21
+     "chg": -0.53,
+     "high": 11.41,
+     "low": 10.61,
+     "vol": 3.94
+    },
+    {
+     "company": "EMPOWER",
+     "last": 2.06,
+     "prev": 2.16,
+     "chgPct": -4.63,
+     "chg": -0.1,
+     "high": 2.06,
+     "low": 2.06,
+     "vol": 1364.29
     }
    ],
    "defaultSort": "chgPct"
@@ -688,7 +688,7 @@
    "slug": "out-and-under-performers",
    "title": "Out & Under Performers",
    "group": "equity",
-   "blurb": "Stocks beating or lagging the NIFTY 50 (benchmark +0.43% today).",
+   "blurb": "Stocks beating or lagging the NIFTY 50 (benchmark +0.54% today).",
    "columns": [
     {
      "key": "company",
@@ -718,172 +718,172 @@
    ],
    "rows": [
     {
-     "company": "CUBEXTUB",
-     "last": 125.82,
+     "company": "PREMIERPOL",
+     "last": 97.22,
      "chgPct": 20,
-     "bench": 0.43,
-     "outperf": 19.57
+     "bench": 0.54,
+     "outperf": 19.46
     },
     {
      "company": "HEROMOTORS",
      "last": 98.4,
      "chgPct": 17.14,
-     "bench": 0.43,
-     "outperf": 16.71
+     "bench": 0.54,
+     "outperf": 16.6
+    },
+    {
+     "company": "CUBEXTUB",
+     "last": 125.82,
+     "chgPct": 20,
+     "bench": 0.54,
+     "outperf": 19.46
     },
     {
      "company": "FRONTSP",
      "last": 1394.6,
      "chgPct": 20,
-     "bench": 0.43,
-     "outperf": 19.57
-    },
-    {
-     "company": "PREMIERPOL",
-     "last": 95.16,
-     "chgPct": 17.45,
-     "bench": 0.43,
-     "outperf": 17.02
+     "bench": 0.54,
+     "outperf": 19.46
     },
     {
      "company": "MANUGRAPH",
-     "last": 23.15,
-     "chgPct": 14.49,
-     "bench": 0.43,
-     "outperf": 14.06
-    },
-    {
-     "company": "JAYKAY",
-     "last": 216.46,
-     "chgPct": 14.23,
-     "bench": 0.43,
-     "outperf": 13.8
+     "last": 23.3,
+     "chgPct": 15.23,
+     "bench": 0.54,
+     "outperf": 14.69
     },
     {
      "company": "OPTIEMUS",
-     "last": 802.8,
-     "chgPct": 13.25,
-     "bench": 0.43,
-     "outperf": 12.82
+     "last": 813.95,
+     "chgPct": 14.82,
+     "bench": 0.54,
+     "outperf": 14.28
     },
     {
-     "company": "ASHOKAMET",
-     "last": 16.15,
-     "chgPct": 12.94,
-     "bench": 0.43,
-     "outperf": 12.51
+     "company": "JAYKAY",
+     "last": 217,
+     "chgPct": 14.51,
+     "bench": 0.54,
+     "outperf": 13.97
+    },
+    {
+     "company": "SUBEXLTD",
+     "last": 22.12,
+     "chgPct": 14.2,
+     "bench": 0.54,
+     "outperf": 13.66
+    },
+    {
+     "company": "SSRETAIL",
+     "last": 711.4,
+     "chgPct": 67.78,
+     "bench": 0.54,
+     "outperf": 67.24
     },
     {
      "company": "ANSALBU",
-     "last": 101.66,
-     "chgPct": 12.81,
-     "bench": 0.43,
-     "outperf": 12.38
+     "last": 101.88,
+     "chgPct": 13.05,
+     "bench": 0.54,
+     "outperf": 12.51
     },
     {
      "company": "MANINDS",
-     "last": 949.3,
-     "chgPct": 11.7,
-     "bench": 0.43,
-     "outperf": 11.27
+     "last": 955.85,
+     "chgPct": 12.47,
+     "bench": 0.54,
+     "outperf": 11.93
     },
     {
-     "company": "LOYALTEX",
-     "last": 239.94,
-     "chgPct": 11.63,
-     "bench": 0.43,
-     "outperf": 11.2
-    },
-    {
-     "company": "OLAELEC",
-     "last": 41.74,
-     "chgPct": 10.48,
-     "bench": 0.43,
-     "outperf": 10.05
+     "company": "ASHOKAMET",
+     "last": 16,
+     "chgPct": 11.89,
+     "bench": 0.54,
+     "outperf": 11.35
     },
     {
      "company": "CENTEXT-RE",
      "last": 2.18,
      "chgPct": -39.94,
-     "bench": 0.43,
-     "outperf": -40.37
+     "bench": 0.54,
+     "outperf": -40.48
     },
     {
      "company": "MONQ50",
      "last": 202.92,
      "chgPct": -20,
-     "bench": 0.43,
-     "outperf": -20.43
+     "bench": 0.54,
+     "outperf": -20.54
     },
     {
      "company": "BLUESTONE",
-     "last": 853.2,
-     "chgPct": -8.3,
-     "bench": 0.43,
-     "outperf": -8.73
+     "last": 830.45,
+     "chgPct": -10.74,
+     "bench": 0.54,
+     "outperf": -11.28
     },
     {
      "company": "OPTIFIN",
-     "last": 15.7,
-     "chgPct": -5.99,
-     "bench": 0.43,
-     "outperf": -6.42
+     "last": 15.47,
+     "chgPct": -7.37,
+     "bench": 0.54,
+     "outperf": -7.91
     },
     {
-     "company": "PFOCUS",
-     "last": 339.45,
-     "chgPct": -5.04,
-     "bench": 0.43,
-     "outperf": -5.47
+     "company": "GLASSWALL",
+     "last": 291.42,
+     "chgPct": -5.78,
+     "bench": 0.54,
+     "outperf": -6.32
+    },
+    {
+     "company": "TAALTECH",
+     "last": 1124,
+     "chgPct": -5.18,
+     "bench": 0.54,
+     "outperf": -5.72
     },
     {
      "company": "VCL",
      "last": 1.52,
      "chgPct": -5,
-     "bench": 0.43,
-     "outperf": -5.43
-    },
-    {
-     "company": "HMVL",
-     "last": 78.1,
-     "chgPct": -5,
-     "bench": 0.43,
-     "outperf": -5.43
+     "bench": 0.54,
+     "outperf": -5.54
     },
     {
      "company": "ONIXSOLAR",
      "last": 306.5,
      "chgPct": -4.99,
-     "bench": 0.43,
-     "outperf": -5.42
+     "bench": 0.54,
+     "outperf": -5.53
+    },
+    {
+     "company": "SIMPLXREA",
+     "last": 114.17,
+     "chgPct": -4.99,
+     "bench": 0.54,
+     "outperf": -5.53
     },
     {
      "company": "NIRAJISPAT",
      "last": 249.05,
      "chgPct": -4.98,
-     "bench": 0.43,
-     "outperf": -5.41
+     "bench": 0.54,
+     "outperf": -5.52
     },
     {
      "company": "RHETAN",
      "last": 16.79,
      "chgPct": -4.98,
-     "bench": 0.43,
-     "outperf": -5.41
+     "bench": 0.54,
+     "outperf": -5.52
     },
     {
-     "company": "KAUSHALYA",
-     "last": 826,
-     "chgPct": -4.92,
-     "bench": 0.43,
-     "outperf": -5.35
-    },
-    {
-     "company": "GAJA",
-     "last": 151.6,
-     "chgPct": -4.86,
-     "bench": 0.43,
-     "outperf": -5.29
+     "company": "TIJARIA",
+     "last": 6.53,
+     "chgPct": -4.95,
+     "bench": 0.54,
+     "outperf": -5.49
     }
    ],
    "defaultSort": "outperf"
@@ -928,13 +928,13 @@
    "rows": [
     {
      "company": "SSRETAIL",
-     "last": 687.8,
+     "last": 711.4,
      "prev": 424,
-     "chgPct": 62.22,
-     "chg": 263.8,
-     "high": 688.9,
+     "chgPct": 67.78,
+     "chg": 287.4,
+     "high": 723.95,
      "low": 603.05,
-     "vol": 25212
+     "vol": 35709.52
     },
     {
      "company": "CENTEXT-RE",
@@ -942,9 +942,19 @@
      "prev": 3.63,
      "chgPct": -39.94,
      "chg": -1.45,
-     "high": 2.22,
+     "high": 2.25,
      "low": 2.18,
-     "vol": 353.1
+     "vol": 401.7
+    },
+    {
+     "company": "PREMIERPOL",
+     "last": 97.22,
+     "prev": 81.02,
+     "chgPct": 20,
+     "chg": 16.2,
+     "high": 97.22,
+     "low": 81.14,
+     "vol": 5300.14
     },
     {
      "company": "CUBEXTUB",
@@ -954,7 +964,7 @@
      "chg": 20.97,
      "high": 125.82,
      "low": 117,
-     "vol": 1010.31
+     "vol": 1027.66
     },
     {
      "company": "FRONTSP",
@@ -964,7 +974,7 @@
      "chg": 232.4,
      "high": 1394.6,
      "low": 1175.4,
-     "vol": 345.99
+     "vol": 348.68
     },
     {
      "company": "MONQ50",
@@ -974,17 +984,7 @@
      "chg": -50.72,
      "high": 228.28,
      "low": 202.92,
-     "vol": 2775.28
-    },
-    {
-     "company": "PREMIERPOL",
-     "last": 95.16,
-     "prev": 81.02,
-     "chgPct": 17.45,
-     "chg": 14.14,
-     "high": 97.22,
-     "low": 81.14,
-     "vol": 4512.18
+     "vol": 2793.7
     },
     {
      "company": "HEROMOTORS",
@@ -994,137 +994,137 @@
      "chg": 14.4,
      "high": 98.4,
      "low": 80.5,
-     "vol": 138831.74
+     "vol": 139255.4
     },
     {
      "company": "MANUGRAPH",
-     "last": 23.15,
+     "last": 23.3,
      "prev": 20.22,
-     "chgPct": 14.49,
-     "chg": 2.93,
+     "chgPct": 15.23,
+     "chg": 3.08,
      "high": 24.26,
      "low": 20.99,
-     "vol": 1480.49
-    },
-    {
-     "company": "JAYKAY",
-     "last": 216.46,
-     "prev": 189.5,
-     "chgPct": 14.23,
-     "chg": 26.96,
-     "high": 219.35,
-     "low": 191.47,
-     "vol": 6660.06
+     "vol": 1540.97
     },
     {
      "company": "OPTIEMUS",
-     "last": 802.8,
+     "last": 813.95,
      "prev": 708.9,
-     "chgPct": 13.25,
-     "chg": 93.9,
+     "chgPct": 14.82,
+     "chg": 105.05,
      "high": 850.65,
      "low": 781.2,
-     "vol": 7149.52
+     "vol": 7720.82
     },
     {
-     "company": "ASHOKAMET",
-     "last": 16.15,
-     "prev": 14.3,
-     "chgPct": 12.94,
-     "chg": 1.85,
-     "high": 16.5,
-     "low": 14.3,
-     "vol": 211.29
+     "company": "JAYKAY",
+     "last": 217,
+     "prev": 189.5,
+     "chgPct": 14.51,
+     "chg": 27.5,
+     "high": 219.35,
+     "low": 191.47,
+     "vol": 7572.82
+    },
+    {
+     "company": "SUBEXLTD",
+     "last": 22.12,
+     "prev": 19.37,
+     "chgPct": 14.2,
+     "chg": 2.75,
+     "high": 22.35,
+     "low": 19.48,
+     "vol": 29499.17
     },
     {
      "company": "ANSALBU",
-     "last": 101.66,
+     "last": 101.88,
      "prev": 90.12,
-     "chgPct": 12.81,
-     "chg": 11.54,
+     "chgPct": 13.05,
+     "chg": 11.76,
      "high": 107.5,
      "low": 95.6,
-     "vol": 145.75
+     "vol": 156.11
     },
     {
      "company": "MANINDS",
-     "last": 949.3,
+     "last": 955.85,
      "prev": 849.9,
-     "chgPct": 11.7,
-     "chg": 99.4,
+     "chgPct": 12.47,
+     "chg": 105.95,
      "high": 974,
      "low": 866.25,
-     "vol": 4597.41
+     "vol": 6850.68
+    },
+    {
+     "company": "ASHOKAMET",
+     "last": 16,
+     "prev": 14.3,
+     "chgPct": 11.89,
+     "chg": 1.7,
+     "high": 16.5,
+     "low": 14.3,
+     "vol": 248.5
+    },
+    {
+     "company": "RAYMONDREL",
+     "last": 658.5,
+     "prev": 589.5,
+     "chgPct": 11.7,
+     "chg": 69,
+     "high": 660,
+     "low": 591,
+     "vol": 1838.87
+    },
+    {
+     "company": "MCL",
+     "last": 62.78,
+     "prev": 56.35,
+     "chgPct": 11.41,
+     "chg": 6.43,
+     "high": 63.73,
+     "low": 56.51,
+     "vol": 164.73
     },
     {
      "company": "LOYALTEX",
-     "last": 239.94,
+     "last": 239.1,
      "prev": 214.95,
-     "chgPct": 11.63,
-     "chg": 24.99,
+     "chgPct": 11.24,
+     "chg": 24.15,
      "high": 257.94,
      "low": 219.25,
-     "vol": 40.58
+     "vol": 42.95
     },
     {
-     "company": "OLAELEC",
-     "last": 41.74,
-     "prev": 37.78,
-     "chgPct": 10.48,
-     "chg": 3.96,
-     "high": 42.36,
-     "low": 38.25,
-     "vol": 253393.86
-    },
-    {
-     "company": "ELECON",
-     "last": 464.55,
-     "prev": 420.55,
-     "chgPct": 10.46,
-     "chg": 44,
-     "high": 476.9,
-     "low": 420.1,
-     "vol": 19911.88
-    },
-    {
-     "company": "ONEPOINT",
-     "last": 69.68,
-     "prev": 63.2,
-     "chgPct": 10.25,
-     "chg": 6.48,
-     "high": 70.5,
-     "low": 63.6,
-     "vol": 12228.5
+     "company": "BLUESTONE",
+     "last": 830.45,
+     "prev": 930.4,
+     "chgPct": -10.74,
+     "chg": -99.95,
+     "high": 969.9,
+     "low": 824,
+     "vol": 5700.67
     },
     {
      "company": "KOTHARIPRO",
-     "last": 70.05,
+     "last": 70.3,
      "prev": 63.67,
-     "chgPct": 10.02,
-     "chg": 6.38,
+     "chgPct": 10.41,
+     "chg": 6.63,
      "high": 76.4,
      "low": 65.6,
-     "vol": 76.4
+     "vol": 92.43
     },
     {
-     "company": "OMAXAUTO",
-     "last": 209.94,
-     "prev": 190.86,
-     "chgPct": 10,
-     "chg": 19.08,
-     "high": 209.94,
-     "low": 192.21,
-     "vol": 190.43
-    },
-    {
-     "company": "DCMSIL",
-     "last": 77.46,
-     "prev": 70.42,
-     "chgPct": 10,
-     "chg": 7.04,
-     "high": 77.46,
-     "low": 70.01,
-     "vol": 271.52
+     "company": "MPIMANIPAL",
+     "last": 373.8,
+     "prev": 338.6,
+     "chgPct": 10.4,
+     "chg": 35.2,
+     "high": 376.3,
+     "low": 338.05,
+     "vol": 2032.84
     }
    ],
    "defaultSort": "chgPct"
@@ -1178,14 +1178,14 @@
    ],
    "rows": [
     {
-     "company": "CUBEXTUB",
-     "last": 125.82,
-     "prev": 104.85,
+     "company": "PREMIERPOL",
+     "last": 97.22,
+     "prev": 81.02,
      "chgPct": 20,
-     "chg": 20.97,
-     "high": 125.82,
-     "low": 117,
-     "vol": 1010.31
+     "chg": 16.2,
+     "high": 97.22,
+     "low": 81.14,
+     "vol": 5300.14
     },
     {
      "company": "HEROMOTORS",
@@ -1195,7 +1195,17 @@
      "chg": 14.4,
      "high": 98.4,
      "low": 80.5,
-     "vol": 138831.74
+     "vol": 139255.4
+    },
+    {
+     "company": "CUBEXTUB",
+     "last": 125.82,
+     "prev": 104.85,
+     "chgPct": 20,
+     "chg": 20.97,
+     "high": 125.82,
+     "low": 117,
+     "vol": 1027.66
     },
     {
      "company": "FRONTSP",
@@ -1205,127 +1215,137 @@
      "chg": 232.4,
      "high": 1394.6,
      "low": 1175.4,
-     "vol": 345.99
-    },
-    {
-     "company": "PREMIERPOL",
-     "last": 95.16,
-     "prev": 81.02,
-     "chgPct": 17.45,
-     "chg": 14.14,
-     "high": 97.22,
-     "low": 81.14,
-     "vol": 4512.18
+     "vol": 348.68
     },
     {
      "company": "MANUGRAPH",
-     "last": 23.15,
+     "last": 23.3,
      "prev": 20.22,
-     "chgPct": 14.49,
-     "chg": 2.93,
+     "chgPct": 15.23,
+     "chg": 3.08,
      "high": 24.26,
      "low": 20.99,
-     "vol": 1480.49
-    },
-    {
-     "company": "JAYKAY",
-     "last": 216.46,
-     "prev": 189.5,
-     "chgPct": 14.23,
-     "chg": 26.96,
-     "high": 219.35,
-     "low": 191.47,
-     "vol": 6660.06
+     "vol": 1540.97
     },
     {
      "company": "OPTIEMUS",
-     "last": 802.8,
+     "last": 813.95,
      "prev": 708.9,
-     "chgPct": 13.25,
-     "chg": 93.9,
+     "chgPct": 14.82,
+     "chg": 105.05,
      "high": 850.65,
      "low": 781.2,
-     "vol": 7149.52
+     "vol": 7720.82
     },
     {
-     "company": "ANSALBU",
-     "last": 101.66,
-     "prev": 90.12,
-     "chgPct": 12.81,
-     "chg": 11.54,
-     "high": 107.5,
-     "low": 95.6,
-     "vol": 145.75
+     "company": "JAYKAY",
+     "last": 217,
+     "prev": 189.5,
+     "chgPct": 14.51,
+     "chg": 27.5,
+     "high": 219.35,
+     "low": 191.47,
+     "vol": 7572.82
     },
     {
-     "company": "MANINDS",
-     "last": 949.3,
-     "prev": 849.9,
-     "chgPct": 11.7,
-     "chg": 99.4,
-     "high": 974,
-     "low": 866.25,
-     "vol": 4597.41
-    },
-    {
-     "company": "LOYALTEX",
-     "last": 239.94,
-     "prev": 214.95,
-     "chgPct": 11.63,
-     "chg": 24.99,
-     "high": 257.94,
-     "low": 219.25,
-     "vol": 40.58
-    },
-    {
-     "company": "OLAELEC",
-     "last": 41.74,
-     "prev": 37.78,
-     "chgPct": 10.48,
-     "chg": 3.96,
-     "high": 42.36,
-     "low": 38.25,
-     "vol": 253393.86
-    },
-    {
-     "company": "ELECON",
-     "last": 464.55,
-     "prev": 420.55,
-     "chgPct": 10.46,
-     "chg": 44,
-     "high": 476.9,
-     "low": 420.1,
-     "vol": 19911.88
-    },
-    {
-     "company": "ONEPOINT",
-     "last": 69.68,
-     "prev": 63.2,
-     "chgPct": 10.25,
-     "chg": 6.48,
-     "high": 70.5,
-     "low": 63.6,
-     "vol": 12228.5
+     "company": "SUBEXLTD",
+     "last": 22.12,
+     "prev": 19.37,
+     "chgPct": 14.2,
+     "chg": 2.75,
+     "high": 22.35,
+     "low": 19.48,
+     "vol": 29499.17
     },
     {
      "company": "SSRETAIL",
-     "last": 687.8,
+     "last": 711.4,
      "prev": 424,
-     "chgPct": 62.22,
-     "chg": 263.8,
-     "high": 688.9,
+     "chgPct": 67.78,
+     "chg": 287.4,
+     "high": 723.95,
      "low": 603.05,
-     "vol": 25212
+     "vol": 35709.52
+    },
+    {
+     "company": "ANSALBU",
+     "last": 101.88,
+     "prev": 90.12,
+     "chgPct": 13.05,
+     "chg": 11.76,
+     "high": 107.5,
+     "low": 95.6,
+     "vol": 156.11
+    },
+    {
+     "company": "MANINDS",
+     "last": 955.85,
+     "prev": 849.9,
+     "chgPct": 12.47,
+     "chg": 105.95,
+     "high": 974,
+     "low": 866.25,
+     "vol": 6850.68
+    },
+    {
+     "company": "RAYMONDREL",
+     "last": 658.5,
+     "prev": 589.5,
+     "chgPct": 11.7,
+     "chg": 69,
+     "high": 660,
+     "low": 591,
+     "vol": 1838.87
+    },
+    {
+     "company": "MCL",
+     "last": 62.78,
+     "prev": 56.35,
+     "chgPct": 11.41,
+     "chg": 6.43,
+     "high": 63.73,
+     "low": 56.51,
+     "vol": 164.73
+    },
+    {
+     "company": "LOYALTEX",
+     "last": 239.1,
+     "prev": 214.95,
+     "chgPct": 11.24,
+     "chg": 24.15,
+     "high": 257.94,
+     "low": 219.25,
+     "vol": 42.95
     },
     {
      "company": "KOTHARIPRO",
-     "last": 70.05,
+     "last": 70.3,
      "prev": 63.67,
-     "chgPct": 10.02,
-     "chg": 6.38,
+     "chgPct": 10.41,
+     "chg": 6.63,
      "high": 76.4,
      "low": 65.6,
-     "vol": 76.4
+     "vol": 92.43
+    },
+    {
+     "company": "MPIMANIPAL",
+     "last": 373.8,
+     "prev": 338.6,
+     "chgPct": 10.4,
+     "chg": 35.2,
+     "high": 376.3,
+     "low": 338.05,
+     "vol": 2032.84
+    },
+    {
+     "company": "EKC",
+     "last": 111.08,
+     "prev": 100.81,
+     "chgPct": 10.19,
+     "chg": 10.27,
+     "high": 116.94,
+     "low": 100.9,
+     "vol": 13963.59
     },
     {
      "company": "OMAXAUTO",
@@ -1335,7 +1355,7 @@
      "chg": 19.08,
      "high": 209.94,
      "low": 192.21,
-     "vol": 190.43
+     "vol": 193.14
     },
     {
      "company": "DCMSIL",
@@ -1345,37 +1365,17 @@
      "chg": 7.04,
      "high": 77.46,
      "low": 70.01,
-     "vol": 271.52
+     "vol": 273.6
     },
     {
-     "company": "SRGHFL",
-     "last": 158.1,
-     "prev": 143.75,
-     "chgPct": 9.98,
-     "chg": 14.35,
-     "high": 158.1,
-     "low": 147.85,
-     "vol": 44.82
-    },
-    {
-     "company": "EKC",
-     "last": 110.16,
-     "prev": 100.81,
-     "chgPct": 9.27,
-     "chg": 9.35,
-     "high": 116.94,
-     "low": 100.9,
-     "vol": 12208.24
-    },
-    {
-     "company": "BIKAJI",
-     "last": 601.7,
-     "prev": 553.65,
-     "chgPct": 8.68,
-     "chg": 48.05,
-     "high": 607.5,
-     "low": 553.5,
-     "vol": 1820.86
+     "company": "SUNFLAG",
+     "last": 390.55,
+     "prev": 355.05,
+     "chgPct": 10,
+     "chg": 35.5,
+     "high": 390.55,
+     "low": 356.55,
+     "vol": 827.71
     },
     {
      "company": "CENTEXT-RE",
@@ -1383,19 +1383,19 @@
      "prev": 3.63,
      "chgPct": -39.94,
      "chg": -1.45,
-     "high": 2.22,
+     "high": 2.25,
      "low": 2.18,
-     "vol": 353.1
+     "vol": 401.7
     },
     {
      "company": "OPTIFIN",
-     "last": 15.7,
+     "last": 15.47,
      "prev": 16.7,
-     "chgPct": -5.99,
-     "chg": -1,
+     "chgPct": -7.37,
+     "chg": -1.23,
      "high": 17,
      "low": 14.69,
-     "vol": 1064.3
+     "vol": 1098.14
     },
     {
      "company": "VCL",
@@ -1405,7 +1405,7 @@
      "chg": -0.08,
      "high": 1.64,
      "low": 1.52,
-     "vol": 652.84
+     "vol": 666.86
     },
     {
      "company": "RHETAN",
@@ -1415,7 +1415,27 @@
      "chg": -0.88,
      "high": 16.79,
      "low": 16.79,
-     "vol": 571.33
+     "vol": 626.69
+    },
+    {
+     "company": "TIJARIA",
+     "last": 6.53,
+     "prev": 6.87,
+     "chgPct": -4.95,
+     "chg": -0.34,
+     "high": 7.15,
+     "low": 6.53,
+     "vol": 46.93
+    },
+    {
+     "company": "GLOBALE",
+     "last": 10.62,
+     "prev": 11.15,
+     "chgPct": -4.75,
+     "chg": -0.53,
+     "high": 11.41,
+     "low": 10.61,
+     "vol": 3.94
     },
     {
      "company": "EMPOWER",
@@ -1425,7 +1445,7 @@
      "chg": -0.1,
      "high": 2.06,
      "low": 2.06,
-     "vol": 1253.67
+     "vol": 1364.29
     },
     {
      "company": "EUROTEXIND",
@@ -1439,13 +1459,13 @@
     },
     {
      "company": "FMNL",
-     "last": 8.08,
+     "last": 8.05,
      "prev": 8.43,
-     "chgPct": -4.15,
-     "chg": -0.35,
+     "chgPct": -4.51,
+     "chg": -0.38,
      "high": 8.64,
      "low": 8.01,
-     "vol": 196.1
+     "vol": 284.56
     },
     {
      "company": "MOOILGAS",
@@ -1455,57 +1475,77 @@
      "chg": -0.47,
      "high": 11.37,
      "low": 10.95,
-     "vol": 404.15
+     "vol": 426.63
     },
     {
-     "company": "SVPGLOB",
-     "last": 3.21,
-     "prev": 3.34,
-     "chgPct": -3.89,
-     "chg": -0.13,
-     "high": 3.47,
-     "low": 3.21,
-     "vol": 19.95
+     "company": "SADHNANIQ",
+     "last": 2.74,
+     "prev": 2.85,
+     "chgPct": -3.86,
+     "chg": -0.11,
+     "high": 2.92,
+     "low": 2.71,
+     "vol": 1634.24
     },
     {
-     "company": "VIPULLTD",
-     "last": 11.05,
-     "prev": 11.45,
-     "chgPct": -3.49,
-     "chg": -0.4,
-     "high": 11.33,
-     "low": 10.96,
-     "vol": 113.56
+     "company": "PRISMX",
+     "last": 0.53,
+     "prev": 0.55,
+     "chgPct": -3.64,
+     "chg": -0.02,
+     "high": 0.55,
+     "low": 0.53,
+     "vol": 105.31
+    },
+    {
+     "company": "ACCURACY",
+     "last": 4.22,
+     "prev": 4.37,
+     "chgPct": -3.43,
+     "chg": -0.15,
+     "high": 4.4,
+     "low": 4.2,
+     "vol": 58.57
+    },
+    {
+     "company": "DAVANGERE",
+     "last": 2.19,
+     "prev": 2.26,
+     "chgPct": -3.1,
+     "chg": -0.07,
+     "high": 2.31,
+     "low": 2.16,
+     "vol": 10066.42
     },
     {
      "company": "AQYLON",
-     "last": 19.16,
+     "last": 19.19,
      "prev": 19.8,
-     "chgPct": -3.23,
-     "chg": -0.64,
+     "chgPct": -3.08,
+     "chg": -0.61,
      "high": 20.74,
      "low": 18.9,
-     "vol": 404.34
+     "vol": 417.95
     },
     {
-     "company": "CREATIVEYE",
-     "last": 6.05,
-     "prev": 6.25,
-     "chgPct": -3.2,
-     "chg": -0.2,
-     "high": 6.68,
-     "low": 5.6,
-     "vol": 49.31
+     "company": "SVPGLOB",
+     "last": 3.24,
+     "prev": 3.34,
+     "chgPct": -2.99,
+     "chg": -0.1,
+     "high": 3.47,
+     "low": 3.21,
+     "vol": 20.3
     },
     {
-     "company": "TIJARIA",
-     "last": 6.66,
-     "prev": 6.87,
-     "chgPct": -3.06,
-     "chg": -0.21,
-     "high": 7.15,
-     "low": 6.53,
-     "vol": 44.48
+     "company": "ANMOL",
+     "last": 13.61,
+     "prev": 14.03,
+     "chgPct": -2.99,
+     "chg": -0.42,
+     "high": 14.3,
+     "low": 13.33,
+     "vol": 66.26
     },
     {
      "company": "BURNPUR",
@@ -1515,17 +1555,7 @@
      "chg": -0.47,
      "high": 16.5,
      "low": 15.33,
-     "vol": 52.3
-    },
-    {
-     "company": "HYBRIDFIN",
-     "last": 16.21,
-     "prev": 16.69,
-     "chgPct": -2.88,
-     "chg": -0.48,
-     "high": 16.79,
-     "low": 16.2,
-     "vol": 0.83
+     "vol": 57.16
     },
     {
      "company": "DCMFINSERV",
@@ -1535,47 +1565,17 @@
      "chg": -0.14,
      "high": 5.16,
      "low": 4.8,
-     "vol": 5.2
+     "vol": 5.45
     },
     {
-     "company": "LEENEE",
-     "last": 7.53,
-     "prev": 7.74,
+     "company": "SWISSMLTRY",
+     "last": 14,
+     "prev": 14.39,
      "chgPct": -2.71,
-     "chg": -0.21,
-     "high": 8.05,
-     "low": 7.46,
-     "vol": 7.02
-    },
-    {
-     "company": "DAVANGERE",
-     "last": 2.2,
-     "prev": 2.26,
-     "chgPct": -2.65,
-     "chg": -0.06,
-     "high": 2.31,
-     "low": 2.18,
-     "vol": 7516.16
-    },
-    {
-     "company": "AKSHOPTFBR",
-     "last": 6.95,
-     "prev": 7.13,
-     "chgPct": -2.52,
-     "chg": -0.18,
-     "high": 7.4,
-     "low": 6.81,
-     "vol": 345.68
-    },
-    {
-     "company": "TREEHOUSE",
-     "last": 5.9,
-     "prev": 6.05,
-     "chgPct": -2.48,
-     "chg": -0.15,
-     "high": 6.14,
-     "low": 5.84,
-     "vol": 5.16
+     "chg": -0.39,
+     "high": 14.6,
+     "low": 14,
+     "vol": 76.59
     }
    ],
    "defaultSort": "chgPct"
@@ -1620,18 +1620,26 @@
    "rows": [
     {
      "company": "PCJEWELLER",
-     "last": 14.39,
+     "last": 14.42,
      "prev": 13.58,
-     "chgPct": 5.96,
-     "qty": 520666.02,
+     "chgPct": 6.19,
+     "qty": 579181.95,
      "value": 0
     },
     {
      "company": "OLAELEC",
-     "last": 41.73,
+     "last": 41.35,
      "prev": 37.78,
-     "chgPct": 10.46,
-     "qty": 217710.84,
+     "chgPct": 9.45,
+     "qty": 253735.01,
+     "value": 0
+    },
+    {
+     "company": "IDEA",
+     "last": 14.41,
+     "prev": 14.27,
+     "chgPct": 0.98,
+     "qty": 129204.33,
      "value": 0
     },
     {
@@ -1639,55 +1647,39 @@
      "last": 98.4,
      "prev": 84,
      "chgPct": 20,
-     "qty": 126124.76,
-     "value": 0
-    },
-    {
-     "company": "IDEA",
-     "last": 14.36,
-     "prev": 14.27,
-     "chgPct": 0.63,
-     "qty": 108757.6,
+     "qty": 138840.31,
      "value": 0
     },
     {
      "company": "AHCL",
-     "last": 28.24,
+     "last": 28.41,
      "prev": 28.86,
-     "chgPct": -2.15,
-     "qty": 62740.41,
+     "chgPct": -1.56,
+     "qty": 72143.44,
      "value": 0
     },
     {
      "company": "SUZLON",
-     "last": 42.24,
+     "last": 42.18,
      "prev": 43,
-     "chgPct": -1.77,
-     "qty": 57971.44,
-     "value": 0
-    },
-    {
-     "company": "IFCI",
-     "last": 78.19,
-     "prev": 75.94,
-     "chgPct": 2.96,
-     "qty": 44715.06,
+     "chgPct": -1.91,
+     "qty": 66521.49,
      "value": 0
     },
     {
      "company": "IDFCFIRSTB",
-     "last": 88.47,
+     "last": 87.93,
      "prev": 85.37,
-     "chgPct": 3.63,
-     "qty": 21657.55,
+     "chgPct": 3,
+     "qty": 46925.59,
      "value": 0
     },
     {
-     "company": "STEELXIND",
-     "last": 12.05,
-     "prev": 11.18,
-     "chgPct": 7.78,
-     "qty": 30164.95,
+     "company": "IFCI",
+     "last": 78.39,
+     "prev": 75.94,
+     "chgPct": 3.23,
+     "qty": 47889.76,
      "value": 0
     },
     {
@@ -1695,7 +1687,7 @@
      "last": 17.61,
      "prev": 18.04,
      "chgPct": -2.38,
-     "qty": 25719.6,
+     "qty": 34764.17,
      "value": 0
     },
     {
@@ -1703,79 +1695,87 @@
      "last": 16.16,
      "prev": 16.17,
      "chgPct": -0.06,
-     "qty": 26305.34,
+     "qty": 34062,
+     "value": 0
+    },
+    {
+     "company": "STEELXIND",
+     "last": 11.96,
+     "prev": 11.18,
+     "chgPct": 6.98,
+     "qty": 34087.42,
      "value": 0
     },
     {
      "company": "BANDHANBNK",
-     "last": 191.2,
+     "last": 191.75,
      "prev": 184.7,
-     "chgPct": 3.52,
-     "qty": 29609.72,
+     "chgPct": 3.82,
+     "qty": 33291.79,
      "value": 0
     },
     {
      "company": "SSRETAIL",
-     "last": 686.05,
+     "last": 711.1,
      "prev": 424,
-     "chgPct": 9.94,
-     "qty": 15110.45,
+     "chgPct": 13.96,
+     "qty": 25563.41,
      "value": 0
     },
     {
-     "company": "VOGL",
-     "last": 35.7,
-     "prev": 35.01,
-     "chgPct": 1.97,
-     "qty": 19556.89,
+     "company": "SUBEXLTD",
+     "last": 22.04,
+     "prev": 19.37,
+     "chgPct": 13.78,
+     "qty": 12767.91,
      "value": 0
     },
     {
-     "company": "TATAGOLD",
-     "last": 14.69,
-     "prev": 14.69,
-     "chgPct": 0,
-     "qty": 7514.54,
-     "value": 0
-    },
-    {
-     "company": "FEDDERSHOL",
-     "last": 67.04,
-     "prev": 64.8,
-     "chgPct": 3.46,
-     "qty": 18153.86,
+     "company": "CUPID",
+     "last": 270.35,
+     "prev": 258.2,
+     "chgPct": 4.71,
+     "qty": 19390.42,
      "value": 0
     },
     {
      "company": "YESBANK",
-     "last": 23.35,
+     "last": 23.21,
      "prev": 23.2,
-     "chgPct": 0.65,
-     "qty": 15054.54,
+     "chgPct": 0.04,
+     "qty": 20845.69,
      "value": 0
     },
     {
-     "company": "GLASSWALL",
-     "last": 297.55,
-     "prev": 309.29,
-     "chgPct": -3.8,
-     "qty": 18152.01,
+     "company": "SAIL",
+     "last": 183.16,
+     "prev": 174.01,
+     "chgPct": 5.26,
+     "qty": 16062.26,
+     "value": 0
+    },
+    {
+     "company": "FEDDERSHOL",
+     "last": 68.91,
+     "prev": 64.8,
+     "chgPct": 6.34,
+     "qty": 21656.81,
+     "value": 0
+    },
+    {
+     "company": "TATAGOLD",
+     "last": 14.68,
+     "prev": 14.69,
+     "chgPct": -0.07,
+     "qty": 21987.17,
      "value": 0
     },
     {
      "company": "ELECON",
-     "last": 464.4,
+     "last": 460.5,
      "prev": 420.55,
-     "chgPct": 10.43,
-     "qty": 9732.18,
-     "value": 0
-    },
-    {
-     "company": "IRB",
-     "last": 18.35,
-     "prev": 17.98,
-     "chgPct": 2.06,
-     "qty": 17959.31,
+     "chgPct": 9.5,
+     "qty": 20027.5,
      "value": 0
     }
    ],
@@ -1821,18 +1821,26 @@
    "rows": [
     {
      "company": "PCJEWELLER",
-     "last": 14.39,
+     "last": 14.42,
      "prev": 13.58,
-     "chgPct": 5.96,
-     "qty": 520666.02,
+     "chgPct": 6.19,
+     "qty": 579181.95,
      "value": 0
     },
     {
      "company": "OLAELEC",
-     "last": 41.73,
+     "last": 41.35,
      "prev": 37.78,
-     "chgPct": 10.46,
-     "qty": 217710.84,
+     "chgPct": 9.45,
+     "qty": 253735.01,
+     "value": 0
+    },
+    {
+     "company": "IDEA",
+     "last": 14.41,
+     "prev": 14.27,
+     "chgPct": 0.98,
+     "qty": 129204.33,
      "value": 0
     },
     {
@@ -1840,55 +1848,39 @@
      "last": 98.4,
      "prev": 84,
      "chgPct": 20,
-     "qty": 126124.76,
-     "value": 0
-    },
-    {
-     "company": "IDEA",
-     "last": 14.36,
-     "prev": 14.27,
-     "chgPct": 0.63,
-     "qty": 108757.6,
+     "qty": 138840.31,
      "value": 0
     },
     {
      "company": "AHCL",
-     "last": 28.24,
+     "last": 28.41,
      "prev": 28.86,
-     "chgPct": -2.15,
-     "qty": 62740.41,
+     "chgPct": -1.56,
+     "qty": 72143.44,
      "value": 0
     },
     {
      "company": "SUZLON",
-     "last": 42.24,
+     "last": 42.18,
      "prev": 43,
-     "chgPct": -1.77,
-     "qty": 57971.44,
-     "value": 0
-    },
-    {
-     "company": "IFCI",
-     "last": 78.19,
-     "prev": 75.94,
-     "chgPct": 2.96,
-     "qty": 44715.06,
+     "chgPct": -1.91,
+     "qty": 66521.49,
      "value": 0
     },
     {
      "company": "IDFCFIRSTB",
-     "last": 88.47,
+     "last": 87.93,
      "prev": 85.37,
-     "chgPct": 3.63,
-     "qty": 21657.55,
+     "chgPct": 3,
+     "qty": 46925.59,
      "value": 0
     },
     {
-     "company": "STEELXIND",
-     "last": 12.05,
-     "prev": 11.18,
-     "chgPct": 7.78,
-     "qty": 30164.95,
+     "company": "IFCI",
+     "last": 78.39,
+     "prev": 75.94,
+     "chgPct": 3.23,
+     "qty": 47889.76,
      "value": 0
     },
     {
@@ -1896,7 +1888,7 @@
      "last": 17.61,
      "prev": 18.04,
      "chgPct": -2.38,
-     "qty": 25719.6,
+     "qty": 34764.17,
      "value": 0
     },
     {
@@ -1904,79 +1896,87 @@
      "last": 16.16,
      "prev": 16.17,
      "chgPct": -0.06,
-     "qty": 26305.34,
+     "qty": 34062,
+     "value": 0
+    },
+    {
+     "company": "STEELXIND",
+     "last": 11.96,
+     "prev": 11.18,
+     "chgPct": 6.98,
+     "qty": 34087.42,
      "value": 0
     },
     {
      "company": "BANDHANBNK",
-     "last": 191.2,
+     "last": 191.75,
      "prev": 184.7,
-     "chgPct": 3.52,
-     "qty": 29609.72,
+     "chgPct": 3.82,
+     "qty": 33291.79,
      "value": 0
     },
     {
      "company": "SSRETAIL",
-     "last": 686.05,
+     "last": 711.1,
      "prev": 424,
-     "chgPct": 9.94,
-     "qty": 15110.45,
+     "chgPct": 13.96,
+     "qty": 25563.41,
      "value": 0
     },
     {
-     "company": "VOGL",
-     "last": 35.7,
-     "prev": 35.01,
-     "chgPct": 1.97,
-     "qty": 19556.89,
+     "company": "SUBEXLTD",
+     "last": 22.04,
+     "prev": 19.37,
+     "chgPct": 13.78,
+     "qty": 12767.91,
      "value": 0
     },
     {
-     "company": "TATAGOLD",
-     "last": 14.69,
-     "prev": 14.69,
-     "chgPct": 0,
-     "qty": 7514.54,
-     "value": 0
-    },
-    {
-     "company": "FEDDERSHOL",
-     "last": 67.04,
-     "prev": 64.8,
-     "chgPct": 3.46,
-     "qty": 18153.86,
+     "company": "CUPID",
+     "last": 270.35,
+     "prev": 258.2,
+     "chgPct": 4.71,
+     "qty": 19390.42,
      "value": 0
     },
     {
      "company": "YESBANK",
-     "last": 23.35,
+     "last": 23.21,
      "prev": 23.2,
-     "chgPct": 0.65,
-     "qty": 15054.54,
+     "chgPct": 0.04,
+     "qty": 20845.69,
      "value": 0
     },
     {
-     "company": "GLASSWALL",
-     "last": 297.55,
-     "prev": 309.29,
-     "chgPct": -3.8,
-     "qty": 18152.01,
+     "company": "SAIL",
+     "last": 183.16,
+     "prev": 174.01,
+     "chgPct": 5.26,
+     "qty": 16062.26,
+     "value": 0
+    },
+    {
+     "company": "FEDDERSHOL",
+     "last": 68.91,
+     "prev": 64.8,
+     "chgPct": 6.34,
+     "qty": 21656.81,
+     "value": 0
+    },
+    {
+     "company": "TATAGOLD",
+     "last": 14.68,
+     "prev": 14.69,
+     "chgPct": -0.07,
+     "qty": 21987.17,
      "value": 0
     },
     {
      "company": "ELECON",
-     "last": 464.4,
+     "last": 460.5,
      "prev": 420.55,
-     "chgPct": 10.43,
-     "qty": 9732.18,
-     "value": 0
-    },
-    {
-     "company": "IRB",
-     "last": 18.35,
-     "prev": 17.98,
-     "chgPct": 2.06,
-     "qty": 17959.31,
+     "chgPct": 9.5,
+     "qty": 20027.5,
      "value": 0
     }
    ],
@@ -2022,10 +2022,10 @@
    "rows": [
     {
      "company": "SSRETAIL",
-     "last": 688.9,
+     "last": 710.75,
      "prev": 424,
-     "chgPct": 10.4,
-     "qty": 15110.45,
+     "chgPct": 13.9,
+     "qty": 25563.41,
      "value": 0
     },
     {
@@ -2033,151 +2033,151 @@
      "last": 98.4,
      "prev": 84,
      "chgPct": 20,
-     "qty": 126124.76,
+     "qty": 138840.31,
      "value": 0
     },
     {
      "company": "OLAELEC",
-     "last": 41.74,
+     "last": 41.32,
      "prev": 37.78,
-     "chgPct": 10.48,
-     "qty": 217710.84,
+     "chgPct": 9.37,
+     "qty": 253735.01,
      "value": 0
     },
     {
      "company": "ELECON",
-     "last": 464.65,
+     "last": 460.5,
      "prev": 420.55,
-     "chgPct": 10.49,
-     "qty": 9732.18,
+     "chgPct": 9.5,
+     "qty": 20027.5,
      "value": 0
     },
     {
      "company": "HDFCBANK",
-     "last": 741.55,
+     "last": 741.05,
      "prev": 738.6,
-     "chgPct": 0.4,
-     "qty": 8978.16,
+     "chgPct": 0.33,
+     "qty": 12243.97,
      "value": 0
     },
     {
      "company": "PCJEWELLER",
-     "last": 14.42,
+     "last": 14.43,
      "prev": 13.58,
-     "chgPct": 6.19,
-     "qty": 520666.02,
-     "value": 0
-    },
-    {
-     "company": "KANOHAR",
-     "last": 891.25,
-     "prev": 870.5,
-     "chgPct": 2.38,
-     "qty": 6988.48,
-     "value": 0
-    },
-    {
-     "company": "MARINE",
-     "last": 429.8,
-     "prev": 411.45,
-     "chgPct": 4.46,
-     "qty": 14178.81,
+     "chgPct": 6.26,
+     "qty": 579181.95,
      "value": 0
     },
     {
      "company": "ATHERENERG",
-     "last": 1501.1,
+     "last": 1488.2,
      "prev": 1543.8,
-     "chgPct": -2.77,
-     "qty": 3349.59,
-     "value": 0
-    },
-    {
-     "company": "WOCKPHARMA",
-     "last": 2291.6,
-     "prev": 2185.4,
-     "chgPct": 4.86,
-     "qty": 2378.19,
-     "value": 0
-    },
-    {
-     "company": "BANDHANBNK",
-     "last": 191.11,
-     "prev": 184.7,
-     "chgPct": 3.47,
-     "qty": 29609.72,
-     "value": 0
-    },
-    {
-     "company": "GLASSWALL",
-     "last": 297.65,
-     "prev": 309.29,
-     "chgPct": -3.76,
-     "qty": 18152.01,
-     "value": 0
-    },
-    {
-     "company": "OPTIEMUS",
-     "last": 803,
-     "prev": 708.9,
-     "chgPct": 13.27,
-     "qty": 6703.34,
-     "value": 0
-    },
-    {
-     "company": "BAJFINANCE",
-     "last": 1030.7,
-     "prev": 1008.8,
-     "chgPct": 2.17,
-     "qty": 4452.03,
+     "chgPct": -3.6,
+     "qty": 4401.84,
      "value": 0
     },
     {
      "company": "CUPID",
-     "last": 266.1,
+     "last": 270.65,
      "prev": 258.2,
-     "chgPct": 3.06,
-     "qty": 12800.92,
+     "chgPct": 4.82,
+     "qty": 19390.42,
      "value": 0
     },
     {
-     "company": "RELIANCE",
-     "last": 1249,
-     "prev": 1240.4,
-     "chgPct": 0.69,
-     "qty": 2015.24,
+     "company": "GLASSWALL",
+     "last": 288.49,
+     "prev": 309.29,
+     "chgPct": -6.73,
+     "qty": 20487.58,
      "value": 0
     },
     {
-     "company": "MEESHO",
-     "last": 234.99,
-     "prev": 240.19,
-     "chgPct": -2.16,
-     "qty": 15393.44,
+     "company": "KANOHAR",
+     "last": 882,
+     "prev": 870.5,
+     "chgPct": 1.32,
+     "qty": 7602.99,
+     "value": 0
+    },
+    {
+     "company": "MARINE",
+     "last": 437.15,
+     "prev": 411.45,
+     "chgPct": 6.25,
+     "qty": 16287.2,
+     "value": 0
+    },
+    {
+     "company": "BANDHANBNK",
+     "last": 191.75,
+     "prev": 184.7,
+     "chgPct": 3.82,
+     "qty": 33291.79,
+     "value": 0
+    },
+    {
+     "company": "WOCKPHARMA",
+     "last": 2296.9,
+     "prev": 2185.4,
+     "chgPct": 5.1,
+     "qty": 2745.23,
+     "value": 0
+    },
+    {
+     "company": "BAJFINANCE",
+     "last": 1034.5,
+     "prev": 1008.8,
+     "chgPct": 2.55,
+     "qty": 5168.11,
      "value": 0
     },
     {
      "company": "MANINDS",
-     "last": 946.85,
+     "last": 956.4,
      "prev": 849.9,
-     "chgPct": 11.41,
-     "qty": 2236.52,
+     "chgPct": 12.53,
+     "qty": 4711.54,
      "value": 0
     },
     {
-     "company": "SOLARINDS",
-     "last": 19815,
-     "prev": 19890,
-     "chgPct": -0.38,
-     "qty": 121.63,
+     "company": "RELIANCE",
+     "last": 1251.9,
+     "prev": 1240.4,
+     "chgPct": 0.93,
+     "qty": 3611.11,
      "value": 0
     },
     {
-     "company": "IDFCFIRSTB",
-     "last": 88.35,
-     "prev": 85.37,
-     "chgPct": 3.49,
-     "qty": 21657.55,
+     "company": "OPTIEMUS",
+     "last": 812.2,
+     "prev": 708.9,
+     "chgPct": 14.57,
+     "qty": 7151.5,
+     "value": 0
+    },
+    {
+     "company": "MEESHO",
+     "last": 237.91,
+     "prev": 240.19,
+     "chgPct": -0.95,
+     "qty": 18867.74,
+     "value": 0
+    },
+    {
+     "company": "BLUESTONE",
+     "last": 831.5,
+     "prev": 930.4,
+     "chgPct": -10.63,
+     "qty": 4274.07,
+     "value": 0
+    },
+    {
+     "company": "BSE",
+     "last": 3244.8,
+     "prev": 3235,
+     "chgPct": 0.3,
+     "qty": 1185.23,
      "value": 0
     }
    ],
@@ -2223,11 +2223,11 @@
    "rows": [
     {
      "company": "AARTIPHARM",
-     "last": 926.3,
+     "last": 936.1,
      "yHigh": 957.3,
      "prevHigh": 932.6,
      "date": "—",
-     "chgPct": 4.814710042432814
+     "chgPct": 5.923620933521923
     },
     {
      "company": "ACSTECH",
@@ -2239,43 +2239,43 @@
     },
     {
      "company": "ADISOFT",
-     "last": 275,
+     "last": 268,
      "yHigh": 292,
      "prevHigh": 280,
      "date": "—",
-     "chgPct": 1.3077914901455148
+     "chgPct": -1.2709522932400075
     },
     {
      "company": "ADROITINFO",
-     "last": 12.97,
-     "yHigh": 12.99,
+     "last": 13.14,
+     "yHigh": 13.15,
      "prevHigh": 12.48,
      "date": "—",
-     "chgPct": 6.57354149548069
+     "chgPct": 7.970419063270337
     },
     {
      "company": "AEROPLANE",
-     "last": 207.2,
+     "last": 208.6,
      "yHigh": 211.39,
      "prevHigh": 209.44,
      "date": "—",
-     "chgPct": 1.171875
+     "chgPct": 1.85546875
     },
     {
      "company": "AHCL",
-     "last": 28.21,
+     "last": 28.41,
      "yHigh": 31.29,
      "prevHigh": 28.86,
      "date": "—",
-     "chgPct": -2.2522522522522523
+     "chgPct": -1.5592515592515592
     },
     {
      "company": "AIMTRON",
-     "last": 1825,
+     "last": 1826.05,
      "yHigh": 1865,
      "prevHigh": 1860,
      "date": "—",
-     "chgPct": 0.3795170782685221
+     "chgPct": 0.4372696771354711
     },
     {
      "company": "AKANKSHA",
@@ -2287,171 +2287,171 @@
     },
     {
      "company": "AKUMS",
-     "last": 828,
+     "last": 825.35,
      "yHigh": 838.8,
      "prevHigh": 834.7,
      "date": "—",
-     "chgPct": 2.487931674712217
+     "chgPct": 2.159920782275034
     },
     {
      "company": "ALUFLUOR",
-     "last": 574.5,
+     "last": 568.45,
      "yHigh": 577.9,
      "prevHigh": 547.95,
      "date": "—",
-     "chgPct": 5.732952976902549
+     "chgPct": 4.619490199687126
     },
     {
      "company": "AMEYA",
-     "last": 164.8,
+     "last": 164.95,
      "yHigh": 164.95,
      "prevHigh": 157.1,
      "date": "—",
-     "chgPct": 4.9013367281986
+     "chgPct": 4.996817313812858
     },
     {
      "company": "ANLON",
-     "last": 810,
+     "last": 794,
      "yHigh": 858.1,
      "prevHigh": 821,
      "date": "—",
-     "chgPct": -0.9779951100244498
+     "chgPct": -2.93398533007335
     },
     {
      "company": "ANSALBU",
-     "last": 101.69,
+     "last": 101.88,
      "yHigh": 107.5,
      "prevHigh": 92.4,
      "date": "—",
-     "chgPct": 12.838437638703951
+     "chgPct": 13.049267643142477
     },
     {
      "company": "APOORVA",
-     "last": 34.5,
+     "last": 34.49,
      "yHigh": 35.58,
      "prevHigh": 33.92,
      "date": "—",
-     "chgPct": 1.7999409855414576
+     "chgPct": 1.7704337562702863
     },
     {
      "company": "ARCIL",
-     "last": 147.37,
-     "yHigh": 149,
+     "last": 148.24,
+     "yHigh": 149.2,
      "prevHigh": 141.5,
      "date": "—",
-     "chgPct": 6.090274278309697
+     "chgPct": 6.7165790799798435
     },
     {
      "company": "AUSTENG",
-     "last": 170.24,
+     "last": 169,
      "yHigh": 178,
      "prevHigh": 162.85,
      "date": "—",
-     "chgPct": 4.537918329751305
+     "chgPct": 3.776481424623887
     },
     {
      "company": "AVTNPL",
-     "last": 97.45,
+     "last": 96.44,
      "yHigh": 102,
      "prevHigh": 100,
      "date": "—",
-     "chgPct": -0.8243435782617545
+     "chgPct": -1.8522287807856708
     },
     {
      "company": "BHADORA",
-     "last": 125.5,
+     "last": 130,
      "yHigh": 131.1,
      "prevHigh": 130.95,
      "date": "—",
-     "chgPct": -1.3364779874213837
+     "chgPct": 2.20125786163522
     },
     {
      "company": "BLUESTONE",
-     "last": 853.7,
+     "last": 831.4,
      "yHigh": 969.9,
      "prevHigh": 950,
      "date": "—",
-     "chgPct": -8.243766122098023
+     "chgPct": -10.640584694754944
     },
     {
      "company": "CENTUM",
-     "last": 4862.2,
+     "last": 4860.4,
      "yHigh": 4999.5,
      "prevHigh": 4894.8,
      "date": "—",
-     "chgPct": 0.07203572972194208
+     "chgPct": 0.03498878300780044
     },
     {
      "company": "CORDSCABLE",
-     "last": 391.5,
+     "last": 391.85,
      "yHigh": 406.95,
      "prevHigh": 394.9,
      "date": "—",
-     "chgPct": 2.2460172368764693
+     "chgPct": 2.3374249151214417
     },
     {
      "company": "CREDENT",
-     "last": 398.05,
+     "last": 397.95,
      "yHigh": 403.95,
      "prevHigh": 380,
      "date": "—",
-     "chgPct": 5.850285866241191
+     "chgPct": 5.823693657758277
     },
     {
      "company": "DICIND",
-     "last": 665,
+     "last": 661.6,
      "yHigh": 674,
      "prevHigh": 667.95,
      "date": "—",
-     "chgPct": 1.6431027894535728
+     "chgPct": 1.123423767672908
     },
     {
      "company": "DOLPHIN",
-     "last": 729,
+     "last": 714.55,
      "yHigh": 749.5,
      "prevHigh": 745,
      "date": "—",
-     "chgPct": 0.648902388513047
+     "chgPct": -1.3461272953196188
     },
     {
      "company": "DYNAMATECH",
-     "last": 12674,
+     "last": 12620,
      "yHigh": 12966,
      "prevHigh": 12875,
      "date": "—",
-     "chgPct": 1.2623841482901885
+     "chgPct": 0.8309364014062001
     },
     {
      "company": "EBGNG",
-     "last": 722.35,
+     "last": 716,
      "yHigh": 730,
      "prevHigh": 712,
      "date": "—",
-     "chgPct": 4.340603784486494
+     "chgPct": 3.4233713707930087
     },
     {
      "company": "EDELWEISS",
-     "last": 142.24,
+     "last": 141.6,
      "yHigh": 146,
      "prevHigh": 144.19,
      "date": "—",
-     "chgPct": 0.7650892604137149
+     "chgPct": 0.3117030320204024
     },
     {
      "company": "ENGINERSIN",
-     "last": 305.55,
+     "last": 304.05,
      "yHigh": 309.5,
      "prevHigh": 304.95,
      "date": "—",
-     "chgPct": 0.991571641051066
+     "chgPct": 0.495785820525533
     },
     {
      "company": "FILATEX",
-     "last": 108.7,
+     "last": 110.05,
      "yHigh": 111.25,
      "prevHigh": 105.75,
      "date": "—",
-     "chgPct": 7.549223310576828
+     "chgPct": 8.884931235777184
     },
     {
      "company": "FONEBOX",
@@ -2463,11 +2463,11 @@
     },
     {
      "company": "GCSL",
-     "last": 646.7,
+     "last": 642.85,
      "yHigh": 649,
      "prevHigh": 645.25,
      "date": "—",
-     "chgPct": 1.1733416770963705
+     "chgPct": 0.5710262828535669
     },
     {
      "company": "GFSTEELS",
@@ -2487,11 +2487,11 @@
     },
     {
      "company": "GNFC",
-     "last": 620.5,
+     "last": 623.2,
      "yHigh": 626,
      "prevHigh": 619,
      "date": "—",
-     "chgPct": 3.6412226490729913
+     "chgPct": 4.092199766160014
     },
     {
      "company": "GREENCHEF",
@@ -2503,19 +2503,19 @@
     },
     {
      "company": "GROWWNET",
-     "last": 11.1,
+     "last": 11.14,
      "yHigh": 11.57,
      "prevHigh": 11.4,
      "date": "—",
-     "chgPct": -0.09000900090009001
+     "chgPct": 0.27002700270027
     },
     {
      "company": "HEALTHCARE",
-     "last": 21.91,
+     "last": 22.01,
      "yHigh": 23.8,
      "prevHigh": 22.5,
      "date": "—",
-     "chgPct": 0.045662100456621
+     "chgPct": 0.502283105022831
     },
     {
      "company": "HEROMOTORS",
@@ -2535,11 +2535,11 @@
     },
     {
      "company": "ICIL",
-     "last": 471.6,
+     "last": 470.7,
      "yHigh": 485.95,
      "prevHigh": 474.65,
      "date": "—",
-     "chgPct": 5.0568055246157275
+     "chgPct": 4.85631543773669
     }
    ],
    "defaultSort": "chgPct"
@@ -2584,27 +2584,35 @@
    "rows": [
     {
      "company": "ABLBL",
-     "last": 80,
+     "last": 79.99,
      "yHigh": 79.8,
      "prevHigh": 80.55,
      "date": "—",
-     "chgPct": -0.9165221699281645
+     "chgPct": -0.9289076046569235
     },
     {
      "company": "ASMS",
-     "last": 6.59,
+     "last": 6.53,
      "yHigh": 6.48,
      "prevHigh": 6.52,
      "date": "—",
-     "chgPct": -0.30257186081694404
+     "chgPct": -1.2102874432677762
     },
     {
      "company": "BRITANNIA",
-     "last": 4946.5,
+     "last": 4950,
      "yHigh": 4905,
      "prevHigh": 4915,
      "date": "—",
-     "chgPct": 0.5795038633590891
+     "chgPct": 0.6506710044733631
+    },
+    {
+     "company": "CHEMCRUX",
+     "last": 78,
+     "yHigh": 77.5,
+     "prevHigh": 78,
+     "date": "—",
+     "chgPct": -0.7254677357770142
     },
     {
      "company": "DHTL",
@@ -2616,27 +2624,27 @@
     },
     {
      "company": "DUGLOBAL",
-     "last": 19.8,
+     "last": 21.2,
      "yHigh": 18.5,
      "prevHigh": 19.3,
      "date": "—",
-     "chgPct": 2.0618556701030926
+     "chgPct": 9.278350515463918
     },
     {
      "company": "GSMFOILS",
-     "last": 77.5,
+     "last": 78.8,
      "yHigh": 77.05,
      "prevHigh": 79.7,
      "date": "—",
-     "chgPct": -4.438964241676942
+     "chgPct": -2.8360049321824907
     },
     {
      "company": "HDIL",
-     "last": 1.45,
+     "last": 1.46,
      "yHigh": 1.44,
      "prevHigh": 1.44,
      "date": "—",
-     "chgPct": 0
+     "chgPct": 0.6896551724137931
     },
     {
      "company": "HEROMOTORS",
@@ -2648,11 +2656,11 @@
     },
     {
      "company": "INDOTHAI",
-     "last": 30.84,
+     "last": 30.9,
      "yHigh": 30.77,
      "prevHigh": 32.38,
      "date": "—",
-     "chgPct": -4.756022235948116
+     "chgPct": -4.570722668313774
     },
     {
      "company": "ITTL",
@@ -2663,12 +2671,20 @@
      "chgPct": -1.9862490450725745
     },
     {
+     "company": "JENBURPH",
+     "last": 963.4,
+     "yHigh": 930,
+     "prevHigh": 949.8,
+     "date": "—",
+     "chgPct": 0.6477225240284162
+    },
+    {
      "company": "JIWANRAM",
-     "last": 4.8,
+     "last": 4.4,
      "yHigh": 4,
      "prevHigh": 4,
      "date": "—",
-     "chgPct": 20
+     "chgPct": 10
     },
     {
      "company": "JSIPL",
@@ -2680,11 +2696,11 @@
     },
     {
      "company": "K2INFRA",
-     "last": 43.6,
+     "last": 42.5,
      "yHigh": 40.2,
      "prevHigh": 40.8,
      "date": "—",
-     "chgPct": 1.8691588785046729
+     "chgPct": -0.7009345794392523
     },
     {
      "company": "KDL",
@@ -2696,19 +2712,19 @@
     },
     {
      "company": "LANDSMILL",
-     "last": 0.54,
+     "last": 0.55,
      "yHigh": 0.54,
      "prevHigh": 0.54,
      "date": "—",
-     "chgPct": 0
+     "chgPct": 1.8518518518518519
     },
     {
      "company": "LOTUSCHO",
-     "last": 575,
+     "last": 573.9,
      "yHigh": 533.7,
      "prevHigh": 550,
      "date": "—",
-     "chgPct": -1.9440654843110505
+     "chgPct": -2.131650750341064
     },
     {
      "company": "MADHURKNIT",
@@ -2720,11 +2736,11 @@
     },
     {
      "company": "MANIKA",
-     "last": 42.5,
+     "last": 42.53,
      "yHigh": 39.71,
      "prevHigh": 40.85,
      "date": "—",
-     "chgPct": 1.698971045704714
+     "chgPct": 1.7707585546781526
     },
     {
      "company": "MANILAM",
@@ -2736,11 +2752,11 @@
     },
     {
      "company": "NUCLEUS",
-     "last": 685,
+     "last": 684.6,
      "yHigh": 681.05,
      "prevHigh": 681.05,
      "date": "—",
-     "chgPct": -0.13849405933377068
+     "chgPct": -0.1968073474743057
     },
     {
      "company": "PULZ",
@@ -2752,11 +2768,19 @@
     },
     {
      "company": "RAJESHEXPO",
-     "last": 69,
+     "last": 68.5,
      "yHigh": 66.61,
      "prevHigh": 68.5,
      "date": "—",
-     "chgPct": 0.3782368344486471
+     "chgPct": -0.3491416933372127
+    },
+    {
+     "company": "READYMIX",
+     "last": 67,
+     "yHigh": 67,
+     "prevHigh": 67,
+     "date": "—",
+     "chgPct": -4.2172980700500355
     },
     {
      "company": "RELINFRA",
@@ -2768,11 +2792,11 @@
     },
     {
      "company": "REXPRO",
-     "last": 34.7,
+     "last": 36.6,
      "yHigh": 34.7,
      "prevHigh": 35.15,
      "date": "—",
-     "chgPct": -3.8781163434903045
+     "chgPct": 1.3850415512465375
     },
     {
      "company": "RHETAN",
@@ -2784,19 +2808,43 @@
     },
     {
      "company": "RHFL",
-     "last": 1.69,
+     "last": 1.7,
      "yHigh": 1.67,
      "prevHigh": 1.68,
      "date": "—",
-     "chgPct": -0.5882352941176471
+     "chgPct": 0
+    },
+    {
+     "company": "SAHAJSOLAR",
+     "last": 90,
+     "yHigh": 90,
+     "prevHigh": 90,
+     "date": "—",
+     "chgPct": -0.22172949002217296
+    },
+    {
+     "company": "SANOFI",
+     "last": 3055.3,
+     "yHigh": 3053,
+     "prevHigh": 3053,
+     "date": "—",
+     "chgPct": -0.11442395710736236
     },
     {
      "company": "SIMBHALS",
-     "last": 6.52,
+     "last": 6.4,
      "yHigh": 6.31,
      "prevHigh": 6.41,
      "date": "—",
-     "chgPct": 1.71606864274571
+     "chgPct": -0.15600624024961
+    },
+    {
+     "company": "SIMPLXREA",
+     "last": 119.25,
+     "yHigh": 114.17,
+     "prevHigh": 116.1,
+     "date": "—",
+     "chgPct": -0.7655820920362819
     },
     {
      "company": "SITINET",
@@ -2808,35 +2856,35 @@
     },
     {
      "company": "SSRETAIL",
-     "last": 692.6,
+     "last": 710.2,
      "yHigh": 603.05,
      "prevHigh": 0,
      "date": "—",
-     "chgPct": 10.993589743589743
+     "chgPct": 13.814102564102564
     },
     {
      "company": "TICL",
-     "last": 5.7,
+     "last": 5.65,
      "yHigh": 5.33,
      "prevHigh": 5.5,
      "date": "—",
-     "chgPct": 2.5179856115107913
+     "chgPct": 1.618705035971223
     },
     {
      "company": "TVSHLTD",
-     "last": 12610,
+     "last": 12628,
      "yHigh": 12361,
      "prevHigh": 12376,
      "date": "—",
-     "chgPct": 0.534162481065136
+     "chgPct": 0.6776688192617396
     },
     {
      "company": "VESUVIUS",
-     "last": 396.45,
+     "last": 396.6,
      "yHigh": 391,
      "prevHigh": 391.6,
      "date": "—",
-     "chgPct": 0.9420751113940166
+     "chgPct": 0.98026734563972
     },
     {
      "company": "VINNY",
@@ -2853,22 +2901,6 @@
      "prevHigh": 76.65,
      "date": "—",
      "chgPct": -4.957599478147423
-    },
-    {
-     "company": "VISAMAN",
-     "last": 33.4,
-     "yHigh": 33.4,
-     "prevHigh": 35.15,
-     "date": "—",
-     "chgPct": -4.978662873399715
-    },
-    {
-     "company": "VOLTAS",
-     "last": 1111.9,
-     "yHigh": 1090.8,
-     "prevHigh": 1100,
-     "date": "—",
-     "chgPct": 1.008357558139535
     }
    ],
    "defaultSort": "chgPct"
@@ -2924,32 +2956,32 @@
     {
      "contract": "NIFTY 29-Sep-2026",
      "expiry": "29-Sep-2026",
-     "last": 23445.8,
-     "chgPct": 0.22,
+     "last": 23470.5,
+     "chgPct": 0.32,
      "open": 23381,
-     "high": 23460.6,
+     "high": 23484.1,
      "low": 23371,
-     "oi": 249546
+     "oi": 247855
     },
     {
      "contract": "NIFTY 27-Oct-2026",
      "expiry": "27-Oct-2026",
-     "last": 23542.5,
-     "chgPct": 0.17,
+     "last": 23571,
+     "chgPct": 0.3,
      "open": 23501.6,
-     "high": 23561.5,
+     "high": 23580,
      "low": 23468,
-     "oi": 81315
+     "oi": 81964
     },
     {
      "contract": "NIFTY 23-Nov-2026",
      "expiry": "23-Nov-2026",
-     "last": 23648.1,
-     "chgPct": 0.19,
+     "last": 23672.1,
+     "chgPct": 0.29,
      "open": 23648.9,
-     "high": 23666,
+     "high": 23691,
      "low": 23579.6,
-     "oi": 17288
+     "oi": 17306
     }
    ],
    "defaultSort": "expiry"
@@ -4290,6 +4322,12 @@
      "purpose": "Financial Results/Other business matters"
     },
     {
+     "symbol": "TVTODAY",
+     "company": "TV Today Network Limited",
+     "date": "02-Nov-2026",
+     "purpose": "Financial Results"
+    },
+    {
      "symbol": "DABUR",
      "company": "Dabur India Limited",
      "date": "04-Nov-2026",
@@ -4425,13 +4463,13 @@
    ],
    "rows": [
     {
-     "company": "Elevate Campuses Limited",
-     "symbol": "ELEVATE",
+     "company": "ArMee Infotech Limited",
+     "symbol": "ARMEE",
      "series": "EQ",
      "open": "23-Sep-2026",
      "close": "25-Sep-2026",
-     "band": "Rs.343 to Rs.362",
-     "size": "33673468"
+     "band": "Rs.350 to Rs.375",
+     "size": "7430356"
     },
     {
      "company": "Adroit Industries (India) Limited",
@@ -4443,6 +4481,15 @@
      "size": "7872900"
     },
     {
+     "company": "Elevate Campuses Limited",
+     "symbol": "ELEVATE",
+     "series": "EQ",
+     "open": "23-Sep-2026",
+     "close": "25-Sep-2026",
+     "band": "Rs.343 to Rs.362",
+     "size": "33673468"
+    },
+    {
      "company": "Swastika Infra Limited",
      "symbol": "SWASTIKAIN",
      "series": "EQ",
@@ -4450,15 +4497,6 @@
      "close": "25-Sep-2026",
      "band": "Rs.175 to Rs.185",
      "size": "6335001"
-    },
-    {
-     "company": "ArMee Infotech Limited",
-     "symbol": "ARMEE",
-     "series": "EQ",
-     "open": "23-Sep-2026",
-     "close": "25-Sep-2026",
-     "band": "Rs.350 to Rs.375",
-     "size": "7430356"
     },
     {
      "company": "Varmora Granito Limited",
@@ -4477,6 +4515,15 @@
      "close": "28-Sep-2026",
      "band": "Rs.32 to Rs.34",
      "size": "334869200"
+    },
+    {
+     "company": "A-One Steels India Limited",
+     "symbol": "AONESTEELS",
+     "series": "EQ",
+     "open": "24-Sep-2026",
+     "close": "28-Sep-2026",
+     "band": "Rs.385 to Rs.405",
+     "size": "10525168"
     },
     {
      "company": "Himalayan Solar Limited",
@@ -4528,123 +4575,123 @@
    "rows": [
     {
      "exchange": "NSE",
-     "company": "Mazagon Dock Shipbuilders Limited",
-     "subject": "Change in Director(s)",
-     "date": "23-Sep-2026 11:57:57"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Jindal Stainless Limited",
-     "subject": "Press Release",
-     "date": "23-Sep-2026 11:57:08"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Happiest Minds Technologies Limited",
+     "company": "Ecos (India) Mobility & Hospitality Limited",
      "subject": "Trading Window",
-     "date": "23-Sep-2026 11:56:17"
+     "date": "23-Sep-2026 13:02:19"
     },
     {
      "exchange": "NSE",
-     "company": "Oswal Pumps Limited",
-     "subject": "Credit Rating- Revision",
-     "date": "23-Sep-2026 11:56:10"
-    },
-    {
-     "exchange": "NSE",
-     "company": "WESTLIFE FOODWORLD LIMITED",
-     "subject": "Trading Window",
-     "date": "23-Sep-2026 11:55:13"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Brand Concepts Limited",
-     "subject": "Trading Window",
-     "date": "23-Sep-2026 11:54:53"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Rallis India Limited",
-     "subject": "Credit Rating",
-     "date": "23-Sep-2026 11:45:47"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Fairchem Organics Limited",
-     "subject": "Trading Window",
-     "date": "23-Sep-2026 11:45:28"
-    },
-    {
-     "exchange": "NSE",
-     "company": "BLS International Services Limited",
+     "company": "Euro Pratik Sales Limited",
      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "23-Sep-2026 11:42:28"
+     "date": "23-Sep-2026 13:02:09"
     },
     {
      "exchange": "NSE",
-     "company": "Anant Raj Limited",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "23-Sep-2026 11:42:15"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Univastu India Limited",
-     "subject": "Shareholders meeting",
-     "date": "23-Sep-2026 11:41:05"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Mahindra Logistics Limited",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "date": "23-Sep-2026 11:40:44"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Automotive Stampings and Assemblies Limited",
+     "company": "Patanjali Foods Limited",
      "subject": "Trading Window",
-     "date": "23-Sep-2026 11:36:53"
+     "date": "23-Sep-2026 12:59:05"
     },
     {
      "exchange": "NSE",
-     "company": "LMW Limited",
-     "subject": "Trading Window",
-     "date": "23-Sep-2026 11:34:49"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Supriya Lifescience Limited",
-     "subject": "General Updates",
-     "date": "23-Sep-2026 11:32:41"
-    },
-    {
-     "exchange": "NSE",
-     "company": "TruAlt Bioenergy Limited",
+     "company": "T T Limited",
      "subject": "Updates",
-     "date": "23-Sep-2026 11:29:55"
+     "date": "23-Sep-2026 12:58:41"
     },
     {
      "exchange": "NSE",
-     "company": "Salasar Techno Engineering Limited",
-     "subject": "Credit Rating- Revision",
-     "date": "23-Sep-2026 11:26:53"
+     "company": "Piramal Finance Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "23-Sep-2026 12:57:50"
     },
     {
      "exchange": "NSE",
-     "company": "Shreeji Shipping Global Limited",
-     "subject": "Trading Window",
-     "date": "23-Sep-2026 11:24:36"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Amj Land Holdings Limited",
-     "subject": "Copy of Newspaper Publication",
-     "date": "23-Sep-2026 11:23:41"
-    },
-    {
-     "exchange": "NSE",
-     "company": "Samvardhana Motherson International Limited",
+     "company": "Polycab India Limited",
      "subject": "General Updates",
-     "date": "23-Sep-2026 11:22:26"
+     "date": "23-Sep-2026 12:53:38"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Vakrangee Limited",
+     "subject": "Shareholders meeting",
+     "date": "23-Sep-2026 12:51:57"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Prostarm Info Systems Limited",
+     "subject": "Trading Window",
+     "date": "23-Sep-2026 12:50:44"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Dev Accelerator Limited",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "date": "23-Sep-2026 12:50:20"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Euro Pratik Sales Limited",
+     "subject": "Investor Presentation",
+     "date": "23-Sep-2026 12:49:38"
+    },
+    {
+     "exchange": "NSE",
+     "company": "RMC Switchgears Limited",
+     "subject": "Trading Window",
+     "date": "23-Sep-2026 12:49:33"
+    },
+    {
+     "exchange": "NSE",
+     "company": "PNB Gilts Limited",
+     "subject": "Trading Window",
+     "date": "23-Sep-2026 12:47:54"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Subex Limited",
+     "subject": "Awarding of order(s)/contract(s)",
+     "date": "23-Sep-2026 12:47:11"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Bajaj Healthcare Limited",
+     "subject": "Trading Window",
+     "date": "23-Sep-2026 12:46:57"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Baazar Style Retail Limited",
+     "subject": "Updates",
+     "date": "23-Sep-2026 12:46:09"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Pilani Investment and Industries Corporation Limited",
+     "subject": "Trading Window",
+     "date": "23-Sep-2026 12:46:03"
+    },
+    {
+     "exchange": "NSE",
+     "company": "The South Indian Bank Limited",
+     "subject": "Commencement of commercial production/operations",
+     "date": "23-Sep-2026 12:45:09"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Bharat Forge Limited",
+     "subject": "Credit Rating",
+     "date": "23-Sep-2026 12:43:06"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Baid Finserv Limited",
+     "subject": "Trading Window",
+     "date": "23-Sep-2026 12:42:14"
+    },
+    {
+     "exchange": "NSE",
+     "company": "Concord Enviro Systems Limited",
+     "subject": "Shareholders meeting",
+     "date": "23-Sep-2026 12:42:12"
     }
    ]
   },
@@ -4737,35 +4784,35 @@
     {
      "country": "United Kingdom",
      "index": "FTSE 100",
-     "date": "22-Sep-2026",
-     "value": 10708.33,
-     "prev": 10739.01,
-     "high": 10771.64,
-     "low": 10708.33,
-     "change": -30.68,
-     "chgPct": -0.29
+     "date": "23-Sep-2026",
+     "value": 10745.47,
+     "prev": 10708.33,
+     "high": 10762.52,
+     "low": 10708.79,
+     "change": 37.14,
+     "chgPct": 0.35
     },
     {
      "country": "Germany",
      "index": "DAX",
-     "date": "22-Sep-2026",
-     "value": 25578.85,
+     "date": "23-Sep-2026",
+     "value": 25593.66,
      "prev": 25578.85,
-     "high": 0,
-     "low": 0,
-     "change": 0,
-     "chgPct": 0
+     "high": 25729.05,
+     "low": 25593.15,
+     "change": 14.81,
+     "chgPct": 0.06
     },
     {
      "country": "France",
      "index": "CAC 40",
-     "date": "22-Sep-2026",
-     "value": 8154.91,
+     "date": "23-Sep-2026",
+     "value": 8182.84,
      "prev": 8154.91,
-     "high": 0,
-     "low": 0,
-     "change": 0,
-     "chgPct": 0
+     "high": 8199.66,
+     "low": 8182.1,
+     "change": 27.93,
+     "chgPct": 0.34
     },
     {
      "country": "Japan",
@@ -4782,34 +4829,34 @@
      "country": "Hong Kong",
      "index": "Hang Seng",
      "date": "23-Sep-2026",
-     "value": 24832.79,
+     "value": 24825.35,
      "prev": 25087.75,
      "high": 25072.25,
-     "low": 24822.66,
-     "change": -254.96,
-     "chgPct": -1.02
+     "low": 24814.01,
+     "change": -262.4,
+     "chgPct": -1.05
     },
     {
      "country": "China",
      "index": "Shanghai Composite",
      "date": "23-Sep-2026",
-     "value": 3940.519,
+     "value": 3936.52,
      "prev": 3952.128,
      "high": 3951.523,
      "low": 3934.459,
-     "change": -11.609,
-     "chgPct": -0.29
+     "change": -15.608,
+     "chgPct": -0.39
     },
     {
      "country": "South Korea",
      "index": "KOSPI",
      "date": "23-Sep-2026",
-     "value": 7059.58,
+     "value": 7080.92,
      "prev": 7017.91,
      "high": 7153.99,
      "low": 7014.98,
-     "change": 41.67,
-     "chgPct": 0.59
+     "change": 63.01,
+     "chgPct": 0.9
     },
     {
      "country": "Australia",
@@ -4838,33 +4885,33 @@
      "index": "Bovespa",
      "date": "22-Sep-2026",
      "value": 187422.92,
-     "prev": 186595.6,
-     "high": 187671.74,
-     "low": 184976.81,
-     "change": 827.32,
-     "chgPct": 0.44
+     "prev": 187422.92,
+     "high": 0,
+     "low": 0,
+     "change": 0,
+     "chgPct": 0
     },
     {
      "country": "India",
      "index": "NIFTY 50",
      "date": "23-Sep-2026",
-     "value": 23441.25,
+     "value": 23445.65,
      "prev": 23329,
-     "high": 23445.9,
+     "high": 23466.9,
      "low": 23349.55,
-     "change": 112.25,
-     "chgPct": 0.48
+     "change": 116.65,
+     "chgPct": 0.5
     },
     {
      "country": "India",
      "index": "NIFTY Bank",
      "date": "23-Sep-2026",
-     "value": 56578,
+     "value": 56549.95,
      "prev": 56215.55,
      "high": 56623.8,
      "low": 56209.65,
-     "change": 362.45,
-     "chgPct": 0.64
+     "change": 334.4,
+     "chgPct": 0.59
     }
    ],
    "defaultSort": "chgPct",
@@ -4911,7 +4958,7 @@
     {
      "symbol": "INFY",
      "company": "Infosys Ltd",
-     "date": "21-Sep-2026",
+     "date": "22-Sep-2026",
      "ltp": 10.76,
      "prev": 10.76,
      "chgPct": -1.19
@@ -4919,7 +4966,7 @@
     {
      "symbol": "WIT",
      "company": "Wipro Ltd",
-     "date": "21-Sep-2026",
+     "date": "22-Sep-2026",
      "ltp": 1.69,
      "prev": 1.69,
      "chgPct": 1.2
@@ -4927,7 +4974,7 @@
     {
      "symbol": "HDB",
      "company": "HDFC Bank Ltd",
-     "date": "21-Sep-2026",
+     "date": "22-Sep-2026",
      "ltp": 23.41,
      "prev": 23.41,
      "chgPct": -1.01
@@ -4935,7 +4982,7 @@
     {
      "symbol": "IBN",
      "company": "ICICI Bank Ltd",
-     "date": "21-Sep-2026",
+     "date": "22-Sep-2026",
      "ltp": 28.04,
      "prev": 28.04,
      "chgPct": -0.99
@@ -4943,7 +4990,7 @@
     {
      "symbol": "RDY",
      "company": "Dr. Reddy's Laboratories Ltd",
-     "date": "21-Sep-2026",
+     "date": "22-Sep-2026",
      "ltp": 12.57,
      "prev": 12.57,
      "chgPct": 1.37
@@ -4951,7 +4998,7 @@
     {
      "symbol": "SIFY",
      "company": "Sify Technologies Ltd",
-     "date": "21-Sep-2026",
+     "date": "22-Sep-2026",
      "ltp": 13.97,
      "prev": 14.08,
      "chgPct": -0.78
@@ -4959,7 +5006,7 @@
     {
      "symbol": "MMYT",
      "company": "MakeMyTrip Ltd",
-     "date": "21-Sep-2026",
+     "date": "22-Sep-2026",
      "ltp": 48.34,
      "prev": 48.34,
      "chgPct": 0.77
@@ -4967,7 +5014,7 @@
     {
      "symbol": "YTRA",
      "company": "Yatra Online Inc",
-     "date": "21-Sep-2026",
+     "date": "22-Sep-2026",
      "ltp": 1.05,
      "prev": 1.03,
      "chgPct": 1.94
@@ -5023,64 +5070,64 @@
      "commodity": "Gold",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 4364.2,
+     "last": 4362.7,
      "prev": 4376.4,
-     "change": -12.2,
-     "chgPct": -0.28
+     "change": -13.7,
+     "chgPct": -0.31
     },
     {
      "commodity": "Silver",
      "contract": "Dec'26",
      "venue": "COMEX",
-     "last": 66.685,
+     "last": 66.295,
      "prev": 66.53,
-     "change": 0.155,
-     "chgPct": 0.23
+     "change": -0.235,
+     "chgPct": -0.35
     },
     {
      "commodity": "Copper",
      "contract": "Dec'26",
      "venue": "CEC:Commodities Exchange Centre",
-     "last": 6.8095,
+     "last": 6.8185,
      "prev": 6.836,
-     "change": -0.0265,
-     "chgPct": -0.39
+     "change": -0.0175,
+     "chgPct": -0.26
     },
     {
      "commodity": "Platinum",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 1813,
+     "last": 1803.1,
      "prev": 1825.5,
-     "change": -12.5,
-     "chgPct": -0.68
+     "change": -22.4,
+     "chgPct": -1.23
     },
     {
      "commodity": "WTI Crude Oil",
      "contract": "Nov'26",
      "venue": "WTI Crude",
-     "last": 89.49,
+     "last": 89.97,
      "prev": 90.52,
-     "change": -1.03,
-     "chgPct": -1.14
+     "change": -0.55,
+     "chgPct": -0.61
     },
     {
      "commodity": "Brent Crude",
      "contract": "Nov'26",
      "venue": "NYMEX Brent Crude",
-     "last": 98.67,
+     "last": 99.39,
      "prev": 99.25,
-     "change": -0.58,
-     "chgPct": -0.58
+     "change": 0.14,
+     "chgPct": 0.14
     },
     {
      "commodity": "Natural Gas",
      "contract": "Oct'26",
      "venue": "New York Mercantile Exchange",
-     "last": 3.023,
+     "last": 3.01,
      "prev": 2.965,
-     "change": 0.058,
-     "chgPct": 1.96
+     "change": 0.045,
+     "chgPct": 1.52
     }
    ],
    "defaultSort": "chgPct",
@@ -8226,7 +8273,7 @@
     }
    ],
    "defaultSort": "total",
-   "note": "This table could not be refreshed on the latest build. Figures are as last retrieved on 23-Sep-2026 11:47.",
+   "note": "This table could not be refreshed on the latest build. Figures are as last retrieved on 23-Sep-2026 12:01.",
    "stale": true
   }
  ]
