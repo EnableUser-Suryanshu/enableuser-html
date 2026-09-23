@@ -82,8 +82,10 @@ export default async function PolicyPage({ params }: { params: Promise<{ slug: s
                 ))}
               </nav>
             )}
-            <PolicyBody blocks={CHARTERS.has(slug) ? trimComplaints(policy.blocks) : policy.blocks} />
+            {/* On a charter the complaints data leads, as it does on the
+                published page, and the charter itself follows. */}
             {CHARTERS.has(slug) && <ComplaintsData report={await getComplaintsReport()} />}
+            <PolicyBody blocks={CHARTERS.has(slug) ? trimComplaints(policy.blocks) : policy.blocks} />
 
             <p className="policy-foot">
               This document is published by Kalpataru Multiplier Ltd in accordance with SEBI and
