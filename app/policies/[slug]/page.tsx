@@ -124,6 +124,8 @@ export default async function PolicyPage({ params }: { params: Promise<{ slug: s
                 published page, and the charter itself follows. */}
             {CHARTERS.has(slug) && <ComplaintsData report={await getComplaintsReport()} />}
             <PolicyBody
+              /* Only this charter's published version carries anchors. */
+              links={slug === 'investor-charter-depository'}
               blocks={
                 CHARTERS.has(slug)
                   ? withLiveTimelines(
