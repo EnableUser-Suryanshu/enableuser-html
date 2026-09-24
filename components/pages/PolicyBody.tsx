@@ -1,4 +1,36 @@
 import type { PolicyBlock } from '@/lib/policies';
+import { EXT } from '@/lib/links';
+
+/**
+ * Turns the links in a policy's text into real links.
+ *
+ * Opt-in, per document. Only the depository charter passes `links`, because
+ * only its published version carries anchors — the other policies are running
+ * prose where a bare URL is quoted, not linked, and turning those into links
+ * would add something the published document does not have.
+ *
+ * Only [label](href) is matched — nothing is linked that the published page
+ * did not anchor. A bare URL quoted in a sentence stays text, as it does
+ * there, and so does the CDSL complaints address. Where the published anchor
+ * showed the URL as its own text, the generator writes both sides the same.
+ */
+const LINK = /\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/[^\s)]+)\)/g;
+
+function RichText({ text }: { text: string }) {
+  const out: React.ReactNode[] = [];
+  let last = 0;
+  for (const m of text.matchAll(LINK)) {
+    const at = m.index ?? 0;
+    if (at > last) out.push(text.slice(last, at));
+    const [full, label, href] = m;
+    out.push(
+      <a key={at} href={href} {...(href.startsWith('http') ? EXT : {})}>{label}</a>,
+    );
+    last = at + full.length;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return <>{out}</>;
+}
 
 /** Counts, "Nil", "NA" and the like — centred and given tabular figures. */
 const NUMERIC = /^(?:[\d.,%+/-]+|nil|na|n\.a\.|—|-)?$/i;
@@ -17,7 +49,12 @@ const isDataGrid = (rows: TableRows) =>
  * Renders a migrated policy document. Consecutive `li` blocks are gathered into
  * a single list; everything else maps straight onto a heading, paragraph or table.
  */
-export default function PolicyBody({ blocks }: { blocks: PolicyBlock[] }) {
+export default function PolicyBody(
+  { blocks, links = false }: { blocks: PolicyBlock[]; links?: boolean },
+) {
+  const T = ({ text }: { text: string }) =>
+    links ? <RichText text={text} /> : <>{text}</>;
+
   const out: React.ReactNode[] = [];
   let list: string[] = [];
 
@@ -25,7 +62,7 @@ export default function PolicyBody({ blocks }: { blocks: PolicyBlock[] }) {
     if (!list.length) return;
     out.push(
       <ul className="policy-list" key={`ul-${out.length}`}>
-        {list.map((text, i) => <li key={i}>{text}</li>)}
+        {list.map((text, i) => <li key={i}><T text={text} /></li>)}
       </ul>,
     );
     list = [];
@@ -36,7 +73,7 @@ export default function PolicyBody({ blocks }: { blocks: PolicyBlock[] }) {
     flush();
 
     if (b.t === 'p') {
-      out.push(<p key={i}>{b.text}</p>);
+      out.push(<p key={i}><T text={b.text} /></p>);
     } else if (b.t === 'h') {
       const Tag = (b.level === 2 ? 'h2' : b.level === 3 ? 'h3' : 'h4') as 'h2' | 'h3' | 'h4';
       out.push(<Tag key={i} className={`policy-h policy-h${b.level}`}>{b.text}</Tag>);
@@ -59,7 +96,7 @@ export default function PolicyBody({ blocks }: { blocks: PolicyBlock[] }) {
           <table className={cls}>
             {headed && (
               <thead>
-                <tr>{first.map((c, j) => <th key={j} scope="col">{c.text}</th>)}</tr>
+                <tr>{first.map((c, j) => <th key={j} scope="col"><T text={c.text} /></th>)}</tr>
               </thead>
             )}
             <tbody>
@@ -73,9 +110,10 @@ export default function PolicyBody({ blocks }: { blocks: PolicyBlock[] }) {
                         'data-label': labels[j],
                         className: grid && NUMERIC.test(c.text) ? 'is-num' : undefined,
                       };
+                      const content = <T text={c.text} />;
                       return c.head
-                        ? <th key={j} scope="row" {...props}>{c.text}</th>
-                        : <td key={j} {...props}>{c.text}</td>;
+                        ? <th key={j} scope="row" {...props}>{content}</th>
+                        : <td key={j} {...props}>{content}</td>;
                     })}
                   </tr>
                 );

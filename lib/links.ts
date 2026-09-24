@@ -8,8 +8,25 @@ export const PORTALS = {
   backOfficeLogin: 'https://kml-backoffice.kalpatarumulti.com/Account/Login',
   webTrading: 'https://trading.kalpatarumulti.com:28001/',
   mutualFund: 'https://mf.kalpatarumulti.com/login',
-  reKyc:
-    'https://re-kyc.kalpatarumulti.com/v1/company/kalpatarumulti/modification/login',
+  /**
+   * Account modification and Re-KYC run through the back office.
+   *
+   * This previously pointed at re-kyc.kalpatarumulti.com, which has never come
+   * back: DNS resolves and port 443 accepts the connection, but no HTTP
+   * response is ever returned, on plain HTTP as well as HTTPS. Dead since at
+   * least 15-Aug-2026 and re-tested 16-Sep-2026.
+   *
+   * Checking the live site settled where it should point instead — it does not
+   * link to that host anywhere. It routes modification through the back office
+   * and offers a downloadable form, which is what these two now mirror.
+   *
+   * Note that kml-backoffice…/ekyc/modification looks like a route but is not:
+   * it and any made-up path both redirect to /Account/Login with byte-identical
+   * output, so it is a soft-404. The login page is the real destination.
+   */
+  reKyc: 'https://kml-backoffice.kalpatarumulti.com/Account/Login',
+  /** Offline route — the printable account modification form. */
+  modificationForm: '/files/download/modi.pdf',
   // NSE IX (NSE International Exchange) at GIFT City — US stocks from India.
   globalInvesting: 'https://trade.nseixga.com/login?kalpataru',
 } as const;
@@ -18,16 +35,10 @@ export const PORTALS = {
  * The three online account services CDSL/SEBI expect to be linked from the
  * website — raised as audit points 13 and 14 by VRDK & Co on 14-Aug-2026.
  *
- * These match how the live site (kalpatarumulti.com) actually implements them:
- * its "Account Closure" and "Account Modification" links both point at the
- * back office, and its Re-KYC tile points at the modification portal. There is
- * no separate nomination portal, so nomination runs through the back office
- * too — `/account-services` documents the form route alongside it.
- *
- * NOTE: re-kyc.kalpatarumulti.com resolves but times out on connection as of
- * 15-Aug-2026, on the live site as well as here. It is kept as the primary
- * Re-KYC link to match the live site, with the back office offered as the
- * working alternative. Confirm the host is reachable with the hosting vendor.
+ * All three run through the back office, which is how the live site
+ * (kalpatarumulti.com) implements them — there is no separate nomination or
+ * modification portal. `/account-services` documents the printable form route
+ * alongside each one for anyone who would rather post it in.
  */
 export const SERVICE_PORTALS: Record<'nomination' | 'reKyc' | 'closure', string | null> = {
   nomination: PORTALS.backOfficeLogin,
@@ -54,6 +65,9 @@ export const POLICY_LINKS = {
   riskDisclosures:
     'https://www.sebi.gov.in/reports-and-statistics/research/jan-2023/study-analysis-of-profit-and-loss-of-individual-traders-dealing-in-equity-fando-segment_67525.html',
   circulars: '/circulars',
+  /** SEBI's voluntary freeze / block facility — published, but not linked
+   *  from the footer until now. The file already sits in lib/circulars. */
+  voluntaryFreeze: '/files/pdf/voluntary-freeze-block-trading-account.pdf',
   regulatory: '/policies/regulatory-disclosures',
   termsOfUse: '/policies/terms-of-use',
   termsConditions: '/policies/terms-and-conditions',

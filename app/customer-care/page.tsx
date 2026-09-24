@@ -2,13 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import FeedbackForm from '@/components/pages/FeedbackForm';
-import InvestorGrievance from '@/components/InvestorGrievance';
+import EscalationMatrix from '@/components/pages/EscalationMatrix';
 import {
   SUPPORT_TEAMS, TRADING_DESKS, CARE_ESCALATION, EXCHANGE_GRIEVANCE,
 } from '@/lib/pages-data';
 import { PORTALS, EXT } from '@/lib/links';
 import {
-  Headset, Phone, Mail, Person, Shield, ArrowRight, TrendUp, Bank, Swap, IdCard,
+  Headset, Phone, Mail, Person, Shield, TrendUp, Bank, Swap, IdCard,
 } from '@/components/icons';
 
 export const metadata: Metadata = {
@@ -119,36 +119,50 @@ export default function CustomerCarePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          <div className="esc-links" style={{ marginTop: 34 }}>
-            <p className="esc-links-h">
-              <Shield size={17} strokeW={2} /> Still unresolved? Lodge a complaint with the exchange or regulator:
+      {/* Feedback form */}
+      {/* Escalation matrix — the same regulated table as /contact */}
+      <section className="section disclosures watch" aria-labelledby="esc-matrix-h">
+        <div className="container">
+          <EscalationMatrix showRegulators />
+
+          {/* Complaint links — regulatory note below the escalation matrix */}
+          <div className="complaint-note">
+            <p>
+              In absence of response / complaint not addressed to your satisfaction, you may lodge a
+              complaint with CDSL at{' '}
+              <a href="https://www.cdslindia.com/eservices/footer/grievances" {...EXT} className="link-red">
+                https://www.cdslindia.com/eservices/footer/grievances
+              </a>{' '}
+              or SEBI at{' '}
+              <a href="https://scores.sebi.gov.in/" {...EXT} className="link-red">
+                https://scores.sebi.gov.in/
+              </a>
+              . Please quote your Complaint Ref No. while raising your complaint at SEBI SCORES /
+              Depository portal.
             </p>
-            <div className="esc-links-row">
-              {EXCHANGE_GRIEVANCE.map((g) => (
-                <a key={g.name} href={g.href} {...EXT} className="esc-link">
-                  {g.name} <ArrowRight size={13} strokeW={2.4} />
+            <div className="complaint-links">
+              {EXCHANGE_GRIEVANCE.filter(
+                (g) => !g.href.includes('scores.sebi') && !g.href.includes('cdslindia') && !g.href.includes('smartodr'),
+              ).map((g) => (
+                <a key={g.name} href={g.href} {...EXT} className="complaint-pill">
+                  {g.name.replace(' Investor Services', '').replace(' Investor Complaints', '').replace(' Investor Helpline', '')}{' '}
+                  at{' '}
+                  <span className="complaint-url">{g.href.replace('https://', '').replace('http://', '')}</span>
                 </a>
               ))}
             </div>
-            <p className="esc-note">
-              Please quote your Complaint Reference Number when escalating to SEBI SCORES or a
-              depository portal. You can also raise a support ticket through the back office.
-            </p>
           </div>
         </div>
       </section>
 
-      {/* SCORES disclosure — moved off the home page, kept with the rest of
-          the grievance content (audit point 3, VRDK & Co). */}
-      <InvestorGrievance />
-
-      {/* Feedback form */}
       <section className="section mkt-explore watch" id="feedback" aria-labelledby="fb-h">
         <div className="container">
           <div className="fb-wrap">
             <div className="fb-intro">
-              <h2 id="fb-h" className="sec-title">Client Feedback</h2>
+              <h2 id="fb-h" className="sec-title">Raise a Ticket</h2>
               <p className="sec-sub" style={{ marginTop: 16 }}>
                 Compliment, complaint or suggestion — tell us and it reaches the customer-care
                 desk directly. We treat every response as a chance to improve.

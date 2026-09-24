@@ -1,0 +1,192 @@
+{
+  "monthEnding": "July - 2026",
+  "snapshot": [
+    {
+      "source": "Directly from Investors",
+      "carriedForward": "Nil",
+      "received": "Nil",
+      "totalPending": "NA",
+      "resolved": "NA",
+      "pendingUnder3": "NA",
+      "pendingOver3": "NA",
+      "avgResolutionDays": "NA"
+    },
+    {
+      "source": "SEBI (SCORES)",
+      "carriedForward": "Nil",
+      "received": "1",
+      "totalPending": "NA",
+      "resolved": "1",
+      "pendingUnder3": "NA",
+      "pendingOver3": "NA",
+      "avgResolutionDays": "15"
+    },
+    {
+      "source": "Depositories",
+      "carriedForward": "Nil",
+      "received": "Nil",
+      "totalPending": "NA",
+      "resolved": "NA",
+      "pendingUnder3": "NA",
+      "pendingOver3": "NA",
+      "avgResolutionDays": "NA"
+    },
+    {
+      "source": "Other Sources (if any)",
+      "carriedForward": "Nil",
+      "received": "Nil",
+      "totalPending": "NA",
+      "resolved": "NA",
+      "pendingUnder3": "NA",
+      "pendingOver3": "NA",
+      "avgResolutionDays": "NA"
+    },
+    {
+      "source": "Grand Total",
+      "carriedForward": "Nil",
+      "received": "1",
+      "totalPending": "NA",
+      "resolved": "1",
+      "pendingUnder3": "NA",
+      "pendingOver3": "NA",
+      "avgResolutionDays": "15"
+    }
+  ],
+  "monthlyTrend": [
+    {
+      "label": "August-2025",
+      "carriedForward": "0",
+      "received": "0",
+      "resolved": "0",
+      "pending": "0"
+    },
+    {
+      "label": "September-2025",
+      "carriedForward": "0",
+      "received": "0",
+      "resolved": "0",
+      "pending": "0"
+    },
+    {
+      "label": "October-2025",
+      "carriedForward": "0",
+      "received": "0",
+      "resolved": "0",
+      "pending": "0"
+    },
+    {
+      "label": "November-2025",
+      "carriedForward": "0",
+      "received": "0",
+      "resolved": "0",
+      "pending": "0"
+    },
+    {
+      "label": "December-2025",
+      "carriedForward": "0",
+      "received": "0",
+      "resolved": "0",
+      "pending": "0"
+    },
+    {
+      "label": "January-2026",
+      "carriedForward": "0",
+      "received": "1",
+      "resolved": "1",
+      "pending": "0"
+    },
+    {
+      "label": "February-2026",
+      "carriedForward": "0",
+      "received": "0",
+      "resolved": "0",
+      "pending": "0"
+    },
+    {
+      "label": "March-2026",
+      "carriedForward": "0",
+      "received": "0",
+      "resolved": "0",
+      "pending": "0"
+    },
+    {
+      "label": "April-2026",
+      "carriedForward": "0",
+      "received": "0",
+      "resolved": "0",
+      "pending": "0"
+    },
+    {
+      "label": "May-2026",
+      "carriedForward": "0",
+      "received": "0",
+      "resolved": "0",
+      "pending": "0"
+    },
+    {
+      "label": "June-2026",
+      "carriedForward": "0",
+      "received": "0",
+      "resolved": "0",
+      "pending": "0"
+    },
+    {
+      "label": "July-2026",
+      "carriedForward": "0",
+      "received": "0",
+      "resolved": "0",
+      "pending": "0"
+    },
+    {
+      "label": "Grand Total",
+      "carriedForward": "",
+      "received": "1",
+      "resolved": "1",
+      "pending": "0"
+    }
+  ],
+  "annualTrend": [
+    {
+      "label": "2021-22",
+      "carriedForward": "0",
+      "received": "0",
+      "resolved": "0",
+      "pending": "0"
+    },
+    {
+      "label": "2022-23",
+      "carriedForward": "0",
+      "received": "2",
+      "resolved": "2",
+      "pending": "0"
+    },
+    {
+      "label": "2023-24",
+      "carriedForward": "1",
+      "received": "4",
+      "resolved": "4",
+      "pending": "0"
+    },
+    {
+      "label": "2024-25",
+      "carriedForward": "0",
+      "received": "4",
+      "resolved": "4",
+      "pending": "0"
+    },
+    {
+      "label": "2025-26",
+      "carriedForward": "0",
+      "received": "1",
+      "resolved": "1",
+      "pending": "0"
+    },
+    {
+      "label": "Grand Total",
+      "carriedForward": "1",
+      "received": "11",
+      "resolved": "11",
+      "pending": "0"
+    }
+  ]
+}

@@ -6,6 +6,18 @@ import { Shield, Users, Phone, Mail, Search, MapPin } from './icons';
 
 type Tab = 'kmp' | 'ap';
 
+/**
+ * A field the exchange record does not carry. Shown as an em dash, which a
+ * screen reader would otherwise read as a dash or skip entirely — so the real
+ * meaning goes in text only assistive tech sees.
+ */
+const Pending = () => (
+  <span className="ap-na">
+    <span aria-hidden="true">—</span>
+    <span className="sr-only">Not on record</span>
+  </span>
+);
+
 export default function Disclosures() {
   const [tab, setTab] = useState<Tab>('kmp');
   const [query, setQuery] = useState('');
@@ -13,15 +25,14 @@ export default function Disclosures() {
   const filteredAps = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) return AUTHORISED_PERSONS;
-    return AUTHORISED_PERSONS.filter(
-      (ap) =>
-        ap.name.toLowerCase().includes(q) ||
-        ap.city.toLowerCase().includes(q) ||
-        ap.regNo.toLowerCase().includes(q),
+    return AUTHORISED_PERSONS.filter((ap) =>
+      [ap.name, ap.city ?? '', ...ap.codes.map((c) => c.code)]
+        .some((f) => f.toLowerCase().includes(q)),
     );
   }, [query]);
 
-  const cities = new Set(AUTHORISED_PERSONS.map((ap) => ap.city)).size;
+  // Rows whose city is still pending are not counted as a location.
+  const cities = new Set(AUTHORISED_PERSONS.map((ap) => ap.city).filter(Boolean)).size;
 
   return (
     <section className="section disclosures watch" aria-label="Regulatory disclosures">
@@ -88,43 +99,92 @@ export default function Disclosures() {
               </div>
             </div>
             <div className="disc-scroll">
-              <table className="disc-table">
+              <table className="disc-table ap-table">
+                <caption className="sr-only">
+                  Authorised persons: serial number, name and contact number, exchange-wise
+                  authorised person code, the exchanges they are registered on, constitution,
+                  status, registered address split into
+                  address, city, state and pin code, and terminal details giving whether a
+                  terminal is allotted and how many. A field shown as an em dash is not on record.
+                </caption>
+                {/* Explicit column widths. Under table-layout: fixed the
+                    browser takes widths from the first row, and that row is all
+                    colSpan groups here — so without a colgroup the four address
+                    columns split their group's share arbitrarily and the address
+                    itself ends up the narrowest of them. */}
+                <colgroup>
+                  {['3%', '12%', '11%', '8.5%', '8%', '9%', '16%', '7%', '7.5%', '5.5%', '6%', '6.5%']
+                    .map((w, i) => <col key={i} style={{ width: w }} />)}
+                </colgroup>
                 <thead>
+                  {/* The exchange's own column layout, kept exactly: the address
+                      split over four columns and the terminal details over two,
+                      under grouped headings. colSpan/rowSpan plus scope keeps
+                      that grouping readable to a screen reader, not just to the
+                      eye. It fits without a sideways scroll because the type and
+                      the column widths are tuned for it — see .ap-table in the
+                      stylesheet — not because any column was merged away.
+
+                      The contact number is the one addition to the format. It
+                      sits under the name rather than in a twelfth column, which
+                      is what the verification sheet asks for without widening
+                      the table. */}
                   <tr>
-                    <th scope="col">Applicant Name</th>
+                    <th scope="col" rowSpan={2}>Sr.<br />No.</th>
+                    <th scope="col" rowSpan={2}>Authorised Person&rsquo;s Name</th>
+                    <th scope="col" rowSpan={2}>Authorised Person Code (Exchange wise)</th>
+                    <th scope="col" rowSpan={2}>Exchange</th>
+                    <th scope="col" rowSpan={2}>Constitution</th>
+                    <th scope="col" rowSpan={2}>Status (Approved/ Cancelled)</th>
+                    <th scope="colgroup" colSpan={4} className="ap-grp">Registered Address</th>
+                    <th scope="colgroup" colSpan={2} className="ap-grp">Terminal Details</th>
+                  </tr>
+                  <tr>
+                    <th scope="col">Address</th>
                     <th scope="col">City</th>
-                    <th scope="col">Registered Address</th>
-                    <th scope="col">Contact</th>
-                    <th scope="col">Segments</th>
-                    <th scope="col">Registration No</th>
-                    <th scope="col">Registered On</th>
-                    <th scope="col">Status</th>
+                    <th scope="col">State</th>
+                    <th scope="col">Pin code</th>
+                    <th scope="col">Terminal Allotted (Y/N)</th>
+                    <th scope="col">No. of Terminals</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {filteredAps.map((ap) => (
-                    <tr key={ap.regNo}>
-                      <td className="ap-name">{ap.name}</td>
-                      <td>{ap.city}</td>
-                      <td>{ap.address} — {ap.pin}</td>
-                      <td>
-                        <a href={`tel:${ap.mobile}`} className="ap-tel">{ap.mobile}</a>
+                  {filteredAps.map((ap, i) => (
+                    <tr key={ap.codes[0].code}>
+                      <td className="ap-sr">{i + 1}</td>
+                      <th scope="row" className="ap-name">
+                        {ap.name}
+                        {ap.mobile && (
+                          <a href={`tel:${ap.mobile}`} className="ap-tel">{ap.mobile}</a>
+                        )}
+                      </th>
+                      <td className="ap-codes" data-label="AP Code (Exchange wise)">
+                        {/* One column, codes separated by a slash, per the
+                            exchange's own note on the source sheet. */}
+                        {ap.codes.map((c, j) => (
+                          <span key={c.code}>
+                            {j > 0 && <span className="ap-slash" aria-hidden="true"> / </span>}
+                            <span className="mono">{c.code}</span>
+                            <span className="ap-exch">{c.exchange}</span>
+                          </span>
+                        ))}
                       </td>
-                      <td>
-                        <span className="seg-chips">
-                          {ap.segments.map((s) => (
-                            <span className={`seg-chip${s === 'F&O' ? ' fo' : ''}`} key={s}>{s}</span>
-                          ))}
-                        </span>
+                      <td className="ap-exchanges" data-label="Exchange">
+                        {ap.exchanges.join(', ')}
                       </td>
-                      <td className="mono">{ap.regNo}</td>
-                      <td>{ap.regDate}</td>
-                      <td><span className="status-pill">{ap.status}</span></td>
+                      <td data-label="Constitution">{ap.constitution ?? <Pending />}</td>
+                      <td data-label="Status"><span className="status-pill">{ap.status}</span></td>
+                      <td className="ap-addr" data-label="Address">{ap.address ?? <Pending />}</td>
+                      <td data-label="City">{ap.city ?? <Pending />}</td>
+                      <td data-label="State">{ap.state ?? <Pending />}</td>
+                      <td className="ap-pin" data-label="Pin code">{ap.pin ?? <Pending />}</td>
+                      <td className="ap-mid" data-label="Terminal Allotted">{ap.terminalAllotted}</td>
+                      <td className="ap-mid" data-label="No. of Terminals">{ap.terminals}</td>
                     </tr>
                   ))}
                   {filteredAps.length === 0 && (
                     <tr>
-                      <td colSpan={8} className="ap-empty">
+                      <td colSpan={12} className="ap-empty">
                         No authorised person matches &ldquo;{query}&rdquo;
                       </td>
                     </tr>

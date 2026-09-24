@@ -58,7 +58,7 @@ export const HEAD_OFFICES = [
       'Hall No. 2, 1st Floor Western Block, Above Central Bank, GTB Complex, T. T. Nagar, Bhopal - 462003',
     phones: ['0755-4350141-143', '0755-4283016'],
     email: 'kmlho@kalpatarumulti.com',
-    person: 'Amitabh Manya Jain',
+    person: 'Amitabh Manya Jain (MD)',
   },
   {
     label: 'Head Office (Registered)',
@@ -100,24 +100,47 @@ export const MF_TOOLS = [
  * NEW TO MARKET — resources published by Kalpataru
  * ------------------------------------------------------------------ */
 
-export const NTM_RESOURCES = [
-  { label: 'Margin Pledge', kind: 'PDF', href: 'https://www.kalpatarumulti.com/files/newtomarket/Margin_Pledge.pdf', desc: 'How the margin pledge system works and what you need to authorise.' },
-  { label: 'ANMI–Secmark FAQ on Margin', kind: 'PDF', href: 'https://www.kalpatarumulti.com/files/newtomarket/ANMI_Secmark_FAQ_on_Margin_2Sep2020.pdf', desc: 'Industry FAQ on the September 2020 margin rules.' },
-  { label: 'Pledge Mechanism', kind: 'PPT', href: 'https://www.kalpatarumulti.com/files/newtomarket/pledge_mechanism.pptx', desc: 'Step-by-step walkthrough of the depository pledge mechanism.' },
-  // `hi` holds the Devanagari lead so the page can mark it lang="hi" —
-  // WCAG 3.1.2 needs the language of a passage identified, and these two sit
-  // inside an otherwise English page.
-  { label: 'Union Budget 2016 — Key Features (Hindi)', kind: 'PDF', href: 'https://www.kalpatarumulti.com/files/pdf/Budget_2016_keyfeature_hindi.pdf', hi: 'बजट की मुख्य बातें', desc: 'Key budget features in Hindi.' },
-  { label: 'Rail Budget Highlights (Hindi)', kind: 'PDF', href: 'https://www.kalpatarumulti.com/files/pdf/rail_budget_highlights_hindi.pdf', hi: 'रेल बजट की मुख्य बातें', desc: 'Rail budget highlights in Hindi.' },
+export interface NtmResource {
+  label: string;
+  kind: 'PDF' | 'PPT';
+  href: string;
+  desc: string;
+  /**
+   * Devanagari lead for a Hindi document. The renderer wraps it in lang="hi"
+   * so assistive tech switches voice — WCAG 3.1.2 needs the language of a
+   * passage identified when it differs from the page's.
+   */
+  hi?: string;
+}
+
+/*
+ * Served from this site, not from www.kalpatarumulti.com — that host is being
+ * retired, and these were the last links still pointing at it from this page.
+ * The files are the ones it serves, copied into public/files/newtomarket.
+ *
+ * The ANMI FAQ was linked as .pdf and badged PDF. No such file exists there;
+ * it is a .pptx and always was, so the link 404'd. Both are corrected.
+ */
+export const NTM_RESOURCES: NtmResource[] = [
+  { label: 'Margin Pledge', kind: 'PDF', href: '/files/newtomarket/Margin_Pledge.pdf', desc: 'How the margin pledge system works and what you need to authorise.' },
+  { label: 'Peak Margin Reporting — Circular', kind: 'PDF', href: '/files/newtomarket/Peak_Margin_Reporting_circular_website.pdf', desc: 'The circular on peak margin reporting and how the penalty is computed.' },
+  { label: 'ANMI–Secmark FAQ on Margin', kind: 'PPT', href: '/files/newtomarket/ANMI_Secmark_FAQ_on_Margin_2Sep2020.pptx', desc: 'Industry FAQ on the September 2020 margin rules.' },
+  { label: 'Pledge Mechanism', kind: 'PPT', href: '/files/newtomarket/pledge_mechanism.pptx', desc: 'Step-by-step walkthrough of the depository pledge mechanism.' },
 ];
 
+/** Described on the page rather than linked — both are arranged through the desk. */
 export const GOLD_ROUTES = [
-  { label: 'Sovereign Gold Bond (SGB)', href: 'https://meon.space/sgb/kalpataru', desc: 'Government-backed bonds that track gold and pay interest — held in demat.' },
-  { label: 'Gold ETFs', href: 'https://www.nseindia.com/market-data/exchange-traded-funds-etf', desc: 'Exchange-traded funds that track gold prices and trade like a share.' },
+  { label: 'Sovereign Gold Bond (SGB)', desc: 'Government-backed bonds that track gold and pay interest — held in demat.' },
+  { label: 'Gold ETFs', desc: 'Exchange-traded funds that track gold prices and trade like a share.' },
 ];
 
+/*
+ * One login. MCX Online Trading pointed at onlinetrading.kalpatarumulti.com,
+ * which returns 404 — commodity trading runs through the same web terminal as
+ * everything else, so it points there now.
+ */
 export const COMMODITY_LOGINS = [
-  { label: 'MCX Online Trading', href: 'http://onlinetrading.kalpatarumulti.com/pages/Login.aspx' },
+  { label: 'MCX Online Trading', href: 'https://trading.kalpatarumulti.com:28001/' },
 ];
 
 /* ------------------------------------------------------------------ *
@@ -178,7 +201,7 @@ export const ACCOUNT_OPENING_ROUTES: OpeningRoute[] = [
   {
     key: 'offline',
     title: 'Offline — physical form',
-    strap: 'At any of our 22 branches, or by post.',
+    strap: 'At any of our Bhopal branches, or by post.',
     steps: [
       'Download and print the account opening and KYC forms, or collect a set from any branch.',
       'Fill the KYC form in your own handwriting, strike off every blank, and never sign an incomplete form.',
@@ -288,18 +311,17 @@ export const ACCOUNT_SERVICES: AccountService[] = [
     summary:
       'Refresh your KYC and update the details held against your trading and demat account — address, mobile number, email ID, bank account, income range or signature. Keeping your own mobile number and email registered is what makes the exchange and depository alerts reach you directly.',
     timeline: 'Updated with the KRA and CKYCR within 10 days of a complete request.',
-    portalLabel: 'Open the Re-KYC Portal',
-    altLabel: 'Or raise it from the Back Office',
+    portalLabel: 'Open the Back Office',
     steps: [
-      'Open the Re-KYC and modification portal and sign in with your PAN and registered mobile number.',
+      'Sign in to the back office with your client ID, then open the modification request.',
       'Select the details you need to change and upload the supporting proof — an address proof, a cancelled cheque or a bank statement, as applicable.',
       'Authenticate with the OTP sent to your registered mobile and email, and complete the Aadhaar-based e-sign.',
       'We verify the request, update your records with the KRA and CKYCR, and confirm the change by email.',
     ],
     forms: [
-      { label: 'Account Modification Form', href: 'https://www.kalpatarumulti.com/files/download/modi.pdf' },
+      { label: 'Account Modification Form', href: '/files/download/modi.pdf' },
       { label: 'KYC Form for KRA', href: 'https://www.kalpatarumulti.com/files/download/Kyc_Form_New.pdf' },
-      { label: 'Demo — Account Modification (Online)', href: 'https://www.kalpatarumulti.com/files/download/MODIFY.pdf' },
+      { label: 'Guide — Modifying your account', href: '/files/guides/demo-account-modification-online.pdf' },
     ],
     desk: {
       person: 'Mr. Vinod Singh',
@@ -323,7 +345,7 @@ export const ACCOUNT_SERVICES: AccountService[] = [
     ],
     forms: [
       { label: 'Account Closure Request Form', href: 'https://www.kalpatarumulti.com/files/download/ACCOUNT_CLOSURE_REQUEST_FORM.pdf' },
-      { label: 'Guide — How to close my account', href: 'https://www.kalpatarumulti.com/files/download/Closure_(1).pptx' },
+      { label: 'Guide — Closing your account', href: '/files/guides/how-to-close-account.pdf' },
     ],
     desk: DP_DESK,
   },

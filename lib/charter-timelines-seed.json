@@ -1,0 +1,125 @@
+{
+  "broker": {
+    "headings": [
+      "S. No.",
+      "Activity",
+      "Expected Timelines"
+    ],
+    "rows": [
+      {
+        "sr": "1",
+        "activity": "KYC entered into KRA system and CKYCR",
+        "timeline": "10 days of account opening"
+      },
+      {
+        "sr": "2",
+        "activity": "Client onboarding",
+        "timeline": "Immediate, but not later than one week"
+      },
+      {
+        "sr": "3",
+        "activity": "Order execution",
+        "timeline": "Immediate on receipt of order, but not later than the same day"
+      },
+      {
+        "sr": "4",
+        "activity": "Allocation of Unique Client Code",
+        "timeline": "Before trading"
+      },
+      {
+        "sr": "5",
+        "activity": "Copy of duly completed Client Registration Documents to clients",
+        "timeline": "7 days from the date of upload of Unique Client Code to the Exchange"
+      },
+      {
+        "sr": "6",
+        "activity": "Issuance of contract notes",
+        "timeline": "24 hours of execution of trades"
+      },
+      {
+        "sr": "7",
+        "activity": "Collection of upfront margin from client",
+        "timeline": "Before initiation of trade"
+      },
+      {
+        "sr": "8",
+        "activity": "Issuance of intimation regarding other margin due payments",
+        "timeline": "At the end of the T day"
+      },
+      {
+        "sr": "9",
+        "activity": "Settlement of client funds",
+        "timeline": "30 days or 90 days of running account settlement, as per the preference of the client"
+      },
+      {
+        "sr": "10",
+        "activity": "Statement of accounts for funds, securities and commodities",
+        "timeline": "Weekly basis — within four trading days of the following week"
+      },
+      {
+        "sr": "11",
+        "activity": "Issuance of retention statement of funds",
+        "timeline": "5 days from the date of settlement"
+      },
+      {
+        "sr": "12",
+        "activity": "Issuance of Annual Global Statement",
+        "timeline": "30 days from the end of the financial year"
+      },
+      {
+        "sr": "13",
+        "activity": "Investor grievance redressal",
+        "timeline": "30 days from the receipt of the complaint"
+      }
+    ]
+  },
+  "depository": {
+    "headings": [
+      "Sr. No.",
+      "Brief about the activity / service",
+      "Expected timelines for processing by the DP after receipt of proper documents"
+    ],
+    "rows": [
+      {
+        "sr": "1",
+        "activity": "Dematerialisation of securities",
+        "timeline": "7 days"
+      },
+      {
+        "sr": "2",
+        "activity": "Rematerialisation of securities",
+        "timeline": "7 days"
+      },
+      {
+        "sr": "3",
+        "activity": "Mutual fund conversion / destatementisation",
+        "timeline": "5 days"
+      },
+      {
+        "sr": "4",
+        "activity": "Re-conversion / restatementisation of mutual fund units",
+        "timeline": "7 days"
+      },
+      {
+        "sr": "5",
+        "activity": "Transmission of securities",
+        "timeline": "7 days"
+      },
+      {
+        "sr": "6",
+        "activity": "Registering pledge request",
+        "timeline": "15 days"
+      },
+      {
+        "sr": "7",
+        "activity": "Closure of demat account",
+        "timeline": "7 days"
+      },
+      {
+        "sr": "8",
+        "activity": "Settlement instruction",
+        "timeline": "Physical DIS accepted for pay-in of securities up to 4:00 p.m. and DIS in electronic form up to 6:00 p.m. on the T+1 day"
+      }
+    ]
+  }
+}

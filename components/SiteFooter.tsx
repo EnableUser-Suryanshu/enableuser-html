@@ -1,12 +1,44 @@
 import Link from 'next/link';
 import { MEMBER_DETAILS } from '@/lib/data';
+import { siteDocumentUrl } from '@/lib/site-documents';
+import RiskDisclosureLink from './RiskDisclosureLink';
 import {
   APP_LINKS, MAPS, POLICY_LINKS, REGULATOR_LINKS, SOCIAL_LINKS, EXT, isInternalPolicy,
 } from '@/lib/links';
 import {
   Facebook, Instagram, XTwitter, LinkedIn, Target, OfficeBuilding,
   Phone, Mail, Person, Map, Pencil, ListCheck, Bank, Handshake, Headset, Download, IdCard,
+  Calculator,
 } from './icons';
+
+/**
+ * Links the live site singles out with a filled box, because they are the ones
+ * an investor is most often sent to look for. Marked rather than reordered, so
+ * each stays in the group it belongs to; the styling is this site's own —
+ * a tinted chip — rather than a copy of the navy blocks.
+ */
+const FEATURED = new Set([
+  'Advisory for Investor',
+  'Risk Disclosures on Derivatives',
+  'Shareholder e-Voting (CDSL)',
+  'Client Collateral Data (NSE)',
+  'Procedure for Voluntary Freeze / Block of Online Access',
+  'Circulars',
+]);
+
+/**
+ * Marker for a link whose file lives in Sanity. The column table is static, so
+ * the entry carries this instead of a URL and the real one is swapped in when
+ * the footer renders. Keeps the link in its published position rather than
+ * pushing it to the end of the column.
+ */
+const SITE_DOC_HREF = 'sanity:investor-complaint-process';
+
+/**
+ * Marker for the entry that opens SEBI's Annexure-I in a dialog instead of
+ * navigating. It keeps its place in the column; only what it renders differs.
+ */
+const RISK_DISCLOSURE_HREF = 'dialog:risk-disclosures';
 
 const POLICY_COLUMNS = [
   {
@@ -18,6 +50,8 @@ const POLICY_COLUMNS = [
       ['Dormant Policy', POLICY_LINKS.dormant],
       ['Surveillance Policy', POLICY_LINKS.surveillance],
       ['Branch Supervision Policy', POLICY_LINKS.branchSupervision],
+      ['RMS Policy', POLICY_LINKS.rms],
+      ['GTT Policy', POLICY_LINKS.gtt],
     ],
   },
   {
@@ -26,11 +60,13 @@ const POLICY_COLUMNS = [
       ['Investor Charter — Stock Broker', POLICY_LINKS.investorCharter],
       ['Investor Charter — Depository Participant', POLICY_LINKS.investorCharterDepository],
       ['Sebi Complaint', POLICY_LINKS.sebiComplaint],
-      ['Investor/Client Complaint Process', POLICY_LINKS.complaintProcess],
+      // Resolved from Sanity at request time — see SITE_DOC_HREF below.
+      ['Investor/Client Complaint Process', SITE_DOC_HREF],
       ['Advisory for Investor', POLICY_LINKS.advisory],
-      ['Risk Disclosures on Derivatives', POLICY_LINKS.riskDisclosures],
+      ['Risk Disclosures on Derivatives', RISK_DISCLOSURE_HREF],
       ['Shareholder e-Voting (CDSL)', REGULATOR_LINKS.cdslEvoting],
       ['Client Collateral Data (NSE)', REGULATOR_LINKS.nseClientCollateral],
+      ['Procedure for Voluntary Freeze / Block of Online Access', POLICY_LINKS.voluntaryFreeze],
       ['Investor Protection Fund — NSE', REGULATOR_LINKS.investorProtectionNse],
       ['Investor Protection — BSE', REGULATOR_LINKS.investorProtectionBse],
       ['KYC Documents in Vernacular Languages — NSE', REGULATOR_LINKS.kycVernacularNse],
@@ -45,13 +81,19 @@ const POLICY_COLUMNS = [
       ['Terms of Use', POLICY_LINKS.termsOfUse],
       ['Terms & Conditions', POLICY_LINKS.termsConditions],
       ['Disclaimer', POLICY_LINKS.disclaimer],
-      ['RMS Policy', POLICY_LINKS.rms],
-      ['GTT Policy', POLICY_LINKS.gtt],
     ],
   },
 ] as const;
 
-export default function SiteFooter() {
+export default async function SiteFooter() {
+  /*
+    Served from Sanity so compliance can replace the PDF without a deployment.
+    Everything else in these columns is a policy page or a regulator's own
+    site, neither of which we host; this is the one file of ours a fixed link
+    points at. Falls back to the copy in the repo if Sanity is unreachable.
+  */
+  const complaintProcess = await siteDocumentUrl('investor-complaint-process');
+
   return (
     <footer className="footer">
       <div className="container">
@@ -135,12 +177,17 @@ export default function SiteFooter() {
               {POLICY_COLUMNS.map((col) => (
                 <div key={col.heading}>
                   <h3>{col.heading}</h3>
-                  {col.links.map(([label, href]) =>
+                  {col.links.map(([label, href]) => {
+                    const cls = FEATURED.has(label) ? 'pol-hi' : undefined;
+                    if (href === RISK_DISCLOSURE_HREF) {
+                      return <RiskDisclosureLink key={label} className={cls} />;
+                    }
+                    const to = href === SITE_DOC_HREF ? complaintProcess : href;
                     // policy pages route in-app; PDFs and regulator links open in a new tab
-                    isInternalPolicy(href) && !href.endsWith('.pdf')
-                      ? <Link key={label} href={href}>{label}</Link>
-                      : <a key={label} href={href} {...EXT}>{label}</a>,
-                  )}
+                    return isInternalPolicy(to) && !to.endsWith('.pdf')
+                      ? <Link key={label} href={to} className={cls}>{label}</Link>
+                      : <a key={label} href={to} className={cls} {...EXT}>{label}</a>;
+                  })}
                 </div>
               ))}
             </div>
@@ -180,6 +227,10 @@ export default function SiteFooter() {
             <Link href="/business-partners" className="gbtn">
               <Handshake size={20} strokeW={1.9} />
               <span><span className="t">BUSINESS PARTNERS</span><br /><span className="s">Franchise &amp; sub-broker</span></span>
+            </Link>
+            <Link href="/tools/margin-calculator" className="gbtn">
+              <Calculator size={20} strokeW={1.9} />
+              <span><span className="t">MARGIN CALCULATOR</span><br /><span className="s">Exchange margin, live rates</span></span>
             </Link>
           </div>
           <h2>Grievance Redressal Mechanisms</h2>

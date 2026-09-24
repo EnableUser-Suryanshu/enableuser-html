@@ -249,7 +249,7 @@ export default function NewToMarketPage() {
         <div className="container">
           <h2 id="res-h">Resource Library</h2>
           <p className="sub">
-            The margin, pledge and budget documents published by Kalpataru — download and keep.
+            The margin and pledge documents published by Kalpataru — download and keep.
           </p>
           <div className="res-grid stagger">
             {NTM_RESOURCES.map((r) => (
@@ -284,11 +284,14 @@ export default function NewToMarketPage() {
           <div className="bank-grid">
             <div className="bank-card reveal rv-left">
               <div className="head"><Rupee size={24} /> Gold Investment Routes</div>
+              {/* Described, not linked. Both routes are transacted through the
+                  desk rather than a page of ours, so a link here would only
+                  send someone somewhere we do not control. */}
               {GOLD_ROUTES.map((g) => (
-                <a key={g.label} href={g.href} {...EXT} className="dl-row" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: 4 }}>
+                <div key={g.label} className="dl-row" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: 4 }}>
                   <strong style={{ fontSize: 14 }}>{g.label}</strong>
                   <span style={{ fontSize: 12.5, color: 'var(--ink-3)', fontWeight: 500 }}>{g.desc}</span>
-                </a>
+                </div>
               ))}
             </div>
             <div className="bank-card reveal rv-right">
@@ -312,7 +315,7 @@ export default function NewToMarketPage() {
       <section className="section values watch" aria-labelledby="safe-h">
         <div className="container">
           <h2 id="safe-h">Stay Safe as an Investor</h2>
-          <p className="sub">Five habits that protect every beginner.</p>
+          <p className="sub">Three habits that protect every beginner.</p>
           <div className="values-grid stagger" style={{ gridTemplateColumns: 'repeat(3,1fr)' }}>
             <div className="value-card">
               <div className="vc-icon"><Shield size={30} /></div>

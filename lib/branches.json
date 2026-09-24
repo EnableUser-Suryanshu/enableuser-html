@@ -1,178 +1,42 @@
 [
- {
-  "city": "Bhopal",
-  "address": "Kalpataru Multiplier Ltd,E-103, Arera Colony, Bhopal (Mp)-462016",
-  "person": "Anil Mahendra",
-  "mobile": "9329209601",
-  "phone": "0755-4233402",
-  "email": "anilmahendra@ymail.com"
- },
- {
-  "city": "Bhopal",
-  "address": "Kalpataru Multiplier Ltd,12-B Indrapuri Near Sbi Plant Bhel, Bhopal (Mp) - 462021",
-  "person": "Abha Jain",
-  "mobile": "8989271259/ 9329571129",
-  "phone": "0755-4260437/ 4901489",
-  "email": "kml03@kalpatarumulti.com"
- },
- {
-  "city": "Bhopal",
-  "address": "G-2/114 Aishwarya Tower Gulmohar Colony Bhopal (Mp) - 462039",
-  "person": "Smt. Meera Saxena",
-  "mobile": "9300327470/ 9300718386",
-  "phone": "0755-4296512/ 4296513",
-  "email": "kkassociates53@rediffmail.com"
- },
- {
-  "city": "Bhopal",
-  "address": "Shop No. 2, Bhagat Singh Chouraha, Sharma Parisar, Karond Bhopal (MP) – 462038",
-  "person": "Akhilesh Narayan Saxena",
-  "mobile": "9893032568",
-  "phone": "2742451",
-  "email": "sahu_jeedendra@yahoo.com"
- },
- {
-  "city": "Bhopal",
-  "address": "Kalpataru Multiplier Ltd, Kalpataru Tower, 131/16, Zone-2, M.P. Nagar, Bhopal (Mp)-462011",
-  "person": "Devendra Kumar Bihar",
-  "mobile": "8989869740",
-  "phone": "0755-3147089",
-  "email": "kmlmpnagar@kalpatarumulti.com"
- },
- {
-  "city": "Bhopal",
-  "address": "Kalpataru Multiplier Ltd,103, Earning Point Complex Mandakni Chouraha Kolar Road Bhopal (Mp)",
-  "person": "YOGESH NAMDEO",
-  "mobile": "9300327458",
-  "phone": "0755-4276710",
-  "email": "kml02@kalpatarumulti.com"
- },
- {
-  "city": "Bhopal",
-  "address": "Kalpataru Multiplier Ltd,Kalpataru House 18 Itwara Bhopal (Mp)",
-  "person": "S. N. Tiwari",
-  "mobile": "9893276728",
-  "phone": "0755-4262655",
-  "email": "cgm@kalpatarumulti.com"
- },
- {
-  "city": "Bhopal",
-  "address": "45-FF Minal shopping mall, Jk Road Bhopal Madhya Pradesh 462037",
-  "person": "KAILASH KUMAR PARYANI",
-  "mobile": "7974521728",
-  "phone": "0755-4279637",
-  "email": "paryanik@rediffmail.com"
- },
- {
-  "city": "Bhopal",
-  "address": "27 NOBAL PLAZA FIRST FLOOR ZONE 2 MP NAGAR Bhopal (Mp)-462011",
-  "person": "PANKAJ CHOURASIA",
-  "mobile": "9425370687",
-  "phone": "0755-4250687",
-  "email": "chourasia.pankaj@gmail.com"
- },
- {
-  "city": "Sagar",
-  "address": "1St Floor Rukmani Complex Katra Bazar Namak Mandi Sagar (Mp)-470002",
-  "person": "Rajesh Jain",
-  "mobile": "9425636400",
-  "phone": "07582-404000",
-  "email": "vinayakshare@gmail.com"
- },
- {
-  "city": "Bina",
-  "address": "Inront Of Decision Hotel Khurai Road Bina.(Mp) - 470113",
-  "person": "Rajesh Jain",
-  "mobile": "8109292615 , 9713310330",
-  "phone": "7049592615",
-  "email": "rajeshjainkml@gmail.com"
- },
- {
-  "city": "Katni",
-  "address": "Vinayak Complex 1st Floor Opp. Prem Narayan Samaj Bhawan Near Hotel Pankaj Bhari Road Katni (MP) – 483501",
-  "person": "Anurag Paroha",
-  "mobile": "9827261387, 9424956196, 9753167335",
-  "phone": "07622-404818, 07622-405989",
-  "email": "anuragkatni@rediffmail.com"
- },
- {
-  "city": "Chhatarpur",
-  "address": "Shop No:2 Opp.Utsav Dhaam Police Line Road Purana Panna Naka Chhatarpur (MP) - 471001",
-  "person": "Durgeh Khare",
-  "mobile": "9425305565, 9685103121",
-  "phone": "07682-249065",
-  "email": "durgeshkhare@yahoo.co.in"
- },
- {
-  "city": "Jabalpur",
-  "address": "Main Road, Ranjhi Bazar Darshan Singh Tiraha In Front Of Nana Bhai Travels, Ranjhi, Jabalpur (Mp)",
-  "person": "Alok Bhatt",
-  "mobile": "9300107852",
-  "phone": "0761-4039019",
-  "email": "15alokdeep@gmail.com"
- },
- {
-  "city": "Bhilai",
-  "address": "Shop No. 49 'A’ Market Sector 10, Bhilai Durg(Cg)-490006",
-  "person": "Ashish Jain",
-  "mobile": "9425556747/ 7000294703",
-  "phone": "0788-4037262",
-  "email": "jains00@gmail.com"
- },
- {
-  "city": "Lalitpur",
-  "address": "32 civil lines,Vijaya bank campus Lalitpur (U.P)- 284403",
-  "person": "Anup Tamrakar",
-  "mobile": "09839484498",
-  "phone": "05176-275611",
-  "email": "anup.tamrakar@yahoo.com, anuptamrakar@gmail.com"
- },
- {
-  "city": "Lalitpur",
-  "address": "17, Talab Pura, Lalitpur, Uttar Pradesh , Pin 284403",
-  "person": "Monika Jain w/o Ashish Jain",
-  "mobile": "8874327999",
-  "phone": "05176-275009",
-  "email": "arnavsetujain11@gmail.com"
- },
- {
-  "city": "Guna",
-  "address": "1ST FLORE GANGA BHAVAN GURUDWARA ROAD GUNA - 473001",
-  "person": "Sunil Agrawal",
-  "mobile": "8989869739, 8989869740",
-  "phone": "07542-253405, 07542-253405",
-  "email": "kml41@kalpatarumulti.com"
- },
- {
-  "city": "Ashok Nagar",
-  "address": "Infront of Union Bank Station Road Ashok Nagar (MP) - 473331",
-  "person": "Amit Kumar Singhai",
-  "mobile": "9926223080, 9406979199",
-  "phone": "07543-225293",
-  "email": "singhai2llb@yahoo.co.in"
- },
- {
-  "city": "Harda",
-  "address": "C/O Mahendra Dal Mill Campus , Station Road , Harda (Mp)- 461331",
-  "person": "Hitendra Jain",
-  "mobile": "9407268010 , 9407268010",
-  "phone": "",
-  "email": "ltharda@gmail.com"
- },
- {
-  "city": "Gadarwara",
-  "address": "Near Sbi Kamath Ward Gadarwara (Mp)-467551",
-  "person": "Alok Jain",
-  "mobile": "9893701718",
-  "phone": "7791258664",
-  "email": "alokjain_1000@rediffmail.com"
- },
- {
-  "city": "Damoh",
-  "address": "41,Behind Purana Thana, Damoh,(M.P)-470661",
-  "person": "Mayank Bharliya",
-  "mobile": "9425611972",
-  "phone": "",
-  "email": "mayankbhrilya1@gmail.com"
- }
+  {
+    "city": "Bhopal",
+    "address": "Kalpataru Multiplier Ltd,E-103, Arera Colony, Bhopal (Mp)-462016",
+    "person": "Anil Mahendra",
+    "mobile": "9329209601",
+    "phone": "0755-4233402",
+    "email": "anilmahendra@ymail.com"
+  },
+  {
+    "city": "Bhopal",
+    "address": "Kalpataru Multiplier Ltd,12-B Indrapuri Near Sbi Plant Bhel, Bhopal (Mp) - 462021",
+    "person": "Abha Jain",
+    "mobile": "8989271259/ 9329571129",
+    "phone": "0755-4260437/ 4901489",
+    "email": "kml03@kalpatarumulti.com"
+  },
+  {
+    "city": "Bhopal",
+    "address": "Kalpataru Multiplier Ltd,Kalpataru House 18 Itwara Bhopal (Mp)",
+    "person": "S. N. Tiwari",
+    "mobile": "9893276728",
+    "phone": "0755-4262655",
+    "email": "cgm@kalpatarumulti.com"
+  },
+  {
+    "city": "Bhopal",
+    "address": "Kalpataru Multiplier Ltd, Kalpataru Tower, 131/16, Zone-2, M.P. Nagar, Bhopal (Mp)-462011",
+    "person": "Devendra Kumar Bihar",
+    "mobile": "8989869740",
+    "phone": "0755-3147089",
+    "email": "kmlmpnagar@kalpatarumulti.com"
+  },
+  {
+    "city": "Bhopal",
+    "address": "Hall No. 2, 1st Floor Western Block, Above Central Bank, GTB Complex, T. T. Nagar, Bhopal-462003",
+    "person": "Vinod Singh (GM)",
+    "mobile": "",
+    "phone": "0755-4350141-143, 0755-4283016",
+    "email": "kmlho@kalpatarumulti.com"
+  }
 ]

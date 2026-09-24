@@ -1,23 +1,26 @@
 import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import BranchFinder from '@/components/pages/BranchFinder';
+import EscalationMatrix from '@/components/pages/EscalationMatrix';
 import {
-  BRANCHES, KEY_CONTACTS, HEAD_OFFICES, ESCALATION, EXCHANGE_GRIEVANCE,
+  BRANCHES, HEAD_OFFICES, ESCALATION,
 } from '@/lib/pages-data';
 import { MEMBER_DETAILS } from '@/lib/data';
 import { PORTALS, MAPS, EXT } from '@/lib/links';
 import {
-  Phone, Mail, MapPin, Person, Map, OfficeBuilding, Shield, WhatsApp, ArrowRight, Headset,
+  Phone, Mail, MapPin, Person, Map, OfficeBuilding, Shield, WhatsApp, Headset,
 } from '@/components/icons';
 
 export const metadata: Metadata = {
   title: 'Contact Us — Kalpataru Multiplier Ltd',
   description:
-    'Reach Kalpataru Multiplier Ltd: corporate and head office, 22 branches across Madhya Pradesh, UP and Chhattisgarh, key contacts, working hours and the investor grievance escalation matrix.',
+    'Reach Kalpataru Multiplier Ltd: corporate and head office, our Bhopal branches, key contacts, working hours and the investor grievance escalation matrix.',
 };
 
 export default function ContactPage() {
-  const cities = new Set(BRANCHES.map((b) => b.city)).size;
+  const cityNames = [...new Set(BRANCHES.map((b) => b.city))];
+  // Reads naturally whether the network is one city or many.
+  const where = cityNames.length === 1 ? `in ${cityNames[0]}` : `across ${cityNames.length} cities`;
 
   return (
     <main id="main">
@@ -27,7 +30,7 @@ export default function ContactPage() {
           { text: 'Always' }, { text: 'a' }, { text: 'Branch', accent: true },
           { text: 'Away' }, { text: 'From' }, { text: 'You.' },
         ]}
-        lead={`${BRANCHES.length} branches across ${cities} cities, a dedicated customer-care desk, and a published escalation path — talk to a person, not a queue.`}
+        lead={`${BRANCHES.length} branches ${where}, a dedicated customer-care desk, and a published escalation path — talk to a person, not a queue.`}
         cta={
           <a href="tel:07554350141" className="btn btn-white">CALL 0755-4350141</a>
         }
@@ -105,47 +108,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Key personnel table */}
+      {/* Escalation matrix — shared with /customer-care */}
       <section className="section disclosures watch" aria-labelledby="kp-h">
         <div className="container">
-          <h2 id="kp-h" style={{ textAlign: 'center', fontSize: 30, fontWeight: 600 }}>
-            Key Contact Persons
-          </h2>
-          <p className="sub" style={{ textAlign: 'center', margin: '12px auto 30px', maxWidth: 620 }}>
-            Names, direct numbers and working hours — published as required by SEBI.
-          </p>
-          <div className="disc-scroll">
-            <table className="disc-table">
-              <thead>
-                <tr>
-                  <th scope="col">Details Of</th>
-                  <th scope="col">Contact Person</th>
-                  <th scope="col">Contact No.</th>
-                  <th scope="col">Email ID</th>
-                  <th scope="col">Working Hours</th>
-                </tr>
-              </thead>
-              <tbody>
-                {KEY_CONTACTS.map((c) => (
-                  <tr key={c.role}>
-                    <th scope="row" className="ap-name">{c.role}</th>
-                    <td>{c.person}</td>
-                    <td>
-                      {c.phones.map((p) => (
-                        <a key={p} href={`tel:${p.replace(/[^\d]/g, '')}`} className="kc-tel">{p}</a>
-                      ))}
-                    </td>
-                    <td>
-                      {c.emails.map((e) => (
-                        <a key={e} href={`mailto:${e}`} className="kc-mail">{e}</a>
-                      ))}
-                    </td>
-                    <td>{c.hours}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <EscalationMatrix headingId="kp-h" />
         </div>
       </section>
 
@@ -156,7 +122,7 @@ export default function ContactPage() {
             <div>
               <h2 id="bf-h" className="sec-title">Find Your Branch</h2>
               <p className="sec-sub">
-                {BRANCHES.length} branches across {cities} cities — filter by city or search for a manager.
+                {BRANCHES.length} branches {where} — search for a branch or a manager.
               </p>
             </div>
           </div>
@@ -183,22 +149,6 @@ export default function ContactPage() {
               </li>
             ))}
           </ol>
-          <div className="esc-links">
-            <p className="esc-links-h">
-              <Shield size={17} strokeW={2} /> Still unresolved? Lodge a complaint directly:
-            </p>
-            <div className="esc-links-row">
-              {EXCHANGE_GRIEVANCE.map((g) => (
-                <a key={g.name} href={g.href} {...EXT} className="esc-link">
-                  {g.name} <ArrowRight size={13} strokeW={2.4} />
-                </a>
-              ))}
-            </div>
-            <p className="esc-note">
-              Please quote your Complaint Reference Number when escalating to SEBI SCORES or a
-              depository portal.
-            </p>
-          </div>
         </div>
       </section>
 

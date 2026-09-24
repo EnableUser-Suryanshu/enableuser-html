@@ -15,7 +15,7 @@ export default function Steps() {
       <div className="container">
         <h2>Free Demat &amp; Trading + MF Account Opening</h2>
         <p className="sub">
-          Start your journey in less than 5 minutes with our completely digital onboarding process.
+          Start your journey in a few quick steps with our completely digital onboarding process.
         </p>
         <div className="steps-grid stagger">
           <div className="connector" aria-hidden="true"></div>

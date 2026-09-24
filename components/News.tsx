@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { PORTALS, EXT, REGULATOR_LINKS } from '@/lib/links';
 import { Rocket } from './icons';
 import { getDataset } from '@/lib/markets';
+import MarketNews from './MarketNews';
 
 export default function News() {
   const [ipos, setIpos] = useState<any[]>(
@@ -69,6 +70,10 @@ export default function News() {
               </a>
             </article>
           )}
+        </div>
+
+        <div className="reveal">
+          <MarketNews limit={7} />
         </div>
       </div>
     </section>
