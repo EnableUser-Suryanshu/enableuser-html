@@ -6,6 +6,7 @@ import PolicyBody from '@/components/pages/PolicyBody';
 import ComplaintsData from '@/components/pages/ComplaintsData';
 import { getComplaintsReport } from '@/lib/complaints';
 import { getCharterTimelines, asTableRows, type CharterKey } from '@/lib/charter-timelines';
+import { DEPOSITORY_CHARTER } from '@/lib/investor-charter-depository';
 import { ALL_POLICIES, POLICY_GROUPS as GROUPS, getPolicyPage, policyTabs } from '@/lib/policy-index';
 import type { PolicyBlock } from '@/lib/policies';
 import { ArrowRight, FilePdf, Shield } from '@/components/icons';
@@ -46,6 +47,16 @@ function withLiveTimelines(
   out[i] = { t: 'table', rows } as PolicyBlock;
   return out;
 }
+
+/**
+ * The depository charter as SEBI publishes it — all eleven sections, including
+ * the Dos and Don'ts, Rights, Responsibilities and the two Codes of Conduct
+ * that the generated version was missing entirely. Generated from the
+ * published page rather than retyped; see lib/investor-charter-depository.
+ */
+const FULL_BODY: Record<string, PolicyBlock[]> = {
+  'investor-charter-depository': DEPOSITORY_CHARTER,
+};
 
 /** Which charter a slug is, for the per-charter timelines document. */
 const CHARTER_KEY: Record<string, CharterKey> = {
@@ -116,7 +127,7 @@ export default async function PolicyPage({ params }: { params: Promise<{ slug: s
               blocks={
                 CHARTERS.has(slug)
                   ? withLiveTimelines(
-                      trimComplaints(policy.blocks),
+                      trimComplaints(FULL_BODY[slug] ?? policy.blocks),
                       asTableRows(await getCharterTimelines(CHARTER_KEY[slug])),
                     )
                   : policy.blocks
