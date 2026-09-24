@@ -357,19 +357,89 @@ async function buildFiiDii(nse) {
 }
 
 async function buildIpo(nse) {
-  const ipos = await nse.get('/api/all-upcoming-issues?category=ipo');
-  if (!Array.isArray(ipos) || !ipos.length) return [];
-  return [{
-    slug: 'ipo-current-issues', title: 'Current & Upcoming IPOs', group: 'ipo',
-    blurb: 'Public issues open or opening shortly on NSE.',
-    columns: [C('company', 'Company Name', 'text'), C('symbol', 'Symbol', 'text'),
-      C('series', 'Series', 'tag'), C('open', 'Open Date', 'date'), C('close', 'Close Date', 'date'),
-      C('band', 'Price Band (₹)', 'text'), C('size', 'Issue Size', 'text')],
-    rows: ipos.map((r) => ({
-      company: r.companyName || r.name || '—', symbol: r.symbol || '—',
-      series: r.series || 'EQ', open: r.issueStartDate || '—', close: r.issueEndDate || '—',
-      band: r.issuePrice || r.priceBand || '—', size: r.issueSize || '—' })),
-  }];
+  /*
+   * Three separate questions an investor actually asks, from three NSE
+   * endpoints:
+   *   what is open now, and how well is it subscribed   /api/ipo-current-issue
+   *   what is coming                     /api/all-upcoming-issues?category=ipo
+   *   what just listed                            /api/public-past-issues
+   *
+   * The current-issue feed is the only one carrying subscription, which is
+   * the number people are checking for — it is a live multiple of the shares
+   * offered, so it moves through the day while an issue is open.
+   */
+  const [current, upcoming, past] = await Promise.all([
+    nse.get('/api/ipo-current-issue').catch(() => null),
+    nse.get('/api/all-upcoming-issues?category=ipo').catch(() => null),
+    nse.get('/api/public-past-issues').catch(() => null),
+  ]);
+
+  const out = [];
+  const name = (r) => r.companyName || r.company || r.symbol || '—';
+  // "Rs.32 to Rs.34" reads better without the repetition.
+  const band = (v) => (typeof v === 'string' ? v.replace(/Rs\./g, '₹').replace(/\s+to\s+/, ' – ') : '—');
+
+  if (Array.isArray(current) && current.length) {
+    out.push({
+      slug: 'ipo-current-issues', title: 'IPOs Open Now', group: 'ipo',
+      blurb: 'Public issues accepting bids today, with live subscription.',
+      columns: [C('company', 'Company', 'text'), C('symbol', 'Symbol', 'text'),
+        C('band', 'Price Band', 'text'), C('open', 'Opens', 'date'), C('close', 'Closes', 'date'),
+        C('subscribed', 'Subscribed (times)', 'num'), C('offered', 'Shares Offered', 'num')],
+      rows: current.map((r) => ({
+        company: name(r), symbol: r.symbol || '—', band: band(r.issuePrice),
+        open: r.issueStartDate || '—', close: r.issueEndDate || '—',
+        subscribed: num(r.noOfTime), offered: num(r.noOfSharesOffered) })),
+      defaultSort: 'close',
+    });
+  }
+
+  /*
+   * The upcoming feed includes issues that are already open — NSE marks those
+   * "Active" and the genuinely future ones "Forthcoming". Without this filter
+   * the two columns show the same six companies, which is how it first went
+   * out.
+   */
+  const forthcoming = Array.isArray(upcoming)
+    ? upcoming.filter((r) => String(r.status).toLowerCase() === 'forthcoming')
+    : [];
+
+  if (forthcoming.length) {
+    out.push({
+      slug: 'ipo-upcoming', title: 'Upcoming IPOs', group: 'ipo',
+      blurb: 'Issues announced on NSE that have not opened yet.',
+      columns: [C('company', 'Company', 'text'), C('symbol', 'Symbol', 'text'),
+        C('series', 'Series', 'tag'), C('band', 'Price Band', 'text'),
+        C('open', 'Opens', 'date'), C('close', 'Closes', 'date'), C('size', 'Issue Size', 'num')],
+      rows: forthcoming.map((r) => ({
+        company: name(r), symbol: r.symbol || '—', series: r.series || 'EQ',
+        band: band(r.issuePrice), open: r.issueStartDate || '—',
+        close: r.issueEndDate || '—', size: num(r.issueSize) })),
+      defaultSort: 'open',
+    });
+  }
+
+  if (Array.isArray(past) && past.length) {
+    // The feed runs back years; only what has actually listed, most recent first.
+    const listed = past
+      .filter((r) => r.listingDate && r.listingDate !== '-' && (r.companyName || r.company))
+      .slice(0, 40);
+    if (listed.length) {
+      out.push({
+        slug: 'ipo-recently-listed', title: 'Recently Listed', group: 'ipo',
+        blurb: 'Issues that have completed and started trading.',
+        columns: [C('company', 'Company', 'text'), C('symbol', 'Symbol', 'text'),
+          C('type', 'Type', 'tag'), C('band', 'Price Band', 'text'),
+          C('issuePrice', 'Issue Price (₹)', 'num'), C('listed', 'Listed On', 'date')],
+        rows: listed.map((r) => ({
+          company: name(r), symbol: r.symbol || '—', type: r.securityType || 'EQ',
+          band: band(r.priceRange), issuePrice: num(r.issuePrice), listed: r.listingDate })),
+        defaultSort: 'listed',
+      });
+    }
+  }
+
+  return out;
 }
 
 async function buildFutures(nse) {
@@ -468,7 +538,7 @@ export const SLUG_GROUP = {
   'split-of-face-value': 'corp-actions', buyback: 'corp-actions', 'book-closure': 'corp-actions',
   'board-meetings': 'board-meetings',
   'fii-investments': 'fii-dii', 'dii-investments': 'fii-dii',
-  'ipo-current-issues': 'ipo',
+  'ipo-current-issues': 'ipo', 'ipo-upcoming': 'ipo', 'ipo-recently-listed': 'ipo',
   'exchange-announcements': 'announcements',
   'world-indices': 'global', 'adr-prices': 'global',
   'mcx-commodities': 'global', 'currency-quotes': 'global',

@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import IpoBoard, { type OpenIpo, type UpcomingIpo, type ListedIpo } from '@/components/pages/IpoBoard';
+import { getDataset } from '@/lib/markets';
 import type { CSSProperties, ReactElement } from 'react';
 import PageHero from '@/components/PageHero';
 import BrandMarquee from '@/components/BrandMarquee';
@@ -397,6 +399,12 @@ export default function ServicesPage() {
       </section>
 
       {/* Why us */}
+      <IpoBoard
+        open={(getDataset('ipo-current-issues')?.rows ?? []) as unknown as OpenIpo[]}
+        upcoming={(getDataset('ipo-upcoming')?.rows ?? []) as unknown as UpcomingIpo[]}
+        listed={(getDataset('ipo-recently-listed')?.rows ?? []) as unknown as ListedIpo[]}
+      />
+
       <section className="section why-strip watch" style={{ background: 'var(--bg-light)' }}>
         <div className="container">
           <h2 style={{ textAlign: 'center', fontSize: 30, fontWeight: 600 }}>
